@@ -71,6 +71,19 @@ The ComfyUI backend discovers available resources over HTTP — no filesystem ac
 | `--aspect-ratio <ratio>` | Standard aspect ratios; used when size is explicit or built-in txt2img |
 | `--seed <n>` | Seed injected into every `KSampler`-family node |
 
+### Sampling controls
+
+These flags override the KSampler sampling settings. The saved workflow is authoritative — a flag only overrides the workflow's value when the flag is explicitly passed.
+
+| Flag | Overrides | Example values |
+|------|-----------|---------------|
+| `--comfyui-steps <int>` | `KSampler.steps` | `20`, `30`, `50` |
+| `--comfyui-cfg <number>` | `KSampler.cfg` | `7`, `5.5`, `12` |
+| `--comfyui-sampler <name>` | `KSampler.sampler_name` | `euler`, `euler_a`, `dpmpp_2m` |
+| `--comfyui-scheduler <name>` | `KSampler.scheduler` | `normal`, `karras`, `exponential` |
+
+Overrides apply to **both** built-in txt2img mode and workflow mode. In workflow mode, only the nodes that already have the matching input key are updated — the same pattern as seed and size injection.
+
 ### API-format workflows
 
 Export a workflow from ComfyUI via **File → Save (API Format)** (requires the "Enable Dev Mode Options" toggle in ComfyUI settings). The resulting JSON contains node IDs as keys — this is what `--comfyui-workflow` expects. The default "Save" format is the GUI format and will not work.

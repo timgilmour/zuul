@@ -17,7 +17,7 @@ export interface Dimensions { width: number; height: number; }
 export type ComfyNode = { class_type: string; inputs: Record<string, unknown>; _meta?: { title?: string } };
 export type ComfyWorkflow = Record<string, ComfyNode>;
 
-export interface InjectParams { positive: string; negative?: string; seed?: number; width?: number; height?: number; }
+export interface InjectParams { positive: string; negative?: string; seed?: number; width?: number; height?: number; steps?: number; cfg?: number; sampler?: string; scheduler?: string; }
 
 export interface Txt2ImgOpts {
   checkpoint: string;
@@ -114,6 +114,26 @@ export function injectIntoWorkflow(wf: ComfyWorkflow, p: InjectParams): ComfyWor
   if (p.width !== undefined && p.height !== undefined) {
     for (const n of Object.values(out)) {
       if (n.class_type === "EmptyLatentImage") { n.inputs.width = p.width; n.inputs.height = p.height; }
+    }
+  }
+  if (p.steps !== undefined) {
+    for (const n of Object.values(out)) {
+      if (typeof n.inputs.steps === "number") n.inputs.steps = p.steps;
+    }
+  }
+  if (p.cfg !== undefined) {
+    for (const n of Object.values(out)) {
+      if (typeof n.inputs.cfg === "number") n.inputs.cfg = p.cfg;
+    }
+  }
+  if (p.sampler !== undefined) {
+    for (const n of Object.values(out)) {
+      if (typeof n.inputs.sampler_name === "string") n.inputs.sampler_name = p.sampler;
+    }
+  }
+  if (p.scheduler !== undefined) {
+    for (const n of Object.values(out)) {
+      if (typeof n.inputs.scheduler === "string") n.inputs.scheduler = p.scheduler;
     }
   }
   return out;
@@ -213,6 +233,10 @@ export interface GenerateComfyOpts {
   width?: number;
   height?: number;
   seed?: number;
+  steps?: number;            // override KSampler steps (both built-in and workflow mode)
+  cfg?: number;              // override KSampler cfg
+  sampler?: string;          // override KSampler sampler_name
+  scheduler?: string;        // override KSampler scheduler
   checkpoint?: string;       // for built-in txt2img; auto-selected if omitted
   workflow?: ComfyWorkflow;  // pre-loaded API-format workflow (from --comfyui-workflow)
   applySize?: boolean;       // inject width/height (true only when --size explicit)
@@ -227,6 +251,7 @@ export async function generateWithComfyUI(o: GenerateComfyOpts): Promise<string>
       positive: o.positive, negative: o.negative, seed: o.seed,
       width: o.applySize ? o.width : undefined,
       height: o.applySize ? o.height : undefined,
+      steps: o.steps, cfg: o.cfg, sampler: o.sampler, scheduler: o.scheduler,
     });
   } else {
     let checkpoint = o.checkpoint;
@@ -239,6 +264,7 @@ export async function generateWithComfyUI(o: GenerateComfyOpts): Promise<string>
     wf = buildTxt2ImgWorkflow({
       checkpoint, positive: o.positive, negative: o.negative,
       width: o.width ?? 1024, height: o.height ?? 1024, seed: o.seed,
+      steps: o.steps, cfg: o.cfg, sampler: o.sampler, scheduler: o.scheduler,
     });
   }
   const id = await o.client.submitPrompt(wf);

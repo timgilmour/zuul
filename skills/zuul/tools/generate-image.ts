@@ -86,6 +86,10 @@ interface CLIArgs {
   seed?: number;
   comfyuiWorkflow?: string;    // path to an API-format workflow JSON
   comfyuiCheckpoint?: string;  // checkpoint filename for built-in txt2img
+  comfyuiSteps?: number;       // override KSampler steps (comfyui provider only)
+  comfyuiCfg?: number;         // override KSampler cfg (comfyui provider only)
+  comfyuiSampler?: string;     // override KSampler sampler_name (comfyui provider only)
+  comfyuiScheduler?: string;   // override KSampler scheduler (comfyui provider only)
   sizeExplicit?: boolean;      // true when --size was passed (controls size injection)
   listComfyuiWorkflows?: boolean;
   listComfyuiModels?: boolean;
@@ -185,6 +189,10 @@ OPTIONS:
                            Not available with --thinking or OpenRouter provider
   --comfyui-workflow <path>  Run an API-format ComfyUI workflow file (provider comfyui)
   --comfyui-checkpoint <name> Checkpoint for built-in txt2img (provider comfyui)
+  --comfyui-steps <int>      Override KSampler steps (positive integer; comfyui provider only)
+  --comfyui-cfg <number>     Override KSampler CFG scale (positive number; comfyui provider only)
+  --comfyui-sampler <name>   Override KSampler sampler name, e.g. euler_a, dpmpp_2m (comfyui provider only)
+  --comfyui-scheduler <name> Override KSampler scheduler, e.g. karras, exponential (comfyui provider only)
   --list-comfyui-models      List ComfyUI checkpoints and exit
   --list-comfyui-workflows   Show how to list saved workflows (use /zuul-comfy for full discovery)
   --help, -h               Show this help message
@@ -347,6 +355,22 @@ function parseArgs(argv: string[]): CLIArgs {
         break;
       case "comfyui-workflow": parsed.comfyuiWorkflow = value; i++; break;
       case "comfyui-checkpoint": parsed.comfyuiCheckpoint = value; i++; break;
+      case "comfyui-steps": {
+        const steps = parseInt(value, 10);
+        if (isNaN(steps) || steps < 1) throw new CLIError(`Invalid comfyui-steps: ${value}. Must be a positive integer`);
+        parsed.comfyuiSteps = steps;
+        i++;
+        break;
+      }
+      case "comfyui-cfg": {
+        const cfg = parseFloat(value);
+        if (isNaN(cfg) || cfg <= 0) throw new CLIError(`Invalid comfyui-cfg: ${value}. Must be a positive number`);
+        parsed.comfyuiCfg = cfg;
+        i++;
+        break;
+      }
+      case "comfyui-sampler": parsed.comfyuiSampler = value; i++; break;
+      case "comfyui-scheduler": parsed.comfyuiScheduler = value; i++; break;
       case "thinking":
         if (value !== "minimal" && value !== "low" && value !== "medium" && value !== "high") {
           throw new CLIError(`Invalid thinking level: ${value}. Must be: minimal, low, medium, high`);
@@ -917,6 +941,8 @@ async function main(): Promise<void> {
         savedPath = await generateWithComfyUI({
           client: ComfyUIClient.fromEnv(),
           positive: prompt, width, height, seed: args.seed,
+          steps: args.comfyuiSteps, cfg: args.comfyuiCfg,
+          sampler: args.comfyuiSampler, scheduler: args.comfyuiScheduler,
           checkpoint: args.comfyuiCheckpoint ?? process.env.COMFYUI_CHECKPOINT, workflow,
           applySize: !!args.sizeExplicit,
           output, saveImage,
