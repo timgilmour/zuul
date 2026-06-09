@@ -1,6 +1,7 @@
 ---
 description: Add to a Zuul vocabulary pool (role, species, pose, style, or fragment)
 argument-hint: "<role|species|pose|style|fragment> [name/description]"
+allowed-tools: Bash(bun run:*), Read, Edit, Write
 ---
 Use the **zuul** skill to add a new entry to a vocabulary pool, following the matching "Creating a new …" flow.
 

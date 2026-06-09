@@ -1,6 +1,7 @@
 ---
 description: Assemble and print a Zuul prompt only — no render, no API call
 argument-hint: "[subject, e.g. 'a steampunk dwarf gunsmith']"
+allowed-tools: Read
 ---
 Use the **zuul** skill to assemble a full generation prompt for the subject below, but **do not render** — output the finished prompt only, ready to paste into any image model.
 

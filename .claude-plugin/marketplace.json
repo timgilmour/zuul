@@ -1,13 +1,13 @@
 {
   "name": "zuul",
-  "description": "Zuul — concept-art skill and slash commands (the Gatekeeper)",
+  "description": "Zuul (the Gatekeeper) — concept-art skill + slash commands for clean, isolated renders tuned for single-image image-to-3D",
   "owner": {
     "name": "Tim Gilmour"
   },
   "plugins": [
     {
       "name": "zuul",
-      "description": "Clean, isolated concept-art renders of fictional subjects, optimized for single-image image-to-3D",
+      "description": "Zuul (the Gatekeeper) — clean, isolated concept-art renders of fictional subjects (characters, creatures, vehicles, mechs, props), tuned for single-image image-to-3D mesh generators (Meshy, Tripo, Hunyuan3D, Rodin)",
       "version": "1.0.0",
       "source": "./",
       "author": {

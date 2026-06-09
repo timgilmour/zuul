@@ -1,6 +1,6 @@
 {
   "name": "zuul",
-  "description": "Zuul (the Gatekeeper) — clean, isolated concept-art renders of fictional subjects, tuned for single-image image-to-3D mesh generators (Meshy, Tripo, Hunyuan3D, Rodin)",
+  "description": "Zuul (the Gatekeeper) — clean, isolated concept-art renders of fictional subjects (characters, creatures, vehicles, mechs, props), tuned for single-image image-to-3D mesh generators (Meshy, Tripo, Hunyuan3D, Rodin)",
   "version": "1.0.0",
   "author": {
     "name": "Tim Gilmour"

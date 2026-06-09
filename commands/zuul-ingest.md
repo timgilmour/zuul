@@ -1,6 +1,7 @@
 ---
 description: Ingest a reference image into a Zuul subject + pose
 argument-hint: "<image path or @image>"
+allowed-tools: Bash(bun run:*), Read, Write, Edit
 ---
 Use the **zuul** skill's image-ingest workflow (its `core/ingest-image.md`) to ingest the reference image below.
 

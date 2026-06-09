@@ -1,6 +1,7 @@
 ---
 description: List Zuul's vocabulary — genres, sub-genres, roles, species, poses, styles
 argument-hint: "[genres|subgenres|roles <genre>|species|poses|styles]"
+allowed-tools: Read
 ---
 Use the **zuul** skill's `vocabulary/` pools to list what's available.
 

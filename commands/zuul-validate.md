@@ -1,6 +1,6 @@
 ---
 description: Validate Zuul's vocabulary pools
-argument-hint: ""
+allowed-tools: Bash(bun run:*), Read
 ---
 Use the **zuul** skill to validate its vocabulary pools: run the bundled `tools/validate-vocab.mjs` and report the result.
 

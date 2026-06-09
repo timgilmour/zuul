@@ -1,6 +1,7 @@
 ---
 description: Generate concept art with Zuul — guided render of a fictional subject
 argument-hint: "[subject, e.g. 'a drow paladin']"
+allowed-tools: Bash(bun run:*), Read, Write, Edit
 ---
 Use the **zuul** skill to produce a concept-art render.
 
