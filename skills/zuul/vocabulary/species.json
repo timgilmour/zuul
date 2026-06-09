@@ -1,0 +1,860 @@
+[
+  {
+    "id": "human",
+    "taxonomy": "species",
+    "label": "Human",
+    "default_size": "medium",
+    "visual": {
+      "skin": "varies widely",
+      "features": [],
+      "build": "medium, varies",
+      "palette": []
+    },
+    "traits": [
+      "adaptable",
+      "short-lived",
+      "ambitious",
+      "socially-complex"
+    ],
+    "prompt_fragments": [
+      "human",
+      "standard humanoid proportions"
+    ],
+    "applies_to": [
+      "*"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "orc",
+    "taxonomy": "species",
+    "label": "Orc",
+    "default_size": "large",
+    "visual": {
+      "skin": "grey-green to olive",
+      "features": [
+        "lower tusks",
+        "heavy brow ridge",
+        "broad flat nose",
+        "wide jaw"
+      ],
+      "build": "heavily muscular, broad-shouldered",
+      "palette": [
+        "grey-green",
+        "earth brown",
+        "iron grey",
+        "rust"
+      ]
+    },
+    "traits": [
+      "warrior-culture",
+      "tribal",
+      "resilient",
+      "honour-bound"
+    ],
+    "prompt_fragments": [
+      "grey-green skin",
+      "heavy lower tusks",
+      "heavy brow ridge",
+      "broad muscular build"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "elf",
+    "taxonomy": "species",
+    "label": "Elf",
+    "default_size": "medium",
+    "visual": {
+      "skin": "pale to warm tan, luminous",
+      "features": [
+        "long pointed ears",
+        "high cheekbones",
+        "sharp angular features",
+        "large eyes"
+      ],
+      "build": "tall and slender, graceful",
+      "palette": [
+        "silver",
+        "forest green",
+        "moonlit white",
+        "deep violet"
+      ]
+    },
+    "traits": [
+      "long-lived",
+      "arcane-affinity",
+      "proud",
+      "nature-connected"
+    ],
+    "prompt_fragments": [
+      "long pointed ears",
+      "high angular cheekbones",
+      "slender graceful build",
+      "luminous pale skin"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "dwarf",
+    "taxonomy": "species",
+    "label": "Dwarf",
+    "default_size": "small",
+    "visual": {
+      "skin": "ruddy tan to weathered brown",
+      "features": [
+        "thick beard",
+        "prominent brow",
+        "stout wide nose",
+        "stocky neck"
+      ],
+      "build": "short and stocky, barrel-chested",
+      "palette": [
+        "russet brown",
+        "iron grey",
+        "gold",
+        "deep slate"
+      ]
+    },
+    "traits": [
+      "craftsman-culture",
+      "stubborn",
+      "tradition-bound",
+      "mountain-dweller"
+    ],
+    "prompt_fragments": [
+      "stocky barrel-chested build",
+      "thick beard",
+      "ruddy skin",
+      "short stature"
+    ],
+    "applies_to": [
+      "fantasy",
+      "steampunk"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "hiver",
+    "taxonomy": "species",
+    "label": "Hiver",
+    "default_size": "medium",
+    "size_note": "variable by caste — worker/drone medium, warrior large, queen massive",
+    "visual": {
+      "skin": "chitinous exoskeleton, segmented",
+      "features": [
+        "compound eyes",
+        "mandibles",
+        "antennae",
+        "four to six limbs",
+        "wing-cases possible"
+      ],
+      "build": "insectoid, variable by caste",
+      "palette": [
+        "iridescent black",
+        "carapace amber",
+        "compound-eye violet",
+        "bioluminescent green"
+      ]
+    },
+    "traits": [
+      "hive-mind-adjacent",
+      "caste-based",
+      "collective-memory",
+      "alien-logic"
+    ],
+    "prompt_fragments": [
+      "insectoid chitinous exoskeleton",
+      "compound eyes",
+      "mandibles",
+      "segmented body"
+    ],
+    "applies_to": [
+      "scifi"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "romulan",
+    "taxonomy": "species",
+    "label": "Romulan",
+    "default_size": "medium",
+    "visual": {
+      "skin": "pale olive to grey-green",
+      "features": [
+        "pointed ears",
+        "sharp V-shaped brow ridges",
+        "angular severe features"
+      ],
+      "build": "athletic humanoid",
+      "palette": [
+        "military green",
+        "obsidian black",
+        "silver",
+        "deep crimson"
+      ]
+    },
+    "traits": [
+      "militaristic",
+      "secretive",
+      "honour-culture",
+      "politically-complex"
+    ],
+    "prompt_fragments": [
+      "pointed ears",
+      "V-shaped brow ridges",
+      "sharp angular features",
+      "pale olive skin"
+    ],
+    "applies_to": [
+      "scifi"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "tiefling",
+    "taxonomy": "species",
+    "label": "Tiefling",
+    "default_size": "medium",
+    "visual": {
+      "skin": "crimson, violet, midnight blue, or ash grey",
+      "features": [
+        "curling horns",
+        "solid-colour eyes",
+        "long slender tail",
+        "small fangs"
+      ],
+      "build": "humanoid, lean",
+      "palette": [
+        "crimson",
+        "deep violet",
+        "midnight blue",
+        "ash",
+        "black"
+      ]
+    },
+    "traits": [
+      "infernal-heritage",
+      "charismatic",
+      "distrusted",
+      "resilient"
+    ],
+    "prompt_fragments": [
+      "crimson skin",
+      "curling ram horns",
+      "solid glowing eyes",
+      "long slender tail"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "dragonborn",
+    "taxonomy": "species",
+    "label": "Dragonborn",
+    "default_size": "medium",
+    "visual": {
+      "skin": "scaled hide in draconic colours",
+      "features": [
+        "reptilian head",
+        "short curved horns",
+        "clawed hands",
+        "no tail (standard)",
+        "draconic crest"
+      ],
+      "build": "tall and powerfully built",
+      "palette": [
+        "varies by draconic ancestry: red, blue, gold, black, white, bronze, silver"
+      ]
+    },
+    "traits": [
+      "draconic-heritage",
+      "clan-proud",
+      "breath-weapon",
+      "honour-focused"
+    ],
+    "prompt_fragments": [
+      "scaled draconic hide",
+      "reptilian head",
+      "short curved horns",
+      "clawed hands",
+      "powerfully built"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "android",
+    "taxonomy": "species",
+    "label": "Android",
+    "default_size": "medium",
+    "visual": {
+      "skin": "synthetic polymer skin over endoskeleton, or exposed chassis",
+      "features": [
+        "glowing optical sensors",
+        "visible seams or panel lines",
+        "articulated joints",
+        "port access points"
+      ],
+      "build": "humanoid chassis, varies by model",
+      "palette": [
+        "chrome silver",
+        "matte white",
+        "industrial grey",
+        "accent glow colour"
+      ]
+    },
+    "traits": [
+      "synthetic-consciousness",
+      "precise",
+      "non-biological",
+      "programmed-directives"
+    ],
+    "prompt_fragments": [
+      "synthetic humanoid",
+      "visible panel seams",
+      "glowing optical sensors",
+      "mechanical joints"
+    ],
+    "applies_to": [
+      "scifi",
+      "science-fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "halfling",
+    "taxonomy": "species",
+    "label": "Halfling",
+    "default_size": "small",
+    "visual": {
+      "skin": "warm tan to brown",
+      "features": [
+        "large hairy feet",
+        "round cheerful face",
+        "large eyes",
+        "curly hair"
+      ],
+      "build": "very short, slight but rounded",
+      "palette": [
+        "warm brown",
+        "autumn gold",
+        "forest green",
+        "cream"
+      ]
+    },
+    "traits": [
+      "lucky",
+      "stealthy",
+      "community-focused",
+      "practical"
+    ],
+    "prompt_fragments": [
+      "very short stature",
+      "large hairy bare feet",
+      "round cheerful face",
+      "curly hair"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "gnome",
+    "taxonomy": "species",
+    "label": "Gnome",
+    "default_size": "small",
+    "visual": {
+      "skin": "pale to ruddy, often weathered",
+      "features": [
+        "large nose",
+        "wide curious eyes",
+        "wild or eccentric hair",
+        "slightly oversized head"
+      ],
+      "build": "very short, wiry",
+      "palette": [
+        "earth tones",
+        "bright arcane accent colours",
+        "indigo",
+        "brass"
+      ]
+    },
+    "traits": [
+      "inventive",
+      "curious",
+      "illusionist-affinity",
+      "eccentric"
+    ],
+    "prompt_fragments": [
+      "very short wiry build",
+      "large nose",
+      "wide curious eyes",
+      "wild eccentric hair"
+    ],
+    "applies_to": [
+      "fantasy",
+      "steampunk"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "half-orc",
+    "taxonomy": "species",
+    "label": "Half-Orc",
+    "default_size": "medium",
+    "visual": {
+      "skin": "grey-green to sallow olive, lighter than a full orc",
+      "features": [
+        "small lower tusks or prominent lower teeth",
+        "medium brow ridge",
+        "broad nose",
+        "strong jaw"
+      ],
+      "build": "tall and strong but not as massive as a full orc",
+      "palette": [
+        "grey-olive",
+        "earth tones",
+        "iron"
+      ]
+    },
+    "traits": [
+      "outcast-possible",
+      "resilient",
+      "dual-identity",
+      "tougher-than-they-look"
+    ],
+    "prompt_fragments": [
+      "grey-olive skin",
+      "small lower tusks",
+      "prominent brow ridge",
+      "tall strong build"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "aasimar",
+    "taxonomy": "species",
+    "label": "Aasimar",
+    "default_size": "medium",
+    "visual": {
+      "skin": "pale gold, silver-white, or luminous bronze",
+      "features": [
+        "solid silver or gold eyes",
+        "faint halo glow at temples",
+        "ethereal beauty",
+        "celestial birthmarks"
+      ],
+      "build": "humanoid, slightly idealised proportions",
+      "palette": [
+        "silver-white",
+        "celestial gold",
+        "divine ivory",
+        "soft radiant blue"
+      ]
+    },
+    "traits": [
+      "celestial-heritage",
+      "divine-touched",
+      "healer-affinity",
+      "burden-of-purpose"
+    ],
+    "prompt_fragments": [
+      "luminous pale gold skin",
+      "solid silver eyes",
+      "faint halo glow",
+      "ethereal celestial beauty"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "lizardfolk",
+    "taxonomy": "species",
+    "label": "Lizardfolk",
+    "default_size": "medium",
+    "visual": {
+      "skin": "scaled hide — green, brown, grey, or desert tan",
+      "features": [
+        "reptilian head",
+        "forked tongue",
+        "tail",
+        "slit pupils",
+        "neck frill possible"
+      ],
+      "build": "medium to large, dense muscle under scales",
+      "palette": [
+        "swamp green",
+        "desert tan",
+        "river grey",
+        "dark brown"
+      ]
+    },
+    "traits": [
+      "cold-logic",
+      "survival-focused",
+      "alien-emotion",
+      "patient-predator"
+    ],
+    "prompt_fragments": [
+      "scaled reptilian hide",
+      "reptilian head with forked tongue",
+      "slit pupils",
+      "tail",
+      "dense muscular build"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "minotaur",
+    "taxonomy": "species",
+    "label": "Minotaur",
+    "default_size": "large",
+    "visual": {
+      "skin": "hide — dark brown to black, short fur on body",
+      "features": [
+        "bull's head with curved horns",
+        "broad flat nostrils",
+        "hooved feet",
+        "short tail"
+      ],
+      "build": "massive, 7–8 feet, heavily muscled",
+      "palette": [
+        "dark brown",
+        "black",
+        "burnt sienna",
+        "horn ivory"
+      ]
+    },
+    "traits": [
+      "labyrinth-dweller",
+      "honour-code",
+      "savage-strength",
+      "navigational-sense"
+    ],
+    "prompt_fragments": [
+      "bull's head with curved horns",
+      "hooved feet",
+      "short furred hide",
+      "massive 7-foot heavily muscled build"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "tabaxi",
+    "taxonomy": "species",
+    "label": "Tabaxi",
+    "default_size": "medium",
+    "visual": {
+      "skin": "short cat fur over humanoid body — spotted, striped, or solid",
+      "features": [
+        "cat head with ears",
+        "slit pupils",
+        "retractable claws",
+        "long tail",
+        "whiskers"
+      ],
+      "build": "lean and lithe, dancer's proportions",
+      "palette": [
+        "tawny gold",
+        "jungle green-black spots",
+        "desert sand",
+        "silver-grey"
+      ]
+    },
+    "traits": [
+      "curious",
+      "collector",
+      "climber",
+      "whimsically-dangerous"
+    ],
+    "prompt_fragments": [
+      "short cat fur over humanoid form",
+      "cat head with upright ears",
+      "slit pupils",
+      "retractable claws",
+      "long cat tail"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "warforged",
+    "taxonomy": "species",
+    "label": "Warforged",
+    "default_size": "medium",
+    "visual": {
+      "skin": "composite plating — wood, metal, and stone grown together",
+      "features": [
+        "armoured head with vestigial face",
+        "glowing crystal eye-lenses",
+        "visible joint mechanisms",
+        "integrated armour cannot be removed"
+      ],
+      "build": "medium to large, solid and dense",
+      "palette": [
+        "dark iron",
+        "weathered bronze",
+        "carved wood grain",
+        "crystal-glow amber"
+      ]
+    },
+    "traits": [
+      "living-construct",
+      "war-made",
+      "purpose-seeking",
+      "ageless"
+    ],
+    "prompt_fragments": [
+      "composite wood-metal-stone plating",
+      "glowing crystal eye-lenses",
+      "integrated construct armour",
+      "solid dense build"
+    ],
+    "applies_to": [
+      "fantasy",
+      "science-fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "drow",
+    "taxonomy": "species",
+    "label": "Drow",
+    "default_size": "medium",
+    "visual": {
+      "skin": "jet black or deep obsidian",
+      "features": [
+        "long pointed ears",
+        "white or silver hair",
+        "red or violet glowing eyes",
+        "sharp aristocratic features"
+      ],
+      "build": "slender and graceful like surface elves",
+      "palette": [
+        "obsidian black",
+        "silver-white hair",
+        "violet eye-glow",
+        "deep crimson accents"
+      ]
+    },
+    "traits": [
+      "underdark-native",
+      "arcane-affinity",
+      "politically-treacherous",
+      "photosensitive"
+    ],
+    "prompt_fragments": [
+      "jet black skin",
+      "silver-white hair",
+      "glowing red or violet eyes",
+      "long pointed ears",
+      "sharp aristocratic features"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "goliath",
+    "taxonomy": "species",
+    "label": "Goliath",
+    "default_size": "large",
+    "visual": {
+      "skin": "stone grey with darker natural markings (lithoderms) across face and shoulders",
+      "features": [
+        "lithoderm stone nodules on brow and shoulders",
+        "slightly oversized head",
+        "flat broad nose"
+      ],
+      "build": "7–8 feet, slab-muscled, giant-kin proportions",
+      "palette": [
+        "stone grey",
+        "off-white",
+        "dark granite marking patterns"
+      ]
+    },
+    "traits": [
+      "competitive",
+      "honour-of-merit",
+      "stoic",
+      "mountain-born"
+    ],
+    "prompt_fragments": [
+      "stone-grey skin with natural lithoderm markings",
+      "slab-muscled giant-kin proportions",
+      "7-foot tall build",
+      "granite-patterned skin markings"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "githyanki",
+    "taxonomy": "species",
+    "label": "Githyanki",
+    "default_size": "medium",
+    "visual": {
+      "skin": "yellow-green to sallow golden",
+      "features": [
+        "flattened angular face",
+        "large pointed ears swept back",
+        "deep-set burning eyes",
+        "elongated skull"
+      ],
+      "build": "lean and angular, wiry strength",
+      "palette": [
+        "yellow-green",
+        "astral silver",
+        "deep violet",
+        "planar gold"
+      ]
+    },
+    "traits": [
+      "planar-warrior",
+      "psionically-gifted",
+      "anti-mindflayer",
+      "martial-zealot"
+    ],
+    "prompt_fragments": [
+      "yellow-green sallow skin",
+      "flattened angular face",
+      "large swept-back pointed ears",
+      "elongated skull",
+      "burning deep-set eyes"
+    ],
+    "applies_to": [
+      "fantasy",
+      "science-fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "leonin",
+    "taxonomy": "species",
+    "label": "Leonin",
+    "default_size": "medium",
+    "visual": {
+      "skin": "short lion fur over humanoid body",
+      "features": [
+        "lion's mane around head and neck",
+        "cat ears",
+        "broad flat nose",
+        "clawed hands",
+        "lion tail"
+      ],
+      "build": "tall and powerfully built, proud bearing",
+      "palette": [
+        "tawny gold",
+        "mane dark brown to black",
+        "ivory claws",
+        "amber eyes"
+      ]
+    },
+    "traits": [
+      "pride-culture",
+      "honour-warrior",
+      "protective",
+      "roar-of-authority"
+    ],
+    "prompt_fragments": [
+      "lion fur over humanoid form",
+      "impressive lion's mane",
+      "cat ears",
+      "clawed hands",
+      "tall proud powerful build"
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  },
+  {
+    "id": "klingon",
+    "taxonomy": "species",
+    "label": "Klingon",
+    "default_size": "medium",
+    "visual": {
+      "skin": "dark brown to dark tan",
+      "features": [
+        "prominent cranial ridges across forehead",
+        "heavy brow",
+        "strong jaw",
+        "long dark hair"
+      ],
+      "build": "powerful warrior build",
+      "palette": [
+        "dark leather brown",
+        "blood red",
+        "black",
+        "honour-gold accents"
+      ]
+    },
+    "traits": [
+      "honour-culture",
+      "battle-worship",
+      "death-before-dishonour",
+      "warrior-poet"
+    ],
+    "prompt_fragments": [
+      "prominent cranial ridges",
+      "dark brown skin",
+      "heavy brow",
+      "powerful warrior build",
+      "long dark hair"
+    ],
+    "applies_to": [
+      "scifi"
+    ],
+    "body_plan": "biped",
+    "ext": {}
+  }
+]

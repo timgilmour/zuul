@@ -1,0 +1,18 @@
+{
+  "name": "zuul",
+  "description": "Zuul — concept-art skill and slash commands (the Gatekeeper)",
+  "owner": {
+    "name": "Tim Gilmour"
+  },
+  "plugins": [
+    {
+      "name": "zuul",
+      "description": "Clean, isolated concept-art renders of fictional subjects, optimized for single-image image-to-3D",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Tim Gilmour"
+      }
+    }
+  ]
+}

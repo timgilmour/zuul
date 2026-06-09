@@ -1,0 +1,722 @@
+[
+  {
+    "id": "high-fantasy",
+    "level": "subgenre",
+    "parent": "fantasy",
+    "label": "High Fantasy",
+    "tone": "heroic, luminous, mythic",
+    "visual": {
+      "palette_notes": "bright steel, gold leaf, sapphire, emerald, warm oak",
+      "lighting_notes": "warm torchlight, radiant magical aura, clean midday sun on stone"
+    },
+    "descriptors": ["gleaming", "ceremonial", "ornate", "pristine", "noble"],
+    "prompt_fragments": [
+      "high fantasy concept art",
+      "gleaming enchanted armour",
+      "gold-leaf ornamental detail",
+      "luminous magical aesthetic",
+      "heroic mythic scale"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "dark-fantasy",
+    "level": "subgenre",
+    "parent": "fantasy",
+    "label": "Dark Fantasy",
+    "tone": "grim, weathered, morally ambiguous",
+    "visual": {
+      "palette_notes": "deep shadow, tarnished iron, soot-black, dried blood, muted jewel tones",
+      "lighting_notes": "low guttering torchlight, overcast diffuse, no clean highlights"
+    },
+    "descriptors": ["battle-worn", "defaced", "scarred", "corrupted", "ancient"],
+    "prompt_fragments": [
+      "dark fantasy concept art",
+      "tarnished iron and dried blood palette",
+      "battle-scarred corrupted design",
+      "grim weathered materials",
+      "morally ambiguous aesthetic"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "low-fantasy",
+    "level": "subgenre",
+    "parent": "fantasy",
+    "label": "Low Fantasy",
+    "tone": "grounded, mundane-world-with-rare-magic, unglamorous",
+    "visual": {
+      "palette_notes": "mud brown, undyed linen, raw iron, muted greens, peasant grey",
+      "lighting_notes": "overcast daylight, smoky hearth, no magical glow",
+      "materials": ["rough linen", "raw iron", "tallow-stained leather", "wattle", "bone toggles"]
+    },
+    "descriptors": ["unglamorous", "peasant-worn", "functional", "crude", "muddy"],
+    "prompt_fragments": [
+      "low fantasy concept art",
+      "unglamorous medieval peasant aesthetic",
+      "mud-and-linen colour palette",
+      "crude hand-forged iron tools",
+      "grounded no-magic design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "fairytale",
+    "level": "subgenre",
+    "parent": "fantasy",
+    "label": "Fairytale",
+    "tone": "whimsical, storybook-enchanted, surface-sweet with dark undertow",
+    "visual": {
+      "palette_notes": "rose blush, powder blue, gilded cream, forest moss, midnight black as contrast",
+      "lighting_notes": "soft diffuse storybook light, moonlit clearing acceptable",
+      "materials": ["spun gold thread", "glass", "enchanted wood", "woven straw", "silk"]
+    },
+    "descriptors": ["whimsical", "storybook", "enchanted", "delicate", "uncanny"],
+    "prompt_fragments": [
+      "fairytale concept art",
+      "storybook-enchanted aesthetic",
+      "rose-blush and gilded-cream palette",
+      "delicate glass and spun-gold materials",
+      "whimsical surface with dark undertone"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia",
+    "level": "subgenre",
+    "parent": "fantasy",
+    "label": "Wuxia",
+    "tone": "martial nobility, flowing and swift, honour-bound",
+    "visual": {
+      "palette_notes": "ink-black, lacquer red, jade green, brushed gold, white silk",
+      "lighting_notes": "clear open-sky light, mist over mountain acceptable",
+      "materials": ["silk", "lacquered bamboo", "jade", "forged dao steel", "carved ivory"]
+    },
+    "descriptors": ["flowing", "disciplined", "elegant", "martial", "swift"],
+    "prompt_fragments": [
+      "wuxia concept art",
+      "flowing silk robes and dao blades",
+      "ink-black lacquer-red palette",
+      "jade and carved ivory detail",
+      "martial-nobility Chinese fantasy aesthetic"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cosmic-horror",
+    "level": "subgenre",
+    "parent": "horror",
+    "label": "Cosmic Horror",
+    "tone": "vast, unknowable, wrong",
+    "visual": {
+      "palette_notes": "deep violet, bioluminescent green, necrotic yellow, abyssal black",
+      "lighting_notes": "faint cold bioluminescence, sourceless wrong-spectrum glow"
+    },
+    "descriptors": ["non-euclidean", "writhing", "iridescent", "eldritch", "vast"],
+    "prompt_fragments": [
+      "cosmic horror concept art",
+      "non-euclidean eldritch design",
+      "deep-violet and bioluminescent-green palette",
+      "writhing iridescent corruption",
+      "wrong proportions, unknowable geometry"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gothic-horror",
+    "level": "subgenre",
+    "parent": "horror",
+    "label": "Gothic Horror",
+    "tone": "decayed, aristocratic, tragic",
+    "visual": {
+      "palette_notes": "ash grey, deep crimson, tarnished silver, candlelight amber",
+      "lighting_notes": "candlelight, moon through stained glass, deep shadow with warm amber pools"
+    },
+    "descriptors": ["crumbling", "shrouded", "pallid", "ornate-decay", "bloodstained"],
+    "prompt_fragments": [
+      "gothic horror concept art",
+      "decayed aristocratic aesthetic",
+      "ash-grey and deep-crimson palette",
+      "tarnished silver and candlelight-amber detail",
+      "ornate crumbling materials"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "movie-horror",
+    "level": "subgenre",
+    "parent": "horror",
+    "label": "Movie Horror",
+    "tone": "slasher-real, suburban-uncanny, visceral shock",
+    "visual": {
+      "palette_notes": "everyday beige and grey, sudden violence red, fluorescent wash, night-black",
+      "lighting_notes": "harsh fluorescent interior, suburban exterior daylight, pitch dark with single beam"
+    },
+    "descriptors": ["suburban", "visceral", "familiar", "stalker", "shock"],
+    "prompt_fragments": [
+      "slasher horror concept art",
+      "suburban-uncanny setting",
+      "everyday palette broken by violence red",
+      "harsh fluorescent lighting aesthetic",
+      "movie-horror character design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "body-horror",
+    "level": "subgenre",
+    "parent": "horror",
+    "label": "Body Horror",
+    "tone": "flesh transgressed, biological wrongness, organic corruption",
+    "visual": {
+      "palette_notes": "raw flesh pink, arterial red, bile yellow, necrotic grey, exposed-bone white",
+      "lighting_notes": "clinical flat or autopsy-cold; no flattering light",
+      "materials": ["exposed tissue", "fused bone", "extruded cartilage", "membrane", "viscera"]
+    },
+    "descriptors": ["transgressed", "fused", "extruded", "monstrous", "organic"],
+    "prompt_fragments": [
+      "body horror concept art",
+      "flesh-transgressed biological design",
+      "raw-flesh and arterial-red palette",
+      "fused bone and exposed tissue materials",
+      "organic wrongness aesthetic"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "folk-horror",
+    "level": "subgenre",
+    "parent": "horror",
+    "label": "Folk Horror",
+    "tone": "rural, pagan, isolation-dread, old-rites",
+    "visual": {
+      "palette_notes": "harvest gold, dried-blood brown, undyed wool, moss green, chalk white",
+      "lighting_notes": "flat overcast field light, bonfire flicker, torch procession",
+      "materials": ["wicker", "rough-woven wool", "animal bone", "carved wood", "dried herbs"]
+    },
+    "descriptors": ["rural", "pagan", "ritual", "isolated", "ancient-rites"],
+    "prompt_fragments": [
+      "folk horror concept art",
+      "rural pagan ritual aesthetic",
+      "harvest-gold and dried-blood palette",
+      "wicker and rough-woven wool materials",
+      "isolation-dread old-rites design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pulp-scifi",
+    "level": "subgenre",
+    "parent": "scifi",
+    "label": "Pulp Sci-Fi",
+    "tone": "1950s rocket-age optimism, lurid and bold, chrome and ray-guns",
+    "visual": {
+      "palette_notes": "chrome silver, candy red, bright yellow, space blue, signal orange",
+      "lighting_notes": "bold graphic lit, colour-saturated, retro ray-gun glow acceptable",
+      "materials": ["polished chrome", "bakelite", "painted tin", "riveted hull-plate", "rubber seal"]
+    },
+    "descriptors": ["chrome", "lurid", "rocket-age", "bold", "pulp"],
+    "prompt_fragments": [
+      "pulp sci-fi concept art",
+      "1950s rocket-age aesthetic",
+      "chrome and candy-red palette",
+      "bakelite and polished-tin materials",
+      "ray-gun retro design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cyberpunk",
+    "level": "subgenre",
+    "parent": "scifi",
+    "label": "Cyberpunk",
+    "tone": "neon-soaked, corporate dystopia, street-level grit",
+    "visual": {
+      "palette_notes": "neon magenta, electric cyan, rain-slick black, dirty concrete, acid yellow accent",
+      "lighting_notes": "neon sign bleed, holographic UI glow, rain diffusion — render flat per rules",
+      "materials": ["mylar", "exposed circuitry", "cracked synth-leather", "chrome implants", "spray-tagged concrete"]
+    },
+    "descriptors": ["neon-soaked", "gritty", "implanted", "dystopian", "street-level"],
+    "prompt_fragments": [
+      "cyberpunk concept art",
+      "neon-magenta and electric-cyan palette",
+      "cracked synth-leather and chrome implants",
+      "corporate dystopia street-level aesthetic",
+      "rain-slick dark city materials"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "space-opera",
+    "level": "subgenre",
+    "parent": "scifi",
+    "label": "Space Opera",
+    "tone": "galactic epic scale, diverse alien cultures, baroque starship design",
+    "visual": {
+      "palette_notes": "nebula violet, starfield black, gold hull trim, alien-fauna colours, imperial white",
+      "lighting_notes": "star-backlit, engine glow acceptable, alien sun spectrum",
+      "materials": ["exotic alloy hulls", "alien carapace", "void-silk", "ceremonial energy armour", "crystalline tech"]
+    },
+    "descriptors": ["galactic", "baroque", "alien", "epic", "imperial"],
+    "prompt_fragments": [
+      "space opera concept art",
+      "galactic-epic baroque starship aesthetic",
+      "nebula-violet and gold-hull palette",
+      "alien carapace and void-silk materials",
+      "diverse alien culture character design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hard-scifi",
+    "level": "subgenre",
+    "parent": "scifi",
+    "label": "Hard SF",
+    "tone": "industrial, utilitarian, lived-in realism",
+    "visual": {
+      "palette_notes": "gunmetal, scuffed matte black, warning orange, hydraulic yellow",
+      "lighting_notes": "functional work-light, harsh task illumination, no atmospheric glow",
+      "materials": ["dented carbon composite", "patched pressure-suit nylon", "heat-scored aluminium", "jury-rigged polymer", "worn grip tape"]
+    },
+    "descriptors": ["utilitarian", "dented", "patched", "heat-scored", "jury-rigged"],
+    "prompt_fragments": [
+      "hard sci-fi concept art",
+      "utilitarian industrial aesthetic",
+      "gunmetal and warning-orange palette",
+      "dented patched pressure-suit design",
+      "lived-in worn-grip-tape materials"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "post-human",
+    "level": "subgenre",
+    "parent": "scifi",
+    "label": "Post-Human",
+    "tone": "transcended biology, fluid identity, synthetic sublime",
+    "visual": {
+      "palette_notes": "translucent white, bioluminescent blue, vantablack, data-stream silver, synthetic flesh",
+      "lighting_notes": "internal luminescence from beneath skin or chassis — render flat per rules",
+      "materials": ["grown bio-polymer", "neural lace mesh", "vat-cultured tissue", "light-emitting synthetic skin", "memory-crystal"]
+    },
+    "descriptors": ["transcended", "fluid", "synthetic", "post-biological", "sublime"],
+    "prompt_fragments": [
+      "post-human concept art",
+      "transcended biology synthetic aesthetic",
+      "translucent-white and bioluminescent-blue palette",
+      "neural-lace and vat-cultured tissue materials",
+      "fluid identity post-biological design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "military",
+    "level": "subgenre",
+    "parent": "modern",
+    "label": "Military",
+    "tone": "contemporary tactical, utilitarian lethality, unit cohesion",
+    "visual": {
+      "palette_notes": "multicam green-brown, coyote tan, ranger green, flat dark earth, black hardware",
+      "lighting_notes": "harsh field daylight, flat tactical — no cinematic lighting"
+    },
+    "descriptors": ["tactical", "modular", "load-bearing", "matte-finish", "operational"],
+    "prompt_fragments": [
+      "military concept art",
+      "contemporary tactical aesthetic",
+      "multicam and coyote-tan palette",
+      "modular load-bearing equipment design",
+      "flat-dark-earth matte-finish materials"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "superhero",
+    "level": "subgenre",
+    "parent": "modern",
+    "label": "Superhero",
+    "tone": "larger-than-life, iconic silhouette, power made visible",
+    "visual": {
+      "palette_notes": "primary hero colours, bold contrast, metallic sheen, vibrant signal tones",
+      "lighting_notes": "bold graphic, rim light acceptable to define silhouette — render flat per rules",
+      "materials": ["spandex-stretch composite", "impact-absorbing polymer", "powered exo-plate", "vibranium-style exotic alloy"]
+    },
+    "descriptors": ["iconic", "bold", "primary-colours", "powered", "caped"],
+    "prompt_fragments": [
+      "superhero concept art",
+      "iconic bold silhouette design",
+      "primary hero colour palette",
+      "spandex-composite and impact-polymer materials",
+      "power-made-visible aesthetic"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wwii",
+    "level": "subgenre",
+    "parent": "modern",
+    "label": "WWII",
+    "tone": "wartime grim pragmatism, olive drab and field grey, total-war scale",
+    "visual": {
+      "palette_notes": "olive drab, field grey, khaki, leather brown, blued steel, mud",
+      "lighting_notes": "overcast European daylight, Pacific sun, smoky battlefield haze"
+    },
+    "descriptors": ["olive-drab", "field-grey", "wartime", "worn", "period-accurate"],
+    "prompt_fragments": [
+      "WWII concept art",
+      "olive-drab and field-grey palette",
+      "wartime pragmatic equipment design",
+      "blued-steel and leather-brown materials",
+      "total-war-era aesthetic"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wwi",
+    "level": "subgenre",
+    "parent": "modern",
+    "label": "WWI",
+    "tone": "mud-and-wire attrition, early industrial warfare, tragic futility",
+    "visual": {
+      "palette_notes": "trench mud brown, khaki drab, steel grey, gas-mask green, rusted wire",
+      "lighting_notes": "flat overcast, mud-diffused, no-man's-land grey"
+    },
+    "descriptors": ["trench-worn", "drab", "mud-caked", "early-industrial", "gas-era"],
+    "prompt_fragments": [
+      "WWI concept art",
+      "trench-warfare aesthetic",
+      "mud-brown and khaki-drab palette",
+      "gas-mask and wire-entanglement design",
+      "early-industrial-warfare materials"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "noir",
+    "level": "subgenre",
+    "parent": "modern",
+    "label": "Noir",
+    "tone": "rain-slicked cynicism, crime-world shadow, moral ambiguity in fedora and trench coat",
+    "visual": {
+      "palette_notes": "near-monochrome: charcoal, cream, deep shadow, single amber lamp, cigarette haze",
+      "lighting_notes": "single hard lamp source casting long shadows — represent as palette contrast, render flat",
+      "materials": ["wool serge", "worn leather", "cigarette-stained cotton", "blued snubnose steel", "rain-dark silk"]
+    },
+    "descriptors": ["shadowed", "cynical", "rain-slicked", "monochrome", "hard-boiled"],
+    "prompt_fragments": [
+      "film noir concept art",
+      "rain-slicked cynical aesthetic",
+      "near-monochrome charcoal-and-amber palette",
+      "wool-serge and worn-leather materials",
+      "hard-boiled shadow design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "espionage",
+    "level": "subgenre",
+    "parent": "modern",
+    "label": "Espionage",
+    "tone": "cold-war sleek, tradecraft concealment, elegant lethality",
+    "visual": {
+      "palette_notes": "charcoal grey, navy, stone, brushed stainless, discrete accent red or gold",
+      "lighting_notes": "controlled interior light, embassy marble, airport glass — clean and cold"
+    },
+    "descriptors": ["covert", "tailored", "concealed", "sleek", "cold-war"],
+    "prompt_fragments": [
+      "espionage concept art",
+      "cold-war tradecraft aesthetic",
+      "charcoal-and-navy palette",
+      "tailored concealed-weapon design",
+      "elegant lethal operative aesthetic"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "steampunk",
+    "level": "subgenre",
+    "parent": "science-fantasy",
+    "label": "Steampunk",
+    "tone": "Victorian-industrial, brass-and-steam ingenuity, clockwork grandeur",
+    "visual": {
+      "palette_notes": "aged brass, copper verdigris, mahogany brown, ivory, soot-stained cream",
+      "lighting_notes": "gas-lamp amber, coal-furnace orange glow acceptable",
+      "materials": ["riveted brass", "mahogany", "India rubber", "boiler steel", "clock-gear bronze", "leather with copper rivets"]
+    },
+    "descriptors": ["brass", "riveted", "clockwork", "Victorian", "steam-powered"],
+    "prompt_fragments": [
+      "steampunk concept art",
+      "Victorian-industrial clockwork aesthetic",
+      "aged-brass and copper-verdigris palette",
+      "riveted boiler-steel and mahogany materials",
+      "steam-powered grand-machine design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "dieselpunk",
+    "level": "subgenre",
+    "parent": "science-fantasy",
+    "label": "Dieselpunk",
+    "tone": "interwar industrial, art-deco geometry, oil-and-iron machismo",
+    "visual": {
+      "palette_notes": "battleship grey, oil-stained black, art-deco gold stripe, blood red accent, industrial tan",
+      "lighting_notes": "arc-welder spark, factory halogen, hard angular shadows",
+      "materials": ["rolled steel plate", "chrome trim", "oil-soaked canvas", "cast iron", "art-deco enamel"]
+    },
+    "descriptors": ["art-deco", "oil-stained", "industrial", "interwar", "chrome-trimmed"],
+    "prompt_fragments": [
+      "dieselpunk concept art",
+      "interwar art-deco industrial aesthetic",
+      "battleship-grey and gold-stripe palette",
+      "rolled-steel and chrome-trim materials",
+      "oil-and-iron machismo design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "atompunk",
+    "level": "subgenre",
+    "parent": "science-fantasy",
+    "label": "Atompunk",
+    "tone": "1950s atomic optimism laced with fallout dread, space-age domestic",
+    "visual": {
+      "palette_notes": "aqua teal, lemon yellow, coral red, aluminium silver, fallout green",
+      "lighting_notes": "sunny suburban daylight, atomic-core glow acceptable",
+      "materials": ["fibreglass", "Formica laminate", "aluminium siding", "Bakelite", "radiation-suit rubber"]
+    },
+    "descriptors": ["atomic", "retrofuturist", "suburban", "teal-and-yellow", "fallout-era"],
+    "prompt_fragments": [
+      "atompunk concept art",
+      "1950s atomic-age retrofuturist aesthetic",
+      "aqua-teal and lemon-yellow palette",
+      "fibreglass and Formica-laminate materials",
+      "space-age domestic design with fallout dread"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gamma-world",
+    "level": "subgenre",
+    "parent": "science-fantasy",
+    "label": "Gamma World",
+    "tone": "post-apocalyptic mutant pulp, salvage-tech exuberance, irradiated absurdity",
+    "visual": {
+      "palette_notes": "radiation green, rust orange, bleached bone, cobbled primary colours, toxic purple",
+      "lighting_notes": "harsh wasteland sun, radioactive glow acceptable as material property",
+      "materials": ["salvaged polymer", "jury-rigged metal scrap", "mutant-bone", "irradiated rubber", "patched synth-leather"]
+    },
+    "descriptors": ["mutant", "salvage-tech", "irradiated", "pulp", "post-apocalyptic"],
+    "prompt_fragments": [
+      "gamma world concept art",
+      "post-apocalyptic mutant-pulp aesthetic",
+      "radiation-green and rust-orange palette",
+      "salvaged-scrap and mutant-bone materials",
+      "irradiated wasteland design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sword-and-planet",
+    "level": "subgenre",
+    "parent": "science-fantasy",
+    "label": "Sword & Planet",
+    "tone": "planetary romance, exotic alien barbarism, steel-and-starship heroics",
+    "visual": {
+      "palette_notes": "alien sky magenta, twin-moon silver, copper sand, exotic fauna colours, ochre rock",
+      "lighting_notes": "alien sun harsh, coloured-sky ambience acceptable",
+      "materials": ["exotic alien hide", "copper-alloy blades", "crystal tech", "woven alien-fibre", "carved bone-ivory"]
+    },
+    "descriptors": ["planetary", "exotic", "barbaric", "alien-world", "romance"],
+    "prompt_fragments": [
+      "sword and planet concept art",
+      "planetary romance alien-world aesthetic",
+      "magenta-sky and copper-sand palette",
+      "exotic alien-hide and crystal-tech materials",
+      "steel-and-starship heroic design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ancient",
+    "level": "subgenre",
+    "parent": "historical",
+    "label": "Ancient",
+    "tone": "bronze-age to classical antiquity, monumental and sun-baked",
+    "visual": {
+      "palette_notes": "sun-bleached limestone white, terracotta, bronze, azurite blue, ochre yellow",
+      "lighting_notes": "harsh Mediterranean or Mesopotamian sun, flat and brilliant"
+    },
+    "descriptors": ["monumental", "sun-baked", "bronze-age", "classical", "terracotta"],
+    "prompt_fragments": [
+      "ancient world concept art",
+      "classical antiquity aesthetic",
+      "limestone-white and terracotta palette",
+      "bronze and azurite-blue material design",
+      "monumental sun-baked construction"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "viking",
+    "level": "subgenre",
+    "parent": "historical",
+    "label": "Viking / Norse",
+    "tone": "brutal, earthy, tribal warrior-caste",
+    "visual": {
+      "palette_notes": "bronze, woad blue, undyed linen, rust iron, deep forest green",
+      "lighting_notes": "grey Northern overcast, firelight in longhouse"
+    },
+    "descriptors": ["knotwork", "torc", "rough-hewn", "warrior-caste", "Norse"],
+    "prompt_fragments": [
+      "Viking concept art",
+      "Norse warrior-caste aesthetic",
+      "bronze and woad-blue palette",
+      "undyed-linen and rust-iron materials",
+      "knotwork torc rough-hewn design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "medieval",
+    "level": "subgenre",
+    "parent": "historical",
+    "label": "Medieval",
+    "tone": "feudal Europe, chainmail pragmatism, ecclesiastical weight",
+    "visual": {
+      "palette_notes": "chainmail silver, heraldic red and blue, wool black, parchment cream, tarnished gold",
+      "lighting_notes": "overcast Northern Europe daylight, candle in chapel"
+    },
+    "descriptors": ["feudal", "chainmail", "heraldic", "ecclesiastical", "cobblestone"],
+    "prompt_fragments": [
+      "medieval concept art",
+      "feudal European aesthetic",
+      "chainmail-silver and heraldic-red palette",
+      "parchment and wool-black materials",
+      "ecclesiastical heraldic design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "samurai",
+    "level": "subgenre",
+    "parent": "historical",
+    "label": "Samurai",
+    "tone": "feudal Japanese discipline, lacquer and steel, austere elegance",
+    "visual": {
+      "palette_notes": "lacquer red, ink black, gold mon, undyed white silk, burnished steel",
+      "lighting_notes": "clear East Asian daylight, paper-screen interior diffuse"
+    },
+    "descriptors": ["lacquered", "disciplined", "austere", "mon", "katana"],
+    "prompt_fragments": [
+      "samurai concept art",
+      "feudal Japanese aesthetic",
+      "lacquer-red and ink-black palette",
+      "burnished-steel and undyed-silk materials",
+      "austere disciplined mon design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "age-of-sail",
+    "level": "subgenre",
+    "parent": "historical",
+    "label": "Age of Sail",
+    "tone": "maritime empire, salt and tar, broadside cannon grandeur",
+    "visual": {
+      "palette_notes": "ocean blue-grey, tarred oak brown, cannon-black, brass fittings, faded colonial red",
+      "lighting_notes": "open ocean daylight, lantern below-decks"
+    },
+    "descriptors": ["maritime", "tarred", "colonial", "nautical", "broadside"],
+    "prompt_fragments": [
+      "age of sail concept art",
+      "maritime empire aesthetic",
+      "ocean-grey and tarred-oak palette",
+      "brass-fittings and cannon-black materials",
+      "broadside colonial nautical design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "classic-western",
+    "level": "subgenre",
+    "parent": "western",
+    "label": "Classic Western",
+    "tone": "frontier honour code, sun-bleached open range, Hollywood golden age",
+    "visual": {
+      "palette_notes": "sun-bleached cream, saddle tan, sky blue, blued-steel grey, dark chocolate leather",
+      "lighting_notes": "harsh noon sun, golden-hour amber, clear blue-sky daylight"
+    },
+    "descriptors": ["sun-bleached", "frontier", "saddle-worn", "cowboy", "open-range"],
+    "prompt_fragments": [
+      "classic western concept art",
+      "Hollywood frontier aesthetic",
+      "sun-bleached-cream and saddle-tan palette",
+      "dark-chocolate-leather and blued-steel materials",
+      "open-range cowboy design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "spaghetti-western",
+    "level": "subgenre",
+    "parent": "western",
+    "label": "Spaghetti Western",
+    "tone": "nihilistic, grimy, close-up tension, Leone morally-empty landscape",
+    "visual": {
+      "palette_notes": "bleached bone, sweat-stained cream, burnt sienna, gun-metal grey, dried-blood rust",
+      "lighting_notes": "extreme noon contrast, sweat-sheen — represent as palette, render flat",
+      "materials": ["sweat-stained linen", "cracked leather duster", "stubbled grime", "sand-scoured wood", "rusted blued-steel"]
+    },
+    "descriptors": ["grimy", "nihilistic", "sweat-stained", "Leone", "close-up"],
+    "prompt_fragments": [
+      "spaghetti western concept art",
+      "Leone nihilistic frontier aesthetic",
+      "bleached-bone and burnt-sienna palette",
+      "cracked-leather and sweat-stained-linen materials",
+      "morally-empty arid landscape design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "weird-west",
+    "level": "subgenre",
+    "parent": "western",
+    "label": "Weird West",
+    "tone": "frontier horror-occult, supernatural corruption in dust-town USA",
+    "visual": {
+      "palette_notes": "dust tan, corruption purple, bone white, dried-blood brown, unnatural green",
+      "lighting_notes": "dead-noon sun with wrong shadows, sickly moon — palette-driven, render flat",
+      "materials": ["cursed leather", "occult-carved bone", "tainted iron", "dust-caked wool", "ritual-burnt wood"]
+    },
+    "descriptors": ["occult", "corrupted", "frontier", "supernatural", "dust-town"],
+    "prompt_fragments": [
+      "weird west concept art",
+      "frontier occult-horror aesthetic",
+      "dust-tan and corruption-purple palette",
+      "cursed-leather and occult-carved-bone materials",
+      "supernatural corruption western design"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "apocalypse-west",
+    "level": "subgenre",
+    "parent": "western",
+    "label": "Apocalypse West",
+    "tone": "post-collapse frontier, salvage-cowboy, wasteland-range lawlessness",
+    "visual": {
+      "palette_notes": "ash grey, rust red, bleached bone, dirty olive, faded denim",
+      "lighting_notes": "post-collapse overcast or brutal unfiltered sun, no warmth",
+      "materials": ["salvaged denim", "duct-taped leather", "scrap-iron spurs", "jury-rigged rifle", "cracked polymer"]
+    },
+    "descriptors": ["salvage", "post-collapse", "wasteland", "lawless", "jury-rigged"],
+    "prompt_fragments": [
+      "apocalypse western concept art",
+      "post-collapse salvage-cowboy aesthetic",
+      "ash-grey and rust-red palette",
+      "salvaged-denim and duct-taped-leather materials",
+      "wasteland frontier lawless design"
+    ],
+    "ext": {}
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "a-pose",
+    "taxonomy": "pose",
+    "label": "A-pose",
+    "category": "mesh-gen",
+    "mesh_safe": true,
+    "default": true,
+    "applies_to": ["biped"],
+    "phrase": "standing in a symmetrical A-pose with arms relaxed straight down at roughly 45 degrees away from the torso, palms facing the body, fingers slightly spread, legs shoulder-width apart",
+    "aspect": "2:3",
+    "use": "mesh-gen",
+    "source": "hand-curated",
+    "ext": {}
+  },
+  {
+    "id": "t-pose",
+    "taxonomy": "pose",
+    "label": "T-pose",
+    "category": "mesh-gen",
+    "mesh_safe": true,
+    "applies_to": ["biped"],
+    "phrase": "standing in a symmetrical T-pose with both arms extended straight out horizontally to the sides at shoulder height, palms down, fingers together, legs shoulder-width apart",
+    "aspect": "1:1",
+    "use": "mesh-gen",
+    "source": "hand-curated",
+    "ext": {}
+  },
+  {
+    "id": "quadruped-stand",
+    "taxonomy": "pose",
+    "label": "Quadruped stand",
+    "category": "mesh-gen",
+    "mesh_safe": true,
+    "applies_to": ["quadruped"],
+    "phrase": "standing square and symmetrical on all four legs, planted shoulder-width apart, head level",
+    "aspect": "4:3",
+    "use": "mesh-gen",
+    "source": "hand-curated",
+    "ext": {}
+  },
+  {
+    "id": "winged-spread",
+    "taxonomy": "pose",
+    "label": "Wings spread",
+    "category": "mesh-gen",
+    "mesh_safe": true,
+    "applies_to": ["winged"],
+    "phrase": "standing square and symmetrical, both wings spread wide and held well clear of the body, limbs planted shoulder-width apart, head level",
+    "aspect": "4:3",
+    "use": "mesh-gen",
+    "source": "hand-curated (promoted from the creature reference table)",
+    "ext": {}
+  },
+  {
+    "id": "floating-idle",
+    "taxonomy": "pose",
+    "label": "Floating idle",
+    "category": "mesh-gen",
+    "mesh_safe": true,
+    "applies_to": ["floating"],
+    "phrase": "hovering upright and symmetrical, body centered with any limbs, tentacles, or eyestalks splayed evenly and held clear of the body, no ground contact",
+    "aspect": "1:1",
+    "use": "mesh-gen",
+    "source": "hand-curated (promoted from the creature reference table)",
+    "ext": {}
+  },
+  {
+    "id": "enraged-roar",
+    "taxonomy": "pose",
+    "label": "Enraged roar",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": ["biped"],
+    "phrase": "standing wide with weight low, torso leaning forward, both arms raised and bent outward with fists clenched, shoulders hunched, head tilted back mid-roar, mouth wide open",
+    "expression": "screaming, enraged, furious",
+    "aspect": "2:3",
+    "use": "action / dramatic",
+    "source": "example entry (illustrates the format)",
+    "ext": {}
+  }
+]

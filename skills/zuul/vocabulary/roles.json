@@ -1,0 +1,3489 @@
+[
+  {
+    "id": "barbarian",
+    "label": "Barbarian",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "minimal hide and fur armour",
+      "bare arms and shoulders",
+      "war paint on face and chest",
+      "raw muscular physique",
+      "tribal bone fetishes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wizard",
+    "label": "Wizard",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "layered arcane robes with rune embroidery",
+      "tall staff or carved wand",
+      "scholar's satchel",
+      "soft leather slippers",
+      "rings on multiple fingers"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "rogue",
+    "label": "Rogue",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "fitted dark leather armour",
+      "hidden buckles and concealed sheaths",
+      "hood or half-mask",
+      "lean agile build",
+      "dark muted colours"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cleric",
+    "label": "Cleric",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "scale mail under holy tabard",
+      "divine symbol pendant",
+      "mace or warhammer",
+      "solid dependable build",
+      "prayer beads at wrist"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "paladin",
+    "label": "Paladin",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "ornate full plate armour",
+      "heraldic tabard over chest",
+      "longsword and tower shield",
+      "imposing broad-shouldered silhouette",
+      "holy symbol engraved on breastplate"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ranger",
+    "label": "Ranger",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "forest-toned leather scout armour",
+      "longbow across back",
+      "filled quiver at hip",
+      "lean athletic build",
+      "hood thrown back"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "bard",
+    "label": "Bard",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "flamboyant traveller's vest with bright lining",
+      "rapier at hip",
+      "instrument slung across back",
+      "feathered cap",
+      "performer's upright bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "druid",
+    "label": "Druid",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "hide and bark armour woven with living vines",
+      "wooden staff wrapped in roots",
+      "antler or leaf crown",
+      "herb pouches at belt",
+      "earthy weathered look"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "fighter",
+    "label": "Fighter",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "battle-worn plate or chain mail",
+      "scarred practical shield",
+      "longsword or battle-axe",
+      "solid athletic build",
+      "utility belt with fight trophies"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "warlock",
+    "label": "Warlock",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "dark fitted robes with eldritch motifs",
+      "pact focus in hand",
+      "patron mark visible on skin",
+      "dark gemstone amulet",
+      "intense otherworldly bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "monk",
+    "label": "Monk",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "simple order robes or gi",
+      "prayer beads at wrist",
+      "bare hands or quarterstaff",
+      "lean defined build",
+      "order sash at waist"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sorcerer",
+    "label": "Sorcerer",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "minimal robes — power is internal",
+      "bloodline markings on skin",
+      "arcane energy at fingertips",
+      "crystal or jewel focus",
+      "raw magical aura visible"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "necromancer",
+    "label": "Necromancer",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "dark robes with bone and skull motifs",
+      "bone or skull-topped staff",
+      "gaunt pale features",
+      "soul gem at belt",
+      "grave-soil vials on bandolier"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "assassin",
+    "label": "Assassin",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "matte black form-fitted leather",
+      "face veil leaving only eyes",
+      "poisoned short blades",
+      "poison vial belt",
+      "zero wasted silhouette"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "knight",
+    "label": "Knight",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "heraldic full plate armour",
+      "family crest on kite shield",
+      "longsword at hip",
+      "noble upright bearing",
+      "favour ribbon at pauldron"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "shaman",
+    "label": "Shaman",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "spirit-fetish hide armour with totems and bones",
+      "spirit staff",
+      "spirit mask worn or carried",
+      "tribal spirit-eye face paint",
+      "ancestor energy as faint wisps"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "inquisitor",
+    "label": "Inquisitor",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "long church coat over functional medium armour",
+      "inquisitor's authority sigil",
+      "authority blade at hip",
+      "blessed crossbow at back",
+      "cold institutional bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "summoner",
+    "label": "Summoner",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "ritual robes covered in summoning circles",
+      "binding sigil tattoos on arms",
+      "summoning focus staff",
+      "glowing contract marks on skin",
+      "scholar's build"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "witch",
+    "label": "Witch",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "layered eccentric worn garments",
+      "gnarled staff or wand",
+      "familiar on shoulder or at feet",
+      "herb bundles and hex bags at belt",
+      "wide-brimmed hat"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "arcane-archer",
+    "label": "Arcane Archer",
+    "applies_to": [
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "enchanted longbow with runes along limbs",
+      "arcane arrows with faint magical sheen",
+      "light leather with arcane glyphs on pauldrons",
+      "focus ring on draw hand",
+      "lean precise build"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-cultivator",
+    "label": "Cultivator",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "flowing sect robes in sect colours",
+      "sect insignia on chest",
+      "cultivation sword at hip",
+      "faint qi aura glow",
+      "refined lean build"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-sect-elder",
+    "label": "Sect Elder",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "ornate elder's formal robes",
+      "heavy rank sash",
+      "divine artifact staff",
+      "ageless face with ancient presence",
+      "long white or grey beard"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-demon-lord",
+    "label": "Demon Lord",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "black iron demonic armour with bone motifs",
+      "dark corruption veins visible on skin",
+      "demonic eyes",
+      "skull-motif pauldrons",
+      "imposing sinister silhouette"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-sword-saint",
+    "label": "Sword Saint",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "plain white or grey robes — deliberate simplicity",
+      "single perfect sword in minimalist scabbard",
+      "sword intent aura shimmer",
+      "lean ascetic build",
+      "absolute stillness"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-body-cultivator",
+    "label": "Body Cultivator",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "minimal clothing showing cultivated physique",
+      "body tempering scars",
+      "golden qi vein glow under skin",
+      "extreme muscular density",
+      "iron-sand callused hands"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-array-master",
+    "label": "Array Master",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "ink-stained scholarly robes",
+      "array brush in hand",
+      "formation flags at belt",
+      "jade slips in sleeve pockets",
+      "calculating precise bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-beast-tamer",
+    "label": "Beast Tamer",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "reinforced practical robes — padded at shoulders",
+      "taming whip coiled at belt",
+      "beast-bond mark on wrist",
+      "spirit beast contract tokens on cord",
+      "bearing enlarged by powerful companion implied"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-pill-master",
+    "label": "Pill Master",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "clean pale robes with flame-proof lining",
+      "pill-fire energy at fingertips",
+      "jade pill bottles on belt",
+      "flame control jade bangle",
+      "revered bearing others defer to"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-heavenly-maiden",
+    "label": "Heavenly Maiden",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "flowing celestial robes in white and gold",
+      "heaven-grade hairpin",
+      "celestial sword or divine ribbon weapon",
+      "luminous presence from qi refinement",
+      "sect-peak quality silks"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-ghost-cultivator",
+    "label": "Ghost Cultivator",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "tattered pale ghost-path robes",
+      "ghost fire cold light",
+      "yin death-qi aura",
+      "ghost core cold glow at chest",
+      "desaturated colour palette around them"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-war-god",
+    "label": "War God",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "divine war armour with battle-record engravings",
+      "war-dao energy radiating from frame",
+      "supreme divine weapon — spear or blade",
+      "war-god domain field effect in air around them",
+      "battle scar cultivation marks"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-rogue-cultivator",
+    "label": "Rogue Cultivator",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "plain travel robes with no sect insignia",
+      "varied self-acquired weapons",
+      "storage ring from dangerous ruins",
+      "world-worn self-reliant bearing",
+      "no sect badge or emblem"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hf-archmage",
+    "label": "Archmage",
+    "applies_to": [
+      "high-fantasy"
+    ],
+    "prompt_fragments": [
+      "ceremonial arcane robes of office — multilayered and heavily embroidered",
+      "staff of archmagister authority",
+      "floating astral familiar or orbiting spell-foci",
+      "ancient and weathered face beneath great dignity",
+      "arcane order insignia on chest"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hf-high-king",
+    "label": "High King",
+    "applies_to": [
+      "high-fantasy"
+    ],
+    "prompt_fragments": [
+      "ceremonial crown armour — plate inlaid with realm insignia",
+      "ancestral sword of rulership",
+      "flowing war-cloak in royal colours",
+      "imposing regal bearing",
+      "heraldic devices of united kingdoms on shield"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hf-runic-smith",
+    "label": "Runic Smith",
+    "applies_to": [
+      "high-fantasy"
+    ],
+    "prompt_fragments": [
+      "heavy leather apron over chain shirt",
+      "runic tattoos or brands covering forearms",
+      "rune-etching tools at belt",
+      "stocky powerful build",
+      "hammer with glowing inscribed head"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hf-dragon-knight",
+    "label": "Dragon Knight",
+    "applies_to": [
+      "high-fantasy"
+    ],
+    "prompt_fragments": [
+      "dragonscale plate armour in rich iridescent tones",
+      "draconic wing-crest helm",
+      "lance or greatsword scaled to aerial combat",
+      "bond-mark glowing at collarbone",
+      "broad imposing frame"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "df-plague-doctor",
+    "label": "Plague Doctor",
+    "applies_to": [
+      "dark-fantasy"
+    ],
+    "prompt_fragments": [
+      "long oilskin coat dark with age",
+      "beaked mask with glass eye-lenses",
+      "wide-brim hat",
+      "belt of tincture vials and lancets",
+      "slim wiry build hidden beneath coat"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "df-witch-hunter",
+    "label": "Witch Hunter",
+    "applies_to": [
+      "dark-fantasy"
+    ],
+    "prompt_fragments": [
+      "weathered leather longcoat with silver-rivet trim",
+      "broad-brimmed hunter's hat",
+      "silver-loaded crossbow on back",
+      "belt of hex-wards and blessed oils",
+      "lean scarred build"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "df-flayed-knight",
+    "label": "Flayed Knight",
+    "applies_to": [
+      "dark-fantasy"
+    ],
+    "prompt_fragments": [
+      "corrupted plate armour — warped cracked dark iron",
+      "cursed blade leaking dark ichor",
+      "corruption veins tracing neck and jaw",
+      "hollow visor with faint malevolent glow",
+      "slouched powerful silhouette"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "df-blood-witch",
+    "label": "Blood Witch",
+    "applies_to": [
+      "dark-fantasy"
+    ],
+    "prompt_fragments": [
+      "dark ritualistic robes with crimson accents",
+      "blood-etched ritual knife",
+      "hemomancy sigils on exposed arms",
+      "hair loose and matted",
+      "unsettling calm bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "lf-sellsword",
+    "label": "Sellsword",
+    "applies_to": [
+      "low-fantasy"
+    ],
+    "prompt_fragments": [
+      "mismatched armour — mail hauberk over padded jack",
+      "well-worn longsword",
+      "mercenary company brand or token",
+      "practical road-worn kit",
+      "lean and scarred, no ceremony"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "lf-hedge-wizard",
+    "label": "Hedge Wizard",
+    "applies_to": [
+      "low-fantasy"
+    ],
+    "prompt_fragments": [
+      "rough spun travelling robes patched many times",
+      "gnarled walking staff with small charms tied on",
+      "belt of worn pouches and dried herbs",
+      "ordinary unremarkable face",
+      "no arcane glamour — power is subtle"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "lf-pit-fighter",
+    "label": "Pit Fighter",
+    "applies_to": [
+      "low-fantasy"
+    ],
+    "prompt_fragments": [
+      "bare chest or padded gambeson with no proper armour",
+      "crude chained weapon or short brutal blade",
+      "arena scars across arms and torso",
+      "crowd-facing swagger in stance",
+      "heavy muscled build"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "lf-cunning-folk",
+    "label": "Cunning Folk",
+    "applies_to": [
+      "low-fantasy"
+    ],
+    "prompt_fragments": [
+      "plain village clothes with practical apron",
+      "wicker basket of herbs and roots",
+      "small carved charm on cord at neck",
+      "weathered capable hands",
+      "trusted community bearing — no threat implied"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ft-fae-knight",
+    "label": "Fae Knight",
+    "applies_to": [
+      "fairytale"
+    ],
+    "prompt_fragments": [
+      "armour grown from living thorns and pale wood",
+      "visor shaped into a leaf-mask",
+      "slim otherworldly build",
+      "iridescent cloak like insect wings",
+      "cool silver-green palette"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ft-wicked-witch",
+    "label": "Wicked Witch",
+    "applies_to": [
+      "fairytale"
+    ],
+    "prompt_fragments": [
+      "tall dramatic silhouette in layered black gowns",
+      "crooked staff crowned with a grasping hand",
+      "sharp angular features",
+      "crow or raven familiar on shoulder",
+      "deep shadow palette with sickly green accent"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ft-huntsman",
+    "label": "Huntsman",
+    "applies_to": [
+      "fairytale"
+    ],
+    "prompt_fragments": [
+      "heavy forest cloak in earthy browns",
+      "hunting knife and short bow",
+      "woodsman's cap",
+      "stocky capable build",
+      "reluctant honourable bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ft-enchanted-prince",
+    "label": "Enchanted Prince",
+    "applies_to": [
+      "fairytale"
+    ],
+    "prompt_fragments": [
+      "once-fine court clothes now tattered by curse",
+      "beast features partially showing — claws or fur",
+      "cracked royal signet ring still worn",
+      "conflicted mournful posture",
+      "warm amber and shadow palette"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-wandering-hero",
+    "label": "Wandering Hero",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "worn travel-stained hero's robe",
+      "bamboo hat pushed back or slung on back",
+      "unadorned practical sword",
+      "road dust and honourable bearing combined",
+      "lean and self-contained"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-hidden-weapon-specialist",
+    "label": "Hidden Weapon Specialist",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "loose layered robes concealing many pockets",
+      "dozens of hidden darts and blades visible on inner lining",
+      "calm unassuming exterior",
+      "quick precise hands",
+      "neutral colours — designed to be overlooked"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wuxia-poison-mistress",
+    "label": "Poison Mistress",
+    "applies_to": [
+      "wuxia"
+    ],
+    "prompt_fragments": [
+      "silk robes with subtle venom-motif embroidery — serpents and flowers",
+      "butterfly fan concealing blades",
+      "jade poison-vial bangles on wrists",
+      "serene dangerous bearing",
+      "cool jewel-tone palette"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ancient-legionary",
+    "label": "Roman Legionary",
+    "applies_to": [
+      "ancient"
+    ],
+    "prompt_fragments": [
+      "lorica segmentata segmented iron plate armour over linen subarmalis",
+      "scutum rectangular curved shield in red with legionary eagle emblem",
+      "gladius short stabbing sword at right hip, pugio dagger at left",
+      "galea imperial-gallic iron helmet with cheek guards and neck guard",
+      "caligae heavy-studded military sandals and wool tunic beneath armour",
+      "dusty campaign-weathered palette — iron grey, ox-blood red, raw linen"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ancient-hoplite",
+    "label": "Greek Hoplite",
+    "applies_to": [
+      "ancient"
+    ],
+    "prompt_fragments": [
+      "bronze linothorax or bell cuirass with muscled chest relief",
+      "crested Corinthian or Attic bronze helmet pushed up on brow",
+      "large round hoplon shield with polis device — owl, gorgon, or geometric",
+      "long ash-wood dory spear held upright, xiphos short sword at hip",
+      "bronze greaves strapped over bare shins",
+      "warm Mediterranean palette — polished bronze, white linen, deep ochre"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ancient-gladiator",
+    "label": "Gladiator",
+    "applies_to": [
+      "ancient"
+    ],
+    "prompt_fragments": [
+      "manica layered linen and leather arm-guard on weapon arm",
+      "subligaculum loincloth with wide balteus leather belt, no chest armour",
+      "secutor's smooth domed iron helmet with small eye-grill, or murmillo's fish-crest",
+      "scutum or small parma shield scarred from arena sand",
+      "arena sand clinging to oiled skin and sandalled feet",
+      "tanned olive skin, heavy muscled build, visible training scars"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ancient-pharaoh",
+    "label": "Pharaoh",
+    "applies_to": [
+      "ancient"
+    ],
+    "prompt_fragments": [
+      "blue khepresh war crown or double pschent crown of Upper and Lower Egypt",
+      "pleated white shendyt kilt with gold-thread hem and broad usekh collar",
+      "crook and flail crossed at chest, or recurve composite bow in hand",
+      "kohl-lined eyes, ceremonial false beard of plaited gold",
+      "linen and gold sandals, ankh and cartouche amulets at neck",
+      "rich palette — white linen, beaten gold, lapis lazuli, turquoise faience"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ancient-egyptian-priestess",
+    "label": "Egyptian Priestess",
+    "applies_to": [
+      "ancient"
+    ],
+    "prompt_fragments": [
+      "fine white linen sheath dress with pleated over-robe, one shoulder bared",
+      "broad usekh broad collar of faience beads in turquoise and gold",
+      "sistrum rattle held at shoulder height, or menat necklace counterweight",
+      "shaved head or tight black wig with gold circlet and uraeus",
+      "kohl-rimmed eyes, henna on palms, linen sandals",
+      "cool white and gold palette with lapis and malachite accents"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "viking-berserker",
+    "label": "Berserker",
+    "applies_to": [
+      "viking"
+    ],
+    "prompt_fragments": [
+      "bear or wolf pelt worn as cloak or hood — fur side out",
+      "no helmet, minimal iron ring-mail or bare torso beneath pelt",
+      "two-handed axe or pair of hand-axes, no shield",
+      "tattoos and iron arm-rings on bare forearms",
+      "wild matted hair, beard in warrior braids, intense unfocused stare",
+      "raw desaturated palette — wolf-grey fur, bare iron, weathered skin"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "viking-shieldmaiden",
+    "label": "Shieldmaiden",
+    "applies_to": [
+      "viking"
+    ],
+    "prompt_fragments": [
+      "iron ring-mail hauberk over linen under-dress, wool trousers and leg wraps",
+      "round painted shield in bold geometric Norse pattern, boss at centre",
+      "seax long knife at hip, spear or hand-axe in weapon hand",
+      "iron helmet — simple spangenhelm or nasal bar type, no horns",
+      "warrior braids with bone or iron hair rings, cloak pinned at shoulder",
+      "cold Norse palette — iron grey, undyed wool, pine green, burnt ochre"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "viking-jarl",
+    "label": "Jarl",
+    "applies_to": [
+      "viking"
+    ],
+    "prompt_fragments": [
+      "quality ring-mail hauberk with gilded or decorated helm — riveted nasal type",
+      "rich wool cloak in imported dyed colour — deep red or blue, fur-lined edge",
+      "broad silver arm-rings and neck torc denoting rank and wealth",
+      "pattern-welded sword with decorated hilt in hand, or resting on knee",
+      "high leather boots, commanding seated or standing authority posture",
+      "richer palette than thralls — jewel-dyed wool, silver, polished iron"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "viking-seer-volva",
+    "label": "Seer (Völva)",
+    "applies_to": [
+      "viking"
+    ],
+    "prompt_fragments": [
+      "layered wool robes with embroidered hems — dark blue, green, or undyed",
+      "wide-brimmed staff of rowan or ash held as walking staff",
+      "amber and bone bead necklaces, animal-tooth pendants",
+      "hood of animal skin — cat or rabbit, per sagas",
+      "belt purse of casting lots and herbs, silver ring-brooches at shoulders",
+      "weathered self-contained bearing, pale northern skin, grey-streaked hair"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "medieval-knight",
+    "label": "Knight",
+    "applies_to": [
+      "medieval"
+    ],
+    "prompt_fragments": [
+      "full plate harness — gorget, pauldrons, cuirass, gauntlets, sabatons — mid-15th century form",
+      "great helm or visor-closed armet, plume at crest",
+      "heraldic surcoat over armour with family blazon",
+      "longsword at hip, heater shield with coat of arms",
+      "spurs at heels, war-horse implied by posture and scale of kit",
+      "polished steel with colour from heraldic surcoat — primary colours on white or metal"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "medieval-man-at-arms",
+    "label": "Man-at-Arms",
+    "applies_to": [
+      "medieval"
+    ],
+    "prompt_fragments": [
+      "brigandine coat — riveted iron plates inside canvas — over mail shirt",
+      "kettle hat or simple iron bascinet without visor",
+      "poleaxe, bill, or halberd as primary weapon, short arming sword at hip",
+      "padded gambeson visible at sleeves and collar beneath armour",
+      "plain leather belt and boots, no heraldry — professional soldier's kit",
+      "muted functional palette — dark iron, tan leather, undyed linen"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "medieval-crusader",
+    "label": "Crusader",
+    "applies_to": [
+      "medieval"
+    ],
+    "prompt_fragments": [
+      "mail hauberk with coif over padded gambeson, surcoat with crusading cross",
+      "flat-top or nasal helm, or early great helm — 12th–13th century form",
+      "kite or heater shield with cross device",
+      "arming sword and dagger, pilgrim's cross badge at chest",
+      "sand-dusted from Levant campaign, heat-faded linen surcoat",
+      "stark cross-and-white palette over dusty campaign-worn mail"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "medieval-peasant-levy",
+    "label": "Peasant Levy",
+    "applies_to": [
+      "medieval"
+    ],
+    "prompt_fragments": [
+      "thick padded gambeson of rough undyed linen — only protection",
+      "wide kettle hat of iron or boiled leather",
+      "bill hook or hunting spear repurposed as weapon, crude seax at belt",
+      "rough wool hose and ankle-tied leather shoes",
+      "calloused working hands, weather-beaten complexion",
+      "grim muted palette — undyed wool, mud-brown leather, dull iron"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "medieval-court-lady",
+    "label": "Court Lady",
+    "applies_to": [
+      "medieval"
+    ],
+    "prompt_fragments": [
+      "fitted bliaut or cotehardie in fine wool or silk with trailing sleeves",
+      "hennin tall cone headdress with sheer veil, or padded roll wimple",
+      "jewelled belt low on hips, decorative purse and keys at waist",
+      "fine leather slippers, embroidered trim at hem and collar",
+      "upright formal posture, small book of hours or flower held",
+      "rich palette — deep jewel gowns, white linen veil, gold embroidery"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "samurai",
+    "label": "Samurai",
+    "applies_to": [
+      "samurai"
+    ],
+    "prompt_fragments": [
+      "ō-yoroi or dō-maru lamellar armour with laced kusazuri skirt plates",
+      "kabuto helmet with elaborate maedate crest, fukigaeshi ear guards",
+      "katana and wakizashi daisho at left hip, tachi slung from belt",
+      "wide hakama trousers over kimono, kote armoured gauntlets",
+      "clan mon device on breastplate or flag at back",
+      "bold palette — lacquered black or red armour, silk lacing in clan colours"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ronin",
+    "label": "Rōnin",
+    "applies_to": [
+      "samurai"
+    ],
+    "prompt_fragments": [
+      "worn travel-stained kimono and hakama — no clan colours, no mon",
+      "single katana or slightly battered daisho, scabbard worn from constant travel",
+      "kasa wide straw hat, or bare head with unkempt topknot",
+      "straw sandals and road-worn gaiters",
+      "lean self-contained build, steady watchful gaze, deliberate economy of posture",
+      "desaturated earthy palette — faded indigo, slate, undyed linen"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ashigaru",
+    "label": "Ashigaru",
+    "applies_to": [
+      "samurai"
+    ],
+    "prompt_fragments": [
+      "simple tosei-gusoku foot-soldier armour — do breastplate, suneate shin guards",
+      "jingasa conical iron or lacquered hat",
+      "naginata polearm or yari spear as primary weapon",
+      "plain kimono and hakama in lord's livery colour",
+      "straw sandals, limited kit — no ornament",
+      "practical muted palette — raw iron, plain cotton, dark leather straps"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ninja-shinobi",
+    "label": "Shinobi",
+    "applies_to": [
+      "samurai"
+    ],
+    "prompt_fragments": [
+      "dark blue or charcoal shinobi shozoku — fitted jacket, trousers, tabi toe-split boots",
+      "face wrapped in dark hood leaving only eyes",
+      "tanto short blade at hip, shuriken throwing stars in inner pocket",
+      "kusarigama chain-sickle coiled at belt, or climbing equipment at back",
+      "lean wiry build, completely matte dark clothing — no shine",
+      "near-monochrome palette — night blue, deep charcoal, dark linen"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "daimyo",
+    "label": "Daimyō",
+    "applies_to": [
+      "samurai"
+    ],
+    "prompt_fragments": [
+      "finest tosei-gusoku armour — lacquered, with elaborate kabuto and dramatic maedate",
+      "clan mon repeated on armour, banners implied by scale of presence",
+      "commanding general's war fan (gunbai) or lacquered baton",
+      "richly decorated daisho, silk haori campaign coat over armour",
+      "imposing authority bearing, battle headquarters posture",
+      "bold high-contrast palette — rich lacquer red or black, gold fittings, silk clan colours"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aos-ship-captain",
+    "label": "Ship's Captain",
+    "applies_to": [
+      "age-of-sail"
+    ],
+    "prompt_fragments": [
+      "heavy wool broadcloth long coat — navy or bottle green with brass-button rows",
+      "tricorne hat with cockade, or bare-headed with wind-blown powdered wig",
+      "smallsword or cut-and-thrust blade at hip, brass-barrelled pistol tucked in sash",
+      "lace-cuffed shirt beneath coat, waistcoat with pocket watch chain",
+      "knee-length breeches, white stockings, buckled leather shoes",
+      "salt-faded officer's palette — navy, ivory, tarnished brass, aged linen"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aos-pirate",
+    "label": "Pirate",
+    "applies_to": [
+      "age-of-sail"
+    ],
+    "prompt_fragments": [
+      "mismatched plundered clothing — loose linen shirt, wool or canvas trousers, sash belt",
+      "baldric belt across chest holding multiple pistols",
+      "boarding cutlass or heavy hanger sword in hand",
+      "bicorne or slouch hat, kerchief or loose bandana at head",
+      "bare feet or worn rope-soled shoes, gold earring, rope callused hands",
+      "salt-bleached sun-faded palette — dirty white linen, worn indigo, rope brown"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aos-naval-officer",
+    "label": "Naval Officer",
+    "applies_to": [
+      "age-of-sail"
+    ],
+    "prompt_fragments": [
+      "regulation naval coat in blue with white facings and gold epaulettes denoting rank",
+      "white waistcoat and breeches, black knee-length boots",
+      "tricorne or cocked hat, white gloves in hand",
+      "straight naval hanger sword or spadroon in dress scabbard",
+      "telescope under non-sword arm, commanding quarterdeck posture",
+      "crisp formal palette — naval blue, white, gold braid, polished black leather"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aos-buccaneer",
+    "label": "Buccaneer",
+    "applies_to": [
+      "age-of-sail"
+    ],
+    "prompt_fragments": [
+      "heavy leather coat over work-stained linen shirt and canvas trousers",
+      "wide-brimmed felt hat weathered almost shapeless",
+      "flintlock musket carried at shoulder, hunting knife and tomahawk at belt",
+      "wide leather baldric, powder horn on cord at chest",
+      "sun-darkened skin from years in Caribbean heat, practical scarred build",
+      "earthy hunter's palette — tobacco brown, dirty linen, dark leather, verdigris"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aos-powder-monkey",
+    "label": "Powder Monkey",
+    "applies_to": [
+      "age-of-sail"
+    ],
+    "prompt_fragments": [
+      "simple loose linen shirt and rough canvas trousers, rolled to the knee",
+      "leather cartridge case or wooden powder bucket carried at chest",
+      "bare feet — necessary for grip and silence on gun deck",
+      "no weapons — work tool is the wooden cylinder cartridge carrier",
+      "small slight build — role required young agile crew for cannon service",
+      "gunpowder-grey and sail-white palette, soot smudges at face and hands"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cosmic-cultist",
+    "label": "Cosmic Cultist",
+    "applies_to": [
+      "cosmic-horror"
+    ],
+    "prompt_fragments": [
+      "tattered robes in deep indigo and rotting ochre",
+      "sigils carved into exposed skin",
+      "hunched asymmetrical posture",
+      "face partially obscured by a featureless cowl",
+      "fingers elongated by ritual scarring",
+      "crude idol clutched against chest"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "deep-one-hybrid",
+    "label": "Deep One Hybrid",
+    "applies_to": [
+      "cosmic-horror"
+    ],
+    "prompt_fragments": [
+      "ichthyic skin transitioning from pale to grey-green at the extremities",
+      "gill slits along the neck not quite concealed by a damp collar",
+      "bulging unblinking eyes set wide apart",
+      "webbed fingers partially visible beneath loose sleeves",
+      "stooped broad-shouldered silhouette",
+      "brackish stain spreading across waterlogged clothing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mad-investigator",
+    "label": "Mad Investigator",
+    "applies_to": [
+      "cosmic-horror"
+    ],
+    "prompt_fragments": [
+      "rumpled tweed or linen suit covered in margin-scrawled notes",
+      "eyes with blown pupils and rings of exhaustion beneath",
+      "papers and photographs safety-pinned to coat lining",
+      "one hand gripping a cracked magnifying lens",
+      "hollow gaunt cheekbones from prolonged wasting",
+      "posture bent forward as though perpetually leaning into something unseen"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "eldritch-thing",
+    "label": "Eldritch Thing",
+    "applies_to": [
+      "cosmic-horror"
+    ],
+    "prompt_fragments": [
+      "vaguely humanoid silhouette with too many joints",
+      "surface texture like wet basalt or cured membrane",
+      "limbs that taper to filament-thin extremities",
+      "clusters of vestigial appendages at the torso",
+      "no discernible face — smooth with faint concavities",
+      "scale conveyed by environment dwarfed around it"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "vampire-lord",
+    "label": "Vampire Lord",
+    "applies_to": [
+      "gothic-horror"
+    ],
+    "prompt_fragments": [
+      "immaculate high-collared frock coat in black or blood-burgundy velvet",
+      "chalk-pale skin against deep shadow-carved features",
+      "clawed fingernails lacquered dark",
+      "slender aristocratic frame with unnatural stillness",
+      "medallion or signet ring of antique silver",
+      "no breath mist — an absence of warmth"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mad-doctor",
+    "label": "Mad Doctor",
+    "applies_to": [
+      "gothic-horror"
+    ],
+    "prompt_fragments": [
+      "stained laboratory apron over Victorian waistcoat",
+      "wire-rimmed spectacles with one cracked lens",
+      "mismatched surgical tools protruding from coat pockets",
+      "hands permanently discoloured from chemical exposure",
+      "gaunt frame over-articulated at every joint",
+      "wild unshorn hair framing a rigid focused expression"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "grieving-bride",
+    "label": "Grieving Bride",
+    "applies_to": [
+      "gothic-horror"
+    ],
+    "prompt_fragments": [
+      "wedding gown yellowed and rotting at every seam",
+      "veil torn and trailing unevenly",
+      "skeletal thinness beneath the dress silhouette",
+      "hands clasped with broken or missing finger bones",
+      "hollow eye sockets rimmed with dried black",
+      "bouquet reduced to brittle sticks and crumbling petals"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hunchback-servant",
+    "label": "Hunchback Servant",
+    "applies_to": [
+      "gothic-horror"
+    ],
+    "prompt_fragments": [
+      "heavy lateral spinal curve forcing one shoulder dramatically higher",
+      "rough wool livery several sizes too large",
+      "dragging gait with one foot turned inward",
+      "large calloused hands disproportionate to thin arms",
+      "permanent forward tilt of the head",
+      "expression of servile blankness"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "masked-slasher",
+    "label": "Masked Slasher",
+    "applies_to": [
+      "movie-horror"
+    ],
+    "prompt_fragments": [
+      "plain featureless mask — no decoration, no expression",
+      "heavy work wear or mechanics coveralls in dark navy or grey",
+      "imposing broad-shouldered bulk",
+      "large bladed tool held loose at the side",
+      "no visible skin except possibly the hands",
+      "silhouette fills the frame — excessive, unhurried presence"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "final-girl",
+    "label": "Final Girl",
+    "applies_to": [
+      "movie-horror"
+    ],
+    "prompt_fragments": [
+      "casual everyday clothing torn and bloodstained after struggle",
+      "improvised weapon clutched in both hands",
+      "lean wiry build — survivor's posture, weight forward",
+      "cuts and bruising on forearms from defensive wounds",
+      "hair dishevelled, eyes wide and hyper-alert",
+      "shoes missing or mismatched — details of a desperate flight"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "creature-from-the-lab",
+    "label": "Creature from the Lab",
+    "applies_to": [
+      "movie-horror"
+    ],
+    "prompt_fragments": [
+      "human template distorted — proportions stretched or compressed",
+      "visible suture or weld lines where flesh meets something else",
+      "remnants of a hospital gown or restraint harness",
+      "compound or reflective eyes set into a near-human face",
+      "posture oscillating between animal crouch and upright lurch",
+      "surface of wet rubber or cured polymer over muscle suggestion"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "possessed-child",
+    "label": "Possessed Child",
+    "applies_to": [
+      "movie-horror"
+    ],
+    "prompt_fragments": [
+      "child's school uniform or nightclothes pristine except for hem",
+      "head tilted at an angle that exceeds anatomical range",
+      "hands hanging at sides with fingers spread and rigid",
+      "skin mottled with subcutaneous vein tracery",
+      "mouth open slightly wider than a natural rest position",
+      "irises discoloured — pale gold, white, or solid black"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mutated-host",
+    "label": "Mutated Host",
+    "applies_to": [
+      "body-horror"
+    ],
+    "prompt_fragments": [
+      "torso asymmetrically enlarged by internal mass",
+      "skin stretched taut and translucent over new geometry",
+      "clothing split at seams, barely retained",
+      "additional limb stubs erupting from shoulder or hip",
+      "face still recognisably human — the horror of retained identity",
+      "thick fibrous tissue bridging joints at wrong angles"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "surgeon-of-flesh",
+    "label": "Surgeon of Flesh",
+    "applies_to": [
+      "body-horror"
+    ],
+    "prompt_fragments": [
+      "apron of stitched mixed-origin leather panels",
+      "instruments of bone, chitin, and repurposed metal",
+      "hands rebuilt with grafted segments at each knuckle",
+      "face partially replaced — one side smooth and new, one original",
+      "tall gaunt silhouette with an extra articulated arm at the ribcage",
+      "clinical precision in stance undercut by the wrongness of the body"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "parasite-puppet",
+    "label": "Parasite Puppet",
+    "applies_to": [
+      "body-horror"
+    ],
+    "prompt_fragments": [
+      "human body with joints bent against their natural direction",
+      "parasite mass visible as a ridge running spine to skull",
+      "movement suggested by taut cables of exposed musculature",
+      "mouth held open by something pressing from inside the throat",
+      "eyes tracking independently in different directions",
+      "clothing shredded at the back where the parasite emerged"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "masked-villager",
+    "label": "Masked Villager",
+    "applies_to": [
+      "folk-horror"
+    ],
+    "prompt_fragments": [
+      "woven reed or bark mask with crudely cut eye slits",
+      "rough-spun tunic and trousers in undyed brown and grey",
+      "garlands of dried flowers and seed pods hung at the neck",
+      "bare or rope-sandalled feet caked in earth",
+      "ordinary farming tools repurposed as ritual implements",
+      "posture of collective calm — unsettling uniformity in a group"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pagan-priest",
+    "label": "Pagan Priest",
+    "applies_to": [
+      "folk-horror"
+    ],
+    "prompt_fragments": [
+      "layered robes of coarse wool and stitched animal hide",
+      "antler crown or wreath of thorned branches",
+      "torso covered in ash-paste symbols",
+      "staff of bound bones and carved wood",
+      "old and weathered body carrying absolute authority in posture",
+      "eyes pale with cataracts or entirely unfocused"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "scarecrow-effigy",
+    "label": "Scarecrow Effigy",
+    "applies_to": [
+      "folk-horror"
+    ],
+    "prompt_fragments": [
+      "straw stuffing visibly bulging through torn hessian seams",
+      "crossbeam armature beneath a canvas coat",
+      "crude stitched-button eyes on a sack-cloth face",
+      "oversized brimmed hat pinned at an angle",
+      "arms fixed horizontal in permanent outstretched gesture",
+      "feet absent — post or stake instead of legs"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "witch-of-the-woods",
+    "label": "Witch of the Woods",
+    "applies_to": [
+      "folk-horror"
+    ],
+    "prompt_fragments": [
+      "multiple layers of rotting fabric in moss and mud tones",
+      "hair matted with twigs, feathers, and dried herbs",
+      "deeply lined face with pronounced bone structure",
+      "bare feet with bark-like skin at the heel and sole",
+      "bundles of bound animal parts tied to belt and sash",
+      "crouched narrow silhouette — contained and feral simultaneously"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wendigo",
+    "label": "Wendigo",
+    "applies_to": [
+      "horror",
+      "folk-horror"
+    ],
+    "prompt_fragments": [
+      "emaciated human frame stretched to near seven feet",
+      "antlered skull or deer skull fused to the head",
+      "skin pulled so tight every rib and clavicle is individually visible",
+      "hands ending in blackened cracked fingers",
+      "ragged remnants of winter clothing — fur trim, torn wool",
+      "impossible thinness despite apparent physical threat"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "revenant",
+    "label": "Revenant",
+    "applies_to": [
+      "horror",
+      "gothic-horror"
+    ],
+    "prompt_fragments": [
+      "burial attire decayed to grey tatters",
+      "skin the colour and texture of dried clay",
+      "wounds from cause of death still visible and unhealed",
+      "rigid jerky movement implied by locked joints",
+      "hollow eye sockets with no reflective surface inside",
+      "grave soil clinging to every crease and fold"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "soldier",
+    "label": "Soldier",
+    "applies_to": [
+      "military"
+    ],
+    "prompt_fragments": [
+      "plate carrier with MOLLE pouches",
+      "multicam combat fatigues",
+      "ballistic helmet with NVG mount",
+      "athletic military build",
+      "unit patch on shoulder",
+      "assault rifle at low-ready"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "operator",
+    "label": "Operator",
+    "applies_to": [
+      "military",
+      "espionage"
+    ],
+    "prompt_fragments": [
+      "low-profile subdued kit with no unit patches",
+      "suppressed rifle or pistol",
+      "plate carrier worn under civilian jacket",
+      "ear-pro and bone-conduction comms",
+      "lean capable build nothing wasted",
+      "no identifying markings"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "paramedic",
+    "label": "Paramedic",
+    "applies_to": [
+      "modern",
+      "military"
+    ],
+    "prompt_fragments": [
+      "high-visibility paramedic uniform or tactical medic vest",
+      "trauma bag over shoulder",
+      "defibrillator pack",
+      "radio clipped to chest",
+      "nitrile gloves always ready",
+      "capable always-in-motion bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "journalist",
+    "label": "Journalist",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "press vest in conflict zone or professional civilian clothes",
+      "camera and audio recorder",
+      "press credentials visible on lanyard",
+      "notebook in hand",
+      "alert slightly-sideways bearing watching the story"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hacker",
+    "label": "Hacker",
+    "applies_to": [
+      "espionage",
+      "cyberpunk"
+    ],
+    "prompt_fragments": [
+      "casual hoodie and cargo pants",
+      "custom laptop covered in stickers",
+      "multiple screens or devices",
+      "cable collection spilling from bag",
+      "lean sedentary build dark circles hyperaware eyes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "detective",
+    "label": "Detective",
+    "applies_to": [
+      "modern",
+      "noir"
+    ],
+    "prompt_fragments": [
+      "plain clothes trench coat or rumpled suit",
+      "concealed shoulder holster",
+      "police badge clipped to belt",
+      "notepad and pen",
+      "alert watchful world-worn bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "criminal",
+    "label": "Criminal",
+    "applies_to": [
+      "modern",
+      "noir"
+    ],
+    "prompt_fragments": [
+      "street clothes with subtle crew identifier",
+      "concealed pistol in waistband",
+      "cash roll or burner phone visible",
+      "bearing that owns the room or disappears from it",
+      "scarred knuckles and guarded eyes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "spy",
+    "label": "Spy",
+    "applies_to": [
+      "espionage"
+    ],
+    "prompt_fragments": [
+      "civilian clothes perfectly tailored to the target environment",
+      "tradecraft items concealed — dead drop container, signal chalk",
+      "cover-legend documents",
+      "comms disguised as everyday object",
+      "deliberately unremarkable or deliberately charming — both are disguises"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "martial-artist",
+    "label": "Martial Artist",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "training gi or athletic wear nothing restricts movement",
+      "worn ranked belt",
+      "hand wraps on fists",
+      "speed-and-precision functional musculature not bodybuilder bulk",
+      "sparring scars on knuckles"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "salaryman",
+    "label": "Salaryman",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "business suit off-the-rack to tailored",
+      "briefcase or laptop bag",
+      "company lanyard with ID badge",
+      "unremarkable sedentary-to-average build",
+      "phone in hand coffee in the other"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "doctor",
+    "label": "Doctor",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "white coat or hospital scrubs",
+      "stethoscope around neck",
+      "ID badge clipped to chest",
+      "tablet or clipboard in hand",
+      "precise capable hands focal point"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "athlete",
+    "label": "Athlete",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "sport-specific performance gear",
+      "team colours or sponsor branding",
+      "compression sleeves or sport tape",
+      "peak physical condition sport-specific musculature",
+      "athletic ready posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "politician",
+    "label": "Politician",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "expensive tailored power suit",
+      "flag or party pin on lapel",
+      "earpiece",
+      "security detail implied in framing",
+      "perpetually-presenting bearing posture tuned for a crowd even when alone"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mechanic",
+    "label": "Mechanic",
+    "applies_to": [
+      "modern"
+    ],
+    "prompt_fragments": [
+      "permanently grease-stained work overalls",
+      "heavy tool belt",
+      "safety glasses pushed up on forehead",
+      "diagnostic tablet in back pocket",
+      "practical work-muscle build"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "vigilante",
+    "label": "Vigilante",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "dark kevlar-weave street-level costume",
+      "cowl or full-face mask",
+      "utility belt with gadgets",
+      "no official insignia deliberately unsanctioned look",
+      "peak human lean capable build",
+      "grapple hook or zip-line kit"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hero",
+    "label": "Hero",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "bright iconic primary-colour costume",
+      "chest symbol or emblem",
+      "cape optional flowing",
+      "government or team sanction implied",
+      "idealised heroic physique",
+      "inspirational upright bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "villain",
+    "label": "Villain",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "dramatic dark costume visual contrast to hero",
+      "theatrical dramatic cape",
+      "mask or exposed face of menace",
+      "power source visibly glowing or crackling",
+      "exaggerated imposing or gaunt proportions",
+      "army of minions implied in composition"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sidekick",
+    "label": "Sidekick",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "complementary lighter costume to mentor",
+      "trainee insignia variant of mentor symbol",
+      "younger smaller agile build",
+      "mentor-derived gadgets",
+      "eager ready posture looking toward something greater"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "superhero-mercenary",
+    "label": "Super-Mercenary",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "tactical functional armour with power-assist components",
+      "no team colours contract-neutral palette",
+      "paymaster sigil on pauldron",
+      "mask by choice not necessity",
+      "professional well-equipped mercenary confidence"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "anti-hero",
+    "label": "Anti-Hero",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "dark subverted hero iconography corrupted or ironic symbol",
+      "lethal weapons hero would not carry",
+      "scars a sanctioned hero would not have",
+      "same power-level bearing different moral calculus",
+      "power used without restraint visible in stance"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cosmic-entity",
+    "label": "Cosmic Entity",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "humanoid form composed of stellar or void energy",
+      "stars and nebulae visible within the body",
+      "cosmic force radiating beyond the silhouette",
+      "planet or moon visible for scale reference",
+      "humanoid shape as a courtesy to lesser beings"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gadgeteer",
+    "label": "Gadgeteer",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "custom hand-assembled armoured suit function over aesthetic",
+      "utility harness overloaded with devices",
+      "HUD visor with data readout",
+      "the suit larger than the person inside it",
+      "field-workshop energy — tool for every scenario"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mentalist",
+    "label": "Mentalist",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "civilian clothes or light hero costume — the weapon is invisible",
+      "subtle psi-power tell: glowing eyes or bioluminescent vein lines",
+      "perfectly still body while mind is active elsewhere",
+      "psi-focus object held lightly",
+      "concentrated stillness amid chaos"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "powerhouse",
+    "label": "Powerhouse",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "reinforced or torn clothing strained by power use",
+      "physique beyond all natural human limits",
+      "impact craters or cracked ground where they stand",
+      "the environment treated as improvised weapon",
+      "blunt force incarnate bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "spec-ops-operator",
+    "label": "Special Operations Operator",
+    "applies_to": [
+      "military"
+    ],
+    "prompt_fragments": [
+      "full kit: plate carrier chest rig helmet NVGs",
+      "suppressed HK or similar special-forces rifle",
+      "IR patch and flag on sleeve",
+      "multicam or arid-pattern camouflage",
+      "breaching tool or flashbang on chest rig",
+      "compact coiled ready-to-move posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "tank-commander",
+    "label": "Tank Commander",
+    "applies_to": [
+      "military"
+    ],
+    "prompt_fragments": [
+      "tanker coveralls in olive or NATO green",
+      "padded tanker helmet with comms",
+      "pistol or compact SMG as sidearm",
+      "standing in open hatch of armoured vehicle",
+      "dust and exhaust haze from tracks",
+      "binoculars around neck"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "combat-medic",
+    "label": "Combat Medic",
+    "applies_to": [
+      "military",
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "military fatigues with red-cross armband",
+      "IFAK and full medic loadout on carrier",
+      "CAT tourniquet staged on shoulder strap",
+      "kneeling forward-lean treating-a-casualty posture",
+      "helmeted and armoured but marked non-combatant",
+      "battlefield dust and urgency"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wwii-paratrooper",
+    "label": "WWII Paratrooper",
+    "applies_to": [
+      "wwii"
+    ],
+    "prompt_fragments": [
+      "M42 jump suit with cargo pockets",
+      "M1C paratrooper helmet with chin cup",
+      "musette bag and para-specific webbing",
+      "M1 Garand or Thompson SMG",
+      "jump boots bloused trousers",
+      "cloth US flag patch on shoulder"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "resistance-fighter",
+    "label": "Resistance Fighter",
+    "applies_to": [
+      "wwii"
+    ],
+    "prompt_fragments": [
+      "civilian clothes — beret, wool coat, working-class dress",
+      "concealed Sten gun or Welrod pistol under coat",
+      "forged identity papers in breast pocket",
+      "gaunt determined face from wartime rationing",
+      "occupied-city backdrop implied — cobblestones curfew signs"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "panzer-crew",
+    "label": "Panzer Crew",
+    "applies_to": [
+      "wwii"
+    ],
+    "prompt_fragments": [
+      "black Panzer wrap uniform with pink piping",
+      "padded field-grey tanker cap",
+      "Iron Cross or campaign ribbon on breast",
+      "goggles pushed up on cap",
+      "oil and grease stains from engine maintenance",
+      "stoic weathered bearing Eastern Front"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "doughboy",
+    "label": "Doughboy",
+    "applies_to": [
+      "wwi"
+    ],
+    "prompt_fragments": [
+      "olive drab wool tunic and breeches",
+      "M1917 Brodie helmet",
+      "Springfield 1903 rifle with bayonet fixed",
+      "canvas webbing with cartridge belt",
+      "puttee-wrapped lower legs",
+      "mud-caked boots from trench conditions"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "trench-officer",
+    "label": "Trench Officer",
+    "applies_to": [
+      "wwi"
+    ],
+    "prompt_fragments": [
+      "khaki service dress with Sam Browne belt",
+      "officer's peaked cap or Brodie helmet",
+      "Webley revolver in holster",
+      "trench periscope or map case in hand",
+      "mud-spattered from knee down",
+      "exhausted resolute bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "flying-ace",
+    "label": "Flying Ace",
+    "applies_to": [
+      "wwi"
+    ],
+    "prompt_fragments": [
+      "leather flight jacket with fur collar",
+      "silk scarf wound around neck",
+      "aviator goggles on helmet",
+      "kill-tally markings implied in composition",
+      "jodhpurs and tall leather boots",
+      "open-cockpit biplane implied in background"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "femme-fatale",
+    "label": "Femme Fatale",
+    "applies_to": [
+      "noir"
+    ],
+    "prompt_fragments": [
+      "sleek 1940s–50s silhouette dress in black or deep red",
+      "wide-brimmed hat casting shadow across one eye",
+      "pearl or garnet jewellery",
+      "cigarette holder in gloved hand",
+      "high heels on wet cobblestones under neon",
+      "deliberately ambiguous expression"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hardboiled-detective",
+    "label": "Hardboiled Detective",
+    "applies_to": [
+      "noir"
+    ],
+    "prompt_fragments": [
+      "rumpled fedora rain-spotted brim",
+      "loose-knotted tie loosened at the collar",
+      "trench coat damp from night rain",
+      "snub-nose revolver in shoulder holster",
+      "cigarette at corner of mouth or stub in ashtray",
+      "window-blind shadow stripe lighting across face"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mob-boss",
+    "label": "Mob Boss",
+    "applies_to": [
+      "noir"
+    ],
+    "prompt_fragments": [
+      "bespoke pinstripe suit hand-stitched lapels",
+      "fedora with silk band",
+      "thick signet ring on right hand",
+      "bodyguards implied flanking the frame",
+      "cigar and cut crystal glass",
+      "controlled dangerous calm bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "tuxedo-spy",
+    "label": "Tuxedo Spy",
+    "applies_to": [
+      "espionage"
+    ],
+    "prompt_fragments": [
+      "immaculate dinner jacket black tie white shirt",
+      "boutonnière concealing a micro-camera",
+      "cufflinks with hidden function",
+      "casino or embassy gala backdrop",
+      "effortless charm masking lethal readiness",
+      "concealed PPK or equivalent in breast holster"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "deep-cover-agent",
+    "label": "Deep-Cover Agent",
+    "applies_to": [
+      "espionage"
+    ],
+    "prompt_fragments": [
+      "local civilian dress period and region accurate",
+      "no western tells — watch shoes posture all localised",
+      "dead-drop container disguised as everyday object",
+      "micro-film or USB concealed in shoe heel",
+      "the exhaustion of living a lie in the eyes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "handler",
+    "label": "Handler",
+    "applies_to": [
+      "espionage"
+    ],
+    "prompt_fragments": [
+      "anonymous business attire — forgettable by design",
+      "encrypted phone or secure radio earpiece",
+      "surveillance map or asset file spread on table",
+      "safe-house interior — bare bulb peeling walls",
+      "controlled detached bearing — the voice behind the agent",
+      "no field gear all brain"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "caped-crusader",
+    "label": "Caped Crusader",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "dark armoured cowl with pointed ears or horned silhouette",
+      "full-length billowing cape in shadow-palette",
+      "chest emblem in contrasting colour",
+      "grapple gun and batarang-type gadgets",
+      "gargoyle perch over rain-slick city implied",
+      "detective-hero hybrid bearing: brains and brawn"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "masked-vigilante",
+    "label": "Masked Vigilante",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "full-face or half-mask concealing identity",
+      "street clothes upgraded with improvised armour",
+      "no government sanction visible",
+      "athletic urban parkour-ready build",
+      "graffiti-tagged alley or rooftop backdrop",
+      "handmade feel — this costume was built in a garage"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "powered-villain",
+    "label": "Powered Villain",
+    "applies_to": [
+      "superhero"
+    ],
+    "prompt_fragments": [
+      "sleek armoured suit with integrated power source glowing at joints",
+      "monochrome or inverted-hero colour palette",
+      "energy discharge crackling at fists or eyes",
+      "debris and destruction framing the figure",
+      "cold methodical expression — the plan is already in motion"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "tinker",
+    "label": "Tinker",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "leather apron over work clothes",
+      "goggles on forehead",
+      "tool belt hung with clockwork components",
+      "oil-stained gloves",
+      "magnifying loupe clipped to lapel",
+      "scarred expressive hands"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aeronaut",
+    "label": "Aeronaut",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "long weather-beaten leather flight coat",
+      "brass buckle fastenings",
+      "wide-lens flight goggles",
+      "flintlock revolver at hip",
+      "airship-crew insignia on chest",
+      "wind-scarred complexion"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "artificer",
+    "label": "Artificer",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "structured waistcoat over formal work clothes",
+      "mechanical arm augmentation visible",
+      "arc-rifle slung over shoulder",
+      "blueprints tube on back",
+      "arcane power cell at belt",
+      "studious composed bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "navigator",
+    "label": "Navigator",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk",
+      "scifi",
+      "space-opera"
+    ],
+    "prompt_fragments": [
+      "formal naval uniform with brass rank fittings",
+      "orrery compass in hand",
+      "rolled star charts under arm",
+      "sextant at belt",
+      "precision watchful eyes",
+      "rank braid at shoulder"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "alchemist",
+    "label": "Alchemist",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "long coat with sealed chemical pockets",
+      "bandolier of glass vials",
+      "protective tinted goggles",
+      "discoloured chemical-stained fingertips",
+      "portable reaction burner at belt",
+      "slightly manic focused eyes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "clockwright",
+    "label": "Clockwright",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "fine structured waistcoat",
+      "precision work gloves",
+      "multiple pocket watches on chain",
+      "mounted loupe or monocle",
+      "jeweller's stillness of posture",
+      "meticulous measured bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ironclad-soldier",
+    "label": "Ironclad Soldier",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "riveted iron steam-assisted plate armour",
+      "boiler backpack with visible pressure gauges",
+      "steam vents at armour joints",
+      "gatling arm-cannon",
+      "empire insignia stamped on pauldron",
+      "massive silhouette dwarfing the human within"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "agent",
+    "label": "Agent",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "impeccable Victorian-era civilian dress",
+      "accessories that conceal weapons",
+      "concealed clockwork pistol under coat",
+      "cipher notebook in breast pocket",
+      "faction seal signet ring",
+      "dressed to pass in any social room"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "chirurgeon",
+    "label": "Chirurgeon",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "pristine bleached leather medical coat",
+      "clockwork surgical arm attachment",
+      "precision surgical tools on belt",
+      "anaesthetic vials in coat pockets",
+      "magnifying surgical loupe",
+      "absolute stillness of bearing under pressure"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pamphleteer",
+    "label": "Pamphleteer",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "ink-stained journalist's long coat",
+      "press hat tilted forward",
+      "printed broadsides folded in every pocket",
+      "portable printing block at hip",
+      "inkwell on belt",
+      "perpetually in-motion urgent bearing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "automaton-handler",
+    "label": "Automaton Handler",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "heavy reinforced work coat",
+      "control gauntlet with telegraph keys",
+      "automaton registry ledger under arm",
+      "spare gear-parts in canvas satchel",
+      "oversized wrench at hip",
+      "bearing of someone always in a machine's shadow"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "aristocrat",
+    "label": "Aristocrat",
+    "applies_to": [
+      "science-fantasy",
+      "steampunk"
+    ],
+    "prompt_fragments": [
+      "finest Victorian formal wear",
+      "tall top hat or elaborate structured hat",
+      "sword cane with decorative grip",
+      "expensive engraved pocket watch",
+      "family signet ring",
+      "commanding bearing that owns the room"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "dp-ace-aviator",
+    "label": "Ace Aviator",
+    "applies_to": [
+      "science-fantasy",
+      "dieselpunk"
+    ],
+    "prompt_fragments": [
+      "fleece-lined leather bomber jacket with squadron insignia",
+      "A2-style flight jacket in cracked brown leather",
+      "broad-lens goggles pushed up on helmet",
+      "silk neck scarf in bold colour",
+      "shoulder holster with heavy automatic pistol",
+      "sun-weathered jaw and thousand-yard stare"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "dp-art-deco-enforcer",
+    "label": "Art Deco Enforcer",
+    "applies_to": [
+      "science-fantasy",
+      "dieselpunk"
+    ],
+    "prompt_fragments": [
+      "long pinstripe coat with bold geometric lapels",
+      "wide-brim fedora with chrome band",
+      "Thompson-style drum-magazine submachine gun",
+      "chrome and bakelite badge on chest",
+      "two-tone leather brogues",
+      "hard angular silhouette — art deco geometry made flesh"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "dp-factory-foreman",
+    "label": "Factory Foreman",
+    "applies_to": [
+      "science-fantasy",
+      "dieselpunk"
+    ],
+    "prompt_fragments": [
+      "canvas coveralls over heavy work shirt",
+      "hardhat stamped with foreman's number",
+      "clipboard of production manifests",
+      "heavy wrench or rivet gun at hip",
+      "soot-darkened skin and forearms",
+      "air of industrial authority in a world of machines"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ap-atomic-ranger",
+    "label": "Atomic Ranger",
+    "applies_to": [
+      "science-fantasy",
+      "atompunk"
+    ],
+    "prompt_fragments": [
+      "retrofuturist ranger uniform in chrome and white",
+      "radiation symbol badge on chest",
+      "sealed helmet with circular viewport",
+      "bulky geiger counter on belt",
+      "atomic-cell raygun holstered at thigh",
+      "clean-cut authority of a Space Age law officer"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ap-raygun-scientist",
+    "label": "Raygun Scientist",
+    "applies_to": [
+      "science-fantasy",
+      "atompunk"
+    ],
+    "prompt_fragments": [
+      "white lab coat with atom-motif patches",
+      "oversized horn-rimmed safety glasses",
+      "prototype raygun clutched in both hands",
+      "oscilloscope and dials on portable chest rig",
+      "pocket protector bristling with instruments",
+      "optimistic 1950s Space Age palette — cream white and turquoise"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ap-robot-butler",
+    "label": "Robot Butler",
+    "applies_to": [
+      "science-fantasy",
+      "atompunk"
+    ],
+    "prompt_fragments": [
+      "gleaming chrome humanoid chassis",
+      "white-gloved articulated hands holding a tray",
+      "art deco vent grilles across torso",
+      "round glowing photoreceptor eyes",
+      "bowtie and apron painted or riveted onto chassis",
+      "eerily perfect servile posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gw-mutant-scavenger",
+    "label": "Mutant Scavenger",
+    "applies_to": [
+      "science-fantasy",
+      "gamma-world"
+    ],
+    "prompt_fragments": [
+      "patchwork armour of salvaged pre-war plastics and metal scraps",
+      "visible mutation — extra limb, scaled skin patch, or bioluminescent marking",
+      "radiation-burned wasteland palette — ochre, rust, sickly green",
+      "jury-rigged crossbow or pipe weapon",
+      "scavenger satchel overflowing with salvaged components",
+      "wary survivalist eyes scanning for the next threat"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gw-beast-hybrid",
+    "label": "Beast Hybrid",
+    "applies_to": [
+      "science-fantasy",
+      "gamma-world"
+    ],
+    "prompt_fragments": [
+      "humanoid with prominent animal features — fur, feathers, or scales covering body",
+      "digitigrade legs or elongated limbs",
+      "crude hide armour layered over mutant physique",
+      "natural weapons — claws, tusks, or tail — alongside crude tools",
+      "tribal markings painted or scarred into fur or hide",
+      "predator's coiled ready-to-spring stance"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gw-radiation-cultist",
+    "label": "Radiation Cultist",
+    "applies_to": [
+      "science-fantasy",
+      "gamma-world"
+    ],
+    "prompt_fragments": [
+      "robes cobbled from irradiated plastic sheeting and scavenged cloth",
+      "hand-painted atom or mushroom cloud symbols on garment",
+      "radiation-sore skin visible at face and hands",
+      "ritualistic staff topped with a salvaged geiger counter or glowing rod",
+      "fervent unfocused eyes of a true believer",
+      "wasteland cult palette — yellowed white, toxic green, bone"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gw-ruined-tech-tinker",
+    "label": "Ruined-Tech Tinker",
+    "applies_to": [
+      "science-fantasy",
+      "gamma-world"
+    ],
+    "prompt_fragments": [
+      "pre-war technician's jumpsuit held together with duct tape and wire",
+      "helmet made from a salvaged hard-drive housing",
+      "tool harness covered in stripped wires and circuit board fragments",
+      "half-repaired robot or drone companion piece implied nearby",
+      "goggles with mismatched lenses",
+      "grease-blackened hands of someone who fixes what others discard"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sp-sword-prince",
+    "label": "Sword Prince",
+    "applies_to": [
+      "science-fantasy",
+      "sword-and-planet"
+    ],
+    "prompt_fragments": [
+      "bare or near-bare torso with ornate alien armour plates at shoulder and forearm",
+      "gleaming broadsword or energy-edged blade held at guard",
+      "alien-court jewellery — torque, armbands, and crown-circlet",
+      "cloak in vivid alien-world pigment — crimson, violet, or gold",
+      "heroic upright bearing on a world with heavier gravity than Earth",
+      "two weapons — sword in one hand, raygun or energy pistol in the other"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sp-alien-princess",
+    "label": "Alien Princess",
+    "applies_to": [
+      "science-fantasy",
+      "sword-and-planet"
+    ],
+    "prompt_fragments": [
+      "otherworldly draped silks in colours that don't exist on Earth",
+      "bioluminescent skin tone or iridescent alien complexion",
+      "alien-court crown or headpiece of living crystal or carved bone",
+      "concealed sidearm — elegant energy pistol at thigh or wrist",
+      "regal defiant bearing of someone born to command entire worlds",
+      "alien flora or fauna motifs woven into garment and accessories"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sp-beast-rider",
+    "label": "Beast Rider",
+    "applies_to": [
+      "science-fantasy",
+      "sword-and-planet"
+    ],
+    "prompt_fragments": [
+      "riding leathers strapped over minimal alien armour",
+      "beast-bond talisman or reins looped at belt",
+      "lance or barbed spear alongside holstered raygun",
+      "alien saddle-gear hung about the body when dismounted",
+      "wind-battered look of someone at speed on an open alien plain",
+      "bond-mark tattoo or scar linking rider to their mount's lineage"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "space-marine",
+    "label": "Space Marine",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "heavy powered combat armour with faction insignia",
+      "assault rifle or plasma rifle at the ready",
+      "sealed helmet or visor pushed up",
+      "ammo pouches and squad markings across chest plate",
+      "imposing armoured silhouette that dwarfs an unaugmented human"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pilot",
+    "label": "Pilot",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "flight suit or vacuum-rated pressure suit",
+      "HUD visor helmet tucked under one arm",
+      "mission patches stitched across chest and shoulders",
+      "navigation data-glove on dominant hand",
+      "lean wiry build optimised for cockpit ergonomics"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "scientist",
+    "label": "Scientist",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "white lab coat or sealed research suit",
+      "data tablet with scrolling readouts",
+      "neural interface headset worn at the temple",
+      "specimen containers clipped to belt",
+      "scholar's absorbed bearing — sees data, not danger"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "engineer",
+    "label": "Engineer",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "work suit with reinforced knees and elbows",
+      "full tool harness — wrenches, cutters, conduit tape",
+      "diagnostic scanner holstered at the hip",
+      "hardhat or flip-up welding visor",
+      "hands visibly worn and grease-stained"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "bounty-hunter",
+    "label": "Bounty Hunter",
+    "applies_to": [
+      "scifi",
+      "spaghetti-western"
+    ],
+    "prompt_fragments": [
+      "worn serape draped over one shoulder in muted earth tones",
+      "eyes narrowed to a calculating squint beneath a battered hat",
+      "wanted posters folded and stuffed into a coat pocket",
+      "single-action Colt tied down with rawhide to the thigh",
+      "pockmarked stubbled jaw set in cold determination",
+      "harsh midday sun bleaching the dusty Italian-location landscape"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "android",
+    "label": "Android",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "synthetic humanoid form — flawlessly symmetrical",
+      "visible panel seams or exposed chassis sections",
+      "status indicator lights embedded in neck or forearm",
+      "data port at the temple or wrist",
+      "uncanny stillness and precision in posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "psyker",
+    "label": "Psyker",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "psionic energy crackling in arcs around the head and hands",
+      "psi-dampener headband or suppressor collar",
+      "neural amplifier crown embedded in the skull",
+      "third-eye mark or bioluminescent implant at the brow",
+      "lean frame secondary to the power — body almost irrelevant"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "commander",
+    "label": "Commander",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "command armour — heavier than bridge crew, lighter than a marine",
+      "campaign ribbons and battle honours across the chest",
+      "tactical HUD monocle or command visor",
+      "ceremonial command baton in hand",
+      "bearing of someone others follow into hell — upright, present, scarred"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "infiltrator",
+    "label": "Infiltrator",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "active camouflage stealth suit with matte-black low-reflectance panels",
+      "silenced energy pistol in a quick-draw thigh holster",
+      "holo-disguise emitter worn at the wrist",
+      "signal jammer and EMP grenades on the belt",
+      "economical lean build — designed to vanish into shadow"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cyborg",
+    "label": "Cyborg",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "partial mechanical replacement — polished metal plates over organic body",
+      "exposed mechanical joints at shoulder, elbow, or knee",
+      "ocular targeting implant replacing one eye",
+      "power cell indicator lights at the flesh-metal junction",
+      "surgical scars where biology transitions to machine"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "xenobiologist",
+    "label": "Xenobiologist",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "field containment suit with specimen jars and sample pouches attached",
+      "taxonomic scanner raised toward subject",
+      "environmental sampler probe in hand",
+      "fascinated wide eyes overriding any visible caution",
+      "field notes and specimen tags dangling from the suit"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "rebel",
+    "label": "Rebel",
+    "applies_to": [
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "mismatched salvaged armour — no two pieces from the same kit",
+      "captured enemy weapons worn with grim satisfaction",
+      "rebel faction symbol stitched or painted on defiantly",
+      "comms unit scavenged from a fallen enemy soldier",
+      "every piece of gear a testimony to survival"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "netrunner",
+    "label": "Netrunner",
+    "applies_to": [
+      "cyberpunk"
+    ],
+    "prompt_fragments": [
+      "neural plug-in ports along the spine and neck — exposed, used",
+      "flatline rig worn as a backpack with trailing optic cables",
+      "fingers tipped with interface needles for jack-in access",
+      "eyes glazed with ICE-breaking focus, pupils non-responsive",
+      "pale skin from hours spent deep inside the net — body neglected"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "street-samurai",
+    "label": "Street Samurai",
+    "applies_to": [
+      "cyberpunk"
+    ],
+    "prompt_fragments": [
+      "subdermal armour plating beneath synthetic skin — barely concealed",
+      "mono-edged blade sheathed at the back or thigh",
+      "reflex-boost chrome implants visible at the joints",
+      "gun-kata stance — weapon already moving before thought catches up",
+      "neon-lit urban grime coating battered combat gear"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "corpo-exec",
+    "label": "Corporate Executive",
+    "applies_to": [
+      "cyberpunk"
+    ],
+    "prompt_fragments": [
+      "immaculate high-collar corporate suit with faction logo at lapel",
+      "security detail hovering just outside the frame",
+      "neural comms implant — no visible earpiece, the message is inside",
+      "manicured hands that have never touched real work",
+      "smile that doesn't reach the eyes — every word a calculated move"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "fixer",
+    "label": "Fixer",
+    "applies_to": [
+      "cyberpunk"
+    ],
+    "prompt_fragments": [
+      "well-worn leather jacket over layered street fashion",
+      "multiple comms bands on both wrists — always reachable",
+      "concealed holdout pistol in a shoulder rig under the jacket",
+      "contacts ledger or encrypted tablet always in hand",
+      "reads every room from the door — threat-assessing without breaking stride"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "starship-captain",
+    "label": "Starship Captain",
+    "applies_to": [
+      "space-opera"
+    ],
+    "prompt_fragments": [
+      "tailored command uniform with fleet rank braiding on the cuff",
+      "hand resting on the back of the command chair",
+      "calm authoritative gaze that holds a bridge together",
+      "sidearm at the hip — worn, not ceremonial",
+      "bearing of someone who has ordered hard decisions and lived with them"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "alien-envoy",
+    "label": "Alien Envoy",
+    "applies_to": [
+      "space-opera"
+    ],
+    "prompt_fragments": [
+      "flowing robes in non-human textile — alien weave and iridescent sheen",
+      "diplomatic insignia of the home world displayed at the chest",
+      "facial features subtly non-human — bilateral but asymmetric",
+      "ritual adornments signalling caste or status",
+      "interpreter implant visible at the ear or throat"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "starfleet-officer",
+    "label": "Starfleet Officer",
+    "applies_to": [
+      "space-opera"
+    ],
+    "prompt_fragments": [
+      "clean-line fleet uniform — division colour on shoulders or trim",
+      "rank pips or bars at the collar",
+      "tricorder or scanning device in hand",
+      "multi-species crew visible in the background",
+      "composed professional bearing — diplomacy and duty in equal measure"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "space-pirate",
+    "label": "Space Pirate",
+    "applies_to": [
+      "space-opera"
+    ],
+    "prompt_fragments": [
+      "flamboyant coat over mismatched spacer armour",
+      "energy cutlass in one hand, blaster in the other",
+      "trophies from a dozen worlds hanging from the belt",
+      "grinning confidence of someone with a fast ship and nothing to lose",
+      "docking clamps and boarding hooks visible on the harness"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pulp-rocket-ranger",
+    "label": "Rocket Ranger",
+    "applies_to": [
+      "pulp-scifi"
+    ],
+    "prompt_fragments": [
+      "gleaming chrome jetpack strapped to the back — fins and rivets",
+      "streamlined silver flight suit with star-corps insignia",
+      "ray gun holstered at the hip — rounded, retro-futurist design",
+      "aviator goggles pushed up on the helmet brow",
+      "heroic square-jawed silhouette against a painted-sky backdrop"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pulp-bug-eyed-mutant",
+    "label": "Bug-Eyed Mutant",
+    "applies_to": [
+      "pulp-scifi"
+    ],
+    "prompt_fragments": [
+      "enlarged compound or bulbous eyes dominating the skull",
+      "mottled or luminescent skin — alien pigmentation gone wrong",
+      "hunched or elongated frame warped by radiation or experiment",
+      "torn lab clothing revealing mutated flesh beneath",
+      "pulp-cover dramatic pose — menacing but theatrical"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pulp-alien-overlord",
+    "label": "Alien Overlord",
+    "applies_to": [
+      "pulp-scifi"
+    ],
+    "prompt_fragments": [
+      "towering insectoid or tentacled silhouette in dramatic three-quarter angle",
+      "glowing control orb or death-ray emitter in a clawed appendage",
+      "carapace or bony crest marking dominance and alien hierarchy",
+      "retro-futurist dais or throne of chrome and glass",
+      "pulp-art colour palette — lurid greens, electric blues, deep shadow"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "pulp-space-adventurer",
+    "label": "Space Adventurer",
+    "applies_to": [
+      "pulp-scifi"
+    ],
+    "prompt_fragments": [
+      "khaki or tan expedition jacket adapted for the space age",
+      "battered ray gun and utility belt — the essentials, nothing more",
+      "wide-brimmed helmet or explorer's cap with goggled visor",
+      "confident striding pose — into the unknown with a grin",
+      "pulp paperback energy — adventure is the point, danger is the backdrop"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "vacuum-welder",
+    "label": "Vacuum Welder",
+    "applies_to": [
+      "hard-scifi"
+    ],
+    "prompt_fragments": [
+      "EVA hard suit with gold-visor helmet and tethered tool array",
+      "plasma welding torch with active ignition bloom",
+      "safety tether lines clipped to hull handrails",
+      "suit covered in micro-impact pitting and re-entry scoring",
+      "deliberate methodical posture — one wrong move is a fatality"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "colony-marine",
+    "label": "Colony Marine",
+    "applies_to": [
+      "hard-scifi"
+    ],
+    "prompt_fragments": [
+      "utilitarian combat pressure suit — function over aesthetic",
+      "modular weapon system — no energy weapons, kinetic rounds only",
+      "rebreather and life-support pack integrated into the back plate",
+      "colony patch on the shoulder — far from Earth, protecting something real",
+      "tired pragmatic bearing — not a hero, a professional doing a job"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "mission-specialist",
+    "label": "Mission Specialist",
+    "applies_to": [
+      "hard-scifi"
+    ],
+    "prompt_fragments": [
+      "agency-issue coverall with mission insignia and name tape",
+      "multi-tool and EVA gloves tucked into thigh pockets",
+      "specialist equipment case carried by hand or shoulder-strapped",
+      "close-cropped practical appearance — no jewellery, no vanity",
+      "expression of focused competence — knows exactly what failure costs"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "astrogeologist",
+    "label": "Astrogeologist",
+    "applies_to": [
+      "hard-scifi"
+    ],
+    "prompt_fragments": [
+      "pressure suit modified for surface work — kneepads and sample pouches",
+      "core sampler drill over one shoulder",
+      "mineral analyser held up to a rock face",
+      "gloves dusted with regolith from a world humans have barely touched",
+      "unhurried methodical posture — the planet has been here four billion years"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "uplifted-mind",
+    "label": "Uplifted Mind",
+    "applies_to": [
+      "post-human"
+    ],
+    "prompt_fragments": [
+      "human silhouette with consciousness externally visible — neural light halo",
+      "brain-external substrate device worn as a crown or backpack",
+      "eyes replaced by glowing sensor arrays processing at inhuman speed",
+      "body maintained as a vehicle rather than an identity",
+      "serene detachment — thought has outrun the need for expression"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "synth-body",
+    "label": "Synth Body",
+    "applies_to": [
+      "post-human"
+    ],
+    "prompt_fragments": [
+      "fully synthetic humanoid chassis — deliberately not quite human",
+      "modular limb attachment points visible at the shoulder and hip",
+      "internal glow visible through translucent torso panels",
+      "face designed for function — minimal but expressive enough",
+      "seamless movement that betrays no biological hesitation"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gene-sculpted-ascendant",
+    "label": "Gene-Sculpted Ascendant",
+    "applies_to": [
+      "post-human"
+    ],
+    "prompt_fragments": [
+      "human form taken to idealised biological extremes — designed rather than born",
+      "skin luminescent or subtly iridescent — no pores, no blemish",
+      "musculature and proportions engineered beyond natural variation",
+      "calm certainty in bearing — evolution was their choice",
+      "subtle markers of the change — elongated fingers, enlarged cranium, altered iris"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "substrate-drifter",
+    "label": "Substrate Drifter",
+    "applies_to": [
+      "post-human"
+    ],
+    "prompt_fragments": [
+      "consciousness broadcast via hovering emitter drone — no fixed body",
+      "holographic avatar projected at variable fidelity — sometimes crisp, sometimes ghost-like",
+      "emitter housing worn, battered, covered in signal-range stickers",
+      "presence in the room but no physical footprint — nothing to restrain",
+      "unsettling freedom in the posture — no fear of physical harm"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "ruler",
+    "label": "Ruler / Sovereign",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "regal commanding bearing",
+      "ornate robes or finery of the setting",
+      "symbol of authority — crown, circlet, or insignia",
+      "upright dignified posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "merchant",
+    "label": "Merchant / Trader",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "practical layered clothing with coin purse or ledger",
+      "goods or wares carried or worn",
+      "shrewd appraising expression",
+      "well-traveled, slightly worn attire"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "noble",
+    "label": "Noble / Aristocrat",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "fine tailored garments of the setting",
+      "refined posture and grooming",
+      "subtle status markers — jewelry, crest, fine fabric",
+      "soft uncalloused hands"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "commoner",
+    "label": "Commoner / Civilian",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "plain practical everyday clothing",
+      "modest worn materials",
+      "unremarkable functional gear",
+      "neutral standing pose"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "laborer",
+    "label": "Laborer / Worker",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "sturdy work clothes with wear and grime",
+      "tool of their trade in hand",
+      "calloused hands, strong build",
+      "rolled sleeves, sweat-stained cloth"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "priest",
+    "label": "Priest / Cleric",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "religious vestments of the setting",
+      "holy symbol or icon",
+      "solemn devotional bearing",
+      "ceremonial accessories"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "scholar",
+    "label": "Scholar / Scribe",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "robes or coat with books, scrolls, or instruments",
+      "spectacles or magnifier",
+      "ink-stained fingers",
+      "thoughtful studious expression"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "healer",
+    "label": "Healer / Physician",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "practical garb with medical kit or remedies",
+      "satchel of tools and bandages",
+      "calm focused demeanor",
+      "stained apron or smock"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "hunter",
+    "label": "Hunter / Tracker",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "rugged outdoor clothing in earth tones",
+      "ranged weapon of the setting",
+      "trophies, pelts, or trail gear",
+      "alert watchful stance"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "smith",
+    "label": "Smith / Artisan",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "heavy apron over work clothes",
+      "hammer, tongs, or craft tools",
+      "soot-marked muscular arms",
+      "sturdy practical boots"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "elder",
+    "label": "Elder / Sage",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "aged weathered features",
+      "long simple robes or layered clothing",
+      "walking staff or cane",
+      "stooped but dignified posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "child",
+    "label": "Child / Youth",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "small youthful proportions",
+      "simple setting-appropriate clothes",
+      "curious lively expression",
+      "oversized or hand-me-down garments"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "outcast",
+    "label": "Outcast / Beggar",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "ragged patched clothing",
+      "gaunt weathered look",
+      "meager possessions bundled close",
+      "hunched wary posture"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "servant",
+    "label": "Servant / Attendant",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "neat livery or simple uniform of the setting",
+      "modest deferential bearing",
+      "carried tray, tools, or implements",
+      "tidy restrained appearance"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "entertainer",
+    "label": "Entertainer / Performer",
+    "applies_to": [
+      "*"
+    ],
+    "prompt_fragments": [
+      "colorful expressive costume of the setting",
+      "instrument or performance prop",
+      "animated theatrical posture",
+      "decorative flourishes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "sheriff",
+    "label": "Sheriff",
+    "applies_to": [
+      "western"
+    ],
+    "prompt_fragments": [
+      "tin star badge pinned to leather vest",
+      "wide-brim felt hat dusted with trail grime",
+      "double-action revolver holstered at the hip",
+      "sun-cracked boots with worn rowel spurs",
+      "duster coat in faded ochre and brown",
+      "weathered face set in a hard authoritative stare"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "gunslinger",
+    "label": "Gunslinger",
+    "applies_to": [
+      "western"
+    ],
+    "prompt_fragments": [
+      "low-slung tied-down holster on each hip",
+      "nimble leather-gloved hands hovering near pearl-handled revolvers",
+      "black cattleman hat with a snakeskin band",
+      "long duster coat split at the back for fast draw",
+      "steely squinting eyes beneath a tanned brow",
+      "fine trail dust coating every crease of dark clothing"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "outlaw",
+    "label": "Outlaw",
+    "applies_to": [
+      "western"
+    ],
+    "prompt_fragments": [
+      "red bandana pulled up over the nose and mouth",
+      "battered flat-brim hat with a bullet hole through the crown",
+      "Winchester rifle slung across the back",
+      "cartridge belt crossed over the chest",
+      "scarred knuckles and road-dust-caked clothing",
+      "wanted-poster silhouette against a red-rock canyon backdrop"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "frontier-saloon-girl",
+    "label": "Saloon Girl",
+    "applies_to": [
+      "classic-western"
+    ],
+    "prompt_fragments": [
+      "ruffled satin dress in deep crimson and black lace trim",
+      "ostrich feather tucked into swept-up hair",
+      "fingerless lace gloves and a folding fan",
+      "high-heeled buttoned boots peeking below the hemline",
+      "smoky kerosene-lit saloon interior with sawdust floors",
+      "knowing smile framed by kohl-lined eyes"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "cattle-rancher",
+    "label": "Cattle Rancher",
+    "applies_to": [
+      "classic-western"
+    ],
+    "prompt_fragments": [
+      "sweat-stained Stetson pushed back on the brow",
+      "heavy canvas chaps strapped over worn denim",
+      "coiled lasso rope at the saddle horn",
+      "roughened calloused hands gripping a fence rail",
+      "flannel work shirt rolled to the elbows",
+      "wide open grassland range stretching to a sun-bleached horizon"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "frontier-marshal",
+    "label": "Frontier Marshal",
+    "applies_to": [
+      "classic-western"
+    ],
+    "prompt_fragments": [
+      "US Marshal star medallion on a dark wool lapel",
+      "tailored frock coat in charcoal with brass buttons",
+      "lever-action rifle carried at a measured ready",
+      "polished cavalry boots with dress spurs",
+      "composed unreadable expression under a flat-brim hat",
+      "dusty main-street backdrop of a frontier boomtown"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "poncho-stranger",
+    "label": "The Poncho Stranger",
+    "applies_to": [
+      "spaghetti-western"
+    ],
+    "prompt_fragments": [
+      "threadbare tobacco-brown poncho hiding both hands",
+      "half-smoked cheroot clenched at the corner of the mouth",
+      "anonymous face shaded by a wide-brim hat pulled low",
+      "twin revolvers concealed beneath the poncho drape",
+      "lone silhouette against a bleached adobe village wall",
+      "morally ambiguous mercenary bearing no name or allegiance"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "bandido",
+    "label": "Bandido",
+    "applies_to": [
+      "spaghetti-western"
+    ],
+    "prompt_fragments": [
+      "oversized sombrero decorated with tarnished silver conchos",
+      "twin cartridge bandoliers crossing a sweat-soaked shirt",
+      "ornate silver-inlaid pistol thrust into a wide leather belt",
+      "flamboyant moustache and expressive theatrical eyes",
+      "loud patterned serape in ochre and rust",
+      "exaggerated operatic posturing against a crumbling hacienda wall"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "undead-gunslinger",
+    "label": "Undead Gunslinger",
+    "applies_to": [
+      "weird-west"
+    ],
+    "prompt_fragments": [
+      "skeletal fingers wrapped around a corroded revolver",
+      "bullet holes visible through a tattered duster coat",
+      "glowing amber eyes beneath a dust-caked hat brim",
+      "dried bloodstains and grave dirt on trail-worn clothing",
+      "spectral blue aura leaking from the wounds",
+      "cracked parched skin over a gaunt undead face"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "snake-oil-occultist",
+    "label": "Snake-Oil Occultist",
+    "applies_to": [
+      "weird-west"
+    ],
+    "prompt_fragments": [
+      "velvet top hat adorned with occult sigil pins and feathers",
+      "medicine show wagon draped in arcane symbols and lanterns",
+      "glass vials of glowing elixirs in a wooden satchel",
+      "tailored black frock coat with alchemical embroidery",
+      "long fingers stained with reagents tracing a hex circle",
+      "unsettling wide grin beneath a waxed handlebar moustache"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "demon-hunter-preacher",
+    "label": "Demon Hunter Preacher",
+    "applies_to": [
+      "weird-west"
+    ],
+    "prompt_fragments": [
+      "black clerical collar above a heavy duster coat",
+      "silver-loaded sawn-off shotgun held like a crucifix",
+      "iron holy symbols and occult wards hanging from the belt",
+      "scripture verses tattooed across scarred forearms",
+      "haunted eyes that have witnessed genuine hellfire",
+      "smoke and brimstone hanging in the air around the figure"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "wasteland-marauder",
+    "label": "Wasteland Marauder",
+    "applies_to": [
+      "apocalypse-west"
+    ],
+    "prompt_fragments": [
+      "asymmetric armour plates bolted over a cracked leather duster",
+      "spiked shoulder pauldrons welded from salvaged vehicle parts",
+      "war paint streaked in red oxide and motor grease",
+      "sawed-off double-barrel shotgun and a machete at the hip",
+      "face half-hidden behind a rusted iron rebreather mask",
+      "desolate irradiated badlands stretching to a toxic orange sky"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "scrap-gunslinger",
+    "label": "Scrap Gunslinger",
+    "applies_to": [
+      "apocalypse-west"
+    ],
+    "prompt_fragments": [
+      "hand-fabricated revolver assembled from pipe fittings and scavenged parts",
+      "patchwork duster stitched from salvaged canvas and tarp",
+      "goggles with cracked lenses pushed up on the brow",
+      "bullet casings repurposed as decoration on hat band and belt",
+      "lean sun-blasted frame dusted head to toe in pale alkali",
+      "calm precise gunfighter stance amid a rusted ghost-town backdrop"
+    ],
+    "ext": {}
+  },
+  {
+    "id": "road-warrior-outrider",
+    "label": "Road Warrior Outrider",
+    "applies_to": [
+      "apocalypse-west"
+    ],
+    "prompt_fragments": [
+      "studded leather jacket over a patchwork armoured vest",
+      "chopped motorcycle helmet strapped to a saddlebag",
+      "crossbow and bolt quiver alongside a sawn-off carbine",
+      "tribal war paint and ritual scarification on exposed arms",
+      "dusty bandana and cracked flight goggles as face cover",
+      "scorched frontier highway littered with wrecked vehicles receding into haze"
+    ],
+    "ext": {}
+  }
+]

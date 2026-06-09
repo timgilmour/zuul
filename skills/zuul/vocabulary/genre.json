@@ -1,0 +1,107 @@
+[
+  {
+    "id": "fantasy",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Fantasy",
+    "visual": {
+      "aesthetic": "medieval to pre-industrial, magic present",
+      "materials": ["leather", "iron", "wool", "wood", "bone", "enchanted stone"],
+      "palette_notes": "earthy tones, jewel accents, aged metals",
+      "lighting_notes": "torchlight, moonlight, magical glow acceptable in source"
+    },
+    "traits": ["magic-present", "pre-gunpowder", "mythological-creatures", "class-hierarchies"],
+    "prompt_fragments": ["fantasy game concept art", "medieval fantasy aesthetic", "hand-crafted materials"],
+    "ext": {}
+  },
+  {
+    "id": "horror",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Horror",
+    "visual": {
+      "aesthetic": "dread-saturated, decayed, uncanny and wrong",
+      "materials": ["rotted wood", "rusted iron", "viscera", "grave dirt", "tattered cloth", "bone"],
+      "palette_notes": "desaturated greys, sickly greens, blood reds, bruised purples, candle amber",
+      "lighting_notes": "tone via palette and form; render flat per render-rules regardless of source mood"
+    },
+    "traits": ["fear-driven", "mortality-themes", "the-uncanny", "transgression-of-the-natural"],
+    "prompt_fragments": ["horror concept art", "unsettling subject design", "dread conveyed through form and palette"],
+    "ext": {}
+  },
+  {
+    "id": "scifi",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Sci-Fi",
+    "visual": {
+      "aesthetic": "near-future to far-future, technology-dominant",
+      "materials": ["carbon fibre", "titanium alloy", "synthetic polymer", "smart glass", "energy shielding"],
+      "palette_notes": "cool neutrals, neon accents, deep space blacks",
+      "lighting_notes": "bioluminescent panels, holographic UI glow, hard vacuum light"
+    },
+    "traits": ["technology-dominant", "space-faring", "synthetic-life", "post-scarcity-or-dystopia"],
+    "prompt_fragments": ["sci-fi concept art", "futuristic aesthetic", "advanced technology materials"],
+    "ext": {}
+  },
+  {
+    "id": "modern",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Modern",
+    "visual": {
+      "aesthetic": "20th-century to contemporary real-world",
+      "materials": ["cotton", "kevlar", "polymer", "steel", "glass", "synthetic fabrics", "wool serge"],
+      "palette_notes": "realistic period colours, tactical olive/tan/black, civilian variety",
+      "lighting_notes": "natural daylight or artificial interior lighting"
+    },
+    "traits": ["real-world-physics", "no-magic", "firearms-era", "institutional-structures"],
+    "prompt_fragments": ["modern concept art", "grounded realistic aesthetic", "20th-century-to-present setting"],
+    "ext": {}
+  },
+  {
+    "id": "science-fantasy",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Science Fantasy",
+    "visual": {
+      "aesthetic": "magic and technology fused, rule-of-cool retrofuturism",
+      "materials": ["brass", "riveted iron", "vacuum tubes", "atomic alloys", "crystal power-cores", "salvaged tech"],
+      "palette_notes": "warm metals, retro signage colours, radioactive greens, ray-gun chrome",
+      "lighting_notes": "glowing cores, arc-light, atomic glow acceptable in source"
+    },
+    "traits": ["magic-and-technology", "anachronistic-tech", "retrofuturism", "rule-of-cool"],
+    "prompt_fragments": ["science fantasy concept art", "retrofuturist aesthetic", "magic-meets-machine design"],
+    "ext": {}
+  },
+  {
+    "id": "historical",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Historical",
+    "visual": {
+      "aesthetic": "real-world, pre-contemporary, no magic",
+      "materials": ["bronze", "iron", "linen", "wool", "leather", "lacquered wood", "hammered steel"],
+      "palette_notes": "natural dyes, undyed cloth, aged metals, earth and ochre tones",
+      "lighting_notes": "daylight, firelight, lantern — period-accurate"
+    },
+    "traits": ["real-world-history", "no-magic", "period-accurate-materials", "pre-industrial-to-early-modern"],
+    "prompt_fragments": ["historical concept art", "period-accurate aesthetic", "authentic materials and construction"],
+    "ext": {}
+  },
+  {
+    "id": "western",
+    "level": "genre",
+    "taxonomy": "genre",
+    "label": "Western",
+    "visual": {
+      "aesthetic": "American frontier, dust and leather",
+      "materials": ["worn leather", "denim", "raw cotton", "blued steel", "rough timber", "tin"],
+      "palette_notes": "sun-bleached tans, dust ochre, faded blue, gun-metal, dried-blood red",
+      "lighting_notes": "harsh sun, golden-hour dust, lantern interior"
+    },
+    "traits": ["frontier-setting", "firearms", "lawless-or-frontier-justice", "rugged-survival"],
+    "prompt_fragments": ["western concept art", "frontier aesthetic", "dusty weathered materials"],
+    "ext": {}
+  }
+]

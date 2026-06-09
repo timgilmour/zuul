@@ -1,0 +1,123 @@
+[
+  {
+    "id": "rebel-starfighter",
+    "label": "Rebel Starfighter",
+    "applies_to": ["scifi", "space-opera"],
+    "prompt_fragments": [
+      "angular matte grey hull panels",
+      "twin rear thruster pods with glowing orange exhaust rings",
+      "swept-back delta wings with battle damage along leading edges",
+      "scorched heat shields below the nose",
+      "opaque dark cockpit canopy",
+      "hull number stencilled on the fuselage"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2",
+    "ext": {}
+  },
+  {
+    "id": "imperial-dreadnought",
+    "label": "Imperial Dreadnought",
+    "applies_to": ["scifi", "space-opera"],
+    "prompt_fragments": [
+      "slab-sided matte charcoal hull",
+      "rows of gun batteries along the flanks",
+      "sensor towers rising from the dorsal surface",
+      "hull division lines scoring the plating",
+      "no chrome or reflective surfaces"
+    ],
+    "view": "Side",
+    "aspect": "16:9",
+    "ext": {}
+  },
+  {
+    "id": "goblin-war-barge",
+    "label": "Goblin War Barge",
+    "applies_to": ["fantasy", "dark-fantasy", "low-fantasy"],
+    "prompt_fragments": [
+      "mismatched salvage planking with asymmetric patched hull",
+      "iron spike prow ram at the bow",
+      "ragged torn canvas sails",
+      "dangling lanterns swinging from the rigging",
+      "crude iron fittings and exposed rope lashings"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2",
+    "ext": {}
+  },
+  {
+    "id": "steampunk-ironclad",
+    "label": "Steampunk Ironclad",
+    "applies_to": ["steampunk"],
+    "prompt_fragments": [
+      "black-painted iron hull with riveted plates throughout",
+      "two rotating gun turrets fore and aft",
+      "brass pressure relief valves along the hull sides",
+      "smoke stacks venting dark exhaust",
+      "shallow-draft flat-bottomed hull form"
+    ],
+    "view": "Side",
+    "aspect": "16:9",
+    "ext": {}
+  },
+  {
+    "id": "hover-apc",
+    "label": "Hover APC",
+    "applies_to": ["scifi", "hard-scifi"],
+    "prompt_fragments": [
+      "flat-topped matte olive hull",
+      "grav-plate emitters on the flat undercarriage",
+      "side troop hatches along both flanks",
+      "sensor cluster mounted on the roof",
+      "no chrome or reflective surfaces"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2",
+    "ext": {}
+  },
+  {
+    "id": "ornithopter",
+    "label": "Ornithopter",
+    "applies_to": ["steampunk"],
+    "prompt_fragments": [
+      "articulated brass wing-frames with fabric membrane panels",
+      "open cockpit with exposed pilot seat",
+      "twin engine pods flanking the fuselage",
+      "riveted metal fuselage with visible bolt heads",
+      "mechanical linkage rods connecting wing joints"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2",
+    "ext": {}
+  },
+  {
+    "id": "xianxia-cloud-boat",
+    "label": "Xianxia Cloud Boat",
+    "applies_to": ["wuxia"],
+    "prompt_fragments": [
+      "carved red lacquer hull with gold script inlay",
+      "curved upswept prow with jade phoenix carving",
+      "trailing spirit-energy wisps streaming from the stern",
+      "cloud-platform base with levitation glow at the underside",
+      "ornate wooden railings with golden filigree trim"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2",
+    "ext": {}
+  },
+  {
+    "id": "attack-helicopter",
+    "label": "Attack Helicopter",
+    "applies_to": ["modern", "military"],
+    "prompt_fragments": [
+      "matte olive drab airframe with national markings",
+      "stub wings with weapon pylons on each side",
+      "sensor pod mounted under the nose",
+      "opaque dark canopy over tandem cockpit",
+      "tail rotor and stabiliser fin at the rear"
+    ],
+    "view": "Side",
+    "aspect": "16:9",
+    "ext": {}
+  }
+]

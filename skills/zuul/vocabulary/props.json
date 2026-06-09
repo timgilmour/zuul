@@ -1,0 +1,767 @@
+[
+  {
+    "id": "longsword",
+    "label": "Longsword",
+    "category": "weapon",
+    "applies_to": ["fantasy", "high-fantasy", "dark-fantasy", "low-fantasy", "medieval", "historical"],
+    "prompt_fragments": [
+      "double-edged longsword, cruciform hilt, polished steel blade",
+      "hand-and-a-half grip wrapped in worn brown leather",
+      "fuller groove running two-thirds of the blade length",
+      "pommel of cast iron, slightly pitted with age"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "battle-axe",
+    "label": "Battle Axe",
+    "category": "weapon",
+    "applies_to": ["fantasy", "high-fantasy", "dark-fantasy", "medieval", "viking", "historical"],
+    "prompt_fragments": [
+      "broad single-bitted axe head, forged iron, edge-honed bright",
+      "thick ashwood haft bound with iron bands at shoulder and base",
+      "simple etched knotwork on axe cheek, worn and shallow",
+      "rough-hewn utilitarian form, no ornament below the knotwork"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "dagger",
+    "label": "Dagger",
+    "category": "weapon",
+    "applies_to": ["*"],
+    "prompt_fragments": [
+      "double-edged blade, narrow taper to fine point, hand-length",
+      "crossguard of plain iron, grip of riveted bone scales",
+      "steel finish ranging from bright-edged to surface-patinated",
+      "compact and concealable, no elaborate ornament"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "samurai-katana",
+    "label": "Samurai Katana",
+    "category": "weapon",
+    "applies_to": ["samurai", "wuxia", "historical"],
+    "prompt_fragments": [
+      "single-edged curved blade, lacquer-black saya scabbard",
+      "tsuba of pierced iron, geometric wave motif",
+      "tsuka wrapped in white cotton ito over same ray-skin",
+      "burnished hamon line of tempered steel visible on blade"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "revolver",
+    "label": "Revolver",
+    "category": "weapon",
+    "applies_to": ["western", "classic-western", "spaghetti-western", "weird-west", "apocalypse-west", "noir"],
+    "prompt_fragments": [
+      "single-action six-shooter, blued-steel barrel and frame",
+      "walnut grip panels, worn smooth at contact points",
+      "visible cylinder with loaded-cartridge brass bases",
+      "ejector rod housing on right side, front blade sight"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "laser-pistol",
+    "label": "Laser Pistol",
+    "category": "weapon",
+    "applies_to": ["scifi", "space-opera", "hard-scifi", "military", "post-human"],
+    "prompt_fragments": [
+      "compact energy sidearm, matte carbon-fibre body",
+      "emitter lens of polished synthetic crystal at muzzle",
+      "ergonomic grip of rubberised polymer, thumb safety tab",
+      "charge indicator strip along slide, deep blue gradient"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "plasma-rifle",
+    "label": "Plasma Rifle",
+    "category": "weapon",
+    "applies_to": ["scifi", "military", "space-opera", "hard-scifi"],
+    "prompt_fragments": [
+      "long-barrelled energy rifle, matte titanium-alloy receiver",
+      "plasma containment coils visible along barrel, glowing amber",
+      "modular Picatinny-style rail, reinforced polymer foregrip",
+      "cooling vents etched along barrel body, machined-sharp edges"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "raygun",
+    "label": "Ray Gun",
+    "category": "weapon",
+    "applies_to": ["pulp-scifi", "atompunk", "science-fantasy", "sword-and-planet"],
+    "prompt_fragments": [
+      "bulbous chrome pistol body, polished to mirror finish",
+      "flared barrel with concentric ring detailing",
+      "Bakelite grip in candy red, fin-shaped trigger guard",
+      "vacuum-tube power cell in transparent housing at grip base"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "flintlock-musket",
+    "label": "Flintlock Musket",
+    "category": "weapon",
+    "applies_to": ["age-of-sail", "historical"],
+    "prompt_fragments": [
+      "long smoothbore barrel of blued steel, octagonal breech section",
+      "full-length walnut stock, brass furniture at butt and trigger guard",
+      "flintlock mechanism, cock and frizzen of case-hardened iron",
+      "ramrod of turned wood slotted beneath the barrel"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "tommy-gun",
+    "label": "Tommy Gun",
+    "category": "weapon",
+    "applies_to": ["wwii", "noir", "modern"],
+    "prompt_fragments": [
+      "Thompson submachine gun, blued-steel receiver and barrel",
+      "drum magazine of blued metal, circular, capacity-marked",
+      "walnut pistol grip and horizontal foregrip, oil-darkened",
+      "compensator at muzzle, Cutts-style ports machined in line"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "crossbow",
+    "label": "Crossbow",
+    "category": "weapon",
+    "applies_to": ["fantasy", "medieval", "dark-fantasy", "low-fantasy", "historical"],
+    "prompt_fragments": [
+      "heavy prod of yew wood, recurved and set in iron-shod tiller",
+      "windlass spanning mechanism of rope and iron pulleys",
+      "quarrel bolt nocked in groove, iron broadhead tip",
+      "stock of carved oak, trigger lever of wrought iron"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "war-spear",
+    "label": "War Spear",
+    "category": "weapon",
+    "applies_to": ["ancient", "viking", "historical", "fantasy"],
+    "prompt_fragments": [
+      "leaf-shaped iron spearhead, tapering socket, surface-pitted",
+      "long ashwood shaft, smooth-worn where hands grip",
+      "butt ferrule of iron at shaft base, blunt and ground flat",
+      "simple surface of functional iron, no ornament"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "wuxia-jian",
+    "label": "Wuxia Jian",
+    "category": "weapon",
+    "applies_to": ["wuxia", "historical"],
+    "prompt_fragments": [
+      "straight double-edged jian blade, narrow diamond cross-section",
+      "guard of cast bronze, ruyi cloud-motif lugs",
+      "hilt wrapped in red silk cord over lacquered wood",
+      "pommel of carved jade, spherical with incised dragon"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "scrap-shotgun",
+    "label": "Scrap Shotgun",
+    "category": "weapon",
+    "applies_to": ["apocalypse-west", "gamma-world", "weird-west"],
+    "prompt_fragments": [
+      "sawn-off double barrel of rust-pitted blued steel",
+      "stock replaced with duct-tape-wrapped pipe section",
+      "wire-wrapped breach, improvised shell ejector of bent metal",
+      "exposed-head screws and jubilee clamps visible on assembly"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "knight-helm",
+    "label": "Knight's Helm",
+    "category": "armor",
+    "applies_to": ["medieval", "fantasy", "high-fantasy", "historical"],
+    "prompt_fragments": [
+      "full-face great helm, polished steel with subtle hammered facets",
+      "visor of hinged iron bars, vision slit narrow and horizontal",
+      "crest socket at crown, empty, surface-gilt at edges",
+      "mail aventail of riveted iron rings at cheek and neck"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "power-armor-helm",
+    "label": "Power Armor Helmet",
+    "category": "armor",
+    "applies_to": ["scifi", "military", "space-opera", "hard-scifi"],
+    "prompt_fragments": [
+      "full-seal tactical helmet, carbon-composite shell, matte black",
+      "visor of polarised smart-glass, amber tint, curved wrap-around",
+      "side-mounted sensor pod, miniaturised, flush-mounted",
+      "collar seal of reinforced polymer, ribbed pressure gasket"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "samurai-kabuto",
+    "label": "Samurai Kabuto",
+    "category": "armor",
+    "applies_to": ["samurai", "historical"],
+    "prompt_fragments": [
+      "multi-plate suji-bachi kabuto, lacquer-black iron scales",
+      "shikoro neck guard of layered lacing in white and gold",
+      "kuwagata horn mounts of gilded iron, swept forward",
+      "mabizashi peak of burnished iron, surface incised with waves"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "gas-mask",
+    "label": "Gas Mask",
+    "category": "armor",
+    "applies_to": ["wwi", "wwii", "dieselpunk", "dark-fantasy"],
+    "prompt_fragments": [
+      "rubberised canvas face mask, aged khaki-grey, surface cracked",
+      "twin circular eyepiece lenses of yellowed glass, metal frames",
+      "canister filter of pressed tin at snout, threaded connection",
+      "adjustable canvas straps, metal buckles oxidised to flat grey"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "viking-shield",
+    "label": "Viking Shield",
+    "category": "armor",
+    "applies_to": ["viking", "historical"],
+    "prompt_fragments": [
+      "round shield of planked pine, hide-covered face, battle-worn",
+      "central iron boss, domed, surface-pitted with use",
+      "iron rim binding over rawhide edge, rivet-spaced",
+      "knotwork painted in woad blue and rust red, partially flaked"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "relic-idol",
+    "label": "Relic Idol",
+    "category": "artifact",
+    "applies_to": ["fantasy", "historical", "ancient", "folk-horror"],
+    "prompt_fragments": [
+      "carved stone figurine, dense basalt, heavily smoothed by age",
+      "stylised humanoid form, exaggerated proportions, no facial detail",
+      "surface inlaid with hammered gold leaf in geometric patterns",
+      "pedestal of worn sandstone, inscription worn to illegibility"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "ancient-grimoire",
+    "label": "Ancient Grimoire",
+    "category": "artifact",
+    "applies_to": ["fantasy", "horror", "gothic-horror", "dark-fantasy", "high-fantasy"],
+    "prompt_fragments": [
+      "thick tome, boards of aged leather over wood, iron clasp",
+      "pages of vellum, edges browned and warped with age",
+      "cover embossed with occult sigil, deep relief, gilded trace",
+      "spine wrapped with cord binding, frayed and stained"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "holocron-cube",
+    "label": "Holocron Cube",
+    "category": "artifact",
+    "applies_to": ["scifi", "science-fantasy", "space-opera"],
+    "prompt_fragments": [
+      "geometric cube of translucent smart-glass, palm-sized",
+      "interior lattice of micro-circuitry, glowing blue-white",
+      "facets bevelled to precise machine-cut angles, seamless",
+      "data-stream silver casing with recessed activation rune array"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "cursed-amulet",
+    "label": "Cursed Amulet",
+    "category": "artifact",
+    "applies_to": ["horror", "dark-fantasy", "gothic-horror", "weird-west"],
+    "prompt_fragments": [
+      "oval pendant of tarnished silver, surface pitted and discoloured",
+      "central stone of deep viridian, clouded, light does not reflect cleanly",
+      "engraved border of interlocking skulls, worn shallow by age",
+      "suspension loop cracked and re-soldered, crude repair visible"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "qi-talisman",
+    "label": "Qi Talisman",
+    "category": "artifact",
+    "applies_to": ["wuxia", "fantasy"],
+    "prompt_fragments": [
+      "folded yellow paper talisman, hand-brushed calligraphy in vermillion",
+      "ink strokes bold and precise, brush-tip flicks preserved in dried ink",
+      "folded once across centre, creased sharp and flat",
+      "small iron hole-punch at corner, red silk cord loop"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "eldritch-totem",
+    "label": "Eldritch Totem",
+    "category": "artifact",
+    "applies_to": ["cosmic-horror", "folk-horror", "horror"],
+    "prompt_fragments": [
+      "assembled totem of bone, driftwood, and shell, crude cord binding",
+      "central figure of no recognisable species, geometry slightly wrong",
+      "surface staining of dark residue, surface iridescent in patches",
+      "hanging strands of knotted sinew, uneven lengths, asymmetric"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "reliquary-cross",
+    "label": "Reliquary Cross",
+    "category": "artifact",
+    "applies_to": ["gothic-horror", "medieval", "historical"],
+    "prompt_fragments": [
+      "processional cross of gilded copper, patinated at joints",
+      "central cavity sealed behind rock-crystal cabochon, cracked",
+      "niello-inlaid vine scroll border on each arm face",
+      "socket shaft of iron, surface rusted where gilding is lost"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "power-crystal",
+    "label": "Power Crystal",
+    "category": "artifact",
+    "applies_to": ["scifi", "science-fantasy", "sword-and-planet", "space-opera"],
+    "prompt_fragments": [
+      "faceted hexagonal crystal, dense synthetic mineral, fist-sized",
+      "interior lit by pulsing energy core, cool cerulean glow",
+      "surface planes machine-polished, edges crisp and sharp",
+      "metal cradle mount of burnished titanium, four-point grip"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "lantern",
+    "label": "Lantern",
+    "category": "tool",
+    "applies_to": ["*"],
+    "prompt_fragments": [
+      "four-paned lantern of iron frame and wavy period glass",
+      "handle bail of twisted iron, pivot-mounted at crown",
+      "oil font visible at base through lower glass pane",
+      "surface patina of rust-brown on iron, glass smoke-hazed"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "brass-compass",
+    "label": "Brass Compass",
+    "category": "tool",
+    "applies_to": ["age-of-sail", "steampunk", "historical", "modern"],
+    "prompt_fragments": [
+      "pocket compass, case of lathe-turned brass, hinged lid",
+      "compass rose printed on cream card, iron needle blued-tip",
+      "bezel ring of engraved degree marks, hairline index",
+      "lid interior engraved with maker's cartouche, ornate serif"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "alchemist-kit",
+    "label": "Alchemist's Kit",
+    "category": "tool",
+    "applies_to": ["fantasy", "steampunk", "gothic-horror"],
+    "prompt_fragments": [
+      "leather roll-case open to reveal glass vials in sewn loops",
+      "corked vials of coloured liquid, amber, green, and cobalt",
+      "small bronze mortar and pestle, stained interior",
+      "folded parchment label on each vial, inked in cramped script"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "cyberdeck",
+    "label": "Cyberdeck",
+    "category": "tool",
+    "applies_to": ["cyberpunk", "scifi"],
+    "prompt_fragments": [
+      "portable deck of cracked synth-leather over composite shell",
+      "flip-up display of scratched smart-glass, amber text overlay",
+      "exposed circuit ports along top edge, custom-coloured cable stubs",
+      "sticker-tagged housing, graffiti tags and corp-logo removal scars"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "surveyor-theodolite",
+    "label": "Surveyor's Theodolite",
+    "category": "tool",
+    "applies_to": ["steampunk", "modern", "historical"],
+    "prompt_fragments": [
+      "precision optical instrument, body of lacquered brass",
+      "telescope tube of polished brass, objective lens ringed in black",
+      "horizontal and vertical circles of engraved silver, vernier scales",
+      "tribrach base of cast iron, levelling screws at three points"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "medkit",
+    "label": "Field Medkit",
+    "category": "tool",
+    "applies_to": ["modern", "scifi", "military", "hard-scifi"],
+    "prompt_fragments": [
+      "rigid polymer case, MOLLE-compatible, olive-drab surface",
+      "red cross marking on lid, slightly peeling at corner",
+      "interior foam-cut for sealed vials, syringes, and trauma dressings",
+      "clasp of black nylon webbing, quick-release buckle"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "pickaxe",
+    "label": "Pickaxe",
+    "category": "tool",
+    "applies_to": ["*"],
+    "prompt_fragments": [
+      "miners pickaxe, forged iron head, point and adze ends",
+      "head surface scale-rough with use, edge corners bright",
+      "hickory haft, smooth-worn at grip, grain visible at handle end",
+      "shoulder wedge of iron, securing head, surface rusted"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "treasure-chest",
+    "label": "Treasure Chest",
+    "category": "container",
+    "applies_to": ["fantasy", "historical", "age-of-sail", "high-fantasy"],
+    "prompt_fragments": [
+      "domed-lid chest of studded oak, iron corner bands and hasp",
+      "padlock of heavy iron, keyhole visible, surface rusted",
+      "interior lined with faded red velvet, partially visible",
+      "coin and gem scatter at lid edge, gold and jewel tones"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "supply-crate",
+    "label": "Supply Crate",
+    "category": "container",
+    "applies_to": ["scifi", "modern", "military", "space-opera"],
+    "prompt_fragments": [
+      "injection-moulded polymer crate, gunmetal grey, stackable",
+      "stencilled unit and contents markings in white, slightly faded",
+      "twin butterfly latches of pressed steel, safety-orange tabs",
+      "recessed grip handles on short faces, reinforced with polymer"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "apothecary-jar",
+    "label": "Apothecary Jar",
+    "category": "container",
+    "applies_to": ["fantasy", "gothic-horror", "historical", "steampunk"],
+    "prompt_fragments": [
+      "wide-mouth glass jar, blown glass with slight green tint",
+      "cork stopper, yellowed with age, wax-sealed at join",
+      "handwritten paper label, ink browned, adhesive failed at corner",
+      "contents murky liquid with suspended specimen visible"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "ammo-box",
+    "label": "Ammo Box",
+    "category": "container",
+    "applies_to": ["wwii", "modern", "military", "apocalypse-west"],
+    "prompt_fragments": [
+      "pressed-steel ammunition box, olive-drab paint, stencilled calibre",
+      "lid of folded sheet steel, rubber gasket seal at join",
+      "wire bail handle, surface-rusted at pivot points",
+      "embossed NATO cross on lid face, paint partially chipped"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "barrel",
+    "label": "Barrel",
+    "category": "container",
+    "applies_to": ["*"],
+    "prompt_fragments": [
+      "cooperage barrel of staved oak, iron hoops at bilge and head",
+      "stave wood grain running vertical, slightly swelled at bilge",
+      "bung hole and wooden bung at stave face, iron ring around",
+      "surface aged and weathered, iron hoops rust-streaked"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "steamer-trunk",
+    "label": "Steamer Trunk",
+    "category": "container",
+    "applies_to": ["modern", "historical", "steampunk", "age-of-sail"],
+    "prompt_fragments": [
+      "flat-top trunk of canvas-covered wood, slat-reinforced",
+      "brass corner fittings and tray latches, tarnished",
+      "travel stickers layered on lid, faded and overlapping",
+      "tray interior of faded velvet, interior fittings of tarnished brass"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "ornate-throne",
+    "label": "Ornate Throne",
+    "category": "furniture",
+    "applies_to": ["fantasy", "historical", "high-fantasy", "ancient", "medieval"],
+    "prompt_fragments": [
+      "high-backed throne of carved oak, gilded relief on crest rail",
+      "seat cushion of deep crimson velvet, worn at front edge",
+      "armrests carved as lion heads, open-mouthed, gilt-traced",
+      "tapered legs on ball-and-claw feet, each surface-gilded"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "gothic-mirror",
+    "label": "Gothic Mirror",
+    "category": "furniture",
+    "applies_to": ["gothic-horror", "horror", "dark-fantasy"],
+    "prompt_fragments": [
+      "tall pier glass in tarnished silver frame, tracery spires at crown",
+      "mirror surface foxed with age, dark patches at corners",
+      "frame of cast iron lacquered black over silver leaf, worn through",
+      "base plinth of ebonised wood, carved with skulls, surface dusty"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "control-console",
+    "label": "Control Console",
+    "category": "furniture",
+    "applies_to": ["scifi", "space-opera", "cyberpunk", "hard-scifi", "military"],
+    "prompt_fragments": [
+      "curved console of matte composite, recessed display array",
+      "holographic panel projection above console surface, data readout",
+      "backlit keyboard of sculpted polymer, alpha-numeric legends",
+      "cable management channels at rear, bundled conduits visible"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "saloon-piano",
+    "label": "Saloon Piano",
+    "category": "furniture",
+    "applies_to": ["western", "classic-western", "spaghetti-western", "weird-west"],
+    "prompt_fragments": [
+      "upright piano, case of weathered walnut veneer, panels warped",
+      "ivory keys yellowed and chipped at edges, several dropped",
+      "brass candle holders at music desk, tarnished and wax-dripped",
+      "front panel open revealing hammers of felt, stained"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "war-table",
+    "label": "War Table",
+    "category": "furniture",
+    "applies_to": ["medieval", "military", "historical", "fantasy"],
+    "prompt_fragments": [
+      "heavy oak trestle table, surface scarred and ink-stained",
+      "spread parchment map pinned at corners with iron tacks",
+      "carved wooden campaign markers scattered at battle-line",
+      "candle stubs in iron holders at table corners, wax-pooled"
+    ],
+    "view": "three-quarter",
+    "aspect": "4:3",
+    "ext": {}
+  },
+  {
+    "id": "war-drum",
+    "label": "War Drum",
+    "category": "instrument",
+    "applies_to": ["ancient", "historical", "fantasy", "viking"],
+    "prompt_fragments": [
+      "barrel drum of carved oak, rawhide head laced with twisted cord",
+      "iron rim band at each end, surface pitted and weathered",
+      "painted geometric motif on head face, colours faded",
+      "rope tension loops knotted in V-pattern along body"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "lute",
+    "label": "Lute",
+    "category": "instrument",
+    "applies_to": ["fantasy", "medieval", "historical", "fairytale"],
+    "prompt_fragments": [
+      "eleven-string lute, bowl-back of ribbed maple, deep warm brown",
+      "spruce soundboard with carved rose soundhole, delicate fretwork",
+      "peg box bent nearly perpendicular, tuning pegs of fruitwood",
+      "gut strings aged to cream, bridge of ebonised wood, low profile"
+    ],
+    "view": "three-quarter",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "ritual-gong",
+    "label": "Ritual Gong",
+    "category": "instrument",
+    "applies_to": ["wuxia", "historical", "ancient"],
+    "prompt_fragments": [
+      "suspended boss gong of hammered bronze, patinated green-brown",
+      "frame of lacquered red wood, cross-beam carved with cloud motif",
+      "silk tassels of gold and black at frame corners, age-frayed",
+      "padded mallet of wrapped leather, resting on frame hook"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "battle-standard",
+    "label": "Battle Standard",
+    "category": "banner",
+    "applies_to": ["fantasy", "historical", "medieval", "high-fantasy", "ancient"],
+    "prompt_fragments": [
+      "square banner of heavy wool, faded crimson field",
+      "charge of golden lion rampant, couched in black outline",
+      "pole of ashwood, iron point finial at top, butt iron-shod",
+      "fabric edge frayed from campaign, several tears partially mended"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "regimental-colors",
+    "label": "Regimental Colors",
+    "category": "banner",
+    "applies_to": ["wwi", "wwii", "military", "historical"],
+    "prompt_fragments": [
+      "silk colour, royal blue field with unit battle-honours inscribed",
+      "gold fringe at fly edge, frayed at lower corner from service",
+      "painted central wreath of laurel, faded and cracked",
+      "pike staff of turned wood, crowned finial of gilt metal"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  },
+  {
+    "id": "clan-sigil-banner",
+    "label": "Clan Sigil Banner",
+    "category": "banner",
+    "applies_to": ["wuxia", "samurai", "historical", "fantasy"],
+    "prompt_fragments": [
+      "tall sashimono banner of undyed white silk, ink-brushed mon",
+      "mon design of stylised crane, black brushwork, single bold stroke",
+      "crossbar of lacquered bamboo at top, silk tied at four points",
+      "vertical pole of lacquered black wood, tapered to copper point"
+    ],
+    "view": "front",
+    "aspect": "1:1",
+    "ext": {}
+  }
+]
