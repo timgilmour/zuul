@@ -4,7 +4,7 @@
  * generate-image - Image Generation CLI
  *
  * Generate images using Nano Banana 2 or Nano Banana Pro (Google Gemini).
- * Supports Google Gemini API (direct), Vertex AI, and OpenRouter as providers.
+ * Supports Google Gemini API (direct), Vertex AI, OpenRouter, and ComfyUI (local) as providers.
  * Follows llcli pattern for deterministic, composable CLI design.
  *
  * Usage:
@@ -14,6 +14,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { writeFile, readFile } from "node:fs/promises";
 import { extname, resolve } from "node:path";
+import { ComfyUIClient, generateWithComfyUI, comfySizeToDimensions, ComfyUIError, type ComfyWorkflow } from "./comfyui";
 
 // ============================================================================
 // Environment Loading
@@ -64,7 +65,7 @@ async function loadEnvFile(envPath: string): Promise<void> {
 // ============================================================================
 
 type Model = "nano-banana-pro" | "nano-banana-2";
-type Provider = "google" | "vertex" | "openrouter";
+type Provider = "google" | "vertex" | "openrouter" | "comfyui";
 type AspectRatio = "1:1" | "1:4" | "1:8" | "2:3" | "3:2" | "3:4" | "4:1" | "4:3" | "4:5" | "5:4" | "8:1" | "9:16" | "16:9" | "21:9";
 type GeminiSize = "512px" | "1K" | "2K" | "4K";
 type ThinkingLevel = "minimal" | "low" | "medium" | "high";
@@ -83,6 +84,11 @@ interface CLIArgs {
   thinking?: ThinkingLevel;
   grounded?: boolean;
   seed?: number;
+  comfyuiWorkflow?: string;    // path to an API-format workflow JSON
+  comfyuiCheckpoint?: string;  // checkpoint filename for built-in txt2img
+  sizeExplicit?: boolean;      // true when --size was passed (controls size injection)
+  listComfyuiWorkflows?: boolean;
+  listComfyuiModels?: boolean;
 }
 
 // ============================================================================
@@ -147,7 +153,7 @@ function showHelp(): void {
 generate-image - Image Generation CLI
 
 Generate images using Nano Banana 2 (default) or Nano Banana Pro.
-Supports Google Gemini API (direct), Vertex AI, and OpenRouter as providers.
+Supports Google Gemini API (direct), Vertex AI, OpenRouter, and ComfyUI (local) as providers.
 
 USAGE:
   generate-image --prompt "<prompt>" [OPTIONS]
@@ -157,7 +163,7 @@ REQUIRED:
 
 OPTIONS:
   --model <model>          Model: nano-banana-2 (default), nano-banana-pro
-  --provider <provider>    API provider: google, vertex, openrouter
+  --provider <provider>    API provider: google, vertex, openrouter, comfyui
                            Auto-detected from available API keys/credentials if not specified
   --size <size>            Resolution: 512px, 1K, 2K (default), 4K
                            512px is Nano Banana 2 only
@@ -177,6 +183,9 @@ OPTIONS:
   --seed <n>               Random seed for best-effort deterministic output (non-negative integer)
                            Same seed + prompt + settings → nearly identical result each run
                            Not available with --thinking or OpenRouter provider
+  --comfyui-workflow <path>  Run an API-format ComfyUI workflow file (provider comfyui)
+  --comfyui-checkpoint <name> Checkpoint for built-in txt2img (provider comfyui)
+  --list-comfyui-models      List ComfyUI checkpoints and exit
   --help, -h               Show this help message
 
 EXAMPLES:
@@ -216,6 +225,7 @@ ENVIRONMENT VARIABLES:
   GOOGLE_CLOUD_LOCATION    Optional for full Vertex AI (default: us-central1)
   OPENROUTER_KEY           Required for OpenRouter provider
   REMOVEBG_API_KEY         Required for --remove-bg flag
+  COMFYUI_HOST / COMFYUI_PORT (or COMFYUI_URL)  ComfyUI backend
 
 VERTEX AI MODES:
   Express Mode (recommended): Set GOOGLE_API_KEY_VERTEX with a Vertex Express key.
@@ -228,6 +238,7 @@ PROVIDER AUTO-DETECTION:
   1. GOOGLE_API_KEY found → uses Google provider (Gemini API)
   2. GOOGLE_API_KEY_VERTEX or GOOGLE_CLOUD_PROJECT found → uses Vertex AI
   3. OPENROUTER_KEY found → uses OpenRouter provider
+  4. COMFYUI_URL or COMFYUI_HOST found → uses ComfyUI (local)
 
 ERROR CODES:
   0  Success
@@ -282,6 +293,8 @@ function parseArgs(argv: string[]): CLIArgs {
       parsed.grounded = true;
       continue;
     }
+    if (key === "list-comfyui-workflows") { parsed.listComfyuiWorkflows = true; continue; }
+    if (key === "list-comfyui-models") { parsed.listComfyuiModels = true; continue; }
 
     // Handle flags with values
     const value = args[i + 1];
@@ -298,8 +311,8 @@ function parseArgs(argv: string[]): CLIArgs {
         i++;
         break;
       case "provider":
-        if (value !== "google" && value !== "vertex" && value !== "openrouter") {
-          throw new CLIError(`Invalid provider: ${value}. Must be: google, vertex, or openrouter`);
+        if (value !== "google" && value !== "vertex" && value !== "openrouter" && value !== "comfyui") {
+          throw new CLIError(`Invalid provider: ${value}. Must be: google, vertex, openrouter, or comfyui`);
         }
         parsed.provider = value as Provider;
         i++;
@@ -313,6 +326,7 @@ function parseArgs(argv: string[]): CLIArgs {
           throw new CLIError(`Invalid size: ${value}. Must be: ${GEMINI_SIZES.join(", ")}`);
         }
         parsed.size = value as GeminiSize;
+        parsed.sizeExplicit = true;
         i++;
         break;
       case "aspect-ratio":
@@ -330,6 +344,8 @@ function parseArgs(argv: string[]): CLIArgs {
         parsed.referenceImage = value;
         i++;
         break;
+      case "comfyui-workflow": parsed.comfyuiWorkflow = value; i++; break;
+      case "comfyui-checkpoint": parsed.comfyuiCheckpoint = value; i++; break;
       case "thinking":
         if (value !== "minimal" && value !== "low" && value !== "medium" && value !== "high") {
           throw new CLIError(`Invalid thinking level: ${value}. Must be: minimal, low, medium, high`);
@@ -359,7 +375,7 @@ function parseArgs(argv: string[]): CLIArgs {
   }
 
   // Validate required arguments
-  if (!parsed.prompt) {
+  if (!parsed.prompt && !parsed.listComfyuiWorkflows && !parsed.listComfyuiModels) {
     throw new CLIError("Missing required argument: --prompt");
   }
 
@@ -830,8 +846,26 @@ async function main(): Promise<void> {
       provider = "vertex";
     } else if (process.env.OPENROUTER_KEY) {
       provider = "openrouter";
+    } else if (process.env.COMFYUI_URL || process.env.COMFYUI_HOST) {
+      provider = "comfyui";
+    } else if (args.listComfyuiModels || args.listComfyuiWorkflows) {
+      // Discovery flags work without any provider credentials — default to comfyui
+      provider = "comfyui";
     } else {
       throw new CLIError("No API key found. Set GOOGLE_API_KEY, configure Vertex AI (GOOGLE_CLOUD_PROJECT), or set OPENROUTER_KEY in .env (project root) or ~/.claude/.env");
+    }
+
+    // Handle ComfyUI discovery flags (early exit — no prompt required)
+    if (args.listComfyuiModels || args.listComfyuiWorkflows) {
+      const client = ComfyUIClient.fromEnv();
+      if (args.listComfyuiModels) {
+        const cps = await client.listCheckpoints();
+        console.log("Checkpoints:\n" + (cps.length ? cps.map((c) => "  " + c).join("\n") : "  (none)"));
+      }
+      if (args.listComfyuiWorkflows) {
+        console.log("Saved-workflow listing: use the /zuul-comfy command (MCP list_workflows) — the CLI runs API-format workflow files via --comfyui-workflow <path>.");
+      }
+      return;
     }
 
     // Warn about provider-specific features when using OpenRouter
@@ -842,6 +876,13 @@ async function main(): Promise<void> {
       if (args.grounded) {
         console.warn("Warning: --grounded is not supported with OpenRouter provider, ignoring");
       }
+    }
+
+    // Guard comfyui-unsupported flags
+    if (provider === "comfyui") {
+      if (args.referenceImage) throw new CLIError("--reference-image is not yet supported with the comfyui provider");
+      if (args.transparent) throw new CLIError("--transparent is not supported with the comfyui provider (SD has no native alpha)");
+      if (args.thinking || args.grounded) console.warn("Warning: --thinking/--grounded are ignored by the comfyui provider");
     }
 
     // Enhance prompt for transparency if requested
@@ -862,7 +903,24 @@ async function main(): Promise<void> {
 
     const generate = async (prompt: string, output: string): Promise<string> => {
       let savedPath: string;
-      if (provider === "openrouter") {
+      if (provider === "comfyui") {
+        const { width, height } = comfySizeToDimensions(args.size, args.aspectRatio);
+        let workflow: ComfyWorkflow | undefined;
+        if (args.comfyuiWorkflow) {
+          try {
+            workflow = JSON.parse(await readFile(args.comfyuiWorkflow, "utf-8")) as ComfyWorkflow;
+          } catch (err) {
+            throw new CLIError(`Could not read ComfyUI workflow file "${args.comfyuiWorkflow}": ${err instanceof Error ? err.message : err}. It must be a valid API-format workflow JSON.`);
+          }
+        }
+        savedPath = await generateWithComfyUI({
+          client: ComfyUIClient.fromEnv(),
+          positive: prompt, width, height, seed: args.seed,
+          checkpoint: args.comfyuiCheckpoint, workflow,
+          applySize: !!args.sizeExplicit,
+          output, saveImage,
+        });
+      } else if (provider === "openrouter") {
         savedPath = await generateWithOpenRouter(args.model, prompt, args.size, args.aspectRatio, output, args.referenceImage);
       } else if (args.model === "nano-banana-pro") {
         savedPath = await generateWithNanoBananaPro(prompt, args.size, args.aspectRatio, output, args.referenceImage, geminiProvider, args.seed);

@@ -124,3 +124,11 @@ bun run <ZUUL>/tools/generate-image.ts \
 | `--transparent` | off | Often better than white BG for mesh tools that accept PNGA |
 | `--thinking high` | off | Add for complex multi-element compositions (nano-banana-2 only) |
 | `--seed` | none | Omit entirely if user cleared the seed |
+
+## Backends / providers
+
+The default providers are Google Gemini (`GOOGLE_API_KEY`), Vertex AI (`GOOGLE_API_KEY_VERTEX` / `GOOGLE_CLOUD_PROJECT`), and OpenRouter (`OPENROUTER_KEY`). Auto-detected from env — no `--provider` flag needed.
+
+**ComfyUI (optional local backend):** If `COMFYUI_HOST` or `COMFYUI_URL` is set, the CLI auto-detects a local ComfyUI server and routes to it. ComfyUI respects your saved workflows — zuul injects only the prompt, negative, and seed; the workflow stays authoritative for model, sampler, steps, and size (size overridden only when `--size` is passed explicitly). Use `--provider comfyui` to force it regardless of env.
+
+For the interactive/agentic path (workflow selection, checkpoint discovery, polling), use the `/zuul-comfy` command instead. See `core/comfyui-backend.md` for the full reference.
