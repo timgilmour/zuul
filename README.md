@@ -1,8 +1,8 @@
 # Zuul
 
-> There is no `/art`. There is only Zuul.
+> There is no `/art`. There is only `/zuul`.
 
-Clean, isolated concept-art renders of fictional subjects — characters, creatures, vehicles, mechs, props — tuned for single-image **image-to-3D** mesh generators (Meshy, Tripo, Hunyuan3D, Rodin) and cinematic pre-production. Zuul is the Gatekeeper to concept art.
+Clean, isolated concept-art renders of fictional subjects including characters, creatures, vehicles, mechs, and props. Styles and tuning for 2d output or single-image **image-to-3D** mesh generators (Meshy, Tripo, Hunyuan3D, Rodin) and cinematic pre-production. 
 
 ## What's here
 
