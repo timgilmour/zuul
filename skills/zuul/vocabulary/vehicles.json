@@ -119,5 +119,21 @@
     "view": "Side",
     "aspect": "16:9",
     "ext": {}
+  },
+  {
+    "id": "gothic-hearse-coach",
+    "label": "Gothic Funeral Hearse-Coach",
+    "applies_to": ["horror", "gothic-horror"],
+    "prompt_fragments": [
+      "matte black weathered-timber coachwork, slab-sided hearse body with cracked peeling finish",
+      "opaque dark glass casket-viewing panels along both sides",
+      "wrought-iron filigree cresting with funerary-urn finials along the roofline",
+      "tarnished-silver corner lanterns and a raised driver's box with worn leather seat",
+      "tall iron-shod spoked wheels with weathered timber spokes",
+      "empty harness shafts extending forward from the bow, deep-crimson moth-eaten velvet drapes behind the panels"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2",
+    "ext": {}
   }
 ]
