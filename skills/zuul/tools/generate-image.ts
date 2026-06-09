@@ -186,6 +186,7 @@ OPTIONS:
   --comfyui-workflow <path>  Run an API-format ComfyUI workflow file (provider comfyui)
   --comfyui-checkpoint <name> Checkpoint for built-in txt2img (provider comfyui)
   --list-comfyui-models      List ComfyUI checkpoints and exit
+  --list-comfyui-workflows   Show how to list saved workflows (use /zuul-comfy for full discovery)
   --help, -h               Show this help message
 
 EXAMPLES:
@@ -916,7 +917,7 @@ async function main(): Promise<void> {
         savedPath = await generateWithComfyUI({
           client: ComfyUIClient.fromEnv(),
           positive: prompt, width, height, seed: args.seed,
-          checkpoint: args.comfyuiCheckpoint, workflow,
+          checkpoint: args.comfyuiCheckpoint ?? process.env.COMFYUI_CHECKPOINT, workflow,
           applySize: !!args.sizeExplicit,
           output, saveImage,
         });

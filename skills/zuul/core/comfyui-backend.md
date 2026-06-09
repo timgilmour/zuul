@@ -29,8 +29,8 @@ zuul injects the **minimal** set into the workflow by default. The saved workflo
 
 | Target | How it is found | What is set |
 |--------|----------------|-------------|
-| Positive prompt node | `CLIPTextEncode` whose `_meta.title` contains `positive` (case-insensitive) | `inputs.text` |
-| Negative prompt node | `CLIPTextEncode` whose `_meta.title` contains `negative` | `inputs.text` |
+| Positive prompt node | `CLIPTextEncode` whose `_meta.title` starts with `positive` (case-insensitive) | `inputs.text` |
+| Negative prompt node | `CLIPTextEncode` whose `_meta.title` starts with `negative` | `inputs.text` |
 | Seed | Every node with a numeric `seed` input (typically `KSampler`) | `inputs.seed` |
 
 ### Fallback: KSampler link tracing

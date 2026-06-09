@@ -42,8 +42,8 @@ Call `mcp__comfyui__get_workflow(filename, format="api")` to retrieve the select
 
 Inject zuul's assembled values into the workflow graph:
 
-- **Positive prompt node:** find the `CLIPTextEncode` node whose `_meta.title` contains `positive` (case-insensitive). Fallback: trace `KSampler.positive` to its source node. Set `inputs.text`.
-- **Negative prompt node:** same approach via `_meta.title` containing `negative` or `KSampler.negative`. Set `inputs.text`.
+- **Positive prompt node:** find the `CLIPTextEncode` node whose `_meta.title` starts with `positive` (case-insensitive). Fallback: trace `KSampler.positive` to its source node. Set `inputs.text`.
+- **Negative prompt node:** same approach via `_meta.title` starting with `negative` or `KSampler.negative`. Set `inputs.text`.
 - **Seed:** set `inputs.seed` on every node that has a numeric `seed` field (typically the `KSampler`).
 - **Size:** inject `width`/`height` into `EmptyLatentImage` nodes **only** if the user explicitly requested a size override. Otherwise leave the workflow's size intact — the workflow is authoritative.
 
@@ -53,13 +53,13 @@ Do not alter any other inputs. For complex graphs (SDXL dual-CLIP, refiner chain
 
 Call `mcp__comfyui__enqueue_workflow` with the modified workflow.
 
-Poll `mcp__comfyui__get_job_status` at ~3-second intervals until the job status is `completed` or `error`. Do not rely on push notifications — the completion hook is not installed.
+Poll `mcp__comfyui__get_job_status` at ~3-second intervals. The tool returns a JSON object with boolean fields `running`, `pending`, and `done` (plus optional `status_str` and `error`). Continue polling until `done` is `true` (success) or `error` is non-null/present (failure). Do not rely on push notifications — the completion hook is not installed.
 
-If the job errors, surface the error message and stop.
+If the job errors, surface the `error` field and stop.
 
 ### 7. Retrieve and record
 
-Get the output filename from the job status or `mcp__comfyui__get_history`.
+Call `mcp__comfyui__get_history` with the `prompt_id` to retrieve the output image filenames.
 
 **Copy the file from the Windows output mount:**
 
