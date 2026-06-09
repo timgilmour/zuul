@@ -4,8 +4,6 @@
 
 Clean, isolated concept-art renders of fictional subjects — characters, creatures, vehicles, mechs, props — tuned for single-image **image-to-3D** mesh generators (Meshy, Tripo, Hunyuan3D, Rodin) and cinematic pre-production. Zuul is the Gatekeeper to concept art.
 
-This is the distributable build of the [gatekeeper](https://github.com/timgilmour/gatekeeper) project.
-
 ## What's here
 
 ```
@@ -25,7 +23,7 @@ zuul/
 /plugin install zuul@zuul
 ```
 
-### As bare commands (`/zuul`, gstack-style)
+### As bare commands (`/zuul`)
 
 ```bash
 git clone git@github.com:timgilmour/zuul.git && cd zuul
