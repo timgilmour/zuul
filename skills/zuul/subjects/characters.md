@@ -27,7 +27,7 @@ These species have entries in `vocabulary/species.json`:
 #### Creating a new species (the pool grows as you use it)
 
 If the user wants a species not in the pool, **create it** — same flow as roles:
-1. **Draft** the entry: `id`, `taxonomy: "species"`, `label`, `default_size`, `body_plan` (`biped` | `quadruped` | `winged` | `floating` — drives pose filtering), `visual` (skin / features / build / palette), `traits`, `prompt_fragments` (2–5 concrete phrases), `applies_to` (genre/sub-genre ids or `"*"`), `ext: {}`.
+1. **Draft** the entry: `id`, `taxonomy: "species"`, `label`, `default_size`, `body_plan` (`biped` | `quadruped` | `winged` | `floating` — drives pose filtering), `visual` (skin / features / build / palette), `traits`, `prompt_fragments` (2–5 concrete phrases), `applies_to` (genre/sub-genre ids or `"*"`).
 2. **Confirm** the full drafted JSON with the user.
 3. **Append** it to `vocabulary/species.json` — no duplicate `id`.
 4. **Validate**: `bun run tools/validate-vocab.mjs` → `OK`.

@@ -23,7 +23,7 @@ Styles live in the tagged pool **`vocabulary/styles.json`**. Each entry's `promp
 
 Same draft → confirm → append → validate → use flow as the other pools:
 
-1. **Draft** the object: `id` (kebab), `taxonomy: "style"`, `label`, `description`, `mesh_safe` (true **only** if it keeps flat light / white bg / matte / orthographic / isolated), `uses_framing` (true if the `prompt` contains a `<FRAMING>` slot), `prompt` (the full core prompt), `source: "hand-authored"`, `ext: {}`. Do **not** set `default` — there is exactly one default.
+1. **Draft** the object: `id` (kebab), `taxonomy: "style"`, `label`, `description`, `mesh_safe` (true **only** if it keeps flat light / white bg / matte / orthographic / isolated), `uses_framing` (true if the `prompt` contains a `<FRAMING>` slot), `prompt` (the full core prompt), `source: "hand-authored"`. Do **not** set `default` — there is exactly one default.
 2. **Confirm** the full JSON with the user.
 3. **Append** to `vocabulary/styles.json` — no duplicate `id`.
 4. **Validate**: `bun run tools/validate-vocab.mjs` → `OK`.

@@ -21,8 +21,7 @@ Each pose is an object:
   "default": true,                 // optional — the default pick for its body plan
   "expression": "...",             // optional — observed poses only
   "use": "mesh-gen",               // mesh-gen | action | beauty | idle | dramatic
-  "source": "hand-curated",        // or the ingested image filename
-  "ext": {}
+  "source": "hand-curated"         // or the ingested image filename
 }
 ```
 
@@ -54,7 +53,7 @@ Two paths — both end with a validated object appended to `vocabulary/poses.jso
 **A. From text** (no image needed):
 1. **Draft** the object: `id` (verb-first kebab — `guard-stance`, `casting-spell`),
    `label`, `category`, `mesh_safe`, `applies_to` (body plans), `phrase`, `aspect`,
-   optional `expression`/`use`, `source` (`"hand-authored"`), `ext: {}`.
+   optional `expression`/`use`, `source` (`"hand-authored"`).
 2. **Confirm** the full drafted JSON with the user before writing.
 3. **Append** it to `vocabulary/poses.json` — no duplicate `id`.
 4. **Validate**: `bun run tools/validate-vocab.mjs` → `OK`.

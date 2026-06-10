@@ -69,8 +69,7 @@ Emit a pose **object** to append to the `vocabulary/poses.json` pool (confirm wi
   "expression": "<face/attitude>",
   "aspect": "<ratio>",
   "use": "action / beauty / idle / dramatic",
-  "source": "<image filename>",
-  "ext": {}
+  "source": "<image filename>"
 }
 ```
 
@@ -87,8 +86,7 @@ Emit a pose **object** to append to the `vocabulary/poses.json` pool (confirm wi
   "expression": "screaming, enraged, furious",
   "aspect": "2:3",
   "use": "action / dramatic",
-  "source": "orc-ref.png",
-  "ext": {}
+  "source": "orc-ref.png"
 }
 ```
 
