@@ -4,278 +4,789 @@
     "taxonomy": "descriptor",
     "category": "size",
     "label": "Tiny",
-    "visual": { "scale": "under 2 feet", "build_note": "sprite-scale, easily overlooked" },
-    "traits": ["easily-overlooked", "nimble", "fragile"],
-    "prompt_fragments": ["tiny sprite-scale figure", "easily overlooked stature"]
+    "visual": {
+      "scale": "under 2 feet",
+      "build_note": "sprite-scale, easily overlooked"
+    },
+    "traits": [
+      "easily-overlooked",
+      "nimble",
+      "fragile"
+    ],
+    "prompt_fragments": [
+      "tiny sprite-scale figure",
+      "easily overlooked stature"
+    ]
   },
   {
     "id": "small",
     "taxonomy": "descriptor",
     "category": "size",
     "label": "Small",
-    "visual": { "scale": "2–4 feet", "build_note": "child-height to halfling-height" },
-    "traits": ["nimble", "lower-reach", "underestimated"],
-    "prompt_fragments": ["small stature", "below average height"]
+    "visual": {
+      "scale": "2\u20134 feet",
+      "build_note": "child-height to halfling-height"
+    },
+    "traits": [
+      "nimble",
+      "lower-reach",
+      "underestimated"
+    ],
+    "prompt_fragments": [
+      "small stature",
+      "below average height"
+    ]
   },
   {
     "id": "medium",
     "taxonomy": "descriptor",
     "category": "size",
     "label": "Medium",
-    "visual": { "scale": "5–6 feet", "build_note": "standard humanoid" },
-    "traits": ["standard", "versatile"],
-    "prompt_fragments": ["average humanoid height"]
+    "visual": {
+      "scale": "5\u20136 feet",
+      "build_note": "standard humanoid"
+    },
+    "traits": [
+      "standard",
+      "versatile"
+    ],
+    "prompt_fragments": [
+      "average humanoid height"
+    ]
   },
   {
     "id": "large",
     "taxonomy": "descriptor",
     "category": "size",
     "label": "Large",
-    "visual": { "scale": "7–10 feet", "build_note": "head and shoulders above others, fills a doorway" },
-    "traits": ["imposing", "strong", "slower", "hard-to-hide"],
-    "prompt_fragments": ["towering large build", "head and shoulders above average height", "fills the frame"]
+    "visual": {
+      "scale": "7\u201310 feet",
+      "build_note": "head and shoulders above others, fills a doorway"
+    },
+    "traits": [
+      "imposing",
+      "strong",
+      "slower",
+      "hard-to-hide"
+    ],
+    "prompt_fragments": [
+      "towering large build",
+      "head and shoulders above average height",
+      "fills the frame"
+    ]
   },
   {
     "id": "massive",
     "taxonomy": "descriptor",
     "category": "size",
     "label": "Massive",
-    "visual": { "scale": "10–20 feet", "build_note": "giant-scale, architecture is a reference point" },
-    "traits": ["giant", "devastating", "terrain-altering"],
-    "prompt_fragments": ["massive giant-scale figure", "dwarfs surrounding objects"]
+    "visual": {
+      "scale": "10\u201320 feet",
+      "build_note": "giant-scale, architecture is a reference point"
+    },
+    "traits": [
+      "giant",
+      "devastating",
+      "terrain-altering"
+    ],
+    "prompt_fragments": [
+      "massive giant-scale figure",
+      "dwarfs surrounding objects"
+    ]
   },
   {
     "id": "colossal",
     "taxonomy": "descriptor",
     "category": "size",
     "label": "Colossal",
-    "visual": { "scale": "20+ feet", "build_note": "kaiju-scale, buildings are furniture" },
-    "traits": ["kaiju-scale", "world-threat", "geological-impact"],
-    "prompt_fragments": ["colossal kaiju-scale figure", "buildings visible for scale"]
+    "visual": {
+      "scale": "20+ feet",
+      "build_note": "kaiju-scale, buildings are furniture"
+    },
+    "traits": [
+      "kaiju-scale",
+      "world-threat",
+      "geological-impact"
+    ],
+    "prompt_fragments": [
+      "colossal kaiju-scale figure",
+      "buildings visible for scale"
+    ]
   },
   {
     "id": "young",
     "taxonomy": "descriptor",
     "category": "age",
     "label": "Young",
-    "visual": { "note": "unlined face, lean, still growing into gear" },
-    "traits": ["inexperienced", "fast", "idealistic", "potential-unrealised"],
-    "prompt_fragments": ["young unlined face", "lean youthful build", "still growing into their gear"]
+    "visual": {
+      "note": "unlined face, lean, still growing into gear"
+    },
+    "traits": [
+      "inexperienced",
+      "fast",
+      "idealistic",
+      "potential-unrealised"
+    ],
+    "prompt_fragments": [
+      "young unlined face",
+      "lean youthful build",
+      "still growing into their gear"
+    ]
   },
   {
     "id": "adult",
     "taxonomy": "descriptor",
     "category": "age",
     "label": "Adult",
-    "visual": { "note": "prime physical condition, fully equipped" },
-    "traits": ["competent", "experienced", "prime"],
-    "prompt_fragments": ["adult in their prime"]
+    "visual": {
+      "note": "prime physical condition, fully equipped"
+    },
+    "traits": [
+      "competent",
+      "experienced",
+      "prime"
+    ],
+    "prompt_fragments": [
+      "adult in their prime"
+    ]
   },
   {
     "id": "elder",
     "taxonomy": "descriptor",
     "category": "age",
     "label": "Elder",
-    "visual": { "note": "grey or white hair, weathered skin, scars of age, slower but deliberate" },
-    "traits": ["veteran", "wise", "slowing", "respected"],
-    "prompt_fragments": ["elder weathered face", "grey or white hair", "scars of a long life", "deliberate movement"]
+    "visual": {
+      "note": "grey or white hair, weathered skin, scars of age, slower but deliberate"
+    },
+    "traits": [
+      "veteran",
+      "wise",
+      "slowing",
+      "respected"
+    ],
+    "prompt_fragments": [
+      "elder weathered face",
+      "grey or white hair",
+      "scars of a long life",
+      "deliberate movement"
+    ]
   },
   {
     "id": "ancient",
     "taxonomy": "descriptor",
     "category": "age",
     "label": "Ancient",
-    "visual": { "note": "ageless or visibly beyond normal lifespan — for non-humans this means power, for humans it means supernatural" },
-    "traits": ["beyond-normal-lifespan", "vast-experience", "detached", "power-accumulated"],
-    "prompt_fragments": ["ancient ageless quality", "face that has seen centuries", "beyond-normal-lifespan presence"]
+    "visual": {
+      "note": "ageless or visibly beyond normal lifespan \u2014 for non-humans this means power, for humans it means supernatural"
+    },
+    "traits": [
+      "beyond-normal-lifespan",
+      "vast-experience",
+      "detached",
+      "power-accumulated"
+    ],
+    "prompt_fragments": [
+      "ancient ageless quality",
+      "face that has seen centuries",
+      "beyond-normal-lifespan presence"
+    ]
   },
   {
     "id": "battle-worn",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Battle-worn",
-    "visual": { "note": "scarred, repaired equipment, no pristine surfaces" },
-    "traits": ["veteran", "survivor", "pragmatic", "trusted-gear"],
-    "prompt_fragments": ["battle-worn scarred equipment", "repaired dents and tears", "veteran's scars on face and hands"]
+    "visual": {
+      "note": "scarred, repaired equipment, no pristine surfaces"
+    },
+    "traits": [
+      "veteran",
+      "survivor",
+      "pragmatic",
+      "trusted-gear"
+    ],
+    "prompt_fragments": [
+      "battle-worn scarred equipment",
+      "repaired dents and tears",
+      "veteran's scars on face and hands"
+    ]
   },
   {
     "id": "pristine",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Pristine",
-    "visual": { "note": "perfect condition — either new, wealthy, or magically maintained" },
-    "traits": ["wealthy", "new", "magically-maintained", "untested-or-meticulous"],
-    "prompt_fragments": ["pristine immaculate equipment", "perfect condition", "no wear or damage"]
+    "visual": {
+      "note": "perfect condition \u2014 either new, wealthy, or magically maintained"
+    },
+    "traits": [
+      "wealthy",
+      "new",
+      "magically-maintained",
+      "untested-or-meticulous"
+    ],
+    "prompt_fragments": [
+      "pristine immaculate equipment",
+      "perfect condition",
+      "no wear or damage"
+    ]
   },
   {
     "id": "corrupted",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Corrupted",
-    "visual": { "note": "dark energy visible — veins, cracks leaking unnatural light, warped surfaces" },
-    "traits": ["dark-power", "transformed", "dangerous-to-self", "unstable"],
-    "prompt_fragments": ["corruption visible as dark veins", "cracks leaking unnatural light", "warped or blackened surfaces"]
+    "visual": {
+      "note": "dark energy visible \u2014 veins, cracks leaking unnatural light, warped surfaces"
+    },
+    "traits": [
+      "dark-power",
+      "transformed",
+      "dangerous-to-self",
+      "unstable"
+    ],
+    "prompt_fragments": [
+      "corruption visible as dark veins",
+      "cracks leaking unnatural light",
+      "warped or blackened surfaces"
+    ]
   },
   {
     "id": "elite",
     "taxonomy": "descriptor",
     "category": "tier",
     "label": "Elite",
-    "visual": { "note": "better gear than peers — customised, maintained, clearly superior kit" },
-    "traits": ["top-of-their-class", "hand-picked", "better-resourced"],
-    "prompt_fragments": ["elite customised gear", "clearly superior kit to peers", "top-tier equipment"]
+    "visual": {
+      "note": "better gear than peers \u2014 customised, maintained, clearly superior kit"
+    },
+    "traits": [
+      "top-of-their-class",
+      "hand-picked",
+      "better-resourced"
+    ],
+    "prompt_fragments": [
+      "elite customised gear",
+      "clearly superior kit to peers",
+      "top-tier equipment"
+    ]
   },
   {
     "id": "legendary",
     "taxonomy": "descriptor",
     "category": "tier",
     "label": "Legendary",
-    "visual": { "note": "gear or bearing that speaks of history — named items, unique artefacts, others recognise them on sight" },
-    "traits": ["storied", "named-artefacts", "widely-known", "history-defining"],
-    "prompt_fragments": ["legendary named artefacts", "gear with visible history", "unique iconic equipment"]
+    "visual": {
+      "note": "gear or bearing that speaks of history \u2014 named items, unique artefacts, others recognise them on sight"
+    },
+    "traits": [
+      "storied",
+      "named-artefacts",
+      "widely-known",
+      "history-defining"
+    ],
+    "prompt_fragments": [
+      "legendary named artefacts",
+      "gear with visible history",
+      "unique iconic equipment"
+    ]
   },
   {
     "id": "mythic",
     "taxonomy": "descriptor",
     "category": "tier",
     "label": "Mythic",
-    "visual": { "note": "beyond legendary — reality bends, power is visible as environmental distortion" },
-    "traits": ["reality-warping", "divine-or-demonic-tier", "world-historical"],
-    "prompt_fragments": ["mythic aura distorting surroundings", "power visible as environmental effect", "beyond-legendary presence"]
+    "visual": {
+      "note": "beyond legendary \u2014 reality bends, power is visible as environmental distortion"
+    },
+    "traits": [
+      "reality-warping",
+      "divine-or-demonic-tier",
+      "world-historical"
+    ],
+    "prompt_fragments": [
+      "mythic aura distorting surroundings",
+      "power visible as environmental effect",
+      "beyond-legendary presence"
+    ]
   },
   {
     "id": "winged",
     "taxonomy": "descriptor",
     "category": "physical",
     "label": "Winged",
-    "visual": { "note": "functional wings — feathered, membranous, or mechanical. Span is proportional to body size. Wings folded for A-pose renders." },
-    "traits": ["flight-capable", "aerial-advantage", "wingspan-is-presence"],
-    "prompt_fragments": ["large folded wings on back", "wingspan proportional to height"]
+    "visual": {
+      "note": "functional wings \u2014 feathered, membranous, or mechanical. Span is proportional to body size. Wings folded for A-pose renders."
+    },
+    "traits": [
+      "flight-capable",
+      "aerial-advantage",
+      "wingspan-is-presence"
+    ],
+    "prompt_fragments": [
+      "large folded wings on back",
+      "wingspan proportional to height"
+    ]
   },
   {
     "id": "four-armed",
     "taxonomy": "descriptor",
     "category": "physical",
     "label": "Four-Armed",
-    "visual": { "note": "two additional arms below or beside primary pair — for mesh gen, all four extended slightly outward to show separation" },
-    "traits": ["multi-weapon", "multi-task", "intimidating-silhouette"],
-    "prompt_fragments": ["four arms — upper and lower pair", "all four arms slightly extended to show clear separation", "multi-armed silhouette"]
+    "visual": {
+      "note": "two additional arms below or beside primary pair \u2014 for mesh gen, all four extended slightly outward to show separation"
+    },
+    "traits": [
+      "multi-weapon",
+      "multi-task",
+      "intimidating-silhouette"
+    ],
+    "prompt_fragments": [
+      "four arms \u2014 upper and lower pair",
+      "all four arms slightly extended to show clear separation",
+      "multi-armed silhouette"
+    ]
   },
   {
     "id": "scarred",
     "taxonomy": "descriptor",
     "category": "physical",
     "label": "Scarred",
-    "visual": { "note": "visible scarring — facial, body, or both. Character-defining. Can indicate burn scars, slash marks, ritual scarification." },
-    "traits": ["survived-something", "marked", "history-on-skin"],
-    "prompt_fragments": ["prominent scarring on face or body", "scars that tell a story", "character-defining marks from past battles"]
+    "visual": {
+      "note": "visible scarring \u2014 facial, body, or both. Character-defining. Can indicate burn scars, slash marks, ritual scarification."
+    },
+    "traits": [
+      "survived-something",
+      "marked",
+      "history-on-skin"
+    ],
+    "prompt_fragments": [
+      "prominent scarring on face or body",
+      "scars that tell a story",
+      "character-defining marks from past battles"
+    ]
   },
   {
     "id": "masked",
     "taxonomy": "descriptor",
     "category": "visual",
     "label": "Masked",
-    "visual": { "note": "face fully or partially concealed — half-mask, full mask, helmet with no face visible, or face wrap" },
-    "traits": ["identity-concealed", "theatrical", "anonymous-by-choice"],
-    "prompt_fragments": ["face concealed by mask or helm", "identity hidden"]
+    "visual": {
+      "note": "face fully or partially concealed \u2014 half-mask, full mask, helmet with no face visible, or face wrap"
+    },
+    "traits": [
+      "identity-concealed",
+      "theatrical",
+      "anonymous-by-choice"
+    ],
+    "prompt_fragments": [
+      "face concealed by mask or helm",
+      "identity hidden"
+    ]
   },
   {
     "id": "hooded",
     "taxonomy": "descriptor",
     "category": "visual",
     "label": "Hooded",
-    "visual": { "note": "hood up — face in shadow but not fully concealed" },
-    "traits": ["concealed", "traveller", "secretive"],
-    "prompt_fragments": ["hood drawn up, face partially in shadow"]
+    "visual": {
+      "note": "hood up \u2014 face in shadow but not fully concealed"
+    },
+    "traits": [
+      "concealed",
+      "traveller",
+      "secretive"
+    ],
+    "prompt_fragments": [
+      "hood drawn up, face partially in shadow"
+    ]
   },
   {
     "id": "feral",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Feral",
-    "visual": { "note": "untamed — torn clothing, wild hair, animalistic posture, nails grown to claws, civilisation abandoned" },
-    "traits": ["abandoned-civilisation", "animalistic", "unpredictable", "survival-mode"],
-    "prompt_fragments": ["feral untamed appearance", "torn clothing", "wild matted hair", "animalistic crouch and bearing"]
+    "visual": {
+      "note": "untamed \u2014 torn clothing, wild hair, animalistic posture, nails grown to claws, civilisation abandoned"
+    },
+    "traits": [
+      "abandoned-civilisation",
+      "animalistic",
+      "unpredictable",
+      "survival-mode"
+    ],
+    "prompt_fragments": [
+      "feral untamed appearance",
+      "torn clothing",
+      "wild matted hair",
+      "animalistic crouch and bearing"
+    ]
   },
   {
     "id": "spectral",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Spectral",
-    "visual": { "note": "partially transparent or ghostly — edges soft and wispy, cool blue-white glow, slightly translucent" },
-    "traits": ["undead-or-spirit", "partially-present", "phasing-possible", "cold-to-the-touch"],
-    "prompt_fragments": ["spectral semi-transparent form", "soft wispy edges", "cool blue-white glow", "ghostly presence"]
+    "visual": {
+      "note": "partially transparent or ghostly \u2014 edges soft and wispy, cool blue-white glow, slightly translucent"
+    },
+    "traits": [
+      "undead-or-spirit",
+      "partially-present",
+      "phasing-possible",
+      "cold-to-the-touch"
+    ],
+    "prompt_fragments": [
+      "spectral semi-transparent form",
+      "soft wispy edges",
+      "cool blue-white glow",
+      "ghostly presence"
+    ]
   },
   {
     "id": "blessed",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Blessed",
-    "visual": { "note": "divine light — warm golden radiance from within, halo or light-crown, skin luminous" },
-    "traits": ["divine-favour", "protected", "radiant", "chosen"],
-    "prompt_fragments": ["warm golden radiance from within", "faint halo or light crown", "luminous blessed skin"]
+    "visual": {
+      "note": "divine light \u2014 warm golden radiance from within, halo or light-crown, skin luminous"
+    },
+    "traits": [
+      "divine-favour",
+      "protected",
+      "radiant",
+      "chosen"
+    ],
+    "prompt_fragments": [
+      "warm golden radiance from within",
+      "faint halo or light crown",
+      "luminous blessed skin"
+    ]
   },
   {
     "id": "augmented",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Augmented",
-    "visual": { "note": "cybernetic or magical enhancement visible — implants, glowing runes etched into skin, mechanical replacement limbs" },
-    "traits": ["enhanced-beyond-baseline", "maintenance-dependent", "power-at-a-price"],
-    "prompt_fragments": ["visible augmentations — cybernetic implants or enhancement runes", "enhanced beyond baseline", "power-at-a-price aesthetic"]
+    "visual": {
+      "note": "cybernetic or magical enhancement visible \u2014 implants, glowing runes etched into skin, mechanical replacement limbs"
+    },
+    "traits": [
+      "enhanced-beyond-baseline",
+      "maintenance-dependent",
+      "power-at-a-price"
+    ],
+    "prompt_fragments": [
+      "visible augmentations \u2014 cybernetic implants or enhancement runes",
+      "enhanced beyond baseline",
+      "power-at-a-price aesthetic"
+    ]
   },
   {
     "id": "noble",
     "taxonomy": "descriptor",
     "category": "social",
     "label": "Noble",
-    "visual": { "note": "bearing and quality that communicates high birth or earned status — finer materials, insignia, posture of ownership" },
-    "traits": ["high-status", "accustomed-to-deference", "political-weight", "resources-behind-them"],
-    "prompt_fragments": ["noble bearing and posture of ownership", "finer quality materials and insignia", "high-status presence"]
+    "visual": {
+      "note": "bearing and quality that communicates high birth or earned status \u2014 finer materials, insignia, posture of ownership"
+    },
+    "traits": [
+      "high-status",
+      "accustomed-to-deference",
+      "political-weight",
+      "resources-behind-them"
+    ],
+    "prompt_fragments": [
+      "noble bearing and posture of ownership",
+      "finer quality materials and insignia",
+      "high-status presence"
+    ]
   },
   {
     "id": "outcast",
     "taxonomy": "descriptor",
     "category": "social",
     "label": "Outcast",
-    "visual": { "note": "removed from their people — no insignia of former group, worn-down gear, the bearing of someone who walks alone" },
-    "traits": ["exiled-or-self-exiled", "no-backing", "self-reliant", "chip-on-shoulder"],
-    "prompt_fragments": ["no insignia of any group", "worn gear of the long road", "bearing of someone who walks alone by necessity"]
+    "visual": {
+      "note": "removed from their people \u2014 no insignia of former group, worn-down gear, the bearing of someone who walks alone"
+    },
+    "traits": [
+      "exiled-or-self-exiled",
+      "no-backing",
+      "self-reliant",
+      "chip-on-shoulder"
+    ],
+    "prompt_fragments": [
+      "no insignia of any group",
+      "worn gear of the long road",
+      "bearing of someone who walks alone by necessity"
+    ]
   },
   {
     "id": "common",
     "taxonomy": "descriptor",
     "category": "tier",
     "label": "Common",
-    "visual": { "note": "standard-issue or off-the-shelf — nothing distinctive, functional but unremarkable" },
-    "traits": ["everyman", "replaceable-gear", "unnoticed"],
-    "prompt_fragments": ["standard-issue unremarkable gear", "nothing distinctive", "functional but forgettable equipment"]
+    "visual": {
+      "note": "standard-issue or off-the-shelf \u2014 nothing distinctive, functional but unremarkable"
+    },
+    "traits": [
+      "everyman",
+      "replaceable-gear",
+      "unnoticed"
+    ],
+    "prompt_fragments": [
+      "standard-issue unremarkable gear",
+      "nothing distinctive",
+      "functional but forgettable equipment"
+    ]
   },
   {
     "id": "exiled",
     "taxonomy": "descriptor",
     "category": "social",
     "label": "Exiled",
-    "visual": { "note": "former affiliation visible but stripped or defaced — a pauldron with the insignia removed, a tabard faded or torn at the symbol" },
-    "traits": ["former-member", "shame-or-injustice", "driven-by-past", "dangerous-because-knows-the-inside"],
-    "prompt_fragments": ["former affiliation insignia stripped or defaced", "stripped pauldron or faded tabard where a symbol was", "bearing of someone who remembers what they lost"]
+    "visual": {
+      "note": "former affiliation visible but stripped or defaced \u2014 a pauldron with the insignia removed, a tabard faded or torn at the symbol"
+    },
+    "traits": [
+      "former-member",
+      "shame-or-injustice",
+      "driven-by-past",
+      "dangerous-because-knows-the-inside"
+    ],
+    "prompt_fragments": [
+      "former affiliation insignia stripped or defaced",
+      "stripped pauldron or faded tabard where a symbol was",
+      "bearing of someone who remembers what they lost"
+    ]
   },
   {
     "id": "wild",
     "taxonomy": "descriptor",
     "category": "condition",
     "label": "Wild",
-    "visual": { "note": "unkempt, nature-touched — not feral but untamed. Hair unbound, leaves or dirt in it, no concern for appearance" },
-    "traits": ["nature-connected", "unconcerned-with-civilisation", "unpredictable-but-not-dangerous"],
-    "prompt_fragments": ["unkempt unbound hair", "nature-touched appearance", "unconcerned with civilised presentation"]
+    "visual": {
+      "note": "unkempt, nature-touched \u2014 not feral but untamed. Hair unbound, leaves or dirt in it, no concern for appearance"
+    },
+    "traits": [
+      "nature-connected",
+      "unconcerned-with-civilisation",
+      "unpredictable-but-not-dangerous"
+    ],
+    "prompt_fragments": [
+      "unkempt unbound hair",
+      "nature-touched appearance",
+      "unconcerned with civilised presentation"
+    ]
   },
   {
     "id": "veteran",
     "taxonomy": "descriptor",
     "category": "tier",
     "label": "Veteran",
-    "visual": { "note": "between elite and legendary — beyond competent, below famous. Gear shows long use; bearing shows they've seen things that would break a recruit." },
-    "traits": ["long-service", "seen-too-much", "competence-without-fanfare", "keeps-others-alive"],
-    "prompt_fragments": ["gear showing years of careful use", "veteran's quiet competence", "bearing of someone who has seen things recruits have not"]
+    "visual": {
+      "note": "between elite and legendary \u2014 beyond competent, below famous. Gear shows long use; bearing shows they've seen things that would break a recruit."
+    },
+    "traits": [
+      "long-service",
+      "seen-too-much",
+      "competence-without-fanfare",
+      "keeps-others-alive"
+    ],
+    "prompt_fragments": [
+      "gear showing years of careful use",
+      "veteran's quiet competence",
+      "bearing of someone who has seen things recruits have not"
+    ]
+  },
+  {
+    "id": "hulking",
+    "taxonomy": "descriptor",
+    "category": "physical",
+    "label": "Hulking",
+    "visual": {
+      "note": "exaggerated muscle mass and breadth \u2014 not just large but architecturally over-built, presence fills and crowds the space"
+    },
+    "traits": [
+      "physically-dominant",
+      "slow-moving",
+      "wall-of-flesh"
+    ],
+    "prompt_fragments": [
+      "hulking over-muscled build",
+      "massive bulk filling the frame",
+      "exaggerated breadth and mass"
+    ]
+  },
+  {
+    "id": "lithe",
+    "taxonomy": "descriptor",
+    "category": "physical",
+    "label": "Lithe",
+    "visual": {
+      "note": "lean and flexible \u2014 elongated limbs, minimal bulk, built for speed and fluidity rather than power"
+    },
+    "traits": [
+      "fast",
+      "flexible",
+      "low-profile"
+    ],
+    "prompt_fragments": [
+      "lithe lean build, elongated limbs",
+      "minimal bulk built for speed and reach",
+      "fluid and flexible physique"
+    ]
+  },
+  {
+    "id": "gaunt",
+    "taxonomy": "descriptor",
+    "category": "physical",
+    "label": "Gaunt",
+    "visual": {
+      "note": "visible emaciation \u2014 sunken cheeks, prominent bone structure at temple, clavicle, and knuckles, skin tight over the skull"
+    },
+    "traits": [
+      "hollowed",
+      "ascetic-or-starved",
+      "intensity-through-deprivation"
+    ],
+    "prompt_fragments": [
+      "gaunt hollow-cheeked face",
+      "prominent bone structure, skin tight over skull",
+      "emaciated intensity"
+    ]
+  },
+  {
+    "id": "imposing",
+    "taxonomy": "descriptor",
+    "category": "physical",
+    "label": "Imposing",
+    "visual": {
+      "note": "commanding physical presence regardless of raw size \u2014 posture, bearing, and proportion combine into something that dominates the space around it"
+    },
+    "traits": [
+      "commands-attention",
+      "presence-beyond-size",
+      "silhouette-dominance"
+    ],
+    "prompt_fragments": [
+      "imposing presence that commands the frame",
+      "bearing that dominates every space",
+      "powerful silhouette regardless of scale"
+    ]
+  },
+  {
+    "id": "undead",
+    "taxonomy": "descriptor",
+    "category": "condition",
+    "label": "Undead",
+    "visual": {
+      "note": "flesh degraded \u2014 sunken tissue, exposed bone at extremities, necrotic pallor, hollowed eye sockets with unnatural cold light"
+    },
+    "traits": [
+      "beyond-pain",
+      "unnatural-persistence",
+      "death-made-animate"
+    ],
+    "prompt_fragments": [
+      "undead pallor and degraded flesh",
+      "exposed bone at extremities",
+      "hollowed eye sockets with cold unnatural light"
+    ]
+  },
+  {
+    "id": "mutated",
+    "taxonomy": "descriptor",
+    "category": "condition",
+    "label": "Mutated",
+    "visual": {
+      "note": "biological abnormalities \u2014 asymmetric growth, additional limbs or organs in wrong positions, surface textures that do not belong, proportions that do not resolve"
+    },
+    "traits": [
+      "biological-wrongness",
+      "asymmetric",
+      "unstable-form"
+    ],
+    "prompt_fragments": [
+      "mutated asymmetric biological abnormalities",
+      "additional growths and wrongly-placed features",
+      "proportions that do not resolve correctly"
+    ]
+  },
+  {
+    "id": "fallen",
+    "taxonomy": "descriptor",
+    "category": "condition",
+    "label": "Fallen",
+    "visual": {
+      "note": "former greatness corrupted or broken \u2014 vestiges of past glory still visible (fine materials, old insignia) but defaced, damaged, or perverted"
+    },
+    "traits": [
+      "former-glory-lost",
+      "corruption-visible",
+      "tragedy-implied"
+    ],
+    "prompt_fragments": [
+      "vestiges of former glory defaced and corrupted",
+      "fine materials now broken or perverted",
+      "past greatness made tragic"
+    ]
+  },
+  {
+    "id": "disgraced",
+    "taxonomy": "descriptor",
+    "category": "social",
+    "label": "Disgraced",
+    "visual": {
+      "note": "stripped of status \u2014 insignia removed or defaced, rank marks cut away, bearing of someone no longer welcome in the world they once occupied"
+    },
+    "traits": [
+      "stripped-of-rank",
+      "nothing-left-to-lose",
+      "unwelcome-where-once-powerful"
+    ],
+    "prompt_fragments": [
+      "rank insignia removed or defaced",
+      "bearing of someone stripped of status",
+      "former uniform reduced to bare cloth"
+    ]
+  },
+  {
+    "id": "fugitive",
+    "taxonomy": "descriptor",
+    "category": "social",
+    "label": "Fugitive",
+    "visual": {
+      "note": "travelling light and concealing identity \u2014 hood up, face partly covered, nothing that would identify allegiance or origin"
+    },
+    "traits": [
+      "hunted",
+      "identity-concealed",
+      "travelling-light"
+    ],
+    "prompt_fragments": [
+      "travelling light with identity concealed",
+      "hood up, face partly obscured",
+      "no visible allegiance markers"
+    ]
+  },
+  {
+    "id": "mercenary",
+    "taxonomy": "descriptor",
+    "category": "social",
+    "label": "Mercenary",
+    "visual": {
+      "note": "eclectic armour and gear from multiple sources \u2014 no single faction's colours, equipment chosen for effectiveness not allegiance"
+    },
+    "traits": [
+      "no-allegiance",
+      "eclectic-kit",
+      "coin-driven"
+    ],
+    "prompt_fragments": [
+      "mismatched armour and gear from multiple sources",
+      "no single faction's colours or markings",
+      "coin-earned eclectic kit"
+    ]
   }
 ]

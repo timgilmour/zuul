@@ -6,7 +6,9 @@
     "category": "mesh-gen",
     "mesh_safe": true,
     "default": true,
-    "applies_to": ["biped"],
+    "applies_to": [
+      "biped"
+    ],
     "phrase": "standing in a symmetrical A-pose with arms relaxed straight down at roughly 45 degrees away from the torso, palms facing the body, fingers slightly spread, legs shoulder-width apart",
     "aspect": "2:3",
     "use": "mesh-gen",
@@ -18,7 +20,9 @@
     "label": "T-pose",
     "category": "mesh-gen",
     "mesh_safe": true,
-    "applies_to": ["biped"],
+    "applies_to": [
+      "biped"
+    ],
     "phrase": "standing in a symmetrical T-pose with both arms extended straight out horizontally to the sides at shoulder height, palms down, fingers together, legs shoulder-width apart",
     "aspect": "1:1",
     "use": "mesh-gen",
@@ -30,7 +34,9 @@
     "label": "Quadruped stand",
     "category": "mesh-gen",
     "mesh_safe": true,
-    "applies_to": ["quadruped"],
+    "applies_to": [
+      "quadruped"
+    ],
     "phrase": "standing square and symmetrical on all four legs, planted shoulder-width apart, head level",
     "aspect": "4:3",
     "use": "mesh-gen",
@@ -42,7 +48,9 @@
     "label": "Wings spread",
     "category": "mesh-gen",
     "mesh_safe": true,
-    "applies_to": ["winged"],
+    "applies_to": [
+      "winged"
+    ],
     "phrase": "standing square and symmetrical, both wings spread wide and held well clear of the body, limbs planted shoulder-width apart, head level",
     "aspect": "4:3",
     "use": "mesh-gen",
@@ -54,7 +62,9 @@
     "label": "Floating idle",
     "category": "mesh-gen",
     "mesh_safe": true,
-    "applies_to": ["floating"],
+    "applies_to": [
+      "floating"
+    ],
     "phrase": "hovering upright and symmetrical, body centered with any limbs, tentacles, or eyestalks splayed evenly and held clear of the body, no ground contact",
     "aspect": "1:1",
     "use": "mesh-gen",
@@ -66,11 +76,206 @@
     "label": "Enraged roar",
     "category": "observed",
     "mesh_safe": false,
-    "applies_to": ["biped"],
+    "applies_to": [
+      "biped"
+    ],
     "phrase": "standing wide with weight low, torso leaning forward, both arms raised and bent outward with fists clenched, shoulders hunched, head tilted back mid-roar, mouth wide open",
     "expression": "screaming, enraged, furious",
     "aspect": "2:3",
     "use": "action / dramatic",
+    "source": "hand-curated"
+  },
+  {
+    "id": "combat-stance",
+    "taxonomy": "pose",
+    "label": "Combat stance",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "standing in a wide combat stance, weight forward on the front foot, knees bent, torso turned to present a narrower profile, weapon arm extended or raised, off-hand guard held up across the body",
+    "expression": "focused, alert, ready",
+    "aspect": "2:3",
+    "use": "combat / confrontation",
+    "source": "hand-curated"
+  },
+  {
+    "id": "hero-stance",
+    "taxonomy": "pose",
+    "label": "Hero stance",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "standing upright and confident, feet planted shoulder-width apart, chin level, shoulders back, hands relaxed at sides or one hand resting on hip, gaze directed forward toward the viewer or horizon",
+    "expression": "confident, composed, authoritative",
+    "aspect": "2:3",
+    "use": "portrait / key art",
+    "source": "hand-curated"
+  },
+  {
+    "id": "seated-throne",
+    "taxonomy": "pose",
+    "label": "Seated on throne",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "seated upright and commanding on a throne or high-backed chair, forearms resting on the armrests, spine straight, legs planted, gaze directed forward with authority",
+    "expression": "commanding, imperious, watchful",
+    "aspect": "2:3",
+    "use": "ruler / portrait",
+    "source": "hand-curated"
+  },
+  {
+    "id": "crouching-ready",
+    "taxonomy": "pose",
+    "label": "Crouching ready",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "crouching low with weight on the balls of both feet, knees bent deep, one hand lightly touching the ground for balance, the other raised or holding a weapon, head up and scanning",
+    "expression": "wary, predatory, still",
+    "aspect": "2:3",
+    "use": "stealth / infiltration",
+    "source": "hand-curated"
+  },
+  {
+    "id": "walking-stride",
+    "taxonomy": "pose",
+    "label": "Walking stride",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "mid-stride with one foot forward and the opposite arm swung forward, weight shifting through the step, torso with natural counter-rotation, purposeful and unhurried",
+    "aspect": "2:3",
+    "use": "approach / patrol",
+    "source": "hand-curated"
+  },
+  {
+    "id": "dramatic-tableau",
+    "taxonomy": "pose",
+    "label": "Dramatic tableau",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "standing with arms spread wide and slightly forward, chest out, weight centred, cloak or cape caught mid-spread behind the figure, head raised, gaze elevated",
+    "expression": "triumphant, dramatic, theatrical",
+    "aspect": "4:3",
+    "use": "key art / cinematic reveal",
+    "source": "hand-curated"
+  },
+  {
+    "id": "kneeling-defiant",
+    "taxonomy": "pose",
+    "label": "Kneeling defiant",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "one knee planted on the ground, the other leg braced forward with foot flat, torso upright, head raised with gaze direct, one fist pressed to the ground or weapon planted beside",
+    "expression": "defiant, wounded but unbroken, resolute",
+    "aspect": "2:3",
+    "use": "defeat-but-unbroken / dramatic",
+    "source": "hand-curated"
+  },
+  {
+    "id": "spellcast-channelling",
+    "taxonomy": "pose",
+    "label": "Spellcast channelling",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "biped"
+    ],
+    "phrase": "both arms raised and extended forward or upward, fingers spread wide, torso arched slightly back, weight on the back foot, head tilted up, power moving through the body outward through the hands",
+    "expression": "focused intensity, controlled power",
+    "aspect": "2:3",
+    "use": "mage / psyker / divine caster",
+    "source": "hand-curated"
+  },
+  {
+    "id": "quadruped-prowl",
+    "taxonomy": "pose",
+    "label": "Quadruped prowl",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "quadruped"
+    ],
+    "phrase": "belly low, neck extended forward, weight placed on all four paws with slow deliberate care, tail held low and level, eyes locked on target ahead",
+    "expression": "predatory, patient, hunting",
+    "aspect": "4:3",
+    "use": "predator / approach",
+    "source": "hand-curated"
+  },
+  {
+    "id": "quadruped-rear",
+    "taxonomy": "pose",
+    "label": "Quadruped rearing",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "quadruped"
+    ],
+    "phrase": "rearing up on both hind legs with front limbs raised high, body near-vertical, neck arched back, maximum height and threat display",
+    "expression": "aggressive, territorial, displaying power",
+    "aspect": "2:3",
+    "use": "threat display / dramatic",
+    "source": "hand-curated"
+  },
+  {
+    "id": "winged-banking-soar",
+    "taxonomy": "pose",
+    "label": "Soaring bank",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "winged"
+    ],
+    "phrase": "in full flight, body angled in a banking turn, upper wing extended to full span, lower wing dipped, limbs tucked close or trailing, head turned toward the viewer or toward the ground below",
+    "aspect": "4:3",
+    "use": "aerial / flight",
+    "source": "hand-curated"
+  },
+  {
+    "id": "winged-perched",
+    "taxonomy": "pose",
+    "label": "Perched",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "winged"
+    ],
+    "phrase": "standing on an elevated edge or perch, wings folded back and slightly raised, weight settled, head turned to one side with watchful alertness, talons or feet gripping the edge",
+    "expression": "watchful, patient, still",
+    "aspect": "2:3",
+    "use": "sentinel / rest",
+    "source": "hand-curated"
+  },
+  {
+    "id": "floating-attack",
+    "taxonomy": "pose",
+    "label": "Floating attack",
+    "category": "observed",
+    "mesh_safe": false,
+    "applies_to": [
+      "floating"
+    ],
+    "phrase": "hovering with body angled aggressively forward, limbs, tentacles, or appendages extended toward a target below or ahead, trailing elements streaming back with the motion",
+    "expression": "aggressive, purposeful, threatening",
+    "aspect": "2:3",
+    "use": "eldritch / creature attack",
     "source": "hand-curated"
   }
 ]
