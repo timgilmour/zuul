@@ -10,9 +10,14 @@ Clean, isolated concept-art renders of fictional subjects including characters, 
 zuul/
 ├── skills/zuul/        # the skill: SKILL.md, core/, subjects/, vocabulary/, tools/
 ├── commands/           # slash commands (/zuul, /zuul-prompt, …)
+├── docs/               # user documentation (start at docs/README.md)
 ├── install.sh          # install bare commands + standalone skill into ~/.claude
 └── .claude-plugin/     # plugin + marketplace manifest
 ```
+
+**New here?** Read the [docs](docs/README.md) — [getting started](docs/getting-started.md),
+[commands](docs/commands.md), [CLI](docs/cli.md), [vocabulary](docs/vocabulary.md),
+[mesh pipeline](docs/mesh-pipeline.md), [ComfyUI](docs/comfyui.md).
 
 ## Install
 
