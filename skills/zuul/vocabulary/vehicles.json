@@ -3,7 +3,10 @@
     "id": "rebel-starfighter",
     "taxonomy": "vehicle",
     "label": "Rebel Starfighter",
-    "applies_to": ["scifi", "space-opera"],
+    "applies_to": [
+      "scifi",
+      "space-opera"
+    ],
     "prompt_fragments": [
       "angular matte grey hull panels",
       "twin rear thruster pods with glowing orange exhaust rings",
@@ -19,7 +22,10 @@
     "id": "imperial-dreadnought",
     "taxonomy": "vehicle",
     "label": "Imperial Dreadnought",
-    "applies_to": ["scifi", "space-opera"],
+    "applies_to": [
+      "scifi",
+      "space-opera"
+    ],
     "prompt_fragments": [
       "slab-sided matte charcoal hull",
       "rows of gun batteries along the flanks",
@@ -34,7 +40,11 @@
     "id": "goblin-war-barge",
     "taxonomy": "vehicle",
     "label": "Goblin War Barge",
-    "applies_to": ["fantasy", "dark-fantasy", "low-fantasy"],
+    "applies_to": [
+      "fantasy",
+      "dark-fantasy",
+      "low-fantasy"
+    ],
     "prompt_fragments": [
       "mismatched salvage planking with asymmetric patched hull",
       "iron spike prow ram at the bow",
@@ -49,7 +59,9 @@
     "id": "steampunk-ironclad",
     "taxonomy": "vehicle",
     "label": "Steampunk Ironclad",
-    "applies_to": ["steampunk"],
+    "applies_to": [
+      "steampunk"
+    ],
     "prompt_fragments": [
       "black-painted iron hull with riveted plates throughout",
       "two rotating gun turrets fore and aft",
@@ -64,7 +76,10 @@
     "id": "hover-apc",
     "taxonomy": "vehicle",
     "label": "Hover APC",
-    "applies_to": ["scifi", "hard-scifi"],
+    "applies_to": [
+      "scifi",
+      "hard-scifi"
+    ],
     "prompt_fragments": [
       "flat-topped matte olive hull",
       "grav-plate emitters on the flat undercarriage",
@@ -79,7 +94,9 @@
     "id": "ornithopter",
     "taxonomy": "vehicle",
     "label": "Ornithopter",
-    "applies_to": ["steampunk"],
+    "applies_to": [
+      "steampunk"
+    ],
     "prompt_fragments": [
       "articulated brass wing-frames with fabric membrane panels",
       "open cockpit with exposed pilot seat",
@@ -94,7 +111,9 @@
     "id": "xianxia-cloud-boat",
     "taxonomy": "vehicle",
     "label": "Xianxia Cloud Boat",
-    "applies_to": ["wuxia"],
+    "applies_to": [
+      "wuxia"
+    ],
     "prompt_fragments": [
       "carved red lacquer hull with gold script inlay",
       "curved upswept prow with jade phoenix carving",
@@ -109,7 +128,10 @@
     "id": "attack-helicopter",
     "taxonomy": "vehicle",
     "label": "Attack Helicopter",
-    "applies_to": ["modern", "military"],
+    "applies_to": [
+      "modern",
+      "military"
+    ],
     "prompt_fragments": [
       "matte olive drab airframe with national markings",
       "stub wings with weapon pylons on each side",
@@ -124,7 +146,10 @@
     "id": "gothic-hearse-coach",
     "taxonomy": "vehicle",
     "label": "Gothic Funeral Hearse-Coach",
-    "applies_to": ["horror", "gothic-horror"],
+    "applies_to": [
+      "horror",
+      "gothic-horror"
+    ],
     "prompt_fragments": [
       "matte black weathered-timber coachwork, slab-sided hearse body with cracked peeling finish",
       "opaque dark glass casket-viewing panels along both sides",
@@ -132,6 +157,261 @@
       "tarnished-silver corner lanterns and a raised driver's box with worn leather seat",
       "tall iron-shod spoked wheels with weathered timber spokes",
       "empty harness shafts extending forward from the bow, deep-crimson moth-eaten velvet drapes behind the panels"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "cyberpunk-neon-bike",
+    "taxonomy": "vehicle",
+    "label": "Cyberpunk Neon Motorcycle",
+    "applies_to": [
+      "cyberpunk",
+      "scifi"
+    ],
+    "prompt_fragments": [
+      "low-slung matte-black carbon-fibre frame, aggressive forward rake",
+      "neon LED underglow strips along the belly pan, electric blue or magenta",
+      "faired front with integrated HUD visor slot at the nose",
+      "oversized solid-disc rear wheel, slick tyre with no visible tread",
+      "exposed aftermarket engine block with braided coolant lines",
+      "corporate sponsor decals scratched and partially peeled off"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "wwii-medium-tank",
+    "taxonomy": "vehicle",
+    "label": "WWII Medium Tank",
+    "applies_to": [
+      "wwii",
+      "military",
+      "modern"
+    ],
+    "prompt_fragments": [
+      "riveted and welded steel hull, olive drab with mud-caked track guards",
+      "sloped turret with long 75mm barrel, bore evacuator at muzzle",
+      "vision ports and commander's cupola hatch atop the turret",
+      "wide steel tracks, each link caked in dried European mud",
+      "stowage boxes and spare track links bolted to hull exterior",
+      "white star national marking on turret side, paint worn and chipped"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "diesel-zeppelin",
+    "taxonomy": "vehicle",
+    "label": "Dieselpunk Zeppelin",
+    "applies_to": [
+      "dieselpunk",
+      "steampunk",
+      "science-fantasy"
+    ],
+    "prompt_fragments": [
+      "battleship-grey riveted aluminium envelope with art-deco geometric panel seams",
+      "gondola slung below with wide viewport windows and gun emplacements fore and aft",
+      "four engine nacelles with radial piston engines and exposed cowling",
+      "mooring lines trailing below the bow, iron cleat fittings along the keel",
+      "national insignia stencilled in blood red and black on the tail fin",
+      "oil streaks running aft from each engine nacelle along the hull skin"
+    ],
+    "view": "3/4 front",
+    "aspect": "16:9"
+  },
+  {
+    "id": "pulp-rocket-ship",
+    "taxonomy": "vehicle",
+    "label": "Pulp Sci-Fi Rocket Ship",
+    "applies_to": [
+      "pulp-scifi",
+      "scifi",
+      "science-fantasy"
+    ],
+    "prompt_fragments": [
+      "finned torpedo-shaped hull in chrome silver with candy red trim stripe",
+      "three swept stabiliser fins at the base, each with a thruster bell",
+      "clear dome nose cone with pilot seat silhouette visible inside",
+      "porthole windows along the fuselage, each rimmed in polished aluminium",
+      "nose art painted below the cockpit, mission tally marks alongside",
+      "rocket exhaust bell at base, flared and bright"
+    ],
+    "view": "3/4 front",
+    "aspect": "1:1"
+  },
+  {
+    "id": "viking-longship",
+    "taxonomy": "vehicle",
+    "label": "Viking Longship",
+    "applies_to": [
+      "viking",
+      "historical"
+    ],
+    "prompt_fragments": [
+      "low clinker-built hull of overlapping oak strakes, salt-bleached and tar-sealed",
+      "carved serpent prow rising high at the bow, weathered and sea-worn",
+      "single rectangular sail of undyed linen with red-and-white stripe",
+      "oar holes along the gunwale, shield rail with round shields mounted",
+      "stepped mast with forestay and backstay lines, all hemp rope",
+      "dragon-head stern post mirroring the prow, Norse knotwork at bow"
+    ],
+    "view": "3/4 front",
+    "aspect": "16:9"
+  },
+  {
+    "id": "ancient-war-chariot",
+    "taxonomy": "vehicle",
+    "label": "Ancient War Chariot",
+    "applies_to": [
+      "ancient",
+      "historical"
+    ],
+    "prompt_fragments": [
+      "lightweight wicker-and-wood platform on two large spoked wheels, bronze axle fittings",
+      "draught pole extending forward, yoke for two horses with bronze fittings",
+      "open rear standing platform, low curved front screen of wicker",
+      "bronze boss and rim on wheel hubs, leather tyre strip nailed to felloe",
+      "quiver of arrows and bow case mounted on the side panel",
+      "sun-bleached wood, ochre-painted panels with geometric painted border"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "man-of-war",
+    "taxonomy": "vehicle",
+    "label": "Man-of-War",
+    "applies_to": [
+      "age-of-sail",
+      "historical"
+    ],
+    "prompt_fragments": [
+      "three-masted square-rigged ship, tarred oak hull with gun port stripe in faded colonial red",
+      "two gun decks, cannon muzzles protruding from open gun ports along the broadside",
+      "figurehead at the bowsprit, carved and gilded though weather-worn",
+      "shrouds and ratlines on each mast, sails furled on crossed yards",
+      "stern gallery with carved windows, national ensign at the gaff",
+      "waterline stain and weed growth on the hull below the wale"
+    ],
+    "view": "side",
+    "aspect": "16:9"
+  },
+  {
+    "id": "frontier-stagecoach",
+    "taxonomy": "vehicle",
+    "label": "Frontier Stagecoach",
+    "applies_to": [
+      "classic-western",
+      "western",
+      "historical"
+    ],
+    "prompt_fragments": [
+      "boxy wooden coach body on leather thoroughbrace suspension, dark chocolate paint",
+      "four iron-shod spoked wheels, trail-dusted and sun-baked",
+      "boot at the rear for luggage, canvas roll strapped over the roof rack",
+      "driver's box at the front with bench seat and iron footrest",
+      "side windows with rolled leather curtains, hinged door with brass fittings",
+      "draught pole and double trace chains forward, harness rings worn bright"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "atompunk-fins-car",
+    "taxonomy": "vehicle",
+    "label": "Atompunk Fins Automobile",
+    "applies_to": [
+      "atompunk",
+      "science-fantasy"
+    ],
+    "prompt_fragments": [
+      "long low-slung body with chrome-outlined tail fins sweeping back from the C-pillar",
+      "wraparound windshield, two-tone paint in aqua teal and cream white",
+      "bullet nose grille with horizontal chrome bars and central roundel",
+      "fender skirts over rear wheels, white-wall tyres on full-chrome hubcaps",
+      "rocket nacelle taillights with red lenses, chrome bumper blade rear",
+      "radiation-warning diamond decal visible on the dashboard through the windshield"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "wwi-biplane",
+    "taxonomy": "vehicle",
+    "label": "WWI Biplane",
+    "applies_to": [
+      "wwi",
+      "modern"
+    ],
+    "prompt_fragments": [
+      "two-bay biplane with fabric-covered spruce frame, khaki drab with national roundel",
+      "inline engine with blunt nose cowling, static propeller at front",
+      "twin Vickers guns mounted on the cowl ahead of the open cockpit",
+      "open cockpit with padded coaming rim, windscreen barely above gun sight level",
+      "wire bracing between wing bays, interplane struts of varnished spruce",
+      "fixed undercarriage with bungee-cord shock struts, no wheel fairings"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "gamma-scrap-rig",
+    "taxonomy": "vehicle",
+    "label": "Irradiated Scrap Rig",
+    "applies_to": [
+      "gamma-world",
+      "apocalypse-west",
+      "science-fantasy"
+    ],
+    "prompt_fragments": [
+      "jury-rigged cab from a pre-war truck, welded scrap-armour panels bolted over the body",
+      "oversized off-road tyres mismatched from different eras and manufacturers",
+      "ram prow of angle iron and salvaged bumpers welded to the front",
+      "cage roll-bar over the cab with spikes and wire lashing at joins",
+      "fuel can rack and water drum mount bolted to the flat-bed rear",
+      "radiation-bleached paint exposing rust, barely-legible pre-war logo on the door"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "noir-sedan",
+    "taxonomy": "vehicle",
+    "label": "Rain-Slick Sedan",
+    "applies_to": [
+      "noir",
+      "espionage",
+      "modern"
+    ],
+    "prompt_fragments": [
+      "long-wheelbase 1940s sedan body, matte charcoal black with chrome brightwork",
+      "rounded pontoon fenders, running boards, and white-wall tyres",
+      "curved windshield with wiper arc traced in grime, no interior visible",
+      "chrome hood ornament and bonnet louvres, bumper guards fore and aft",
+      "rain-wet roof and bonnet, gutter water pooling in wheel arches",
+      "driver's window partly open, cigarette-smoke implied"
+    ],
+    "view": "3/4 front",
+    "aspect": "3:2"
+  },
+  {
+    "id": "armoured-war-horse",
+    "taxonomy": "vehicle",
+    "label": "Armoured War Horse",
+    "applies_to": [
+      "medieval",
+      "historical",
+      "dark-fantasy",
+      "fantasy"
+    ],
+    "prompt_fragments": [
+      "destrier in steel chanfron and crinet, neck armour articulated in overlapping lames",
+      "peytral over the chest, flanchards on the flanks, crupper over the rump",
+      "heraldic caparison in wool, bright livery colour with lord's device",
+      "heavy hooves in iron shoes, feathered fetlocks mud-caked below",
+      "barding joints riveted and campaign-worn, bright surfaces dull at edges",
+      "saddle of padded leather with high pommel and cantle, iron stirrups"
     ],
     "view": "3/4 front",
     "aspect": "3:2"
