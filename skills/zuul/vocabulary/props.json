@@ -1,6 +1,7 @@
 [
   {
     "id": "longsword",
+    "taxonomy": "prop",
     "label": "Longsword",
     "category": "weapon",
     "applies_to": ["fantasy", "high-fantasy", "dark-fantasy", "low-fantasy", "medieval", "historical"],
@@ -11,11 +12,11 @@
       "pommel of cast iron, slightly pitted with age"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "battle-axe",
+    "taxonomy": "prop",
     "label": "Battle Axe",
     "category": "weapon",
     "applies_to": ["fantasy", "high-fantasy", "dark-fantasy", "medieval", "viking", "historical"],
@@ -26,11 +27,11 @@
       "rough-hewn utilitarian form, no ornament below the knotwork"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "dagger",
+    "taxonomy": "prop",
     "label": "Dagger",
     "category": "weapon",
     "applies_to": ["*"],
@@ -41,11 +42,11 @@
       "compact and concealable, no elaborate ornament"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "samurai-katana",
+    "taxonomy": "prop",
     "label": "Samurai Katana",
     "category": "weapon",
     "applies_to": ["samurai", "wuxia", "historical"],
@@ -56,11 +57,11 @@
       "burnished hamon line of tempered steel visible on blade"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "revolver",
+    "taxonomy": "prop",
     "label": "Revolver",
     "category": "weapon",
     "applies_to": ["western", "classic-western", "spaghetti-western", "weird-west", "apocalypse-west", "noir"],
@@ -71,11 +72,11 @@
       "ejector rod housing on right side, front blade sight"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "laser-pistol",
+    "taxonomy": "prop",
     "label": "Laser Pistol",
     "category": "weapon",
     "applies_to": ["scifi", "space-opera", "hard-scifi", "military", "post-human"],
@@ -86,11 +87,11 @@
       "charge indicator strip along slide, deep blue gradient"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "plasma-rifle",
+    "taxonomy": "prop",
     "label": "Plasma Rifle",
     "category": "weapon",
     "applies_to": ["scifi", "military", "space-opera", "hard-scifi"],
@@ -101,11 +102,11 @@
       "cooling vents etched along barrel body, machined-sharp edges"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "raygun",
+    "taxonomy": "prop",
     "label": "Ray Gun",
     "category": "weapon",
     "applies_to": ["pulp-scifi", "atompunk", "science-fantasy", "sword-and-planet"],
@@ -116,11 +117,11 @@
       "vacuum-tube power cell in transparent housing at grip base"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "flintlock-musket",
+    "taxonomy": "prop",
     "label": "Flintlock Musket",
     "category": "weapon",
     "applies_to": ["age-of-sail", "historical"],
@@ -131,11 +132,11 @@
       "ramrod of turned wood slotted beneath the barrel"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "tommy-gun",
+    "taxonomy": "prop",
     "label": "Tommy Gun",
     "category": "weapon",
     "applies_to": ["wwii", "noir", "modern"],
@@ -146,11 +147,11 @@
       "compensator at muzzle, Cutts-style ports machined in line"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "crossbow",
+    "taxonomy": "prop",
     "label": "Crossbow",
     "category": "weapon",
     "applies_to": ["fantasy", "medieval", "dark-fantasy", "low-fantasy", "historical"],
@@ -161,11 +162,11 @@
       "stock of carved oak, trigger lever of wrought iron"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "war-spear",
+    "taxonomy": "prop",
     "label": "War Spear",
     "category": "weapon",
     "applies_to": ["ancient", "viking", "historical", "fantasy"],
@@ -176,11 +177,11 @@
       "simple surface of functional iron, no ornament"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "wuxia-jian",
+    "taxonomy": "prop",
     "label": "Wuxia Jian",
     "category": "weapon",
     "applies_to": ["wuxia", "historical"],
@@ -191,11 +192,11 @@
       "pommel of carved jade, spherical with incised dragon"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "scrap-shotgun",
+    "taxonomy": "prop",
     "label": "Scrap Shotgun",
     "category": "weapon",
     "applies_to": ["apocalypse-west", "gamma-world", "weird-west"],
@@ -206,11 +207,11 @@
       "exposed-head screws and jubilee clamps visible on assembly"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "knight-helm",
+    "taxonomy": "prop",
     "label": "Knight's Helm",
     "category": "armor",
     "applies_to": ["medieval", "fantasy", "high-fantasy", "historical"],
@@ -221,11 +222,11 @@
       "mail aventail of riveted iron rings at cheek and neck"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "power-armor-helm",
+    "taxonomy": "prop",
     "label": "Power Armor Helmet",
     "category": "armor",
     "applies_to": ["scifi", "military", "space-opera", "hard-scifi"],
@@ -236,11 +237,11 @@
       "collar seal of reinforced polymer, ribbed pressure gasket"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "samurai-kabuto",
+    "taxonomy": "prop",
     "label": "Samurai Kabuto",
     "category": "armor",
     "applies_to": ["samurai", "historical"],
@@ -251,11 +252,11 @@
       "mabizashi peak of burnished iron, surface incised with waves"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "gas-mask",
+    "taxonomy": "prop",
     "label": "Gas Mask",
     "category": "armor",
     "applies_to": ["wwi", "wwii", "dieselpunk", "dark-fantasy"],
@@ -266,11 +267,11 @@
       "adjustable canvas straps, metal buckles oxidised to flat grey"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "viking-shield",
+    "taxonomy": "prop",
     "label": "Viking Shield",
     "category": "armor",
     "applies_to": ["viking", "historical"],
@@ -281,11 +282,11 @@
       "knotwork painted in woad blue and rust red, partially flaked"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "relic-idol",
+    "taxonomy": "prop",
     "label": "Relic Idol",
     "category": "artifact",
     "applies_to": ["fantasy", "historical", "ancient", "folk-horror"],
@@ -296,11 +297,11 @@
       "pedestal of worn sandstone, inscription worn to illegibility"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "ancient-grimoire",
+    "taxonomy": "prop",
     "label": "Ancient Grimoire",
     "category": "artifact",
     "applies_to": ["fantasy", "horror", "gothic-horror", "dark-fantasy", "high-fantasy"],
@@ -311,11 +312,11 @@
       "spine wrapped with cord binding, frayed and stained"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "holocron-cube",
+    "taxonomy": "prop",
     "label": "Holocron Cube",
     "category": "artifact",
     "applies_to": ["scifi", "science-fantasy", "space-opera"],
@@ -326,11 +327,11 @@
       "data-stream silver casing with recessed activation rune array"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "cursed-amulet",
+    "taxonomy": "prop",
     "label": "Cursed Amulet",
     "category": "artifact",
     "applies_to": ["horror", "dark-fantasy", "gothic-horror", "weird-west"],
@@ -341,11 +342,11 @@
       "suspension loop cracked and re-soldered, crude repair visible"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "qi-talisman",
+    "taxonomy": "prop",
     "label": "Qi Talisman",
     "category": "artifact",
     "applies_to": ["wuxia", "fantasy"],
@@ -356,11 +357,11 @@
       "small iron hole-punch at corner, red silk cord loop"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "eldritch-totem",
+    "taxonomy": "prop",
     "label": "Eldritch Totem",
     "category": "artifact",
     "applies_to": ["cosmic-horror", "folk-horror", "horror"],
@@ -371,11 +372,11 @@
       "hanging strands of knotted sinew, uneven lengths, asymmetric"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "reliquary-cross",
+    "taxonomy": "prop",
     "label": "Reliquary Cross",
     "category": "artifact",
     "applies_to": ["gothic-horror", "medieval", "historical"],
@@ -386,11 +387,11 @@
       "socket shaft of iron, surface rusted where gilding is lost"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "power-crystal",
+    "taxonomy": "prop",
     "label": "Power Crystal",
     "category": "artifact",
     "applies_to": ["scifi", "science-fantasy", "sword-and-planet", "space-opera"],
@@ -401,11 +402,11 @@
       "metal cradle mount of burnished titanium, four-point grip"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "lantern",
+    "taxonomy": "prop",
     "label": "Lantern",
     "category": "tool",
     "applies_to": ["*"],
@@ -416,11 +417,11 @@
       "surface patina of rust-brown on iron, glass smoke-hazed"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "brass-compass",
+    "taxonomy": "prop",
     "label": "Brass Compass",
     "category": "tool",
     "applies_to": ["age-of-sail", "steampunk", "historical", "modern"],
@@ -431,11 +432,11 @@
       "lid interior engraved with maker's cartouche, ornate serif"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "alchemist-kit",
+    "taxonomy": "prop",
     "label": "Alchemist's Kit",
     "category": "tool",
     "applies_to": ["fantasy", "steampunk", "gothic-horror"],
@@ -446,11 +447,11 @@
       "folded parchment label on each vial, inked in cramped script"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "cyberdeck",
+    "taxonomy": "prop",
     "label": "Cyberdeck",
     "category": "tool",
     "applies_to": ["cyberpunk", "scifi"],
@@ -461,11 +462,11 @@
       "sticker-tagged housing, graffiti tags and corp-logo removal scars"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "surveyor-theodolite",
+    "taxonomy": "prop",
     "label": "Surveyor's Theodolite",
     "category": "tool",
     "applies_to": ["steampunk", "modern", "historical"],
@@ -476,11 +477,11 @@
       "tribrach base of cast iron, levelling screws at three points"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "medkit",
+    "taxonomy": "prop",
     "label": "Field Medkit",
     "category": "tool",
     "applies_to": ["modern", "scifi", "military", "hard-scifi"],
@@ -491,11 +492,11 @@
       "clasp of black nylon webbing, quick-release buckle"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "pickaxe",
+    "taxonomy": "prop",
     "label": "Pickaxe",
     "category": "tool",
     "applies_to": ["*"],
@@ -506,11 +507,11 @@
       "shoulder wedge of iron, securing head, surface rusted"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "treasure-chest",
+    "taxonomy": "prop",
     "label": "Treasure Chest",
     "category": "container",
     "applies_to": ["fantasy", "historical", "age-of-sail", "high-fantasy"],
@@ -521,11 +522,11 @@
       "coin and gem scatter at lid edge, gold and jewel tones"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "supply-crate",
+    "taxonomy": "prop",
     "label": "Supply Crate",
     "category": "container",
     "applies_to": ["scifi", "modern", "military", "space-opera"],
@@ -536,11 +537,11 @@
       "recessed grip handles on short faces, reinforced with polymer"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "apothecary-jar",
+    "taxonomy": "prop",
     "label": "Apothecary Jar",
     "category": "container",
     "applies_to": ["fantasy", "gothic-horror", "historical", "steampunk"],
@@ -551,11 +552,11 @@
       "contents murky liquid with suspended specimen visible"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "ammo-box",
+    "taxonomy": "prop",
     "label": "Ammo Box",
     "category": "container",
     "applies_to": ["wwii", "modern", "military", "apocalypse-west"],
@@ -566,11 +567,11 @@
       "embossed NATO cross on lid face, paint partially chipped"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "barrel",
+    "taxonomy": "prop",
     "label": "Barrel",
     "category": "container",
     "applies_to": ["*"],
@@ -581,11 +582,11 @@
       "surface aged and weathered, iron hoops rust-streaked"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "steamer-trunk",
+    "taxonomy": "prop",
     "label": "Steamer Trunk",
     "category": "container",
     "applies_to": ["modern", "historical", "steampunk", "age-of-sail"],
@@ -596,11 +597,11 @@
       "tray interior of faded velvet, interior fittings of tarnished brass"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "ornate-throne",
+    "taxonomy": "prop",
     "label": "Ornate Throne",
     "category": "furniture",
     "applies_to": ["fantasy", "historical", "high-fantasy", "ancient", "medieval"],
@@ -611,11 +612,11 @@
       "tapered legs on ball-and-claw feet, each surface-gilded"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "gothic-mirror",
+    "taxonomy": "prop",
     "label": "Gothic Mirror",
     "category": "furniture",
     "applies_to": ["gothic-horror", "horror", "dark-fantasy"],
@@ -626,11 +627,11 @@
       "base plinth of ebonised wood, carved with skulls, surface dusty"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "control-console",
+    "taxonomy": "prop",
     "label": "Control Console",
     "category": "furniture",
     "applies_to": ["scifi", "space-opera", "cyberpunk", "hard-scifi", "military"],
@@ -641,11 +642,11 @@
       "cable management channels at rear, bundled conduits visible"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "saloon-piano",
+    "taxonomy": "prop",
     "label": "Saloon Piano",
     "category": "furniture",
     "applies_to": ["western", "classic-western", "spaghetti-western", "weird-west"],
@@ -656,11 +657,11 @@
       "front panel open revealing hammers of felt, stained"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "war-table",
+    "taxonomy": "prop",
     "label": "War Table",
     "category": "furniture",
     "applies_to": ["medieval", "military", "historical", "fantasy"],
@@ -671,11 +672,11 @@
       "candle stubs in iron holders at table corners, wax-pooled"
     ],
     "view": "three-quarter",
-    "aspect": "4:3",
-    "ext": {}
+    "aspect": "4:3"
   },
   {
     "id": "war-drum",
+    "taxonomy": "prop",
     "label": "War Drum",
     "category": "instrument",
     "applies_to": ["ancient", "historical", "fantasy", "viking"],
@@ -686,11 +687,11 @@
       "rope tension loops knotted in V-pattern along body"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "lute",
+    "taxonomy": "prop",
     "label": "Lute",
     "category": "instrument",
     "applies_to": ["fantasy", "medieval", "historical", "fairytale"],
@@ -701,11 +702,11 @@
       "gut strings aged to cream, bridge of ebonised wood, low profile"
     ],
     "view": "three-quarter",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "ritual-gong",
+    "taxonomy": "prop",
     "label": "Ritual Gong",
     "category": "instrument",
     "applies_to": ["wuxia", "historical", "ancient"],
@@ -716,11 +717,11 @@
       "padded mallet of wrapped leather, resting on frame hook"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "battle-standard",
+    "taxonomy": "prop",
     "label": "Battle Standard",
     "category": "banner",
     "applies_to": ["fantasy", "historical", "medieval", "high-fantasy", "ancient"],
@@ -731,11 +732,11 @@
       "fabric edge frayed from campaign, several tears partially mended"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "regimental-colors",
+    "taxonomy": "prop",
     "label": "Regimental Colors",
     "category": "banner",
     "applies_to": ["wwi", "wwii", "military", "historical"],
@@ -746,11 +747,11 @@
       "pike staff of turned wood, crowned finial of gilt metal"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   },
   {
     "id": "clan-sigil-banner",
+    "taxonomy": "prop",
     "label": "Clan Sigil Banner",
     "category": "banner",
     "applies_to": ["wuxia", "samurai", "historical", "fantasy"],
@@ -761,7 +762,6 @@
       "vertical pole of lacquered black wood, tapered to copper point"
     ],
     "view": "front",
-    "aspect": "1:1",
-    "ext": {}
+    "aspect": "1:1"
   }
 ]

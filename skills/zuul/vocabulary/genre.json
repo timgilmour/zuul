@@ -11,8 +11,7 @@
       "lighting_notes": "torchlight, moonlight, magical glow acceptable in source"
     },
     "traits": ["magic-present", "pre-gunpowder", "mythological-creatures", "class-hierarchies"],
-    "prompt_fragments": ["fantasy game concept art", "medieval fantasy aesthetic", "hand-crafted materials"],
-    "ext": {}
+    "prompt_fragments": ["fantasy game concept art", "medieval fantasy aesthetic", "hand-crafted materials"]
   },
   {
     "id": "horror",
@@ -26,8 +25,7 @@
       "lighting_notes": "tone via palette and form; render flat per render-rules regardless of source mood"
     },
     "traits": ["fear-driven", "mortality-themes", "the-uncanny", "transgression-of-the-natural"],
-    "prompt_fragments": ["horror concept art", "unsettling subject design", "dread conveyed through form and palette"],
-    "ext": {}
+    "prompt_fragments": ["horror concept art", "unsettling subject design", "dread conveyed through form and palette"]
   },
   {
     "id": "scifi",
@@ -41,8 +39,7 @@
       "lighting_notes": "bioluminescent panels, holographic UI glow, hard vacuum light"
     },
     "traits": ["technology-dominant", "space-faring", "synthetic-life", "post-scarcity-or-dystopia"],
-    "prompt_fragments": ["sci-fi concept art", "futuristic aesthetic", "advanced technology materials"],
-    "ext": {}
+    "prompt_fragments": ["sci-fi concept art", "futuristic aesthetic", "advanced technology materials"]
   },
   {
     "id": "modern",
@@ -56,8 +53,7 @@
       "lighting_notes": "natural daylight or artificial interior lighting"
     },
     "traits": ["real-world-physics", "no-magic", "firearms-era", "institutional-structures"],
-    "prompt_fragments": ["modern concept art", "grounded realistic aesthetic", "20th-century-to-present setting"],
-    "ext": {}
+    "prompt_fragments": ["modern concept art", "grounded realistic aesthetic", "20th-century-to-present setting"]
   },
   {
     "id": "science-fantasy",
@@ -71,8 +67,7 @@
       "lighting_notes": "glowing cores, arc-light, atomic glow acceptable in source"
     },
     "traits": ["magic-and-technology", "anachronistic-tech", "retrofuturism", "rule-of-cool"],
-    "prompt_fragments": ["science fantasy concept art", "retrofuturist aesthetic", "magic-meets-machine design"],
-    "ext": {}
+    "prompt_fragments": ["science fantasy concept art", "retrofuturist aesthetic", "magic-meets-machine design"]
   },
   {
     "id": "historical",
@@ -86,8 +81,7 @@
       "lighting_notes": "daylight, firelight, lantern — period-accurate"
     },
     "traits": ["real-world-history", "no-magic", "period-accurate-materials", "pre-industrial-to-early-modern"],
-    "prompt_fragments": ["historical concept art", "period-accurate aesthetic", "authentic materials and construction"],
-    "ext": {}
+    "prompt_fragments": ["historical concept art", "period-accurate aesthetic", "authentic materials and construction"]
   },
   {
     "id": "western",
@@ -101,7 +95,6 @@
       "lighting_notes": "harsh sun, golden-hour dust, lantern interior"
     },
     "traits": ["frontier-setting", "firearms", "lawless-or-frontier-justice", "rugged-survival"],
-    "prompt_fragments": ["western concept art", "frontier aesthetic", "dusty weathered materials"],
-    "ext": {}
+    "prompt_fragments": ["western concept art", "frontier aesthetic", "dusty weathered materials"]
   }
 ]

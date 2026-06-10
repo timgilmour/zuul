@@ -2,6 +2,7 @@
   {
     "id": "high-fantasy",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "fantasy",
     "label": "High Fantasy",
     "tone": "heroic, luminous, mythic",
@@ -16,12 +17,12 @@
       "gold-leaf ornamental detail",
       "luminous magical aesthetic",
       "heroic mythic scale"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "dark-fantasy",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "fantasy",
     "label": "Dark Fantasy",
     "tone": "grim, weathered, morally ambiguous",
@@ -36,12 +37,12 @@
       "battle-scarred corrupted design",
       "grim weathered materials",
       "morally ambiguous aesthetic"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "low-fantasy",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "fantasy",
     "label": "Low Fantasy",
     "tone": "grounded, mundane-world-with-rare-magic, unglamorous",
@@ -57,12 +58,12 @@
       "mud-and-linen colour palette",
       "crude hand-forged iron tools",
       "grounded no-magic design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "fairytale",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "fantasy",
     "label": "Fairytale",
     "tone": "whimsical, storybook-enchanted, surface-sweet with dark undertow",
@@ -78,12 +79,12 @@
       "rose-blush and gilded-cream palette",
       "delicate glass and spun-gold materials",
       "whimsical surface with dark undertone"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "fantasy",
     "label": "Wuxia",
     "tone": "martial nobility, flowing and swift, honour-bound",
@@ -99,12 +100,12 @@
       "ink-black lacquer-red palette",
       "jade and carved ivory detail",
       "martial-nobility Chinese fantasy aesthetic"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cosmic-horror",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "horror",
     "label": "Cosmic Horror",
     "tone": "vast, unknowable, wrong",
@@ -119,12 +120,12 @@
       "deep-violet and bioluminescent-green palette",
       "writhing iridescent corruption",
       "wrong proportions, unknowable geometry"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gothic-horror",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "horror",
     "label": "Gothic Horror",
     "tone": "decayed, aristocratic, tragic",
@@ -139,12 +140,12 @@
       "ash-grey and deep-crimson palette",
       "tarnished silver and candlelight-amber detail",
       "ornate crumbling materials"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "movie-horror",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "horror",
     "label": "Movie Horror",
     "tone": "slasher-real, suburban-uncanny, visceral shock",
@@ -159,12 +160,12 @@
       "everyday palette broken by violence red",
       "harsh fluorescent lighting aesthetic",
       "movie-horror character design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "body-horror",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "horror",
     "label": "Body Horror",
     "tone": "flesh transgressed, biological wrongness, organic corruption",
@@ -180,12 +181,12 @@
       "raw-flesh and arterial-red palette",
       "fused bone and exposed tissue materials",
       "organic wrongness aesthetic"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "folk-horror",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "horror",
     "label": "Folk Horror",
     "tone": "rural, pagan, isolation-dread, old-rites",
@@ -201,12 +202,12 @@
       "harvest-gold and dried-blood palette",
       "wicker and rough-woven wool materials",
       "isolation-dread old-rites design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pulp-scifi",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "scifi",
     "label": "Pulp Sci-Fi",
     "tone": "1950s rocket-age optimism, lurid and bold, chrome and ray-guns",
@@ -222,12 +223,12 @@
       "chrome and candy-red palette",
       "bakelite and polished-tin materials",
       "ray-gun retro design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cyberpunk",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "scifi",
     "label": "Cyberpunk",
     "tone": "neon-soaked, corporate dystopia, street-level grit",
@@ -243,12 +244,12 @@
       "cracked synth-leather and chrome implants",
       "corporate dystopia street-level aesthetic",
       "rain-slick dark city materials"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "space-opera",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "scifi",
     "label": "Space Opera",
     "tone": "galactic epic scale, diverse alien cultures, baroque starship design",
@@ -264,12 +265,12 @@
       "nebula-violet and gold-hull palette",
       "alien carapace and void-silk materials",
       "diverse alien culture character design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hard-scifi",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "scifi",
     "label": "Hard SF",
     "tone": "industrial, utilitarian, lived-in realism",
@@ -285,12 +286,12 @@
       "gunmetal and warning-orange palette",
       "dented patched pressure-suit design",
       "lived-in worn-grip-tape materials"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "post-human",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "scifi",
     "label": "Post-Human",
     "tone": "transcended biology, fluid identity, synthetic sublime",
@@ -306,12 +307,12 @@
       "translucent-white and bioluminescent-blue palette",
       "neural-lace and vat-cultured tissue materials",
       "fluid identity post-biological design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "military",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "modern",
     "label": "Military",
     "tone": "contemporary tactical, utilitarian lethality, unit cohesion",
@@ -326,12 +327,12 @@
       "multicam and coyote-tan palette",
       "modular load-bearing equipment design",
       "flat-dark-earth matte-finish materials"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "superhero",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "modern",
     "label": "Superhero",
     "tone": "larger-than-life, iconic silhouette, power made visible",
@@ -347,12 +348,12 @@
       "primary hero colour palette",
       "spandex-composite and impact-polymer materials",
       "power-made-visible aesthetic"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wwii",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "modern",
     "label": "WWII",
     "tone": "wartime grim pragmatism, olive drab and field grey, total-war scale",
@@ -367,12 +368,12 @@
       "wartime pragmatic equipment design",
       "blued-steel and leather-brown materials",
       "total-war-era aesthetic"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wwi",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "modern",
     "label": "WWI",
     "tone": "mud-and-wire attrition, early industrial warfare, tragic futility",
@@ -387,12 +388,12 @@
       "mud-brown and khaki-drab palette",
       "gas-mask and wire-entanglement design",
       "early-industrial-warfare materials"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "noir",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "modern",
     "label": "Noir",
     "tone": "rain-slicked cynicism, crime-world shadow, moral ambiguity in fedora and trench coat",
@@ -408,12 +409,12 @@
       "near-monochrome charcoal-and-amber palette",
       "wool-serge and worn-leather materials",
       "hard-boiled shadow design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "espionage",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "modern",
     "label": "Espionage",
     "tone": "cold-war sleek, tradecraft concealment, elegant lethality",
@@ -428,12 +429,12 @@
       "charcoal-and-navy palette",
       "tailored concealed-weapon design",
       "elegant lethal operative aesthetic"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "steampunk",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "science-fantasy",
     "label": "Steampunk",
     "tone": "Victorian-industrial, brass-and-steam ingenuity, clockwork grandeur",
@@ -449,12 +450,12 @@
       "aged-brass and copper-verdigris palette",
       "riveted boiler-steel and mahogany materials",
       "steam-powered grand-machine design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "dieselpunk",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "science-fantasy",
     "label": "Dieselpunk",
     "tone": "interwar industrial, art-deco geometry, oil-and-iron machismo",
@@ -470,12 +471,12 @@
       "battleship-grey and gold-stripe palette",
       "rolled-steel and chrome-trim materials",
       "oil-and-iron machismo design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "atompunk",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "science-fantasy",
     "label": "Atompunk",
     "tone": "1950s atomic optimism laced with fallout dread, space-age domestic",
@@ -491,12 +492,12 @@
       "aqua-teal and lemon-yellow palette",
       "fibreglass and Formica-laminate materials",
       "space-age domestic design with fallout dread"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gamma-world",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "science-fantasy",
     "label": "Gamma World",
     "tone": "post-apocalyptic mutant pulp, salvage-tech exuberance, irradiated absurdity",
@@ -512,12 +513,12 @@
       "radiation-green and rust-orange palette",
       "salvaged-scrap and mutant-bone materials",
       "irradiated wasteland design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sword-and-planet",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "science-fantasy",
     "label": "Sword & Planet",
     "tone": "planetary romance, exotic alien barbarism, steel-and-starship heroics",
@@ -533,12 +534,12 @@
       "magenta-sky and copper-sand palette",
       "exotic alien-hide and crystal-tech materials",
       "steel-and-starship heroic design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ancient",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "historical",
     "label": "Ancient",
     "tone": "bronze-age to classical antiquity, monumental and sun-baked",
@@ -553,12 +554,12 @@
       "limestone-white and terracotta palette",
       "bronze and azurite-blue material design",
       "monumental sun-baked construction"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "viking",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "historical",
     "label": "Viking / Norse",
     "tone": "brutal, earthy, tribal warrior-caste",
@@ -573,12 +574,12 @@
       "bronze and woad-blue palette",
       "undyed-linen and rust-iron materials",
       "knotwork torc rough-hewn design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "medieval",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "historical",
     "label": "Medieval",
     "tone": "feudal Europe, chainmail pragmatism, ecclesiastical weight",
@@ -593,12 +594,12 @@
       "chainmail-silver and heraldic-red palette",
       "parchment and wool-black materials",
       "ecclesiastical heraldic design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "samurai",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "historical",
     "label": "Samurai",
     "tone": "feudal Japanese discipline, lacquer and steel, austere elegance",
@@ -613,12 +614,12 @@
       "lacquer-red and ink-black palette",
       "burnished-steel and undyed-silk materials",
       "austere disciplined mon design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "age-of-sail",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "historical",
     "label": "Age of Sail",
     "tone": "maritime empire, salt and tar, broadside cannon grandeur",
@@ -633,12 +634,12 @@
       "ocean-grey and tarred-oak palette",
       "brass-fittings and cannon-black materials",
       "broadside colonial nautical design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "classic-western",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "western",
     "label": "Classic Western",
     "tone": "frontier honour code, sun-bleached open range, Hollywood golden age",
@@ -653,12 +654,12 @@
       "sun-bleached-cream and saddle-tan palette",
       "dark-chocolate-leather and blued-steel materials",
       "open-range cowboy design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "spaghetti-western",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "western",
     "label": "Spaghetti Western",
     "tone": "nihilistic, grimy, close-up tension, Leone morally-empty landscape",
@@ -674,12 +675,12 @@
       "bleached-bone and burnt-sienna palette",
       "cracked-leather and sweat-stained-linen materials",
       "morally-empty arid landscape design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "weird-west",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "western",
     "label": "Weird West",
     "tone": "frontier horror-occult, supernatural corruption in dust-town USA",
@@ -695,12 +696,12 @@
       "dust-tan and corruption-purple palette",
       "cursed-leather and occult-carved-bone materials",
       "supernatural corruption western design"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "apocalypse-west",
     "level": "subgenre",
+    "taxonomy": "subgenre",
     "parent": "western",
     "label": "Apocalypse West",
     "tone": "post-collapse frontier, salvage-cowboy, wasteland-range lawlessness",
@@ -716,7 +717,6 @@
       "ash-grey and rust-red palette",
       "salvaged-denim and duct-taped-leather materials",
       "wasteland frontier lawless design"
-    ],
-    "ext": {}
+    ]
   }
 ]

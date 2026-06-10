@@ -1,5 +1,7 @@
 [
   {
+    "id": "large-orc",
+    "taxonomy": "intersection",
     "when": ["orc", "large"],
     "label": "Large Orc",
     "visual_override": {
@@ -7,10 +9,11 @@
       "features_add": ["barrel chest wider than two humans", "neck as thick as a thigh"]
     },
     "traits_add": ["alpha-presence", "physically-dominant"],
-    "prompt_fragments_add": ["towering even among orcs", "barrel chest", "physically dominant silhouette"],
-    "ext": {}
+    "prompt_fragments_add": ["towering even among orcs", "barrel chest", "physically dominant silhouette"]
   },
   {
+    "id": "orc-barbarian",
+    "taxonomy": "intersection",
     "when": ["orc", "barbarian"],
     "label": "Orc Barbarian",
     "visual_override": {
@@ -18,10 +21,11 @@
       "build_note": "war paint covers what armour does not"
     },
     "traits_add": ["feral-rage-capable", "tribal-champion"],
-    "prompt_fragments_add": ["war paint on grey-green skin", "minimal hide scraps", "tusks bared"],
-    "ext": {}
+    "prompt_fragments_add": ["war paint on grey-green skin", "minimal hide scraps", "tusks bared"]
   },
   {
+    "id": "elf-wizard",
+    "taxonomy": "intersection",
     "when": ["elf", "wizard"],
     "label": "Elf Wizard",
     "visual_override": {
@@ -29,10 +33,11 @@
       "features_note": "high ears and angular features frame the arcane glow"
     },
     "traits_add": ["ancient-arcane-bloodline", "centuries-of-study"],
-    "prompt_fragments_add": ["ancient star-embroidered robes", "arcane glow in the eyes", "centuries of study in the bearing"],
-    "ext": {}
+    "prompt_fragments_add": ["ancient star-embroidered robes", "arcane glow in the eyes", "centuries of study in the bearing"]
   },
   {
+    "id": "dwarf-tinker",
+    "taxonomy": "intersection",
     "when": ["dwarf", "tinker"],
     "label": "Dwarf Tinker",
     "visual_override": {
@@ -40,20 +45,22 @@
       "accessories_add": ["clan rune on primary tool"]
     },
     "traits_add": ["master-craftsman-lineage", "stubborn-perfectionism"],
-    "prompt_fragments_add": ["clan rune on tools", "stocky powerfully-built workshop figure", "stubborn perfectionist's precision"],
-    "ext": {}
+    "prompt_fragments_add": ["clan rune on tools", "stocky powerfully-built workshop figure", "stubborn perfectionist's precision"]
   },
   {
+    "id": "ancient-legend",
+    "taxonomy": "intersection",
     "when": ["ancient", "legendary"],
     "label": "Ancient Legend",
     "visual_override": {
       "presence_note": "reality subtly bends around them — not mythic distortion, but the air of someone who outlasted empires"
     },
     "traits_add": ["history-walking", "beyond-mortality"],
-    "prompt_fragments_add": ["presence of someone who outlasted empires", "subtle aura of accumulated history"],
-    "ext": {}
+    "prompt_fragments_add": ["presence of someone who outlasted empires", "subtle aura of accumulated history"]
   },
   {
+    "id": "large-corrupted",
+    "taxonomy": "intersection",
     "when": ["corrupted", "large"],
     "label": "Large Corrupted",
     "visual_override": {
@@ -61,10 +68,11 @@
       "features_add": ["dark veins visible at greater range", "corruption cracks glow brighter with scale"]
     },
     "traits_add": ["corruption-fuelled-growth", "unstable-power"],
-    "prompt_fragments_add": ["corruption cracks glowing across massive frame", "dark energy pulsing with each movement"],
-    "ext": {}
+    "prompt_fragments_add": ["corruption cracks glowing across massive frame", "dark energy pulsing with each movement"]
   },
   {
+    "id": "large-hiver",
+    "taxonomy": "intersection",
     "when": ["hiver", "large"],
     "label": "Large Hiver",
     "visual_override": {
@@ -72,10 +80,11 @@
       "features_add": ["mandibles the size of short swords", "wing-cases span wider than a man"]
     },
     "traits_add": ["warrior-caste", "hive-general"],
-    "prompt_fragments_add": ["warrior-caste hiver exoskeleton", "mandibles like short swords", "wide wing-cases"],
-    "ext": {}
+    "prompt_fragments_add": ["warrior-caste hiver exoskeleton", "mandibles like short swords", "wide wing-cases"]
   },
   {
+    "id": "tiefling-warlock",
+    "taxonomy": "intersection",
     "when": ["tiefling", "warlock"],
     "label": "Tiefling Warlock",
     "visual_override": {
@@ -83,20 +92,22 @@
       "features_note": "horns are part of the eldritch aesthetic, not just heritage"
     },
     "traits_add": ["patron-and-heritage-blur", "doubly-feared"],
-    "prompt_fragments_add": ["infernal heritage marks and patron marks overlapping on skin", "horns framing the eldritch focus", "doubly-feared presence"],
-    "ext": {}
+    "prompt_fragments_add": ["infernal heritage marks and patron marks overlapping on skin", "horns framing the eldritch focus", "doubly-feared presence"]
   },
   {
+    "id": "battle-worn-legend",
+    "taxonomy": "intersection",
     "when": ["battle-worn", "legendary"],
     "label": "Battle-Worn Legend",
     "visual_override": {
       "gear_note": "the named artefacts are notched, repaired, and famous for their scars as much as their power"
     },
     "traits_add": ["wars-survived-not-avoided", "scars-are-the-legend"],
-    "prompt_fragments_add": ["notched legendary blade repaired a hundred times", "artefacts famous for their battle-scars"],
-    "ext": {}
+    "prompt_fragments_add": ["notched legendary blade repaired a hundred times", "artefacts famous for their battle-scars"]
   },
   {
+    "id": "ancient-cultivator",
+    "taxonomy": "intersection",
     "when": ["wuxia-cultivator", "ancient"],
     "label": "Ancient Cultivator",
     "visual_override": {
@@ -104,10 +115,11 @@
       "features_add": ["qi visible as hovering motes of light", "sect robes have been rewoven by the centuries"]
     },
     "traits_add": ["ascendant-dao", "centuries-of-cultivation", "near-immortal"],
-    "prompt_fragments_add": ["ageless face with ancient stillness", "vast quiet qi field visible as hovering motes", "centuries-rewoven sect robes"],
-    "ext": {}
+    "prompt_fragments_add": ["ageless face with ancient stillness", "vast quiet qi field visible as hovering motes", "centuries-rewoven sect robes"]
   },
   {
+    "id": "elf-ranger",
+    "taxonomy": "intersection",
     "when": ["elf", "ranger"],
     "label": "Elf Ranger",
     "visual_override": {
@@ -115,10 +127,11 @@
       "build_note": "elven grace amplifies ranger agility into something borderline supernatural"
     },
     "traits_add": ["centuries-of-tracking", "forest-as-home-not-terrain"],
-    "prompt_fragments_add": ["forest armour that looks grown not crafted", "elven grace making movement nearly supernatural", "centuries of reading the wild in the eyes"],
-    "ext": {}
+    "prompt_fragments_add": ["forest armour that looks grown not crafted", "elven grace making movement nearly supernatural", "centuries of reading the wild in the eyes"]
   },
   {
+    "id": "dwarf-fighter",
+    "taxonomy": "intersection",
     "when": ["dwarf", "fighter"],
     "label": "Dwarf Fighter",
     "visual_override": {
@@ -126,10 +139,11 @@
       "build_note": "stocky fighter build is almost perfectly optimised — low stance, high durability, axe level with the chin of a taller opponent"
     },
     "traits_add": ["axe-culture", "clan-forged-gear", "stance-is-a-fortress"],
-    "prompt_fragments_add": ["clan-forged armour clearly superior to mass production", "low stable fighting stance", "axe naturally level with a taller opponent's chin"],
-    "ext": {}
+    "prompt_fragments_add": ["clan-forged armour clearly superior to mass production", "low stable fighting stance", "axe naturally level with a taller opponent's chin"]
   },
   {
+    "id": "tiefling-rogue",
+    "taxonomy": "intersection",
     "when": ["tiefling", "rogue"],
     "label": "Tiefling Rogue",
     "visual_override": {
@@ -137,10 +151,11 @@
       "features_note": "solid eyes see in darkness naturally; horns are filed down for mask compatibility"
     },
     "traits_add": ["natural-dark-vision", "tail-as-tool", "outsider-turned-invisible"],
-    "prompt_fragments_add": ["tail used for balance or carrying small tools", "filed-down horns for mask compatibility", "solid eyes made for darkness"],
-    "ext": {}
+    "prompt_fragments_add": ["tail used for balance or carrying small tools", "filed-down horns for mask compatibility", "solid eyes made for darkness"]
   },
   {
+    "id": "aasimar-paladin",
+    "taxonomy": "intersection",
     "when": ["aasimar", "paladin"],
     "label": "Aasimar Paladin",
     "visual_override": {
@@ -148,10 +163,11 @@
       "features_note": "when smiting, the halo becomes visible and the solid silver eyes glow gold"
     },
     "traits_add": ["living-divine-vessel", "smite-manifests-visibly", "the-divine-is-not-metaphor"],
-    "prompt_fragments_add": ["divine plate that looks grown not forged", "halo visible when power activates", "solid silver eyes capable of gold divine glow"],
-    "ext": {}
+    "prompt_fragments_add": ["divine plate that looks grown not forged", "halo visible when power activates", "solid silver eyes capable of gold divine glow"]
   },
   {
+    "id": "drow-warlock",
+    "taxonomy": "intersection",
     "when": ["drow", "warlock"],
     "label": "Drow Warlock",
     "visual_override": {
@@ -159,10 +175,11 @@
       "features_note": "glowing red eyes now have eldritch flickering; the patron and the spider queen are rivals on the same skin"
     },
     "traits_add": ["spider-queen-and-patron-in-tension", "underdark-plus-outer-darkness", "doubly-alienated"],
-    "prompt_fragments_add": ["spider silk robes with eldritch weavings", "red eyes flickering with patron energy", "spider queen and patron competing for the same bearer"],
-    "ext": {}
+    "prompt_fragments_add": ["spider silk robes with eldritch weavings", "red eyes flickering with patron energy", "spider queen and patron competing for the same bearer"]
   },
   {
+    "id": "tabaxi-rogue",
+    "taxonomy": "intersection",
     "when": ["tabaxi", "rogue"],
     "label": "Tabaxi Rogue",
     "visual_override": {
@@ -170,10 +187,11 @@
       "features_note": "retractable claws replace daggers; tail is a balance asset and rope-analogue"
     },
     "traits_add": ["natural-camouflage-pattern", "claws-as-weapons", "nine-lives-feels-literal"],
-    "prompt_fragments_add": ["cat fur pattern augmenting the dark leather camouflage", "retractable claws out for work", "tail extended for balance on the job"],
-    "ext": {}
+    "prompt_fragments_add": ["cat fur pattern augmenting the dark leather camouflage", "retractable claws out for work", "tail extended for balance on the job"]
   },
   {
+    "id": "warforged-fighter",
+    "taxonomy": "intersection",
     "when": ["warforged", "fighter"],
     "label": "Warforged Fighter",
     "visual_override": {
@@ -181,10 +199,11 @@
       "build_note": "every scar is a repair; the weapon grip has worn grooves that match only these hands"
     },
     "traits_add": ["armour-is-not-worn-it-is", "weapon-grooves-fit-only-these-hands", "war-that-made-them-is-over-but-they-are-not"],
-    "prompt_fragments_add": ["composite body-armour with no distinction between flesh and plate", "worn repair marks across the chassis", "weapon grip shaped to fit these specific hands over years of use"],
-    "ext": {}
+    "prompt_fragments_add": ["composite body-armour with no distinction between flesh and plate", "worn repair marks across the chassis", "weapon grip shaped to fit these specific hands over years of use"]
   },
   {
+    "id": "goliath-barbarian",
+    "taxonomy": "intersection",
     "when": ["goliath", "barbarian"],
     "label": "Goliath Barbarian",
     "visual_override": {
@@ -192,10 +211,11 @@
       "armor_note": "minimal armour looks even more minimal on a 7-foot frame — barely enough to cover the strategic points"
     },
     "traits_add": ["stone-blooded-rage", "lithoderms-as-armour", "mountain-made-flesh"],
-    "prompt_fragments_add": ["lithoderm stone markings faintly glowing under rage", "7-foot frame making minimal armour look even more minimal", "mountain made into a person"],
-    "ext": {}
+    "prompt_fragments_add": ["lithoderm stone markings faintly glowing under rage", "7-foot frame making minimal armour look even more minimal", "mountain made into a person"]
   },
   {
+    "id": "lizardfolk-scientist",
+    "taxonomy": "intersection",
     "when": ["lizardfolk", "scientist"],
     "label": "Lizardfolk Scientist",
     "visual_override": {
@@ -203,10 +223,11 @@
       "build_note": "tail and scales underneath the lab coat; the coat is an accommodation for the environment, not truly theirs"
     },
     "traits_add": ["predator-logic-applied-to-science", "empathy-gap-as-clarity", "understands-specimen-because-is-specimen"],
-    "prompt_fragments_add": ["slit pupils tracking specimens with predator focus", "lab coat over scaled hide as environmental accommodation", "cold predator logic applied to scientific method"],
-    "ext": {}
+    "prompt_fragments_add": ["slit pupils tracking specimens with predator focus", "lab coat over scaled hide as environmental accommodation", "cold predator logic applied to scientific method"]
   },
   {
+    "id": "exiled-legend",
+    "taxonomy": "intersection",
     "when": ["exiled", "legendary"],
     "label": "Exiled Legend",
     "visual_override": {
@@ -214,7 +235,6 @@
       "presence_note": "everyone knows who they are; the exile removed the title, not the reputation"
     },
     "traits_add": ["reputation-precedes-institution", "the-exile-is-the-injustice", "legend-stripped-of-rank-not-of-power"],
-    "prompt_fragments_add": ["legendary gear with insignia removed but power undeniable", "reputation visible in bearing that no exile can erase", "everyone knows who they are without the title"],
-    "ext": {}
+    "prompt_fragments_add": ["legendary gear with insignia removed but power undeniable", "reputation visible in bearing that no exile can erase", "everyone knows who they are without the title"]
   }
 ]

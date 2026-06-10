@@ -2,6 +2,10 @@
   "name": "zuul-tools",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "validate": "bun run validate-vocab.mjs",
+    "test": "bun test"
+  },
   "dependencies": {
     "@google/genai": "^1.43.0"
   }

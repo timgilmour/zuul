@@ -1,6 +1,7 @@
 [
   {
     "id": "rebel-starfighter",
+    "taxonomy": "vehicle",
     "label": "Rebel Starfighter",
     "applies_to": ["scifi", "space-opera"],
     "prompt_fragments": [
@@ -12,11 +13,11 @@
       "hull number stencilled on the fuselage"
     ],
     "view": "3/4 front",
-    "aspect": "3:2",
-    "ext": {}
+    "aspect": "3:2"
   },
   {
     "id": "imperial-dreadnought",
+    "taxonomy": "vehicle",
     "label": "Imperial Dreadnought",
     "applies_to": ["scifi", "space-opera"],
     "prompt_fragments": [
@@ -27,11 +28,11 @@
       "no chrome or reflective surfaces"
     ],
     "view": "Side",
-    "aspect": "16:9",
-    "ext": {}
+    "aspect": "16:9"
   },
   {
     "id": "goblin-war-barge",
+    "taxonomy": "vehicle",
     "label": "Goblin War Barge",
     "applies_to": ["fantasy", "dark-fantasy", "low-fantasy"],
     "prompt_fragments": [
@@ -42,11 +43,11 @@
       "crude iron fittings and exposed rope lashings"
     ],
     "view": "3/4 front",
-    "aspect": "3:2",
-    "ext": {}
+    "aspect": "3:2"
   },
   {
     "id": "steampunk-ironclad",
+    "taxonomy": "vehicle",
     "label": "Steampunk Ironclad",
     "applies_to": ["steampunk"],
     "prompt_fragments": [
@@ -57,11 +58,11 @@
       "shallow-draft flat-bottomed hull form"
     ],
     "view": "Side",
-    "aspect": "16:9",
-    "ext": {}
+    "aspect": "16:9"
   },
   {
     "id": "hover-apc",
+    "taxonomy": "vehicle",
     "label": "Hover APC",
     "applies_to": ["scifi", "hard-scifi"],
     "prompt_fragments": [
@@ -72,11 +73,11 @@
       "no chrome or reflective surfaces"
     ],
     "view": "3/4 front",
-    "aspect": "3:2",
-    "ext": {}
+    "aspect": "3:2"
   },
   {
     "id": "ornithopter",
+    "taxonomy": "vehicle",
     "label": "Ornithopter",
     "applies_to": ["steampunk"],
     "prompt_fragments": [
@@ -87,11 +88,11 @@
       "mechanical linkage rods connecting wing joints"
     ],
     "view": "3/4 front",
-    "aspect": "3:2",
-    "ext": {}
+    "aspect": "3:2"
   },
   {
     "id": "xianxia-cloud-boat",
+    "taxonomy": "vehicle",
     "label": "Xianxia Cloud Boat",
     "applies_to": ["wuxia"],
     "prompt_fragments": [
@@ -102,11 +103,11 @@
       "ornate wooden railings with golden filigree trim"
     ],
     "view": "3/4 front",
-    "aspect": "3:2",
-    "ext": {}
+    "aspect": "3:2"
   },
   {
     "id": "attack-helicopter",
+    "taxonomy": "vehicle",
     "label": "Attack Helicopter",
     "applies_to": ["modern", "military"],
     "prompt_fragments": [
@@ -117,11 +118,11 @@
       "tail rotor and stabiliser fin at the rear"
     ],
     "view": "Side",
-    "aspect": "16:9",
-    "ext": {}
+    "aspect": "16:9"
   },
   {
     "id": "gothic-hearse-coach",
+    "taxonomy": "vehicle",
     "label": "Gothic Funeral Hearse-Coach",
     "applies_to": ["horror", "gothic-horror"],
     "prompt_fragments": [
@@ -133,7 +134,6 @@
       "empty harness shafts extending forward from the bow, deep-crimson moth-eaten velvet drapes behind the panels"
     ],
     "view": "3/4 front",
-    "aspect": "3:2",
-    "ext": {}
+    "aspect": "3:2"
   }
 ]

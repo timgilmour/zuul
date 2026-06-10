@@ -8,8 +8,7 @@
     "default": true,
     "uses_framing": true,
     "prompt": "Clean game concept art style, crisp readable silhouette, clear forms. <FRAMING> view, entire subject in frame, centered with empty margin on all sides. No perspective distortion, no foreshortening, neutral eye-level camera. Flat even diffuse studio lighting, soft and shadowless, no rim light, no cast shadows. Matte surfaces, no reflections, no glossy or wet highlights. Pure white seamless background, single subject fully isolated. Still, sharp focus, high detail.",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "cinematic-key-art",
@@ -19,8 +18,7 @@
     "mesh_safe": false,
     "uses_framing": true,
     "prompt": "Cinematic character key art, dramatic and atmospheric. <FRAMING> composition with a strong sense of depth and scale. Expressive directional lighting with rim light, bounce, and deep contrast; moody cinematic colour grade and soft volumetric atmosphere. Believable materials with natural highlights, reflections, and surface wear. Evocative background environment that supports the subject without overwhelming it. Sharp focus on the subject, high detail, polished cinematic finish.",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "painterly-concept",
@@ -30,8 +28,7 @@
     "mesh_safe": false,
     "uses_framing": true,
     "prompt": "Painterly concept illustration with visible, confident brushwork. <FRAMING> composition. Soft naturalistic lighting with gentle gradients and atmospheric depth. Hand-painted textures, loose expressive edges, and rich layered colour. A suggested environmental backdrop in muted tones. Strong readable silhouette, high detail in the focal areas, traditional digital-painting finish.",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "line-art-sketch",
@@ -41,8 +38,7 @@
     "mesh_safe": false,
     "uses_framing": true,
     "prompt": "Clean black-and-white line-art concept sketch. <FRAMING> view, entire subject in frame. Confident inked linework with clear contours, light hatching and cross-hatching for form and shadow, no flat colour fills. Plain white paper background. Strong readable silhouette, high line detail, classic illustration sketchbook finish.",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "flat-vector",
@@ -52,8 +48,7 @@
     "mesh_safe": false,
     "uses_framing": true,
     "prompt": "Flat vector illustration, bold and graphic. <FRAMING> view, entire subject in frame. Clean geometric shapes, a limited flat colour palette, crisp edges, minimal or no gradients, and subtle long shadows for depth. Plain solid-colour background. Strong iconic silhouette, modern flat-design finish.",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "photoreal-studio",
@@ -63,7 +58,6 @@
     "mesh_safe": false,
     "uses_framing": true,
     "prompt": "Photorealistic studio render. <FRAMING> view, subject full in frame. Soft three-point studio lighting with controlled highlights and gentle shadows on a seamless neutral backdrop. Physically based materials with accurate reflectance, micro-detail, and subsurface scattering where appropriate. Shallow depth of field on the focal point, ultra high detail, photoreal finish.",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   }
 ]

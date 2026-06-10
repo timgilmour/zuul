@@ -1,6 +1,7 @@
 [
   {
     "id": "barbarian",
+    "taxonomy": "role",
     "label": "Barbarian",
     "applies_to": [
       "fantasy"
@@ -11,11 +12,11 @@
       "war paint on face and chest",
       "raw muscular physique",
       "tribal bone fetishes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wizard",
+    "taxonomy": "role",
     "label": "Wizard",
     "applies_to": [
       "fantasy"
@@ -26,11 +27,11 @@
       "scholar's satchel",
       "soft leather slippers",
       "rings on multiple fingers"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "rogue",
+    "taxonomy": "role",
     "label": "Rogue",
     "applies_to": [
       "fantasy"
@@ -41,11 +42,11 @@
       "hood or half-mask",
       "lean agile build",
       "dark muted colours"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cleric",
+    "taxonomy": "role",
     "label": "Cleric",
     "applies_to": [
       "fantasy"
@@ -56,11 +57,11 @@
       "mace or warhammer",
       "solid dependable build",
       "prayer beads at wrist"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "paladin",
+    "taxonomy": "role",
     "label": "Paladin",
     "applies_to": [
       "fantasy"
@@ -71,11 +72,11 @@
       "longsword and tower shield",
       "imposing broad-shouldered silhouette",
       "holy symbol engraved on breastplate"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ranger",
+    "taxonomy": "role",
     "label": "Ranger",
     "applies_to": [
       "fantasy"
@@ -86,11 +87,11 @@
       "filled quiver at hip",
       "lean athletic build",
       "hood thrown back"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "bard",
+    "taxonomy": "role",
     "label": "Bard",
     "applies_to": [
       "fantasy"
@@ -101,11 +102,11 @@
       "instrument slung across back",
       "feathered cap",
       "performer's upright bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "druid",
+    "taxonomy": "role",
     "label": "Druid",
     "applies_to": [
       "fantasy"
@@ -116,11 +117,11 @@
       "antler or leaf crown",
       "herb pouches at belt",
       "earthy weathered look"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "fighter",
+    "taxonomy": "role",
     "label": "Fighter",
     "applies_to": [
       "fantasy"
@@ -131,11 +132,11 @@
       "longsword or battle-axe",
       "solid athletic build",
       "utility belt with fight trophies"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "warlock",
+    "taxonomy": "role",
     "label": "Warlock",
     "applies_to": [
       "fantasy"
@@ -146,11 +147,11 @@
       "patron mark visible on skin",
       "dark gemstone amulet",
       "intense otherworldly bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "monk",
+    "taxonomy": "role",
     "label": "Monk",
     "applies_to": [
       "fantasy"
@@ -161,11 +162,11 @@
       "bare hands or quarterstaff",
       "lean defined build",
       "order sash at waist"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sorcerer",
+    "taxonomy": "role",
     "label": "Sorcerer",
     "applies_to": [
       "fantasy"
@@ -176,11 +177,11 @@
       "arcane energy at fingertips",
       "crystal or jewel focus",
       "raw magical aura visible"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "necromancer",
+    "taxonomy": "role",
     "label": "Necromancer",
     "applies_to": [
       "fantasy"
@@ -191,11 +192,11 @@
       "gaunt pale features",
       "soul gem at belt",
       "grave-soil vials on bandolier"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "assassin",
+    "taxonomy": "role",
     "label": "Assassin",
     "applies_to": [
       "fantasy"
@@ -206,11 +207,11 @@
       "poisoned short blades",
       "poison vial belt",
       "zero wasted silhouette"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "knight",
+    "taxonomy": "role",
     "label": "Knight",
     "applies_to": [
       "fantasy"
@@ -221,11 +222,11 @@
       "longsword at hip",
       "noble upright bearing",
       "favour ribbon at pauldron"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "shaman",
+    "taxonomy": "role",
     "label": "Shaman",
     "applies_to": [
       "fantasy"
@@ -236,11 +237,11 @@
       "spirit mask worn or carried",
       "tribal spirit-eye face paint",
       "ancestor energy as faint wisps"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "inquisitor",
+    "taxonomy": "role",
     "label": "Inquisitor",
     "applies_to": [
       "fantasy"
@@ -251,11 +252,11 @@
       "authority blade at hip",
       "blessed crossbow at back",
       "cold institutional bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "summoner",
+    "taxonomy": "role",
     "label": "Summoner",
     "applies_to": [
       "fantasy"
@@ -266,11 +267,11 @@
       "summoning focus staff",
       "glowing contract marks on skin",
       "scholar's build"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "witch",
+    "taxonomy": "role",
     "label": "Witch",
     "applies_to": [
       "fantasy"
@@ -281,11 +282,11 @@
       "familiar on shoulder or at feet",
       "herb bundles and hex bags at belt",
       "wide-brimmed hat"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "arcane-archer",
+    "taxonomy": "role",
     "label": "Arcane Archer",
     "applies_to": [
       "fantasy"
@@ -296,11 +297,11 @@
       "light leather with arcane glyphs on pauldrons",
       "focus ring on draw hand",
       "lean precise build"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-cultivator",
+    "taxonomy": "role",
     "label": "Cultivator",
     "applies_to": [
       "wuxia"
@@ -311,11 +312,11 @@
       "cultivation sword at hip",
       "faint qi aura glow",
       "refined lean build"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-sect-elder",
+    "taxonomy": "role",
     "label": "Sect Elder",
     "applies_to": [
       "wuxia"
@@ -326,11 +327,11 @@
       "divine artifact staff",
       "ageless face with ancient presence",
       "long white or grey beard"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-demon-lord",
+    "taxonomy": "role",
     "label": "Demon Lord",
     "applies_to": [
       "wuxia"
@@ -341,11 +342,11 @@
       "demonic eyes",
       "skull-motif pauldrons",
       "imposing sinister silhouette"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-sword-saint",
+    "taxonomy": "role",
     "label": "Sword Saint",
     "applies_to": [
       "wuxia"
@@ -356,11 +357,11 @@
       "sword intent aura shimmer",
       "lean ascetic build",
       "absolute stillness"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-body-cultivator",
+    "taxonomy": "role",
     "label": "Body Cultivator",
     "applies_to": [
       "wuxia"
@@ -371,11 +372,11 @@
       "golden qi vein glow under skin",
       "extreme muscular density",
       "iron-sand callused hands"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-array-master",
+    "taxonomy": "role",
     "label": "Array Master",
     "applies_to": [
       "wuxia"
@@ -386,11 +387,11 @@
       "formation flags at belt",
       "jade slips in sleeve pockets",
       "calculating precise bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-beast-tamer",
+    "taxonomy": "role",
     "label": "Beast Tamer",
     "applies_to": [
       "wuxia"
@@ -401,11 +402,11 @@
       "beast-bond mark on wrist",
       "spirit beast contract tokens on cord",
       "bearing enlarged by powerful companion implied"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-pill-master",
+    "taxonomy": "role",
     "label": "Pill Master",
     "applies_to": [
       "wuxia"
@@ -416,11 +417,11 @@
       "jade pill bottles on belt",
       "flame control jade bangle",
       "revered bearing others defer to"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-heavenly-maiden",
+    "taxonomy": "role",
     "label": "Heavenly Maiden",
     "applies_to": [
       "wuxia"
@@ -431,11 +432,11 @@
       "celestial sword or divine ribbon weapon",
       "luminous presence from qi refinement",
       "sect-peak quality silks"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-ghost-cultivator",
+    "taxonomy": "role",
     "label": "Ghost Cultivator",
     "applies_to": [
       "wuxia"
@@ -446,11 +447,11 @@
       "yin death-qi aura",
       "ghost core cold glow at chest",
       "desaturated colour palette around them"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-war-god",
+    "taxonomy": "role",
     "label": "War God",
     "applies_to": [
       "wuxia"
@@ -461,11 +462,11 @@
       "supreme divine weapon — spear or blade",
       "war-god domain field effect in air around them",
       "battle scar cultivation marks"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-rogue-cultivator",
+    "taxonomy": "role",
     "label": "Rogue Cultivator",
     "applies_to": [
       "wuxia"
@@ -476,11 +477,11 @@
       "storage ring from dangerous ruins",
       "world-worn self-reliant bearing",
       "no sect badge or emblem"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hf-archmage",
+    "taxonomy": "role",
     "label": "Archmage",
     "applies_to": [
       "high-fantasy"
@@ -491,11 +492,11 @@
       "floating astral familiar or orbiting spell-foci",
       "ancient and weathered face beneath great dignity",
       "arcane order insignia on chest"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hf-high-king",
+    "taxonomy": "role",
     "label": "High King",
     "applies_to": [
       "high-fantasy"
@@ -506,11 +507,11 @@
       "flowing war-cloak in royal colours",
       "imposing regal bearing",
       "heraldic devices of united kingdoms on shield"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hf-runic-smith",
+    "taxonomy": "role",
     "label": "Runic Smith",
     "applies_to": [
       "high-fantasy"
@@ -521,11 +522,11 @@
       "rune-etching tools at belt",
       "stocky powerful build",
       "hammer with glowing inscribed head"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hf-dragon-knight",
+    "taxonomy": "role",
     "label": "Dragon Knight",
     "applies_to": [
       "high-fantasy"
@@ -536,11 +537,11 @@
       "lance or greatsword scaled to aerial combat",
       "bond-mark glowing at collarbone",
       "broad imposing frame"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "df-plague-doctor",
+    "taxonomy": "role",
     "label": "Plague Doctor",
     "applies_to": [
       "dark-fantasy"
@@ -551,11 +552,11 @@
       "wide-brim hat",
       "belt of tincture vials and lancets",
       "slim wiry build hidden beneath coat"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "df-witch-hunter",
+    "taxonomy": "role",
     "label": "Witch Hunter",
     "applies_to": [
       "dark-fantasy"
@@ -566,11 +567,11 @@
       "silver-loaded crossbow on back",
       "belt of hex-wards and blessed oils",
       "lean scarred build"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "df-flayed-knight",
+    "taxonomy": "role",
     "label": "Flayed Knight",
     "applies_to": [
       "dark-fantasy"
@@ -581,11 +582,11 @@
       "corruption veins tracing neck and jaw",
       "hollow visor with faint malevolent glow",
       "slouched powerful silhouette"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "df-blood-witch",
+    "taxonomy": "role",
     "label": "Blood Witch",
     "applies_to": [
       "dark-fantasy"
@@ -596,11 +597,11 @@
       "hemomancy sigils on exposed arms",
       "hair loose and matted",
       "unsettling calm bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "lf-sellsword",
+    "taxonomy": "role",
     "label": "Sellsword",
     "applies_to": [
       "low-fantasy"
@@ -611,11 +612,11 @@
       "mercenary company brand or token",
       "practical road-worn kit",
       "lean and scarred, no ceremony"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "lf-hedge-wizard",
+    "taxonomy": "role",
     "label": "Hedge Wizard",
     "applies_to": [
       "low-fantasy"
@@ -626,11 +627,11 @@
       "belt of worn pouches and dried herbs",
       "ordinary unremarkable face",
       "no arcane glamour — power is subtle"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "lf-pit-fighter",
+    "taxonomy": "role",
     "label": "Pit Fighter",
     "applies_to": [
       "low-fantasy"
@@ -641,11 +642,11 @@
       "arena scars across arms and torso",
       "crowd-facing swagger in stance",
       "heavy muscled build"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "lf-cunning-folk",
+    "taxonomy": "role",
     "label": "Cunning Folk",
     "applies_to": [
       "low-fantasy"
@@ -656,11 +657,11 @@
       "small carved charm on cord at neck",
       "weathered capable hands",
       "trusted community bearing — no threat implied"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ft-fae-knight",
+    "taxonomy": "role",
     "label": "Fae Knight",
     "applies_to": [
       "fairytale"
@@ -671,11 +672,11 @@
       "slim otherworldly build",
       "iridescent cloak like insect wings",
       "cool silver-green palette"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ft-wicked-witch",
+    "taxonomy": "role",
     "label": "Wicked Witch",
     "applies_to": [
       "fairytale"
@@ -686,11 +687,11 @@
       "sharp angular features",
       "crow or raven familiar on shoulder",
       "deep shadow palette with sickly green accent"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ft-huntsman",
+    "taxonomy": "role",
     "label": "Huntsman",
     "applies_to": [
       "fairytale"
@@ -701,11 +702,11 @@
       "woodsman's cap",
       "stocky capable build",
       "reluctant honourable bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ft-enchanted-prince",
+    "taxonomy": "role",
     "label": "Enchanted Prince",
     "applies_to": [
       "fairytale"
@@ -716,11 +717,11 @@
       "cracked royal signet ring still worn",
       "conflicted mournful posture",
       "warm amber and shadow palette"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-wandering-hero",
+    "taxonomy": "role",
     "label": "Wandering Hero",
     "applies_to": [
       "wuxia"
@@ -731,11 +732,11 @@
       "unadorned practical sword",
       "road dust and honourable bearing combined",
       "lean and self-contained"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-hidden-weapon-specialist",
+    "taxonomy": "role",
     "label": "Hidden Weapon Specialist",
     "applies_to": [
       "wuxia"
@@ -746,11 +747,11 @@
       "calm unassuming exterior",
       "quick precise hands",
       "neutral colours — designed to be overlooked"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wuxia-poison-mistress",
+    "taxonomy": "role",
     "label": "Poison Mistress",
     "applies_to": [
       "wuxia"
@@ -761,11 +762,11 @@
       "jade poison-vial bangles on wrists",
       "serene dangerous bearing",
       "cool jewel-tone palette"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ancient-legionary",
+    "taxonomy": "role",
     "label": "Roman Legionary",
     "applies_to": [
       "ancient"
@@ -777,11 +778,11 @@
       "galea imperial-gallic iron helmet with cheek guards and neck guard",
       "caligae heavy-studded military sandals and wool tunic beneath armour",
       "dusty campaign-weathered palette — iron grey, ox-blood red, raw linen"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ancient-hoplite",
+    "taxonomy": "role",
     "label": "Greek Hoplite",
     "applies_to": [
       "ancient"
@@ -793,11 +794,11 @@
       "long ash-wood dory spear held upright, xiphos short sword at hip",
       "bronze greaves strapped over bare shins",
       "warm Mediterranean palette — polished bronze, white linen, deep ochre"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ancient-gladiator",
+    "taxonomy": "role",
     "label": "Gladiator",
     "applies_to": [
       "ancient"
@@ -809,11 +810,11 @@
       "scutum or small parma shield scarred from arena sand",
       "arena sand clinging to oiled skin and sandalled feet",
       "tanned olive skin, heavy muscled build, visible training scars"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ancient-pharaoh",
+    "taxonomy": "role",
     "label": "Pharaoh",
     "applies_to": [
       "ancient"
@@ -825,11 +826,11 @@
       "kohl-lined eyes, ceremonial false beard of plaited gold",
       "linen and gold sandals, ankh and cartouche amulets at neck",
       "rich palette — white linen, beaten gold, lapis lazuli, turquoise faience"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ancient-egyptian-priestess",
+    "taxonomy": "role",
     "label": "Egyptian Priestess",
     "applies_to": [
       "ancient"
@@ -841,11 +842,11 @@
       "shaved head or tight black wig with gold circlet and uraeus",
       "kohl-rimmed eyes, henna on palms, linen sandals",
       "cool white and gold palette with lapis and malachite accents"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "viking-berserker",
+    "taxonomy": "role",
     "label": "Berserker",
     "applies_to": [
       "viking"
@@ -857,11 +858,11 @@
       "tattoos and iron arm-rings on bare forearms",
       "wild matted hair, beard in warrior braids, intense unfocused stare",
       "raw desaturated palette — wolf-grey fur, bare iron, weathered skin"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "viking-shieldmaiden",
+    "taxonomy": "role",
     "label": "Shieldmaiden",
     "applies_to": [
       "viking"
@@ -873,11 +874,11 @@
       "iron helmet — simple spangenhelm or nasal bar type, no horns",
       "warrior braids with bone or iron hair rings, cloak pinned at shoulder",
       "cold Norse palette — iron grey, undyed wool, pine green, burnt ochre"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "viking-jarl",
+    "taxonomy": "role",
     "label": "Jarl",
     "applies_to": [
       "viking"
@@ -889,11 +890,11 @@
       "pattern-welded sword with decorated hilt in hand, or resting on knee",
       "high leather boots, commanding seated or standing authority posture",
       "richer palette than thralls — jewel-dyed wool, silver, polished iron"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "viking-seer-volva",
+    "taxonomy": "role",
     "label": "Seer (Völva)",
     "applies_to": [
       "viking"
@@ -905,11 +906,11 @@
       "hood of animal skin — cat or rabbit, per sagas",
       "belt purse of casting lots and herbs, silver ring-brooches at shoulders",
       "weathered self-contained bearing, pale northern skin, grey-streaked hair"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "medieval-knight",
+    "taxonomy": "role",
     "label": "Knight",
     "applies_to": [
       "medieval"
@@ -921,11 +922,11 @@
       "longsword at hip, heater shield with coat of arms",
       "spurs at heels, war-horse implied by posture and scale of kit",
       "polished steel with colour from heraldic surcoat — primary colours on white or metal"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "medieval-man-at-arms",
+    "taxonomy": "role",
     "label": "Man-at-Arms",
     "applies_to": [
       "medieval"
@@ -937,11 +938,11 @@
       "padded gambeson visible at sleeves and collar beneath armour",
       "plain leather belt and boots, no heraldry — professional soldier's kit",
       "muted functional palette — dark iron, tan leather, undyed linen"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "medieval-crusader",
+    "taxonomy": "role",
     "label": "Crusader",
     "applies_to": [
       "medieval"
@@ -953,11 +954,11 @@
       "arming sword and dagger, pilgrim's cross badge at chest",
       "sand-dusted from Levant campaign, heat-faded linen surcoat",
       "stark cross-and-white palette over dusty campaign-worn mail"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "medieval-peasant-levy",
+    "taxonomy": "role",
     "label": "Peasant Levy",
     "applies_to": [
       "medieval"
@@ -969,11 +970,11 @@
       "rough wool hose and ankle-tied leather shoes",
       "calloused working hands, weather-beaten complexion",
       "grim muted palette — undyed wool, mud-brown leather, dull iron"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "medieval-court-lady",
+    "taxonomy": "role",
     "label": "Court Lady",
     "applies_to": [
       "medieval"
@@ -985,11 +986,11 @@
       "fine leather slippers, embroidered trim at hem and collar",
       "upright formal posture, small book of hours or flower held",
       "rich palette — deep jewel gowns, white linen veil, gold embroidery"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "samurai",
+    "taxonomy": "role",
     "label": "Samurai",
     "applies_to": [
       "samurai"
@@ -1001,11 +1002,11 @@
       "wide hakama trousers over kimono, kote armoured gauntlets",
       "clan mon device on breastplate or flag at back",
       "bold palette — lacquered black or red armour, silk lacing in clan colours"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ronin",
+    "taxonomy": "role",
     "label": "Rōnin",
     "applies_to": [
       "samurai"
@@ -1017,11 +1018,11 @@
       "straw sandals and road-worn gaiters",
       "lean self-contained build, steady watchful gaze, deliberate economy of posture",
       "desaturated earthy palette — faded indigo, slate, undyed linen"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ashigaru",
+    "taxonomy": "role",
     "label": "Ashigaru",
     "applies_to": [
       "samurai"
@@ -1033,11 +1034,11 @@
       "plain kimono and hakama in lord's livery colour",
       "straw sandals, limited kit — no ornament",
       "practical muted palette — raw iron, plain cotton, dark leather straps"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ninja-shinobi",
+    "taxonomy": "role",
     "label": "Shinobi",
     "applies_to": [
       "samurai"
@@ -1049,11 +1050,11 @@
       "kusarigama chain-sickle coiled at belt, or climbing equipment at back",
       "lean wiry build, completely matte dark clothing — no shine",
       "near-monochrome palette — night blue, deep charcoal, dark linen"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "daimyo",
+    "taxonomy": "role",
     "label": "Daimyō",
     "applies_to": [
       "samurai"
@@ -1065,11 +1066,11 @@
       "richly decorated daisho, silk haori campaign coat over armour",
       "imposing authority bearing, battle headquarters posture",
       "bold high-contrast palette — rich lacquer red or black, gold fittings, silk clan colours"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aos-ship-captain",
+    "taxonomy": "role",
     "label": "Ship's Captain",
     "applies_to": [
       "age-of-sail"
@@ -1081,11 +1082,11 @@
       "lace-cuffed shirt beneath coat, waistcoat with pocket watch chain",
       "knee-length breeches, white stockings, buckled leather shoes",
       "salt-faded officer's palette — navy, ivory, tarnished brass, aged linen"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aos-pirate",
+    "taxonomy": "role",
     "label": "Pirate",
     "applies_to": [
       "age-of-sail"
@@ -1097,11 +1098,11 @@
       "bicorne or slouch hat, kerchief or loose bandana at head",
       "bare feet or worn rope-soled shoes, gold earring, rope callused hands",
       "salt-bleached sun-faded palette — dirty white linen, worn indigo, rope brown"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aos-naval-officer",
+    "taxonomy": "role",
     "label": "Naval Officer",
     "applies_to": [
       "age-of-sail"
@@ -1113,11 +1114,11 @@
       "straight naval hanger sword or spadroon in dress scabbard",
       "telescope under non-sword arm, commanding quarterdeck posture",
       "crisp formal palette — naval blue, white, gold braid, polished black leather"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aos-buccaneer",
+    "taxonomy": "role",
     "label": "Buccaneer",
     "applies_to": [
       "age-of-sail"
@@ -1129,11 +1130,11 @@
       "wide leather baldric, powder horn on cord at chest",
       "sun-darkened skin from years in Caribbean heat, practical scarred build",
       "earthy hunter's palette — tobacco brown, dirty linen, dark leather, verdigris"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aos-powder-monkey",
+    "taxonomy": "role",
     "label": "Powder Monkey",
     "applies_to": [
       "age-of-sail"
@@ -1145,11 +1146,11 @@
       "no weapons — work tool is the wooden cylinder cartridge carrier",
       "small slight build — role required young agile crew for cannon service",
       "gunpowder-grey and sail-white palette, soot smudges at face and hands"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cosmic-cultist",
+    "taxonomy": "role",
     "label": "Cosmic Cultist",
     "applies_to": [
       "cosmic-horror"
@@ -1161,11 +1162,11 @@
       "face partially obscured by a featureless cowl",
       "fingers elongated by ritual scarring",
       "crude idol clutched against chest"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "deep-one-hybrid",
+    "taxonomy": "role",
     "label": "Deep One Hybrid",
     "applies_to": [
       "cosmic-horror"
@@ -1177,11 +1178,11 @@
       "webbed fingers partially visible beneath loose sleeves",
       "stooped broad-shouldered silhouette",
       "brackish stain spreading across waterlogged clothing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mad-investigator",
+    "taxonomy": "role",
     "label": "Mad Investigator",
     "applies_to": [
       "cosmic-horror"
@@ -1193,11 +1194,11 @@
       "one hand gripping a cracked magnifying lens",
       "hollow gaunt cheekbones from prolonged wasting",
       "posture bent forward as though perpetually leaning into something unseen"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "eldritch-thing",
+    "taxonomy": "role",
     "label": "Eldritch Thing",
     "applies_to": [
       "cosmic-horror"
@@ -1209,11 +1210,11 @@
       "clusters of vestigial appendages at the torso",
       "no discernible face — smooth with faint concavities",
       "scale conveyed by environment dwarfed around it"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "vampire-lord",
+    "taxonomy": "role",
     "label": "Vampire Lord",
     "applies_to": [
       "gothic-horror"
@@ -1225,11 +1226,11 @@
       "slender aristocratic frame with unnatural stillness",
       "medallion or signet ring of antique silver",
       "no breath mist — an absence of warmth"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mad-doctor",
+    "taxonomy": "role",
     "label": "Mad Doctor",
     "applies_to": [
       "gothic-horror"
@@ -1241,11 +1242,11 @@
       "hands permanently discoloured from chemical exposure",
       "gaunt frame over-articulated at every joint",
       "wild unshorn hair framing a rigid focused expression"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "grieving-bride",
+    "taxonomy": "role",
     "label": "Grieving Bride",
     "applies_to": [
       "gothic-horror"
@@ -1257,11 +1258,11 @@
       "hands clasped with broken or missing finger bones",
       "hollow eye sockets rimmed with dried black",
       "bouquet reduced to brittle sticks and crumbling petals"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hunchback-servant",
+    "taxonomy": "role",
     "label": "Hunchback Servant",
     "applies_to": [
       "gothic-horror"
@@ -1273,11 +1274,11 @@
       "large calloused hands disproportionate to thin arms",
       "permanent forward tilt of the head",
       "expression of servile blankness"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "masked-slasher",
+    "taxonomy": "role",
     "label": "Masked Slasher",
     "applies_to": [
       "movie-horror"
@@ -1289,11 +1290,11 @@
       "large bladed tool held loose at the side",
       "no visible skin except possibly the hands",
       "silhouette fills the frame — excessive, unhurried presence"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "final-girl",
+    "taxonomy": "role",
     "label": "Final Girl",
     "applies_to": [
       "movie-horror"
@@ -1305,11 +1306,11 @@
       "cuts and bruising on forearms from defensive wounds",
       "hair dishevelled, eyes wide and hyper-alert",
       "shoes missing or mismatched — details of a desperate flight"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "creature-from-the-lab",
+    "taxonomy": "role",
     "label": "Creature from the Lab",
     "applies_to": [
       "movie-horror"
@@ -1321,11 +1322,11 @@
       "compound or reflective eyes set into a near-human face",
       "posture oscillating between animal crouch and upright lurch",
       "surface of wet rubber or cured polymer over muscle suggestion"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "possessed-child",
+    "taxonomy": "role",
     "label": "Possessed Child",
     "applies_to": [
       "movie-horror"
@@ -1337,11 +1338,11 @@
       "skin mottled with subcutaneous vein tracery",
       "mouth open slightly wider than a natural rest position",
       "irises discoloured — pale gold, white, or solid black"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mutated-host",
+    "taxonomy": "role",
     "label": "Mutated Host",
     "applies_to": [
       "body-horror"
@@ -1353,11 +1354,11 @@
       "additional limb stubs erupting from shoulder or hip",
       "face still recognisably human — the horror of retained identity",
       "thick fibrous tissue bridging joints at wrong angles"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "surgeon-of-flesh",
+    "taxonomy": "role",
     "label": "Surgeon of Flesh",
     "applies_to": [
       "body-horror"
@@ -1369,11 +1370,11 @@
       "face partially replaced — one side smooth and new, one original",
       "tall gaunt silhouette with an extra articulated arm at the ribcage",
       "clinical precision in stance undercut by the wrongness of the body"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "parasite-puppet",
+    "taxonomy": "role",
     "label": "Parasite Puppet",
     "applies_to": [
       "body-horror"
@@ -1385,11 +1386,11 @@
       "mouth held open by something pressing from inside the throat",
       "eyes tracking independently in different directions",
       "clothing shredded at the back where the parasite emerged"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "masked-villager",
+    "taxonomy": "role",
     "label": "Masked Villager",
     "applies_to": [
       "folk-horror"
@@ -1401,11 +1402,11 @@
       "bare or rope-sandalled feet caked in earth",
       "ordinary farming tools repurposed as ritual implements",
       "posture of collective calm — unsettling uniformity in a group"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pagan-priest",
+    "taxonomy": "role",
     "label": "Pagan Priest",
     "applies_to": [
       "folk-horror"
@@ -1417,11 +1418,11 @@
       "staff of bound bones and carved wood",
       "old and weathered body carrying absolute authority in posture",
       "eyes pale with cataracts or entirely unfocused"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "scarecrow-effigy",
+    "taxonomy": "role",
     "label": "Scarecrow Effigy",
     "applies_to": [
       "folk-horror"
@@ -1433,11 +1434,11 @@
       "oversized brimmed hat pinned at an angle",
       "arms fixed horizontal in permanent outstretched gesture",
       "feet absent — post or stake instead of legs"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "witch-of-the-woods",
+    "taxonomy": "role",
     "label": "Witch of the Woods",
     "applies_to": [
       "folk-horror"
@@ -1449,11 +1450,11 @@
       "bare feet with bark-like skin at the heel and sole",
       "bundles of bound animal parts tied to belt and sash",
       "crouched narrow silhouette — contained and feral simultaneously"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wendigo",
+    "taxonomy": "role",
     "label": "Wendigo",
     "applies_to": [
       "horror",
@@ -1466,11 +1467,11 @@
       "hands ending in blackened cracked fingers",
       "ragged remnants of winter clothing — fur trim, torn wool",
       "impossible thinness despite apparent physical threat"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "revenant",
+    "taxonomy": "role",
     "label": "Revenant",
     "applies_to": [
       "horror",
@@ -1483,11 +1484,11 @@
       "rigid jerky movement implied by locked joints",
       "hollow eye sockets with no reflective surface inside",
       "grave soil clinging to every crease and fold"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "soldier",
+    "taxonomy": "role",
     "label": "Soldier",
     "applies_to": [
       "military"
@@ -1499,11 +1500,11 @@
       "athletic military build",
       "unit patch on shoulder",
       "assault rifle at low-ready"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "operator",
+    "taxonomy": "role",
     "label": "Operator",
     "applies_to": [
       "military",
@@ -1516,11 +1517,11 @@
       "ear-pro and bone-conduction comms",
       "lean capable build nothing wasted",
       "no identifying markings"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "paramedic",
+    "taxonomy": "role",
     "label": "Paramedic",
     "applies_to": [
       "modern",
@@ -1533,11 +1534,11 @@
       "radio clipped to chest",
       "nitrile gloves always ready",
       "capable always-in-motion bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "journalist",
+    "taxonomy": "role",
     "label": "Journalist",
     "applies_to": [
       "modern"
@@ -1548,11 +1549,11 @@
       "press credentials visible on lanyard",
       "notebook in hand",
       "alert slightly-sideways bearing watching the story"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hacker",
+    "taxonomy": "role",
     "label": "Hacker",
     "applies_to": [
       "espionage",
@@ -1564,11 +1565,11 @@
       "multiple screens or devices",
       "cable collection spilling from bag",
       "lean sedentary build dark circles hyperaware eyes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "detective",
+    "taxonomy": "role",
     "label": "Detective",
     "applies_to": [
       "modern",
@@ -1580,11 +1581,11 @@
       "police badge clipped to belt",
       "notepad and pen",
       "alert watchful world-worn bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "criminal",
+    "taxonomy": "role",
     "label": "Criminal",
     "applies_to": [
       "modern",
@@ -1596,11 +1597,11 @@
       "cash roll or burner phone visible",
       "bearing that owns the room or disappears from it",
       "scarred knuckles and guarded eyes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "spy",
+    "taxonomy": "role",
     "label": "Spy",
     "applies_to": [
       "espionage"
@@ -1611,11 +1612,11 @@
       "cover-legend documents",
       "comms disguised as everyday object",
       "deliberately unremarkable or deliberately charming — both are disguises"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "martial-artist",
+    "taxonomy": "role",
     "label": "Martial Artist",
     "applies_to": [
       "modern"
@@ -1626,11 +1627,11 @@
       "hand wraps on fists",
       "speed-and-precision functional musculature not bodybuilder bulk",
       "sparring scars on knuckles"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "salaryman",
+    "taxonomy": "role",
     "label": "Salaryman",
     "applies_to": [
       "modern"
@@ -1641,11 +1642,11 @@
       "company lanyard with ID badge",
       "unremarkable sedentary-to-average build",
       "phone in hand coffee in the other"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "doctor",
+    "taxonomy": "role",
     "label": "Doctor",
     "applies_to": [
       "modern"
@@ -1656,11 +1657,11 @@
       "ID badge clipped to chest",
       "tablet or clipboard in hand",
       "precise capable hands focal point"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "athlete",
+    "taxonomy": "role",
     "label": "Athlete",
     "applies_to": [
       "modern"
@@ -1671,11 +1672,11 @@
       "compression sleeves or sport tape",
       "peak physical condition sport-specific musculature",
       "athletic ready posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "politician",
+    "taxonomy": "role",
     "label": "Politician",
     "applies_to": [
       "modern"
@@ -1686,11 +1687,11 @@
       "earpiece",
       "security detail implied in framing",
       "perpetually-presenting bearing posture tuned for a crowd even when alone"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mechanic",
+    "taxonomy": "role",
     "label": "Mechanic",
     "applies_to": [
       "modern"
@@ -1701,11 +1702,11 @@
       "safety glasses pushed up on forehead",
       "diagnostic tablet in back pocket",
       "practical work-muscle build"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "vigilante",
+    "taxonomy": "role",
     "label": "Vigilante",
     "applies_to": [
       "superhero"
@@ -1717,11 +1718,11 @@
       "no official insignia deliberately unsanctioned look",
       "peak human lean capable build",
       "grapple hook or zip-line kit"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hero",
+    "taxonomy": "role",
     "label": "Hero",
     "applies_to": [
       "superhero"
@@ -1733,11 +1734,11 @@
       "government or team sanction implied",
       "idealised heroic physique",
       "inspirational upright bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "villain",
+    "taxonomy": "role",
     "label": "Villain",
     "applies_to": [
       "superhero"
@@ -1749,11 +1750,11 @@
       "power source visibly glowing or crackling",
       "exaggerated imposing or gaunt proportions",
       "army of minions implied in composition"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sidekick",
+    "taxonomy": "role",
     "label": "Sidekick",
     "applies_to": [
       "superhero"
@@ -1764,11 +1765,11 @@
       "younger smaller agile build",
       "mentor-derived gadgets",
       "eager ready posture looking toward something greater"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "superhero-mercenary",
+    "taxonomy": "role",
     "label": "Super-Mercenary",
     "applies_to": [
       "superhero"
@@ -1779,11 +1780,11 @@
       "paymaster sigil on pauldron",
       "mask by choice not necessity",
       "professional well-equipped mercenary confidence"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "anti-hero",
+    "taxonomy": "role",
     "label": "Anti-Hero",
     "applies_to": [
       "superhero"
@@ -1794,11 +1795,11 @@
       "scars a sanctioned hero would not have",
       "same power-level bearing different moral calculus",
       "power used without restraint visible in stance"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cosmic-entity",
+    "taxonomy": "role",
     "label": "Cosmic Entity",
     "applies_to": [
       "superhero"
@@ -1809,11 +1810,11 @@
       "cosmic force radiating beyond the silhouette",
       "planet or moon visible for scale reference",
       "humanoid shape as a courtesy to lesser beings"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gadgeteer",
+    "taxonomy": "role",
     "label": "Gadgeteer",
     "applies_to": [
       "superhero"
@@ -1824,11 +1825,11 @@
       "HUD visor with data readout",
       "the suit larger than the person inside it",
       "field-workshop energy — tool for every scenario"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mentalist",
+    "taxonomy": "role",
     "label": "Mentalist",
     "applies_to": [
       "superhero"
@@ -1839,11 +1840,11 @@
       "perfectly still body while mind is active elsewhere",
       "psi-focus object held lightly",
       "concentrated stillness amid chaos"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "powerhouse",
+    "taxonomy": "role",
     "label": "Powerhouse",
     "applies_to": [
       "superhero"
@@ -1854,11 +1855,11 @@
       "impact craters or cracked ground where they stand",
       "the environment treated as improvised weapon",
       "blunt force incarnate bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "spec-ops-operator",
+    "taxonomy": "role",
     "label": "Special Operations Operator",
     "applies_to": [
       "military"
@@ -1870,11 +1871,11 @@
       "multicam or arid-pattern camouflage",
       "breaching tool or flashbang on chest rig",
       "compact coiled ready-to-move posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "tank-commander",
+    "taxonomy": "role",
     "label": "Tank Commander",
     "applies_to": [
       "military"
@@ -1886,11 +1887,11 @@
       "standing in open hatch of armoured vehicle",
       "dust and exhaust haze from tracks",
       "binoculars around neck"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "combat-medic",
+    "taxonomy": "role",
     "label": "Combat Medic",
     "applies_to": [
       "military",
@@ -1903,11 +1904,11 @@
       "kneeling forward-lean treating-a-casualty posture",
       "helmeted and armoured but marked non-combatant",
       "battlefield dust and urgency"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wwii-paratrooper",
+    "taxonomy": "role",
     "label": "WWII Paratrooper",
     "applies_to": [
       "wwii"
@@ -1919,11 +1920,11 @@
       "M1 Garand or Thompson SMG",
       "jump boots bloused trousers",
       "cloth US flag patch on shoulder"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "resistance-fighter",
+    "taxonomy": "role",
     "label": "Resistance Fighter",
     "applies_to": [
       "wwii"
@@ -1934,11 +1935,11 @@
       "forged identity papers in breast pocket",
       "gaunt determined face from wartime rationing",
       "occupied-city backdrop implied — cobblestones curfew signs"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "panzer-crew",
+    "taxonomy": "role",
     "label": "Panzer Crew",
     "applies_to": [
       "wwii"
@@ -1950,11 +1951,11 @@
       "goggles pushed up on cap",
       "oil and grease stains from engine maintenance",
       "stoic weathered bearing Eastern Front"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "doughboy",
+    "taxonomy": "role",
     "label": "Doughboy",
     "applies_to": [
       "wwi"
@@ -1966,11 +1967,11 @@
       "canvas webbing with cartridge belt",
       "puttee-wrapped lower legs",
       "mud-caked boots from trench conditions"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "trench-officer",
+    "taxonomy": "role",
     "label": "Trench Officer",
     "applies_to": [
       "wwi"
@@ -1982,11 +1983,11 @@
       "trench periscope or map case in hand",
       "mud-spattered from knee down",
       "exhausted resolute bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "flying-ace",
+    "taxonomy": "role",
     "label": "Flying Ace",
     "applies_to": [
       "wwi"
@@ -1998,11 +1999,11 @@
       "kill-tally markings implied in composition",
       "jodhpurs and tall leather boots",
       "open-cockpit biplane implied in background"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "femme-fatale",
+    "taxonomy": "role",
     "label": "Femme Fatale",
     "applies_to": [
       "noir"
@@ -2014,11 +2015,11 @@
       "cigarette holder in gloved hand",
       "high heels on wet cobblestones under neon",
       "deliberately ambiguous expression"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hardboiled-detective",
+    "taxonomy": "role",
     "label": "Hardboiled Detective",
     "applies_to": [
       "noir"
@@ -2030,11 +2031,11 @@
       "snub-nose revolver in shoulder holster",
       "cigarette at corner of mouth or stub in ashtray",
       "window-blind shadow stripe lighting across face"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mob-boss",
+    "taxonomy": "role",
     "label": "Mob Boss",
     "applies_to": [
       "noir"
@@ -2046,11 +2047,11 @@
       "bodyguards implied flanking the frame",
       "cigar and cut crystal glass",
       "controlled dangerous calm bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "tuxedo-spy",
+    "taxonomy": "role",
     "label": "Tuxedo Spy",
     "applies_to": [
       "espionage"
@@ -2062,11 +2063,11 @@
       "casino or embassy gala backdrop",
       "effortless charm masking lethal readiness",
       "concealed PPK or equivalent in breast holster"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "deep-cover-agent",
+    "taxonomy": "role",
     "label": "Deep-Cover Agent",
     "applies_to": [
       "espionage"
@@ -2077,11 +2078,11 @@
       "dead-drop container disguised as everyday object",
       "micro-film or USB concealed in shoe heel",
       "the exhaustion of living a lie in the eyes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "handler",
+    "taxonomy": "role",
     "label": "Handler",
     "applies_to": [
       "espionage"
@@ -2093,11 +2094,11 @@
       "safe-house interior — bare bulb peeling walls",
       "controlled detached bearing — the voice behind the agent",
       "no field gear all brain"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "caped-crusader",
+    "taxonomy": "role",
     "label": "Caped Crusader",
     "applies_to": [
       "superhero"
@@ -2109,11 +2110,11 @@
       "grapple gun and batarang-type gadgets",
       "gargoyle perch over rain-slick city implied",
       "detective-hero hybrid bearing: brains and brawn"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "masked-vigilante",
+    "taxonomy": "role",
     "label": "Masked Vigilante",
     "applies_to": [
       "superhero"
@@ -2125,11 +2126,11 @@
       "athletic urban parkour-ready build",
       "graffiti-tagged alley or rooftop backdrop",
       "handmade feel — this costume was built in a garage"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "powered-villain",
+    "taxonomy": "role",
     "label": "Powered Villain",
     "applies_to": [
       "superhero"
@@ -2140,11 +2141,11 @@
       "energy discharge crackling at fists or eyes",
       "debris and destruction framing the figure",
       "cold methodical expression — the plan is already in motion"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "tinker",
+    "taxonomy": "role",
     "label": "Tinker",
     "applies_to": [
       "science-fantasy",
@@ -2157,11 +2158,11 @@
       "oil-stained gloves",
       "magnifying loupe clipped to lapel",
       "scarred expressive hands"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aeronaut",
+    "taxonomy": "role",
     "label": "Aeronaut",
     "applies_to": [
       "science-fantasy",
@@ -2174,11 +2175,11 @@
       "flintlock revolver at hip",
       "airship-crew insignia on chest",
       "wind-scarred complexion"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "artificer",
+    "taxonomy": "role",
     "label": "Artificer",
     "applies_to": [
       "science-fantasy",
@@ -2191,11 +2192,11 @@
       "blueprints tube on back",
       "arcane power cell at belt",
       "studious composed bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "navigator",
+    "taxonomy": "role",
     "label": "Navigator",
     "applies_to": [
       "science-fantasy",
@@ -2210,11 +2211,11 @@
       "sextant at belt",
       "precision watchful eyes",
       "rank braid at shoulder"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "alchemist",
+    "taxonomy": "role",
     "label": "Alchemist",
     "applies_to": [
       "science-fantasy",
@@ -2227,11 +2228,11 @@
       "discoloured chemical-stained fingertips",
       "portable reaction burner at belt",
       "slightly manic focused eyes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "clockwright",
+    "taxonomy": "role",
     "label": "Clockwright",
     "applies_to": [
       "science-fantasy",
@@ -2244,11 +2245,11 @@
       "mounted loupe or monocle",
       "jeweller's stillness of posture",
       "meticulous measured bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ironclad-soldier",
+    "taxonomy": "role",
     "label": "Ironclad Soldier",
     "applies_to": [
       "science-fantasy",
@@ -2261,11 +2262,11 @@
       "gatling arm-cannon",
       "empire insignia stamped on pauldron",
       "massive silhouette dwarfing the human within"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "agent",
+    "taxonomy": "role",
     "label": "Agent",
     "applies_to": [
       "science-fantasy",
@@ -2278,11 +2279,11 @@
       "cipher notebook in breast pocket",
       "faction seal signet ring",
       "dressed to pass in any social room"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "chirurgeon",
+    "taxonomy": "role",
     "label": "Chirurgeon",
     "applies_to": [
       "science-fantasy",
@@ -2295,11 +2296,11 @@
       "anaesthetic vials in coat pockets",
       "magnifying surgical loupe",
       "absolute stillness of bearing under pressure"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pamphleteer",
+    "taxonomy": "role",
     "label": "Pamphleteer",
     "applies_to": [
       "science-fantasy",
@@ -2312,11 +2313,11 @@
       "portable printing block at hip",
       "inkwell on belt",
       "perpetually in-motion urgent bearing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "automaton-handler",
+    "taxonomy": "role",
     "label": "Automaton Handler",
     "applies_to": [
       "science-fantasy",
@@ -2329,11 +2330,11 @@
       "spare gear-parts in canvas satchel",
       "oversized wrench at hip",
       "bearing of someone always in a machine's shadow"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "aristocrat",
+    "taxonomy": "role",
     "label": "Aristocrat",
     "applies_to": [
       "science-fantasy",
@@ -2346,11 +2347,11 @@
       "expensive engraved pocket watch",
       "family signet ring",
       "commanding bearing that owns the room"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "dp-ace-aviator",
+    "taxonomy": "role",
     "label": "Ace Aviator",
     "applies_to": [
       "science-fantasy",
@@ -2363,11 +2364,11 @@
       "silk neck scarf in bold colour",
       "shoulder holster with heavy automatic pistol",
       "sun-weathered jaw and thousand-yard stare"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "dp-art-deco-enforcer",
+    "taxonomy": "role",
     "label": "Art Deco Enforcer",
     "applies_to": [
       "science-fantasy",
@@ -2380,11 +2381,11 @@
       "chrome and bakelite badge on chest",
       "two-tone leather brogues",
       "hard angular silhouette — art deco geometry made flesh"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "dp-factory-foreman",
+    "taxonomy": "role",
     "label": "Factory Foreman",
     "applies_to": [
       "science-fantasy",
@@ -2397,11 +2398,11 @@
       "heavy wrench or rivet gun at hip",
       "soot-darkened skin and forearms",
       "air of industrial authority in a world of machines"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ap-atomic-ranger",
+    "taxonomy": "role",
     "label": "Atomic Ranger",
     "applies_to": [
       "science-fantasy",
@@ -2414,11 +2415,11 @@
       "bulky geiger counter on belt",
       "atomic-cell raygun holstered at thigh",
       "clean-cut authority of a Space Age law officer"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ap-raygun-scientist",
+    "taxonomy": "role",
     "label": "Raygun Scientist",
     "applies_to": [
       "science-fantasy",
@@ -2431,11 +2432,11 @@
       "oscilloscope and dials on portable chest rig",
       "pocket protector bristling with instruments",
       "optimistic 1950s Space Age palette — cream white and turquoise"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ap-robot-butler",
+    "taxonomy": "role",
     "label": "Robot Butler",
     "applies_to": [
       "science-fantasy",
@@ -2448,11 +2449,11 @@
       "round glowing photoreceptor eyes",
       "bowtie and apron painted or riveted onto chassis",
       "eerily perfect servile posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gw-mutant-scavenger",
+    "taxonomy": "role",
     "label": "Mutant Scavenger",
     "applies_to": [
       "science-fantasy",
@@ -2465,11 +2466,11 @@
       "jury-rigged crossbow or pipe weapon",
       "scavenger satchel overflowing with salvaged components",
       "wary survivalist eyes scanning for the next threat"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gw-beast-hybrid",
+    "taxonomy": "role",
     "label": "Beast Hybrid",
     "applies_to": [
       "science-fantasy",
@@ -2482,11 +2483,11 @@
       "natural weapons — claws, tusks, or tail — alongside crude tools",
       "tribal markings painted or scarred into fur or hide",
       "predator's coiled ready-to-spring stance"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gw-radiation-cultist",
+    "taxonomy": "role",
     "label": "Radiation Cultist",
     "applies_to": [
       "science-fantasy",
@@ -2499,11 +2500,11 @@
       "ritualistic staff topped with a salvaged geiger counter or glowing rod",
       "fervent unfocused eyes of a true believer",
       "wasteland cult palette — yellowed white, toxic green, bone"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gw-ruined-tech-tinker",
+    "taxonomy": "role",
     "label": "Ruined-Tech Tinker",
     "applies_to": [
       "science-fantasy",
@@ -2516,11 +2517,11 @@
       "half-repaired robot or drone companion piece implied nearby",
       "goggles with mismatched lenses",
       "grease-blackened hands of someone who fixes what others discard"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sp-sword-prince",
+    "taxonomy": "role",
     "label": "Sword Prince",
     "applies_to": [
       "science-fantasy",
@@ -2533,11 +2534,11 @@
       "cloak in vivid alien-world pigment — crimson, violet, or gold",
       "heroic upright bearing on a world with heavier gravity than Earth",
       "two weapons — sword in one hand, raygun or energy pistol in the other"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sp-alien-princess",
+    "taxonomy": "role",
     "label": "Alien Princess",
     "applies_to": [
       "science-fantasy",
@@ -2550,11 +2551,11 @@
       "concealed sidearm — elegant energy pistol at thigh or wrist",
       "regal defiant bearing of someone born to command entire worlds",
       "alien flora or fauna motifs woven into garment and accessories"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sp-beast-rider",
+    "taxonomy": "role",
     "label": "Beast Rider",
     "applies_to": [
       "science-fantasy",
@@ -2567,11 +2568,11 @@
       "alien saddle-gear hung about the body when dismounted",
       "wind-battered look of someone at speed on an open alien plain",
       "bond-mark tattoo or scar linking rider to their mount's lineage"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "space-marine",
+    "taxonomy": "role",
     "label": "Space Marine",
     "applies_to": [
       "scifi"
@@ -2582,11 +2583,11 @@
       "sealed helmet or visor pushed up",
       "ammo pouches and squad markings across chest plate",
       "imposing armoured silhouette that dwarfs an unaugmented human"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pilot",
+    "taxonomy": "role",
     "label": "Pilot",
     "applies_to": [
       "scifi"
@@ -2597,11 +2598,11 @@
       "mission patches stitched across chest and shoulders",
       "navigation data-glove on dominant hand",
       "lean wiry build optimised for cockpit ergonomics"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "scientist",
+    "taxonomy": "role",
     "label": "Scientist",
     "applies_to": [
       "scifi"
@@ -2612,11 +2613,11 @@
       "neural interface headset worn at the temple",
       "specimen containers clipped to belt",
       "scholar's absorbed bearing — sees data, not danger"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "engineer",
+    "taxonomy": "role",
     "label": "Engineer",
     "applies_to": [
       "scifi"
@@ -2627,11 +2628,11 @@
       "diagnostic scanner holstered at the hip",
       "hardhat or flip-up welding visor",
       "hands visibly worn and grease-stained"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "bounty-hunter",
+    "taxonomy": "role",
     "label": "Bounty Hunter",
     "applies_to": [
       "scifi",
@@ -2644,11 +2645,11 @@
       "single-action Colt tied down with rawhide to the thigh",
       "pockmarked stubbled jaw set in cold determination",
       "harsh midday sun bleaching the dusty Italian-location landscape"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "android",
+    "taxonomy": "role",
     "label": "Android",
     "applies_to": [
       "scifi"
@@ -2659,11 +2660,11 @@
       "status indicator lights embedded in neck or forearm",
       "data port at the temple or wrist",
       "uncanny stillness and precision in posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "psyker",
+    "taxonomy": "role",
     "label": "Psyker",
     "applies_to": [
       "scifi"
@@ -2674,11 +2675,11 @@
       "neural amplifier crown embedded in the skull",
       "third-eye mark or bioluminescent implant at the brow",
       "lean frame secondary to the power — body almost irrelevant"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "commander",
+    "taxonomy": "role",
     "label": "Commander",
     "applies_to": [
       "scifi"
@@ -2689,11 +2690,11 @@
       "tactical HUD monocle or command visor",
       "ceremonial command baton in hand",
       "bearing of someone others follow into hell — upright, present, scarred"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "infiltrator",
+    "taxonomy": "role",
     "label": "Infiltrator",
     "applies_to": [
       "scifi"
@@ -2704,11 +2705,11 @@
       "holo-disguise emitter worn at the wrist",
       "signal jammer and EMP grenades on the belt",
       "economical lean build — designed to vanish into shadow"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cyborg",
+    "taxonomy": "role",
     "label": "Cyborg",
     "applies_to": [
       "scifi"
@@ -2719,11 +2720,11 @@
       "ocular targeting implant replacing one eye",
       "power cell indicator lights at the flesh-metal junction",
       "surgical scars where biology transitions to machine"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "xenobiologist",
+    "taxonomy": "role",
     "label": "Xenobiologist",
     "applies_to": [
       "scifi"
@@ -2734,11 +2735,11 @@
       "environmental sampler probe in hand",
       "fascinated wide eyes overriding any visible caution",
       "field notes and specimen tags dangling from the suit"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "rebel",
+    "taxonomy": "role",
     "label": "Rebel",
     "applies_to": [
       "scifi"
@@ -2749,11 +2750,11 @@
       "rebel faction symbol stitched or painted on defiantly",
       "comms unit scavenged from a fallen enemy soldier",
       "every piece of gear a testimony to survival"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "netrunner",
+    "taxonomy": "role",
     "label": "Netrunner",
     "applies_to": [
       "cyberpunk"
@@ -2764,11 +2765,11 @@
       "fingers tipped with interface needles for jack-in access",
       "eyes glazed with ICE-breaking focus, pupils non-responsive",
       "pale skin from hours spent deep inside the net — body neglected"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "street-samurai",
+    "taxonomy": "role",
     "label": "Street Samurai",
     "applies_to": [
       "cyberpunk"
@@ -2779,11 +2780,11 @@
       "reflex-boost chrome implants visible at the joints",
       "gun-kata stance — weapon already moving before thought catches up",
       "neon-lit urban grime coating battered combat gear"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "corpo-exec",
+    "taxonomy": "role",
     "label": "Corporate Executive",
     "applies_to": [
       "cyberpunk"
@@ -2794,11 +2795,11 @@
       "neural comms implant — no visible earpiece, the message is inside",
       "manicured hands that have never touched real work",
       "smile that doesn't reach the eyes — every word a calculated move"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "fixer",
+    "taxonomy": "role",
     "label": "Fixer",
     "applies_to": [
       "cyberpunk"
@@ -2809,11 +2810,11 @@
       "concealed holdout pistol in a shoulder rig under the jacket",
       "contacts ledger or encrypted tablet always in hand",
       "reads every room from the door — threat-assessing without breaking stride"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "starship-captain",
+    "taxonomy": "role",
     "label": "Starship Captain",
     "applies_to": [
       "space-opera"
@@ -2824,11 +2825,11 @@
       "calm authoritative gaze that holds a bridge together",
       "sidearm at the hip — worn, not ceremonial",
       "bearing of someone who has ordered hard decisions and lived with them"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "alien-envoy",
+    "taxonomy": "role",
     "label": "Alien Envoy",
     "applies_to": [
       "space-opera"
@@ -2839,11 +2840,11 @@
       "facial features subtly non-human — bilateral but asymmetric",
       "ritual adornments signalling caste or status",
       "interpreter implant visible at the ear or throat"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "starfleet-officer",
+    "taxonomy": "role",
     "label": "Starfleet Officer",
     "applies_to": [
       "space-opera"
@@ -2854,11 +2855,11 @@
       "tricorder or scanning device in hand",
       "multi-species crew visible in the background",
       "composed professional bearing — diplomacy and duty in equal measure"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "space-pirate",
+    "taxonomy": "role",
     "label": "Space Pirate",
     "applies_to": [
       "space-opera"
@@ -2869,11 +2870,11 @@
       "trophies from a dozen worlds hanging from the belt",
       "grinning confidence of someone with a fast ship and nothing to lose",
       "docking clamps and boarding hooks visible on the harness"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pulp-rocket-ranger",
+    "taxonomy": "role",
     "label": "Rocket Ranger",
     "applies_to": [
       "pulp-scifi"
@@ -2884,11 +2885,11 @@
       "ray gun holstered at the hip — rounded, retro-futurist design",
       "aviator goggles pushed up on the helmet brow",
       "heroic square-jawed silhouette against a painted-sky backdrop"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pulp-bug-eyed-mutant",
+    "taxonomy": "role",
     "label": "Bug-Eyed Mutant",
     "applies_to": [
       "pulp-scifi"
@@ -2899,11 +2900,11 @@
       "hunched or elongated frame warped by radiation or experiment",
       "torn lab clothing revealing mutated flesh beneath",
       "pulp-cover dramatic pose — menacing but theatrical"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pulp-alien-overlord",
+    "taxonomy": "role",
     "label": "Alien Overlord",
     "applies_to": [
       "pulp-scifi"
@@ -2914,11 +2915,11 @@
       "carapace or bony crest marking dominance and alien hierarchy",
       "retro-futurist dais or throne of chrome and glass",
       "pulp-art colour palette — lurid greens, electric blues, deep shadow"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "pulp-space-adventurer",
+    "taxonomy": "role",
     "label": "Space Adventurer",
     "applies_to": [
       "pulp-scifi"
@@ -2929,11 +2930,11 @@
       "wide-brimmed helmet or explorer's cap with goggled visor",
       "confident striding pose — into the unknown with a grin",
       "pulp paperback energy — adventure is the point, danger is the backdrop"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "vacuum-welder",
+    "taxonomy": "role",
     "label": "Vacuum Welder",
     "applies_to": [
       "hard-scifi"
@@ -2944,11 +2945,11 @@
       "safety tether lines clipped to hull handrails",
       "suit covered in micro-impact pitting and re-entry scoring",
       "deliberate methodical posture — one wrong move is a fatality"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "colony-marine",
+    "taxonomy": "role",
     "label": "Colony Marine",
     "applies_to": [
       "hard-scifi"
@@ -2959,11 +2960,11 @@
       "rebreather and life-support pack integrated into the back plate",
       "colony patch on the shoulder — far from Earth, protecting something real",
       "tired pragmatic bearing — not a hero, a professional doing a job"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "mission-specialist",
+    "taxonomy": "role",
     "label": "Mission Specialist",
     "applies_to": [
       "hard-scifi"
@@ -2974,11 +2975,11 @@
       "specialist equipment case carried by hand or shoulder-strapped",
       "close-cropped practical appearance — no jewellery, no vanity",
       "expression of focused competence — knows exactly what failure costs"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "astrogeologist",
+    "taxonomy": "role",
     "label": "Astrogeologist",
     "applies_to": [
       "hard-scifi"
@@ -2989,11 +2990,11 @@
       "mineral analyser held up to a rock face",
       "gloves dusted with regolith from a world humans have barely touched",
       "unhurried methodical posture — the planet has been here four billion years"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "uplifted-mind",
+    "taxonomy": "role",
     "label": "Uplifted Mind",
     "applies_to": [
       "post-human"
@@ -3004,11 +3005,11 @@
       "eyes replaced by glowing sensor arrays processing at inhuman speed",
       "body maintained as a vehicle rather than an identity",
       "serene detachment — thought has outrun the need for expression"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "synth-body",
+    "taxonomy": "role",
     "label": "Synth Body",
     "applies_to": [
       "post-human"
@@ -3019,11 +3020,11 @@
       "internal glow visible through translucent torso panels",
       "face designed for function — minimal but expressive enough",
       "seamless movement that betrays no biological hesitation"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gene-sculpted-ascendant",
+    "taxonomy": "role",
     "label": "Gene-Sculpted Ascendant",
     "applies_to": [
       "post-human"
@@ -3034,11 +3035,11 @@
       "musculature and proportions engineered beyond natural variation",
       "calm certainty in bearing — evolution was their choice",
       "subtle markers of the change — elongated fingers, enlarged cranium, altered iris"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "substrate-drifter",
+    "taxonomy": "role",
     "label": "Substrate Drifter",
     "applies_to": [
       "post-human"
@@ -3049,11 +3050,11 @@
       "emitter housing worn, battered, covered in signal-range stickers",
       "presence in the room but no physical footprint — nothing to restrain",
       "unsettling freedom in the posture — no fear of physical harm"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "ruler",
+    "taxonomy": "role",
     "label": "Ruler / Sovereign",
     "applies_to": [
       "*"
@@ -3063,11 +3064,11 @@
       "ornate robes or finery of the setting",
       "symbol of authority — crown, circlet, or insignia",
       "upright dignified posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "merchant",
+    "taxonomy": "role",
     "label": "Merchant / Trader",
     "applies_to": [
       "*"
@@ -3077,11 +3078,11 @@
       "goods or wares carried or worn",
       "shrewd appraising expression",
       "well-traveled, slightly worn attire"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "noble",
+    "taxonomy": "role",
     "label": "Noble / Aristocrat",
     "applies_to": [
       "*"
@@ -3091,11 +3092,11 @@
       "refined posture and grooming",
       "subtle status markers — jewelry, crest, fine fabric",
       "soft uncalloused hands"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "commoner",
+    "taxonomy": "role",
     "label": "Commoner / Civilian",
     "applies_to": [
       "*"
@@ -3105,11 +3106,11 @@
       "modest worn materials",
       "unremarkable functional gear",
       "neutral standing pose"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "laborer",
+    "taxonomy": "role",
     "label": "Laborer / Worker",
     "applies_to": [
       "*"
@@ -3119,11 +3120,11 @@
       "tool of their trade in hand",
       "calloused hands, strong build",
       "rolled sleeves, sweat-stained cloth"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "priest",
+    "taxonomy": "role",
     "label": "Priest / Cleric",
     "applies_to": [
       "*"
@@ -3133,11 +3134,11 @@
       "holy symbol or icon",
       "solemn devotional bearing",
       "ceremonial accessories"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "scholar",
+    "taxonomy": "role",
     "label": "Scholar / Scribe",
     "applies_to": [
       "*"
@@ -3147,11 +3148,11 @@
       "spectacles or magnifier",
       "ink-stained fingers",
       "thoughtful studious expression"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "healer",
+    "taxonomy": "role",
     "label": "Healer / Physician",
     "applies_to": [
       "*"
@@ -3161,11 +3162,11 @@
       "satchel of tools and bandages",
       "calm focused demeanor",
       "stained apron or smock"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "hunter",
+    "taxonomy": "role",
     "label": "Hunter / Tracker",
     "applies_to": [
       "*"
@@ -3175,11 +3176,11 @@
       "ranged weapon of the setting",
       "trophies, pelts, or trail gear",
       "alert watchful stance"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "smith",
+    "taxonomy": "role",
     "label": "Smith / Artisan",
     "applies_to": [
       "*"
@@ -3189,11 +3190,11 @@
       "hammer, tongs, or craft tools",
       "soot-marked muscular arms",
       "sturdy practical boots"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "elder",
+    "taxonomy": "role",
     "label": "Elder / Sage",
     "applies_to": [
       "*"
@@ -3203,11 +3204,11 @@
       "long simple robes or layered clothing",
       "walking staff or cane",
       "stooped but dignified posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "child",
+    "taxonomy": "role",
     "label": "Child / Youth",
     "applies_to": [
       "*"
@@ -3217,11 +3218,11 @@
       "simple setting-appropriate clothes",
       "curious lively expression",
       "oversized or hand-me-down garments"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "outcast",
+    "taxonomy": "role",
     "label": "Outcast / Beggar",
     "applies_to": [
       "*"
@@ -3231,11 +3232,11 @@
       "gaunt weathered look",
       "meager possessions bundled close",
       "hunched wary posture"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "servant",
+    "taxonomy": "role",
     "label": "Servant / Attendant",
     "applies_to": [
       "*"
@@ -3245,11 +3246,11 @@
       "modest deferential bearing",
       "carried tray, tools, or implements",
       "tidy restrained appearance"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "entertainer",
+    "taxonomy": "role",
     "label": "Entertainer / Performer",
     "applies_to": [
       "*"
@@ -3259,11 +3260,11 @@
       "instrument or performance prop",
       "animated theatrical posture",
       "decorative flourishes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "sheriff",
+    "taxonomy": "role",
     "label": "Sheriff",
     "applies_to": [
       "western"
@@ -3275,11 +3276,11 @@
       "sun-cracked boots with worn rowel spurs",
       "duster coat in faded ochre and brown",
       "weathered face set in a hard authoritative stare"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "gunslinger",
+    "taxonomy": "role",
     "label": "Gunslinger",
     "applies_to": [
       "western"
@@ -3291,11 +3292,11 @@
       "long duster coat split at the back for fast draw",
       "steely squinting eyes beneath a tanned brow",
       "fine trail dust coating every crease of dark clothing"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "outlaw",
+    "taxonomy": "role",
     "label": "Outlaw",
     "applies_to": [
       "western"
@@ -3307,11 +3308,11 @@
       "cartridge belt crossed over the chest",
       "scarred knuckles and road-dust-caked clothing",
       "wanted-poster silhouette against a red-rock canyon backdrop"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "frontier-saloon-girl",
+    "taxonomy": "role",
     "label": "Saloon Girl",
     "applies_to": [
       "classic-western"
@@ -3323,11 +3324,11 @@
       "high-heeled buttoned boots peeking below the hemline",
       "smoky kerosene-lit saloon interior with sawdust floors",
       "knowing smile framed by kohl-lined eyes"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "cattle-rancher",
+    "taxonomy": "role",
     "label": "Cattle Rancher",
     "applies_to": [
       "classic-western"
@@ -3339,11 +3340,11 @@
       "roughened calloused hands gripping a fence rail",
       "flannel work shirt rolled to the elbows",
       "wide open grassland range stretching to a sun-bleached horizon"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "frontier-marshal",
+    "taxonomy": "role",
     "label": "Frontier Marshal",
     "applies_to": [
       "classic-western"
@@ -3355,11 +3356,11 @@
       "polished cavalry boots with dress spurs",
       "composed unreadable expression under a flat-brim hat",
       "dusty main-street backdrop of a frontier boomtown"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "poncho-stranger",
+    "taxonomy": "role",
     "label": "The Poncho Stranger",
     "applies_to": [
       "spaghetti-western"
@@ -3371,11 +3372,11 @@
       "twin revolvers concealed beneath the poncho drape",
       "lone silhouette against a bleached adobe village wall",
       "morally ambiguous mercenary bearing no name or allegiance"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "bandido",
+    "taxonomy": "role",
     "label": "Bandido",
     "applies_to": [
       "spaghetti-western"
@@ -3387,11 +3388,11 @@
       "flamboyant moustache and expressive theatrical eyes",
       "loud patterned serape in ochre and rust",
       "exaggerated operatic posturing against a crumbling hacienda wall"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "undead-gunslinger",
+    "taxonomy": "role",
     "label": "Undead Gunslinger",
     "applies_to": [
       "weird-west"
@@ -3403,11 +3404,11 @@
       "dried bloodstains and grave dirt on trail-worn clothing",
       "spectral blue aura leaking from the wounds",
       "cracked parched skin over a gaunt undead face"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "snake-oil-occultist",
+    "taxonomy": "role",
     "label": "Snake-Oil Occultist",
     "applies_to": [
       "weird-west"
@@ -3419,11 +3420,11 @@
       "tailored black frock coat with alchemical embroidery",
       "long fingers stained with reagents tracing a hex circle",
       "unsettling wide grin beneath a waxed handlebar moustache"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "demon-hunter-preacher",
+    "taxonomy": "role",
     "label": "Demon Hunter Preacher",
     "applies_to": [
       "weird-west"
@@ -3435,11 +3436,11 @@
       "scripture verses tattooed across scarred forearms",
       "haunted eyes that have witnessed genuine hellfire",
       "smoke and brimstone hanging in the air around the figure"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "wasteland-marauder",
+    "taxonomy": "role",
     "label": "Wasteland Marauder",
     "applies_to": [
       "apocalypse-west"
@@ -3451,11 +3452,11 @@
       "sawed-off double-barrel shotgun and a machete at the hip",
       "face half-hidden behind a rusted iron rebreather mask",
       "desolate irradiated badlands stretching to a toxic orange sky"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "scrap-gunslinger",
+    "taxonomy": "role",
     "label": "Scrap Gunslinger",
     "applies_to": [
       "apocalypse-west"
@@ -3467,11 +3468,11 @@
       "bullet casings repurposed as decoration on hat band and belt",
       "lean sun-blasted frame dusted head to toe in pale alkali",
       "calm precise gunfighter stance amid a rusted ghost-town backdrop"
-    ],
-    "ext": {}
+    ]
   },
   {
     "id": "road-warrior-outrider",
+    "taxonomy": "role",
     "label": "Road Warrior Outrider",
     "applies_to": [
       "apocalypse-west"
@@ -3483,7 +3484,6 @@
       "tribal war paint and ritual scarification on exposed arms",
       "dusty bandana and cracked flight goggles as face cover",
       "scorched frontier highway littered with wrecked vehicles receding into haze"
-    ],
-    "ext": {}
+    ]
   }
 ]

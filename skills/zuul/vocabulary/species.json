@@ -23,8 +23,7 @@
     "applies_to": [
       "*"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "orc",
@@ -62,8 +61,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "elf",
@@ -101,8 +99,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "dwarf",
@@ -141,8 +138,7 @@
       "fantasy",
       "steampunk"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "hiver",
@@ -182,8 +178,7 @@
     "applies_to": [
       "scifi"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "romulan",
@@ -220,8 +215,7 @@
     "applies_to": [
       "scifi"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "tiefling",
@@ -260,8 +254,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "dragonborn",
@@ -298,8 +291,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "android",
@@ -338,8 +330,7 @@
       "scifi",
       "science-fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "halfling",
@@ -377,8 +368,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "gnome",
@@ -417,8 +407,7 @@
       "fantasy",
       "steampunk"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "half-orc",
@@ -455,8 +444,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "aasimar",
@@ -494,8 +482,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "lizardfolk",
@@ -535,8 +522,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "minotaur",
@@ -574,8 +560,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "tabaxi",
@@ -615,8 +600,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "warforged",
@@ -655,8 +639,7 @@
       "fantasy",
       "science-fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "drow",
@@ -695,8 +678,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "goliath",
@@ -732,8 +714,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "githyanki",
@@ -773,8 +754,7 @@
       "fantasy",
       "science-fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "leonin",
@@ -814,8 +794,7 @@
     "applies_to": [
       "fantasy"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   },
   {
     "id": "klingon",
@@ -854,7 +833,6 @@
     "applies_to": [
       "scifi"
     ],
-    "body_plan": "biped",
-    "ext": {}
+    "body_plan": "biped"
   }
 ]

@@ -10,8 +10,7 @@
     "phrase": "standing in a symmetrical A-pose with arms relaxed straight down at roughly 45 degrees away from the torso, palms facing the body, fingers slightly spread, legs shoulder-width apart",
     "aspect": "2:3",
     "use": "mesh-gen",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "t-pose",
@@ -23,8 +22,7 @@
     "phrase": "standing in a symmetrical T-pose with both arms extended straight out horizontally to the sides at shoulder height, palms down, fingers together, legs shoulder-width apart",
     "aspect": "1:1",
     "use": "mesh-gen",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "quadruped-stand",
@@ -36,8 +34,7 @@
     "phrase": "standing square and symmetrical on all four legs, planted shoulder-width apart, head level",
     "aspect": "4:3",
     "use": "mesh-gen",
-    "source": "hand-curated",
-    "ext": {}
+    "source": "hand-curated"
   },
   {
     "id": "winged-spread",
@@ -49,8 +46,7 @@
     "phrase": "standing square and symmetrical, both wings spread wide and held well clear of the body, limbs planted shoulder-width apart, head level",
     "aspect": "4:3",
     "use": "mesh-gen",
-    "source": "hand-curated (promoted from the creature reference table)",
-    "ext": {}
+    "source": "hand-curated (promoted from the creature reference table)"
   },
   {
     "id": "floating-idle",
@@ -62,8 +58,7 @@
     "phrase": "hovering upright and symmetrical, body centered with any limbs, tentacles, or eyestalks splayed evenly and held clear of the body, no ground contact",
     "aspect": "1:1",
     "use": "mesh-gen",
-    "source": "hand-curated (promoted from the creature reference table)",
-    "ext": {}
+    "source": "hand-curated (promoted from the creature reference table)"
   },
   {
     "id": "enraged-roar",
@@ -76,7 +71,6 @@
     "expression": "screaming, enraged, furious",
     "aspect": "2:3",
     "use": "action / dramatic",
-    "source": "example entry (illustrates the format)",
-    "ext": {}
+    "source": "hand-curated"
   }
 ]
