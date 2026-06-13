@@ -14,7 +14,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { writeFile, readFile } from "node:fs/promises";
 import { extname, resolve } from "node:path";
-import { ComfyUIClient, generateWithComfyUI, comfySizeToDimensions, ComfyUIError, type ComfyWorkflow } from "./comfyui";
+import { ComfyUIClient, generateWithComfyUI, comfySizeToDimensions, ComfyUIError, detectComfyArch, resolveTemplate, type ComfyWorkflow } from "./comfyui";
 
 // ============================================================================
 // Environment Loading
@@ -93,6 +93,13 @@ interface CLIArgs {
   sizeExplicit?: boolean;      // true when --size was passed (controls size injection)
   listComfyuiWorkflows?: boolean;
   listComfyuiModels?: boolean;
+  comfyuiModel?: string;       // unified model name (alias: --comfyui-checkpoint)
+  comfyuiArch?: "sd" | "flux2";
+  comfyuiUnet?: string;
+  comfyuiClip?: string;
+  comfyuiVae?: string;
+  comfyuiTemplate?: string;
+  referenceImages?: string[];  // repeatable --reference-image (flux2 multi-ref)
 }
 
 // ============================================================================
@@ -177,6 +184,7 @@ OPTIONS:
   --output <path>          Output file path (default: /tmp/generated-image.png)
   --reference-image <path> Reference image for style/composition guidance
                            Accepts: PNG, JPEG, WebP images
+                           Repeatable for FLUX.2 (provider comfyui) — multiple references
   --transparent            Add transparency instructions to prompt
   --remove-bg              Remove background after generation (requires REMOVEBG_API_KEY)
   --thinking <level>       Thinking level for NB2: minimal (default), high (Google only)
@@ -189,6 +197,12 @@ OPTIONS:
                            Not available with --thinking or OpenRouter provider
   --comfyui-workflow <path>  Run an API-format ComfyUI workflow file (provider comfyui)
   --comfyui-checkpoint <name> Checkpoint for built-in txt2img (provider comfyui)
+  --comfyui-model <name>     Model for auto-detected backend (checkpoint or FLUX.2 UNet)
+  --comfyui-arch <sd|flux2>  Force backend architecture (overrides auto-detect)
+  --comfyui-unet <name>      FLUX.2 UNet override
+  --comfyui-clip <name>      FLUX.2 CLIP override
+  --comfyui-vae <name>       FLUX.2 VAE override
+  --comfyui-template <name>  Run a bundled (zuul/workflows) or server workflow by name
   --comfyui-steps <int>      Override KSampler steps (positive integer; comfyui provider only)
   --comfyui-cfg <number>     Override KSampler CFG scale (positive number; comfyui provider only)
   --comfyui-sampler <name>   Override KSampler sampler name, e.g. euler_a, dpmpp_2m (comfyui provider only)
@@ -350,11 +364,19 @@ function parseArgs(argv: string[]): CLIArgs {
         i++;
         break;
       case "reference-image":
-        parsed.referenceImage = value;
-        i++;
-        break;
+        parsed.referenceImage = value;                 // keep single for gemini back-compat
+        (parsed.referenceImages ??= []).push(value);   // accumulate for flux2
+        i++; break;
       case "comfyui-workflow": parsed.comfyuiWorkflow = value; i++; break;
-      case "comfyui-checkpoint": parsed.comfyuiCheckpoint = value; i++; break;
+      case "comfyui-checkpoint": parsed.comfyuiCheckpoint = value; parsed.comfyuiModel = value; i++; break;
+      case "comfyui-model": parsed.comfyuiModel = value; i++; break;
+      case "comfyui-arch":
+        if (value !== "sd" && value !== "flux2") throw new CLIError(`Invalid --comfyui-arch: ${value}. Must be sd or flux2`);
+        parsed.comfyuiArch = value; i++; break;
+      case "comfyui-unet": parsed.comfyuiUnet = value; i++; break;
+      case "comfyui-clip": parsed.comfyuiClip = value; i++; break;
+      case "comfyui-vae": parsed.comfyuiVae = value; i++; break;
+      case "comfyui-template": parsed.comfyuiTemplate = value; i++; break;
       case "comfyui-steps": {
         const steps = parseInt(value, 10);
         if (isNaN(steps) || steps < 1) throw new CLIError(`Invalid comfyui-steps: ${value}. Must be a positive integer`);
@@ -905,7 +927,6 @@ async function main(): Promise<void> {
 
     // Guard comfyui-unsupported flags
     if (provider === "comfyui") {
-      if (args.referenceImage) throw new CLIError("--reference-image is not yet supported with the comfyui provider");
       if (args.transparent) throw new CLIError("--transparent is not supported with the comfyui provider (SD has no native alpha)");
       if (args.thinking || args.grounded) console.warn("Warning: --thinking/--grounded are ignored by the comfyui provider");
     }
@@ -930,21 +951,58 @@ async function main(): Promise<void> {
       let savedPath: string;
       if (provider === "comfyui") {
         const { width, height } = comfySizeToDimensions(args.size, args.aspectRatio);
+        const client = ComfyUIClient.fromEnv();
+
+        // Template mode (bundled or server) — authoritative graph.
+        let template: ComfyWorkflow | undefined;
+        if (args.comfyuiTemplate) {
+          template = await resolveTemplate(args.comfyuiTemplate, {
+            readBundled: async (name) => {
+              const p = resolve(import.meta.dir, "..", "workflows", `${name}.json`);
+              try { return JSON.parse(await readFile(p, "utf-8")); } catch { return null; }
+            },
+            fetchServer: (name) => client.fetchServerWorkflow(name.endsWith(".json") ? name : `${name}.json`),
+            getObjectInfo: () => client.getObjectInfo(),
+          });
+        }
+
+        // Explicit workflow file (ad-hoc), unchanged.
         let workflow: ComfyWorkflow | undefined;
         if (args.comfyuiWorkflow) {
-          try {
-            workflow = JSON.parse(await readFile(args.comfyuiWorkflow, "utf-8")) as ComfyWorkflow;
-          } catch (err) {
-            throw new CLIError(`Could not read ComfyUI workflow file "${args.comfyuiWorkflow}": ${err instanceof Error ? err.message : err}. It must be a valid API-format workflow JSON.`);
+          try { workflow = JSON.parse(await readFile(args.comfyuiWorkflow, "utf-8")) as ComfyWorkflow; }
+          catch (err) { throw new CLIError(`Could not read ComfyUI workflow file "${args.comfyuiWorkflow}": ${err instanceof Error ? err.message : err}.`); }
+        }
+
+        // Arch detection (skipped if a template/workflow is authoritative).
+        let arch: "sd" | "flux2" = "sd";
+        if (!template && !workflow) {
+          const modelName = args.comfyuiModel;
+          if (modelName) {
+            arch = detectComfyArch(
+              modelName,
+              { checkpoints: await client.listCheckpoints(), diffusionModels: await client.listDiffusionModels() },
+              args.comfyuiArch,
+            );
+          } else if (args.comfyuiArch) {
+            arch = args.comfyuiArch;
           }
         }
+
+        // Guard: references only on flux2 (or a template that handles them).
+        const refs = args.referenceImages ?? [];
+        if (refs.length && arch !== "flux2" && !template && !workflow) {
+          throw new CLIError("--reference-image with the comfyui provider requires FLUX.2 (use a FLUX.2 model or --comfyui-arch flux2).");
+        }
+
         savedPath = await generateWithComfyUI({
-          client: ComfyUIClient.fromEnv(),
-          positive: prompt, width, height, seed: args.seed,
-          steps: args.comfyuiSteps, cfg: args.comfyuiCfg,
-          sampler: args.comfyuiSampler, scheduler: args.comfyuiScheduler,
-          checkpoint: args.comfyuiCheckpoint ?? process.env.COMFYUI_CHECKPOINT, workflow,
-          applySize: !!args.sizeExplicit,
+          client, arch, width, height, seed: args.seed,
+          positive: prompt,
+          model: args.comfyuiModel, unet: args.comfyuiUnet, clip: args.comfyuiClip, vae: args.comfyuiVae,
+          references: arch === "flux2" ? refs : undefined,
+          readFileBytes: (p: string) => readFile(p),
+          steps: args.comfyuiSteps, cfg: args.comfyuiCfg, sampler: args.comfyuiSampler, scheduler: args.comfyuiScheduler,
+          checkpoint: args.comfyuiCheckpoint ?? process.env.COMFYUI_CHECKPOINT,
+          template, workflow, applySize: !!args.sizeExplicit,
           output, saveImage,
         });
       } else if (provider === "openrouter") {

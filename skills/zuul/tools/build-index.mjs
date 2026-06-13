@@ -182,6 +182,8 @@ for (const typeDir of subjectTypeDirs) {
         if (firstRender.size) entry.render_size = firstRender.size;
         if (firstRender.aspect_ratio) entry.aspect_ratio = firstRender.aspect_ratio;
         if (firstRender.seed != null) entry.seed = firstRender.seed;
+        if (firstRender.backend) entry.backend = firstRender.backend;
+        if (firstRender.arch) entry.arch = firstRender.arch;
         // image: repo-relative path to the first PNG
         if (firstRender.path) {
           entry.image = firstRender.path; // already a relative path when present

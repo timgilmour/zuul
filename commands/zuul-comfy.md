@@ -14,7 +14,7 @@ Arguments: $ARGUMENTS
 
 Call `mcp__comfyui__health_check`. If the server is unreachable, stop immediately and tell the user:
 
-> ComfyUI is not reachable. Check that ComfyUI is running on Windows and that WSL2 mirrored networking is configured — see `~/.wslconfig` and `skills/zuul/core/comfyui-backend.md`.
+> ComfyUI is not reachable. Check that ComfyUI is running on Windows and that WSL2 mirrored networking is configured — see `~/.wslconfig` and `04-Skills/zuul/core/comfyui-backend.md`.
 
 ### 2. Discover
 
@@ -97,7 +97,7 @@ Write or update the subject `.json` record at `09-Outputs/concepts/<type>/<slug>
 Rebuild the output index:
 
 ```bash
-bun run skills/zuul/tools/build-index.mjs
+bun run 04-Skills/zuul/tools/build-index.mjs
 ```
 
 ## Examples

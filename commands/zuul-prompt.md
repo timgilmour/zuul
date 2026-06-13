@@ -9,7 +9,7 @@ Subject: $ARGUMENTS
 
 Map the subject phrase to pool ids (species / role / subgenre / descriptors) via the
 skill's vocabulary lookup, then build `<DETAILS>` by running
-`bun run skills/zuul/tools/assemble-prompt.mjs --species <id> --role <id> --subgenre <id> [--descriptor <id>]...`
+`bun run 04-Skills/zuul/tools/assemble-prompt.mjs --species <id> --role <id> --subgenre <id> [--descriptor <id>]...`
 (exit 2 = unresolved conflicts: resolve them with the user, re-run with `--add "<slot>:<text>"`).
 Fall back to the manual `core/assembly.md` slot-merge only if the CLI is unavailable.
 Prepend the chosen style's core prompt from `vocabulary/styles.json` (default `clean-mesh-gen`) with `<FRAMING>` filled in, and apply the chosen pose's phrase. Ask only for dimensions you genuinely can't infer.

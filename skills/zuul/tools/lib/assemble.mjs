@@ -7,12 +7,21 @@
 export const PRECEDENCE = ["user", "intersection", "descriptor", "role", "species", "subgenre", "genre"];
 const rank = (source) => PRECEDENCE.indexOf(source);
 
+// Generic "species-level descriptor defaults": each entry maps a descriptor
+// category to the species field that supplies its default id, auto-applied
+// unless the caller passes an explicit descriptor of that category. Size is the
+// only axis today; a future axis is one entry here + a species field + a slot.
+export const SPECIES_DEFAULTS = { size: "default_size" };
+// Per-axis neutral value that means "no auto-derivation" (a no-op default).
+export const SPECIES_DEFAULT_NEUTRAL = { size: "medium" };
+
 // kind "style": highest-precedence supplying source wins the slot outright.
 // kind "subject": additive slots compose; exclusive slots surface conflicts
 // when fragments from ≥2 distinct sources survive demotion.
 export const SLOT_TABLE = {
   art_style:      { kind: "style" },
   tone:           { kind: "style" },
+  scale:          { kind: "subject", mode: "additive" },
   build:          { kind: "subject", mode: "additive" },
   features:       { kind: "subject", mode: "additive" },
   surface:        { kind: "subject", mode: "additive" },
@@ -28,7 +37,7 @@ export const SLOT_TABLE = {
 };
 
 export const DETAILS_ORDER = [
-  "build", "features", "surface", "armor_clothing", "gear", "weapon",
+  "scale", "build", "features", "surface", "armor_clothing", "gear", "weapon",
   "marks", "aura", "bearing", "materials", "tone", "expression",
 ];
 
@@ -88,6 +97,19 @@ export function assemble({ pools, species, role, subgenre, genre, descriptors = 
     ...fired.flatMap((ix) => typedFragments(ix, "intersection", "prompt_fragments_add")),
     ...adds.map(({ slot, text }) => ({ slot, text, source: "user" })),
   ];
+
+  // -- auto-derive species-default descriptors (generic; size only today) ---
+  // If the caller passed no explicit descriptor of a mapped category, inject
+  // the species default's FRAGMENTS (not its id, so this can never satisfy a
+  // category-keyed intersection's when[]). source "species" — derived from it.
+  for (const [category, field] of Object.entries(SPECIES_DEFAULTS)) {
+    if (descriptorEntries.some((d) => d.category === category)) continue; // explicit override
+    const defId = speciesEntry?.[field];
+    if (!defId || defId === SPECIES_DEFAULT_NEUTRAL[category]) continue;
+    const defEntry = (pools.descriptors ?? []).find((d) => d.id === defId && d.category === category);
+    if (defEntry) frags.push(...typedFragments(defEntry, "species"));
+  }
+
   for (const f of frags)
     if (!(f.slot in SLOT_TABLE)) throw new AssembleError(`fragment "${f.text}" has unknown slot "${f.slot}"`);
 

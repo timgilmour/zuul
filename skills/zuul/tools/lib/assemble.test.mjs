@@ -176,6 +176,52 @@ test("additive slots never conflict — multiple descriptors compose", () => {
   expect(r.details).toContain("ritual tattoos");
 });
 
+// FIXTURE variant exercising species-default size derivation. The dwarf gets a
+// default_size; the pool carries scale-slotted size descriptors to resolve it.
+const withSizes = (defaultSize) => {
+  const pools = structuredClone(FIXTURE);
+  pools.species[0].default_size = defaultSize;
+  pools.descriptors.push(
+    { id: "small", taxonomy: "descriptor", category: "size", label: "Small",
+      prompt_fragments: [
+        { slot: "scale", text: "small in stature, roughly child- to halfling-height" },
+        { slot: "scale", text: "compact proportions with a slightly enlarged head" },
+      ] },
+    { id: "large", taxonomy: "descriptor", category: "size", label: "Large",
+      prompt_fragments: [
+        { slot: "scale", text: "large and imposing, standing well over human height" },
+      ] },
+    { id: "medium", taxonomy: "descriptor", category: "size", label: "Medium",
+      prompt_fragments: [{ slot: "scale", text: "average adult human height and proportions" }] },
+  );
+  return pools;
+};
+
+test("species default_size auto-derives a scale fragment that leads DETAILS", () => {
+  const r = assemble({ pools: withSizes("small"), species: "dwarf", role: "barbarian", subgenre: "high-fantasy" });
+  expect(r.details).toMatch(/^small in stature/);
+  expect(r.details).toContain("compact proportions with a slightly enlarged head");
+  expect(r.details).toContain("stocky barrel-chested build"); // physique still present, after scale
+  expect(r.conflicts).toEqual([]);
+});
+
+test("medium default_size is a no-op (humans unchanged)", () => {
+  const r = assemble({ pools: withSizes("medium"), species: "dwarf", role: "barbarian", subgenre: "high-fantasy" });
+  expect(r.details).not.toContain("average adult human height");
+  expect(r.details).toMatch(/^stocky barrel-chested build/);
+});
+
+test("explicit size descriptor overrides the species default", () => {
+  const r = assemble({ pools: withSizes("small"), species: "dwarf", role: "barbarian", subgenre: "high-fantasy", descriptors: ["large"] });
+  expect(r.details).toContain("large and imposing, standing well over human height");
+  expect(r.details).not.toContain("small in stature");
+});
+
+test("species-less subject derives no scale", () => {
+  const r = assemble({ pools: withSizes("small"), role: "barbarian", subgenre: "high-fantasy" });
+  expect(r.details).not.toContain("small in stature");
+});
+
 test("integration: real pools assemble high-fantasy dwarf barbarian cleanly", async () => {
   const VOCAB = resolve(dirname(fileURLToPath(import.meta.url)), "../../vocabulary");
   const load = async (f) => JSON.parse(await readFile(resolve(VOCAB, f), "utf-8"));
@@ -186,7 +232,8 @@ test("integration: real pools assemble high-fantasy dwarf barbarian cleanly", as
     species: "dwarf", role: "barbarian", subgenre: "high-fantasy",
   });
   expect(r.conflicts).toEqual([]);
-  expect(r.details).toMatch(/^stocky barrel-chested build/);
+  expect(r.details).toMatch(/^small in stature/); // scale anchor leads (dwarf default_size: small)
+  expect(r.details).toContain("stocky barrel-chested build"); // physique still present
   expect(r.details).toContain("minimal hide and fur armour");
   expect(r.details).toContain("palette of");
   expect(r.art_style).toBe("high fantasy concept art");

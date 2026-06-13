@@ -40,6 +40,7 @@ into a **slot**, then resolve each slot.
 
 | Slot | Natural owner | Example fragment |
 |------|---------------|------------------|
+| `scale` | species (via `default_size`) → descriptor | `small in stature, compact proportions` |
 | `build` | species | `stocky barrel-chested build` |
 | `features` | species (+ intersection) | `thick beard`, `curling horns` |
 | `surface` | species | `ruddy skin`, `scaled hide` |
@@ -84,6 +85,12 @@ deliberate tension). Never guess on a same-precedence collision.
 1. **Pull** fragments from each source via the lookup sequence in
    `subjects/characters.md` (species → genre+subgenre → role → descriptors →
    intersections).
+1b. **Auto-derive scale.** If no explicit `size`-category descriptor was supplied and
+   the species' `default_size` is set and not `medium`, pull the matching `size`
+   descriptor's (`scale`-slotted) fragments as a species-sourced default. An explicit
+   size descriptor suppresses this (it is the override). This is the one instance of a
+   generic species-default mechanism (`SPECIES_DEFAULTS` in the engine), keyed by
+   descriptor category — size is the only axis today.
 2. **Classify** each fragment into a slot. Mostly free, because classification is
    *by source*:
 
@@ -103,7 +110,7 @@ deliberate tension). Never guess on a same-precedence collision.
 5. **Assemble** in this fixed order so prompts read consistently:
 
    ```
-   build → features → surface → armor_clothing → gear → weapon → marks → aura → bearing → materials → tone → expression → palette clause
+   scale → build → features → surface → armor_clothing → gear → weapon → marks → aura → bearing → materials → tone → expression → palette clause
    ```
 
    `art_style` rides with the subject identity line (per `subjects/characters.md`
@@ -143,6 +150,7 @@ Resolved per slot:
 |------|--------|---------|
 | `art_style` | high fantasy concept art | ~~fantasy game concept art~~ |
 | `tone` | luminous magical aesthetic, heroic mythic scale | ~~medieval fantasy aesthetic~~ |
+| `scale` | small in stature, roughly child- to halfling-height, well under adult size, compact proportions with a slightly enlarged head and short stocky limbs | (auto-derived from dwarf `default_size: small`) |
 | `build` | stocky barrel-chested build, short stature, raw muscular physique | |
 | `features` | thick beard | |
 | `surface` | ruddy skin | |
@@ -154,6 +162,6 @@ Resolved per slot:
 
 Final `<DETAILS>`:
 
-> stocky barrel-chested build, short stature, raw muscular physique, thick beard, ruddy skin, minimal hide and fur armour, bare arms and shoulders, tribal bone fetishes, war paint on face and chest, hand-crafted materials, luminous magical aesthetic, heroic mythic scale, palette of russet brown, iron grey, gold, deep slate
+> small in stature, roughly child- to halfling-height, well under adult size, compact proportions with a slightly enlarged head and short stocky limbs, stocky barrel-chested build, short stature, raw muscular physique, thick beard, ruddy skin, minimal hide and fur armour, bare arms and shoulders, tribal bone fetishes, war paint on face and chest, hand-crafted materials, luminous magical aesthetic, heroic mythic scale, palette of russet brown, iron grey, gold, deep slate
 
 > resolution: demoted "fantasy game concept art" (genre→art_style), "medieval fantasy aesthetic" (genre→tone), "gleaming enchanted armour" (subgenre→armor_clothing), "gold-leaf ornamental detail" (subgenre→armor_clothing); palette from species

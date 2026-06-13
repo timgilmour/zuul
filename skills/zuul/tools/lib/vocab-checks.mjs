@@ -15,7 +15,7 @@ export const EXPECTED_SUBS = {
 
 // A prompt_fragments[] entry is a bare string (legacy) or a {slot,text} object.
 export const SLOTS = new Set([
-  "art_style","tone","build","features","surface","armor_clothing","gear","weapon",
+  "art_style","tone","scale","build","features","surface","armor_clothing","gear","weapon",
   "materials","palette","marks","aura","bearing","expression",
 ]);
 export const BODY_PLANS = ["biped","quadruped","winged","floating"];

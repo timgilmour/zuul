@@ -139,4 +139,6 @@ The default providers are Google Gemini (`GOOGLE_API_KEY`), Vertex AI (`GOOGLE_A
 
 **ComfyUI (optional local backend):** If `COMFYUI_HOST` or `COMFYUI_URL` is set, the CLI auto-detects a local ComfyUI server and routes to it. ComfyUI respects your saved workflows — zuul injects only the prompt, negative, and seed; the workflow stays authoritative for model, sampler, steps, and size (size overridden only when `--size` is passed explicitly). Use `--provider comfyui` to force it regardless of env.
 
+**Fast local drafts (FLUX.2):** For free, ~7 s iteration on your own GPU, render with `--provider comfyui --comfyui-model <flux2 model>` (e.g. `flux-2-klein-9b-fp8.safetensors`); zuul auto-detects the FLUX.2 architecture, supports repeatable `--reference-image`, and selectable `--comfyui-template`. Gemini stays the default for finals. See `core/comfyui-backend.md`.
+
 For the interactive/agentic path (workflow selection, checkpoint discovery, polling), use the `/zuul-comfy` command instead. See `core/comfyui-backend.md` for the full reference.

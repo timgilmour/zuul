@@ -14,8 +14,8 @@
       "fragile"
     ],
     "prompt_fragments": [
-      { "slot": "build", "text": "tiny sprite-scale figure" },
-      { "slot": "build", "text": "easily overlooked stature" }
+      { "slot": "scale", "text": "diminutive sprite-scale figure, only about knee-high to a grown adult" },
+      { "slot": "scale", "text": "childlike proportions — oversized head, small torso, short slender limbs" }
     ]
   },
   {
@@ -33,8 +33,8 @@
       "underestimated"
     ],
     "prompt_fragments": [
-      { "slot": "build", "text": "small stature" },
-      { "slot": "build", "text": "below average height" }
+      { "slot": "scale", "text": "small in stature, roughly child- to halfling-height, well under adult size" },
+      { "slot": "scale", "text": "compact proportions with a slightly enlarged head and short stocky limbs" }
     ]
   },
   {
@@ -51,7 +51,7 @@
       "versatile"
     ],
     "prompt_fragments": [
-      { "slot": "build", "text": "average humanoid height" }
+      { "slot": "scale", "text": "average adult human height and proportions" }
     ]
   },
   {
@@ -70,9 +70,8 @@
       "hard-to-hide"
     ],
     "prompt_fragments": [
-      { "slot": "build", "text": "towering large build" },
-      { "slot": "build", "text": "head and shoulders above average height" },
-      { "slot": "build", "text": "fills the frame" }
+      { "slot": "scale", "text": "large and imposing, standing well over human height" },
+      { "slot": "scale", "text": "heavy powerful proportions — thick limbs, broad torso, comparatively small head" }
     ]
   },
   {
@@ -90,8 +89,8 @@
       "terrain-altering"
     ],
     "prompt_fragments": [
-      { "slot": "build", "text": "massive giant-scale figure" },
-      { "slot": "build", "text": "dwarfs surrounding objects" }
+      { "slot": "scale", "text": "massive giant-scale figure several times human height" },
+      { "slot": "scale", "text": "ponderous bulk — enormous heavy torso and limbs, a small head by comparison" }
     ]
   },
   {
@@ -109,8 +108,8 @@
       "geological-impact"
     ],
     "prompt_fragments": [
-      { "slot": "build", "text": "colossal kaiju-scale figure" },
-      { "slot": "build", "text": "buildings visible for scale" }
+      { "slot": "scale", "text": "colossal, towering many times human height" },
+      { "slot": "scale", "text": "monolithic proportions — vast body, limbs like pillars, tiny head relative to the mass" }
     ]
   },
   {

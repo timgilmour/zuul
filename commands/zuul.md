@@ -11,7 +11,7 @@ Subject: $ARGUMENTS
 - If no subject is given, run the skill's full guided questionnaire.
 
 Establish the session seed and ask for the output directory as the skill specifies. Map the subject to pool ids (species / role / subgenre / descriptors) via the skill's vocabulary lookup, then build `<DETAILS>` by running
-`bun run skills/zuul/tools/assemble-prompt.mjs --species <id> --role <id> --subgenre <id> [--descriptor <id>]...`
+`bun run 04-Skills/zuul/tools/assemble-prompt.mjs --species <id> --role <id> --subgenre <id> [--descriptor <id>]...`
 (exit 2 = unresolved conflicts: resolve them with the user, re-run with `--add "<slot>:<text>"`).
 Fall back to the manual `core/assembly.md` slot-merge only if the CLI is unavailable.
 Prepend the chosen style's core prompt from `vocabulary/styles.json` (default `clean-mesh-gen`) with `<FRAMING>` filled in, apply the chosen pose, then render with the skill's `tools/generate-image.ts`. Write the prompt record and update `index.json` as the skill describes.
