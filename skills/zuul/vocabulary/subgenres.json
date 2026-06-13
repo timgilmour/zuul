@@ -33,7 +33,7 @@
     "descriptors": ["battle-worn", "defaced", "scarred", "corrupted", "ancient"],
     "prompt_fragments": [
       { "slot": "art_style", "text": "dark fantasy concept art" },
-      { "slot": "palette", "text": "tarnished iron and dried blood palette" },
+      { "slot": "palette", "text": "tarnished iron and dried blood" },
       { "slot": "tone", "text": "battle-scarred corrupted design" },
       { "slot": "materials", "text": "grim weathered materials" },
       { "slot": "tone", "text": "morally ambiguous aesthetic" }
@@ -55,7 +55,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "low fantasy concept art" },
       { "slot": "tone", "text": "unglamorous medieval peasant aesthetic" },
-      { "slot": "palette", "text": "mud-and-linen colour palette" },
+      { "slot": "palette", "text": "mud-and-linen" },
       { "slot": "gear", "text": "crude hand-forged iron tools" },
       { "slot": "tone", "text": "grounded no-magic design" }
     ]
@@ -76,7 +76,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "fairytale concept art" },
       { "slot": "tone", "text": "storybook-enchanted aesthetic" },
-      { "slot": "palette", "text": "rose-blush and gilded-cream palette" },
+      { "slot": "palette", "text": "rose-blush and gilded-cream" },
       { "slot": "materials", "text": "delicate glass and spun-gold materials" },
       { "slot": "tone", "text": "whimsical surface with dark undertone" }
     ]
@@ -97,7 +97,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "wuxia concept art" },
       { "slot": "armor_clothing", "text": "flowing silk robes and dao blades" },
-      { "slot": "palette", "text": "ink-black lacquer-red palette" },
+      { "slot": "palette", "text": "ink-black lacquer-red" },
       { "slot": "materials", "text": "jade and carved ivory detail" },
       { "slot": "tone", "text": "martial-nobility Chinese fantasy aesthetic" }
     ]
@@ -117,7 +117,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "cosmic horror concept art" },
       { "slot": "tone", "text": "non-euclidean eldritch design" },
-      { "slot": "palette", "text": "deep-violet and bioluminescent-green palette" },
+      { "slot": "palette", "text": "deep-violet and bioluminescent-green" },
       { "slot": "tone", "text": "writhing iridescent corruption" },
       { "slot": "tone", "text": "wrong proportions, unknowable geometry" }
     ]
@@ -137,7 +137,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "gothic horror concept art" },
       { "slot": "tone", "text": "decayed aristocratic aesthetic" },
-      { "slot": "palette", "text": "ash-grey and deep-crimson palette" },
+      { "slot": "palette", "text": "ash-grey and deep-crimson" },
       { "slot": "materials", "text": "tarnished silver and candlelight-amber detail" },
       { "slot": "materials", "text": "ornate crumbling materials" }
     ]
@@ -178,7 +178,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "body horror concept art" },
       { "slot": "tone", "text": "flesh-transgressed biological design" },
-      { "slot": "palette", "text": "raw-flesh and arterial-red palette" },
+      { "slot": "palette", "text": "raw-flesh and arterial-red" },
       { "slot": "materials", "text": "fused bone and exposed tissue materials" },
       { "slot": "tone", "text": "organic wrongness aesthetic" }
     ]
@@ -199,7 +199,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "folk horror concept art" },
       { "slot": "tone", "text": "rural pagan ritual aesthetic" },
-      { "slot": "palette", "text": "harvest-gold and dried-blood palette" },
+      { "slot": "palette", "text": "harvest-gold and dried-blood" },
       { "slot": "materials", "text": "wicker and rough-woven wool materials" },
       { "slot": "tone", "text": "isolation-dread old-rites design" }
     ]
@@ -220,7 +220,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "pulp sci-fi concept art" },
       { "slot": "tone", "text": "1950s rocket-age aesthetic" },
-      { "slot": "palette", "text": "chrome and candy-red palette" },
+      { "slot": "palette", "text": "chrome and candy-red" },
       { "slot": "materials", "text": "bakelite and polished-tin materials" },
       { "slot": "tone", "text": "ray-gun retro design" }
     ]
@@ -240,7 +240,7 @@
     "descriptors": ["neon-soaked", "gritty", "implanted", "dystopian", "street-level"],
     "prompt_fragments": [
       { "slot": "art_style", "text": "cyberpunk concept art" },
-      { "slot": "palette", "text": "neon-magenta and electric-cyan palette" },
+      { "slot": "palette", "text": "neon-magenta and electric-cyan" },
       { "slot": "armor_clothing", "text": "cracked synth-leather and chrome implants" },
       { "slot": "tone", "text": "corporate dystopia street-level aesthetic" },
       { "slot": "materials", "text": "rain-slick dark city materials" }
@@ -262,7 +262,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "space opera concept art" },
       { "slot": "tone", "text": "galactic-epic baroque starship aesthetic" },
-      { "slot": "palette", "text": "nebula-violet and gold-hull palette" },
+      { "slot": "palette", "text": "nebula-violet and gold-hull" },
       { "slot": "materials", "text": "alien carapace and void-silk materials" },
       { "slot": "tone", "text": "diverse alien culture character design" }
     ]
@@ -283,7 +283,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "hard sci-fi concept art" },
       { "slot": "tone", "text": "utilitarian industrial aesthetic" },
-      { "slot": "palette", "text": "gunmetal and warning-orange palette" },
+      { "slot": "palette", "text": "gunmetal and warning-orange" },
       { "slot": "armor_clothing", "text": "dented patched pressure-suit design" },
       { "slot": "materials", "text": "lived-in worn-grip-tape materials" }
     ]
@@ -304,7 +304,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "post-human concept art" },
       { "slot": "tone", "text": "transcended biology synthetic aesthetic" },
-      { "slot": "palette", "text": "translucent-white and bioluminescent-blue palette" },
+      { "slot": "palette", "text": "translucent-white and bioluminescent-blue" },
       { "slot": "materials", "text": "neural-lace and vat-cultured tissue materials" },
       { "slot": "tone", "text": "fluid identity post-biological design" }
     ]
@@ -324,7 +324,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "military concept art" },
       { "slot": "tone", "text": "contemporary tactical aesthetic" },
-      { "slot": "palette", "text": "multicam and coyote-tan palette" },
+      { "slot": "palette", "text": "multicam and coyote-tan" },
       { "slot": "gear", "text": "modular load-bearing equipment design" },
       { "slot": "materials", "text": "flat-dark-earth matte-finish materials" }
     ]
@@ -345,7 +345,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "superhero concept art" },
       { "slot": "tone", "text": "iconic bold silhouette design" },
-      { "slot": "palette", "text": "primary hero colour palette" },
+      { "slot": "palette", "text": "primary hero" },
       { "slot": "materials", "text": "spandex-composite and impact-polymer materials" },
       { "slot": "tone", "text": "power-made-visible aesthetic" }
     ]
@@ -364,7 +364,7 @@
     "descriptors": ["olive-drab", "field-grey", "wartime", "worn", "period-accurate"],
     "prompt_fragments": [
       { "slot": "art_style", "text": "WWII concept art" },
-      { "slot": "palette", "text": "olive-drab and field-grey palette" },
+      { "slot": "palette", "text": "olive-drab and field-grey" },
       { "slot": "gear", "text": "wartime pragmatic equipment design" },
       { "slot": "materials", "text": "blued-steel and leather-brown materials" },
       { "slot": "tone", "text": "total-war-era aesthetic" }
@@ -385,7 +385,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "WWI concept art" },
       { "slot": "tone", "text": "trench-warfare aesthetic" },
-      { "slot": "palette", "text": "mud-brown and khaki-drab palette" },
+      { "slot": "palette", "text": "mud-brown and khaki-drab" },
       { "slot": "gear", "text": "gas-mask and wire-entanglement design" },
       { "slot": "materials", "text": "early-industrial-warfare materials" }
     ]
@@ -406,7 +406,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "film noir concept art" },
       { "slot": "tone", "text": "rain-slicked cynical aesthetic" },
-      { "slot": "palette", "text": "near-monochrome charcoal-and-amber palette" },
+      { "slot": "palette", "text": "near-monochrome charcoal-and-amber" },
       { "slot": "materials", "text": "wool-serge and worn-leather materials" },
       { "slot": "tone", "text": "hard-boiled shadow design" }
     ]
@@ -426,7 +426,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "espionage concept art" },
       { "slot": "tone", "text": "cold-war tradecraft aesthetic" },
-      { "slot": "palette", "text": "charcoal-and-navy palette" },
+      { "slot": "palette", "text": "charcoal-and-navy" },
       { "slot": "armor_clothing", "text": "tailored concealed-weapon design" },
       { "slot": "tone", "text": "elegant lethal operative aesthetic" }
     ]
@@ -447,7 +447,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "steampunk concept art" },
       { "slot": "tone", "text": "Victorian-industrial clockwork aesthetic" },
-      { "slot": "palette", "text": "aged-brass and copper-verdigris palette" },
+      { "slot": "palette", "text": "aged-brass and copper-verdigris" },
       { "slot": "materials", "text": "riveted boiler-steel and mahogany materials" },
       { "slot": "tone", "text": "steam-powered grand-machine design" }
     ]
@@ -468,7 +468,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "dieselpunk concept art" },
       { "slot": "tone", "text": "interwar art-deco industrial aesthetic" },
-      { "slot": "palette", "text": "battleship-grey and gold-stripe palette" },
+      { "slot": "palette", "text": "battleship-grey and gold-stripe" },
       { "slot": "materials", "text": "rolled-steel and chrome-trim materials" },
       { "slot": "tone", "text": "oil-and-iron machismo design" }
     ]
@@ -489,7 +489,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "atompunk concept art" },
       { "slot": "tone", "text": "1950s atomic-age retrofuturist aesthetic" },
-      { "slot": "palette", "text": "aqua-teal and lemon-yellow palette" },
+      { "slot": "palette", "text": "aqua-teal and lemon-yellow" },
       { "slot": "materials", "text": "fibreglass and Formica-laminate materials" },
       { "slot": "tone", "text": "space-age domestic design with fallout dread" }
     ]
@@ -510,7 +510,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "gamma world concept art" },
       { "slot": "tone", "text": "post-apocalyptic mutant-pulp aesthetic" },
-      { "slot": "palette", "text": "radiation-green and rust-orange palette" },
+      { "slot": "palette", "text": "radiation-green and rust-orange" },
       { "slot": "materials", "text": "salvaged-scrap and mutant-bone materials" },
       { "slot": "tone", "text": "irradiated wasteland design" }
     ]
@@ -531,7 +531,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "sword and planet concept art" },
       { "slot": "tone", "text": "planetary romance alien-world aesthetic" },
-      { "slot": "palette", "text": "magenta-sky and copper-sand palette" },
+      { "slot": "palette", "text": "magenta-sky and copper-sand" },
       { "slot": "materials", "text": "exotic alien-hide and crystal-tech materials" },
       { "slot": "tone", "text": "steel-and-starship heroic design" }
     ]
@@ -551,7 +551,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "ancient world concept art" },
       { "slot": "tone", "text": "classical antiquity aesthetic" },
-      { "slot": "palette", "text": "limestone-white and terracotta palette" },
+      { "slot": "palette", "text": "limestone-white and terracotta" },
       { "slot": "materials", "text": "bronze and azurite-blue material design" },
       { "slot": "tone", "text": "monumental sun-baked construction" }
     ]
@@ -571,7 +571,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "Viking concept art" },
       { "slot": "tone", "text": "Norse warrior-caste aesthetic" },
-      { "slot": "palette", "text": "bronze and woad-blue palette" },
+      { "slot": "palette", "text": "bronze and woad-blue" },
       { "slot": "materials", "text": "undyed-linen and rust-iron materials" },
       { "slot": "tone", "text": "knotwork torc rough-hewn design" }
     ]
@@ -591,7 +591,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "medieval concept art" },
       { "slot": "tone", "text": "feudal European aesthetic" },
-      { "slot": "palette", "text": "chainmail-silver and heraldic-red palette" },
+      { "slot": "palette", "text": "chainmail-silver and heraldic-red" },
       { "slot": "materials", "text": "parchment and wool-black materials" },
       { "slot": "tone", "text": "ecclesiastical heraldic design" }
     ]
@@ -611,7 +611,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "samurai concept art" },
       { "slot": "tone", "text": "feudal Japanese aesthetic" },
-      { "slot": "palette", "text": "lacquer-red and ink-black palette" },
+      { "slot": "palette", "text": "lacquer-red and ink-black" },
       { "slot": "materials", "text": "burnished-steel and undyed-silk materials" },
       { "slot": "tone", "text": "austere disciplined mon design" }
     ]
@@ -631,7 +631,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "age of sail concept art" },
       { "slot": "tone", "text": "maritime empire aesthetic" },
-      { "slot": "palette", "text": "ocean-grey and tarred-oak palette" },
+      { "slot": "palette", "text": "ocean-grey and tarred-oak" },
       { "slot": "materials", "text": "brass-fittings and cannon-black materials" },
       { "slot": "tone", "text": "broadside colonial nautical design" }
     ]
@@ -651,7 +651,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "classic western concept art" },
       { "slot": "tone", "text": "Hollywood frontier aesthetic" },
-      { "slot": "palette", "text": "sun-bleached-cream and saddle-tan palette" },
+      { "slot": "palette", "text": "sun-bleached-cream and saddle-tan" },
       { "slot": "materials", "text": "dark-chocolate-leather and blued-steel materials" },
       { "slot": "tone", "text": "open-range cowboy design" }
     ]
@@ -672,7 +672,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "spaghetti western concept art" },
       { "slot": "tone", "text": "Leone nihilistic frontier aesthetic" },
-      { "slot": "palette", "text": "bleached-bone and burnt-sienna palette" },
+      { "slot": "palette", "text": "bleached-bone and burnt-sienna" },
       { "slot": "materials", "text": "cracked-leather and sweat-stained-linen materials" },
       { "slot": "tone", "text": "morally-empty arid landscape design" }
     ]
@@ -693,7 +693,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "weird west concept art" },
       { "slot": "tone", "text": "frontier occult-horror aesthetic" },
-      { "slot": "palette", "text": "dust-tan and corruption-purple palette" },
+      { "slot": "palette", "text": "dust-tan and corruption-purple" },
       { "slot": "materials", "text": "cursed-leather and occult-carved-bone materials" },
       { "slot": "tone", "text": "supernatural corruption western design" }
     ]
@@ -714,7 +714,7 @@
     "prompt_fragments": [
       { "slot": "art_style", "text": "apocalypse western concept art" },
       { "slot": "tone", "text": "post-collapse salvage-cowboy aesthetic" },
-      { "slot": "palette", "text": "ash-grey and rust-red palette" },
+      { "slot": "palette", "text": "ash-grey and rust-red" },
       { "slot": "materials", "text": "salvaged-denim and duct-taped-leather materials" },
       { "slot": "tone", "text": "wasteland frontier lawless design" }
     ]

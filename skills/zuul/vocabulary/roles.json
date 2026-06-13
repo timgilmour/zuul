@@ -1345,7 +1345,7 @@
       },
       {
         "slot": "palette",
-        "text": "cool silver-green palette"
+        "text": "cool silver-green"
       }
     ]
   },
@@ -1435,7 +1435,7 @@
       },
       {
         "slot": "palette",
-        "text": "warm amber and shadow palette"
+        "text": "warm amber and shadow"
       }
     ]
   },
@@ -1525,7 +1525,7 @@
       },
       {
         "slot": "palette",
-        "text": "cool jewel-tone palette"
+        "text": "cool jewel-tone"
       }
     ]
   },
@@ -3644,7 +3644,7 @@
       },
       {
         "slot": "palette",
-        "text": "no team colours contract-neutral palette"
+        "text": "no team colours contract-neutral"
       },
       {
         "slot": "gear",
@@ -4395,7 +4395,7 @@
       },
       {
         "slot": "palette",
-        "text": "monochrome or inverted-hero colour palette"
+        "text": "monochrome or inverted-hero"
       },
       {
         "slot": "aura",
