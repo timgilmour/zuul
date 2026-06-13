@@ -44,13 +44,14 @@ Then set a provider key — `GOOGLE_API_KEY` (Gemini / AI Studio), Vertex, or `O
 | `/zuul [subject]` | Guided render — infers what it can, asks only for gaps |
 | `/zuul-prompt [subject]` | Assemble + print the prompt only — no render, no API call |
 | `/zuul-ingest <image>` | Reference image → subject + pose |
+| `/zuul-comfy [workflow] [subject]` | Render via a local ComfyUI server instead of a cloud provider |
 | `/zuul-new <role\|species\|pose\|style\|fragment>` | Add to any vocabulary pool |
 | `/zuul-vocab [type]` | List genres, sub-genres, roles, species, poses, styles |
 | `/zuul-validate` | Run the vocabulary validator |
 
 ## How it works
 
-A guided, one-question-at-a-time flow walks from subject type → genre → sub-genre → identity (species + role) → pose → style. The vocabulary is **tag-driven JSON pools** (7 genres × 35 sub-genres, a single 224-role pool, species, vehicles, props, poses, styles) that grow as you use them. Prompts are assembled with a **slot-based merge** (`core/assembly.md`) that resolves contradictions instead of naively concatenating, then rendered via Google's Nano Banana 2 / Pro with provider auto-detection. Every render writes a per-subject JSON record, a catalog index, and a plain-text prompt sidecar.
+A guided, one-question-at-a-time flow walks from subject type → genre → sub-genre → identity (species + role) → pose → style. The vocabulary is **tag-driven JSON pools** (7 genres × 35 sub-genres, a single 224-role pool, species, vehicles, props, poses, styles) that grow as you use them. Prompts are built by a **deterministic assembly engine** (`tools/assemble-prompt.mjs`, spec'd by `core/assembly.md`) that sorts each pool's typed fragments into slots and resolves contradictions by precedence instead of naively concatenating — surfacing genuine ties for you to settle rather than guessing. The result is rendered via Google's Nano Banana 2 / Pro with provider auto-detection (or a local ComfyUI server). Every render writes a per-subject JSON record, a catalog index, and a plain-text prompt sidecar.
 
 ## License
 

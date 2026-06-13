@@ -1,8 +1,10 @@
 # CLI Reference
 
-Three Bun scripts live in [`skills/zuul/tools/`](../skills/zuul/tools/).
-First use requires a one-time `bun install` in that directory (the installer
-does this for you).
+Several Bun scripts live in [`skills/zuul/tools/`](../skills/zuul/tools/):
+the renderer (`generate-image.ts`), the deterministic prompt-assembly engine
+(`assemble-prompt.mjs`), and three maintenance helpers (`validate-vocab.mjs`,
+`validate-outputs.mjs`, `build-index.mjs`). First use requires a one-time
+`bun install` in that directory (the installer does this for you).
 
 ## `generate-image.ts`
 
@@ -73,6 +75,40 @@ Loaded from `.env` in the current directory or `~/.claude/.env`. Without
 
 Run with `--help` for the complete, always-current text.
 
+## `assemble-prompt.mjs`
+
+The **deterministic assembly engine**. It turns the vocabulary's typed
+`prompt_fragments[]` into a single, non-contradictory `<DETAILS>` string by
+the slot-merge rules in
+[`core/assembly.md`](../skills/zuul/core/assembly.md) — the same engine the
+guided flow and [`/zuul-prompt`](commands.md#zuul-prompt) call. It does pure
+logic only: no API call, no render.
+
+```bash
+bun run <zuul>/tools/assemble-prompt.mjs --subgenre <id> [OPTIONS]
+# or, from the tools dir:
+cd <zuul>/tools && bun run assemble --subgenre high-fantasy --species dwarf --role barbarian
+```
+
+| Flag | Notes |
+|------|-------|
+| `--subgenre <id>` | *(required)* sub-genre context (e.g. `high-fantasy`) |
+| `--genre <id>` | usually inferred from the sub-genre; pass to override |
+| `--species <id>` | character / creature species |
+| `--role <id>` | role / archetype |
+| `--descriptor <id>` | cross-cutting modifier (age, tier, condition…); repeatable |
+| `--add "<slot>:<text>"` | inject a user fragment into a slot at top precedence; repeatable |
+| `--json` | print the full structured report instead of the prompt text |
+
+Precedence runs `user → intersection → descriptor → role → species → subgenre
+→ genre`; the engine demotes losing fragments automatically and only stops on
+a genuine tie.
+
+**Exit codes:** `0` success · `1` bad input or vocabulary data · `2`
+unresolved conflict — two same-precedence fragments collide in an exclusive
+slot (e.g. two armor types) and neither owns it. The engine never guesses
+here; resolve it with the user or force a winner via `--add "<slot>:<text>"`.
+
 ## `validate-vocab.mjs`
 
 Validates the vocabulary pools against the contract in
@@ -85,11 +121,35 @@ bun run validate    # alias for: bun run validate-vocab.mjs
 
 Prints `OK — 7 genres, 35 sub-genres, …` and exits 0, or `FAIL` with one
 line per problem and exits 1. Run it after **any** vocabulary edit. The
-check functions live in `tools/lib/vocab-checks.mjs` and are unit-tested:
+check functions live in `tools/lib/vocab-checks.mjs` and are unit-tested
+alongside the assembly engine and output checks:
 
 ```bash
-bun test            # runs tools/lib/vocab-checks.test.mjs
+bun test            # runs the whole tools/lib/*.test.mjs suite
 ```
+
+`bun run validate` and `bun test` also run in CI on every push and pull
+request — see [`.github/workflows/validate.yml`](../.github/workflows/validate.yml).
+
+## `validate-outputs.mjs`
+
+Validates an output catalog (`index.json`) against the vocabulary — every
+record's `genre`, `species`, `role`, and `descriptor` ids must resolve to
+real pool entries. Catches drift from hand edits, merges, or renamed pool
+ids before it corrupts the catalog.
+
+```bash
+bun run <zuul>/tools/validate-outputs.mjs [--index <path>] [--fs]
+# or:  cd <zuul>/tools && bun run validate-outputs
+```
+
+| Flag | Notes |
+|------|-------|
+| `--index <path>` | catalog to check (default assumes the in-repo `09-Outputs/index.json`; standalone installs pass their own path) |
+| `--fs` | also assert each record's `path` / `image` actually exists on disk |
+
+Prints `OK — N output record(s) valid.` and exits 0, or `FAIL` with one line
+per problem and exits 1.
 
 ## `build-index.mjs`
 

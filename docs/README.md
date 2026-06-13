@@ -13,7 +13,7 @@ cinematic pre-production.
 |-----|--------------|
 | [Getting started](getting-started.md) | Installing, setting a provider key, first render |
 | [Slash commands](commands.md) | What each `/zuul*` command does and when to use it |
-| [CLI reference](cli.md) | Driving `generate-image.ts` directly — every flag, provider, and env var |
+| [CLI reference](cli.md) | Driving the bundled scripts directly — render, assemble a prompt, validate — every flag, provider, and env var |
 | [The vocabulary system](vocabulary.md) | How the tag-driven JSON pools work and how to extend them |
 | [Mesh pipeline](mesh-pipeline.md) | Getting renders that survive image-to-3D conversion |
 | [ComfyUI backend](comfyui.md) | Local/offline generation on your own hardware |
