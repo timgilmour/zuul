@@ -3,12 +3,12 @@
     "id": "large-orc",
     "taxonomy": "intersection",
     "when": [
-      "orc",
-      "large"
+      "species:orc",
+      "descriptor:large"
     ],
     "label": "Large Orc",
     "visual_override": {
-      "build": "enormous \u2014 towering even among orcs",
+      "build": "enormous — towering even among orcs",
       "features_add": [
         "barrel chest wider than two humans",
         "neck as thick as a thigh"
@@ -19,66 +19,68 @@
       "physically-dominant"
     ],
     "prompt_fragments_add": [
-      "towering even among orcs",
-      "barrel chest",
-      "physically dominant silhouette"
+      { "slot": "build", "text": "towering even among orcs" },
+      { "slot": "build", "text": "barrel chest" },
+      { "slot": "build", "text": "physically dominant silhouette" }
     ]
   },
   {
     "id": "orc-barbarian",
     "taxonomy": "intersection",
     "when": [
-      "orc",
-      "barbarian"
+      "species:orc",
+      "role:barbarian"
     ],
     "label": "Orc Barbarian",
     "visual_override": {
-      "armor_note": "minimal armour \u2014 orc hide and barbarian scraps combine into almost nothing",
-      "build_note": "war paint covers what armour does not"
+      "armor_clothing": "minimal armour — orc hide and barbarian scraps combine into almost nothing",
+      "marks_add": [
+        "war paint covers what armour does not"
+      ]
     },
     "traits_add": [
       "feral-rage-capable",
       "tribal-champion"
     ],
     "prompt_fragments_add": [
-      "war paint on grey-green skin",
-      "minimal hide scraps",
-      "tusks bared"
+      { "slot": "marks", "text": "war paint on grey-green skin" },
+      { "slot": "armor_clothing", "text": "minimal hide scraps" },
+      { "slot": "features", "text": "tusks bared" }
     ]
   },
   {
     "id": "elf-wizard",
     "taxonomy": "intersection",
     "when": [
-      "elf",
-      "wizard"
+      "species:elf",
+      "role:wizard"
     ],
     "label": "Elf Wizard",
     "visual_override": {
-      "armor_note": "robes are ancient and star-embroidered \u2014 centuries of arcane history visible",
-      "features_note": "high ears and angular features frame the arcane glow"
+      "armor_clothing": "robes are ancient and star-embroidered — centuries of arcane history visible",
+      "features": "high ears and angular features frame the arcane glow"
     },
     "traits_add": [
       "ancient-arcane-bloodline",
       "centuries-of-study"
     ],
     "prompt_fragments_add": [
-      "ancient star-embroidered robes",
-      "arcane glow in the eyes",
-      "centuries of study in the bearing"
+      { "slot": "armor_clothing", "text": "ancient star-embroidered robes" },
+      { "slot": "aura", "text": "arcane glow in the eyes" },
+      { "slot": "bearing", "text": "centuries of study in the bearing" }
     ]
   },
   {
     "id": "dwarf-tinker",
     "taxonomy": "intersection",
     "when": [
-      "dwarf",
-      "tinker"
+      "species:dwarf",
+      "role:tinker"
     ],
     "label": "Dwarf Tinker",
     "visual_override": {
-      "build_note": "stocky frame perfectly matched to a workshop \u2014 low centre of gravity, powerful hands",
-      "accessories_add": [
+      "build": "stocky frame perfectly matched to a workshop — low centre of gravity, powerful hands",
+      "gear_add": [
         "clan rune on primary tool"
       ]
     },
@@ -87,41 +89,41 @@
       "stubborn-perfectionism"
     ],
     "prompt_fragments_add": [
-      "clan rune on tools",
-      "stocky powerfully-built workshop figure",
-      "stubborn perfectionist's precision"
+      { "slot": "gear", "text": "clan rune on tools" },
+      { "slot": "build", "text": "stocky powerfully-built workshop figure" },
+      { "slot": "bearing", "text": "stubborn perfectionist's precision" }
     ]
   },
   {
     "id": "ancient-legend",
     "taxonomy": "intersection",
     "when": [
-      "ancient",
-      "legendary"
+      "descriptor:ancient",
+      "descriptor:legendary"
     ],
     "label": "Ancient Legend",
     "visual_override": {
-      "presence_note": "reality subtly bends around them \u2014 not mythic distortion, but the air of someone who outlasted empires"
+      "bearing": "reality subtly bends around them — not mythic distortion, but the air of someone who outlasted empires"
     },
     "traits_add": [
       "history-walking",
       "beyond-mortality"
     ],
     "prompt_fragments_add": [
-      "presence of someone who outlasted empires",
-      "subtle aura of accumulated history"
+      { "slot": "aura", "text": "presence of someone who outlasted empires" },
+      { "slot": "aura", "text": "subtle aura of accumulated history" }
     ]
   },
   {
     "id": "large-corrupted",
     "taxonomy": "intersection",
     "when": [
-      "corrupted",
-      "large"
+      "descriptor:corrupted",
+      "descriptor:large"
     ],
     "label": "Large Corrupted",
     "visual_override": {
-      "build_note": "corruption amplifies size \u2014 dark energy fills the extra mass",
+      "build": "corruption amplifies size — dark energy fills the extra mass",
       "features_add": [
         "dark veins visible at greater range",
         "corruption cracks glow brighter with scale"
@@ -132,20 +134,20 @@
       "unstable-power"
     ],
     "prompt_fragments_add": [
-      "corruption cracks glowing across massive frame",
-      "dark energy pulsing with each movement"
+      { "slot": "aura", "text": "corruption cracks glowing across massive frame" },
+      { "slot": "aura", "text": "dark energy pulsing with each movement" }
     ]
   },
   {
     "id": "large-hiver",
     "taxonomy": "intersection",
     "when": [
-      "hiver",
-      "large"
+      "species:hiver",
+      "descriptor:large"
     ],
     "label": "Large Hiver",
     "visual_override": {
-      "build_note": "warrior-caste hiver \u2014 the exoskeleton adds natural plate to the large frame",
+      "build": "warrior-caste hiver — the exoskeleton adds natural plate to the large frame",
       "features_add": [
         "mandibles the size of short swords",
         "wing-cases span wider than a man"
@@ -156,63 +158,63 @@
       "hive-general"
     ],
     "prompt_fragments_add": [
-      "warrior-caste hiver exoskeleton",
-      "mandibles like short swords",
-      "wide wing-cases"
+      { "slot": "surface", "text": "warrior-caste hiver exoskeleton" },
+      { "slot": "features", "text": "mandibles like short swords" },
+      { "slot": "features", "text": "wide wing-cases" }
     ]
   },
   {
     "id": "tiefling-warlock",
     "taxonomy": "intersection",
     "when": [
-      "tiefling",
-      "warlock"
+      "species:tiefling",
+      "role:warlock"
     ],
     "label": "Tiefling Warlock",
     "visual_override": {
-      "armor_note": "patron marks overlap with infernal heritage marks \u2014 impossible to tell which is which",
-      "features_note": "horns are part of the eldritch aesthetic, not just heritage"
+      "armor_clothing": "patron marks overlap with infernal heritage marks — impossible to tell which is which",
+      "features": "horns are part of the eldritch aesthetic, not just heritage"
     },
     "traits_add": [
       "patron-and-heritage-blur",
       "doubly-feared"
     ],
     "prompt_fragments_add": [
-      "infernal heritage marks and patron marks overlapping on skin",
-      "horns framing the eldritch focus",
-      "doubly-feared presence"
+      { "slot": "marks", "text": "infernal heritage marks and patron marks overlapping on skin" },
+      { "slot": "features", "text": "horns framing the eldritch focus" },
+      { "slot": "aura", "text": "doubly-feared presence" }
     ]
   },
   {
     "id": "battle-worn-legend",
     "taxonomy": "intersection",
     "when": [
-      "battle-worn",
-      "legendary"
+      "descriptor:battle-worn",
+      "descriptor:legendary"
     ],
     "label": "Battle-Worn Legend",
     "visual_override": {
-      "gear_note": "the named artefacts are notched, repaired, and famous for their scars as much as their power"
+      "gear": "the named artefacts are notched, repaired, and famous for their scars as much as their power"
     },
     "traits_add": [
       "wars-survived-not-avoided",
       "scars-are-the-legend"
     ],
     "prompt_fragments_add": [
-      "notched legendary blade repaired a hundred times",
-      "artefacts famous for their battle-scars"
+      { "slot": "weapon", "text": "notched legendary blade repaired a hundred times" },
+      { "slot": "gear", "text": "artefacts famous for their battle-scars" }
     ]
   },
   {
     "id": "ancient-cultivator",
     "taxonomy": "intersection",
     "when": [
-      "wuxia-cultivator",
-      "ancient"
+      "role:wuxia-cultivator",
+      "descriptor:ancient"
     ],
     "label": "Ancient Cultivator",
     "visual_override": {
-      "build_note": "cultivation has arrested aging \u2014 they look ageless or young, but the qi field around them is vast and still",
+      "build": "cultivation has arrested aging — they look ageless or young, but the qi field around them is vast and still",
       "features_add": [
         "qi visible as hovering motes of light",
         "sect robes have been rewoven by the centuries"
@@ -224,44 +226,44 @@
       "near-immortal"
     ],
     "prompt_fragments_add": [
-      "ageless face with ancient stillness",
-      "vast quiet qi field visible as hovering motes",
-      "centuries-rewoven sect robes"
+      { "slot": "features", "text": "ageless face with ancient stillness" },
+      { "slot": "aura", "text": "vast quiet qi field visible as hovering motes" },
+      { "slot": "armor_clothing", "text": "centuries-rewoven sect robes" }
     ]
   },
   {
     "id": "elf-ranger",
     "taxonomy": "intersection",
     "when": [
-      "elf",
-      "ranger"
+      "species:elf",
+      "role:ranger"
     ],
     "label": "Elf Ranger",
     "visual_override": {
-      "armor_note": "the forest armour looks grown rather than made \u2014 it fits perfectly because the forest gave it",
-      "build_note": "elven grace amplifies ranger agility into something borderline supernatural"
+      "armor_clothing": "the forest armour looks grown rather than made — it fits perfectly because the forest gave it",
+      "build": "elven grace amplifies ranger agility into something borderline supernatural"
     },
     "traits_add": [
       "centuries-of-tracking",
       "forest-as-home-not-terrain"
     ],
     "prompt_fragments_add": [
-      "forest armour that looks grown not crafted",
-      "elven grace making movement nearly supernatural",
-      "centuries of reading the wild in the eyes"
+      { "slot": "armor_clothing", "text": "forest armour that looks grown not crafted" },
+      { "slot": "bearing", "text": "elven grace making movement nearly supernatural" },
+      { "slot": "features", "text": "centuries of reading the wild in the eyes" }
     ]
   },
   {
     "id": "dwarf-fighter",
     "taxonomy": "intersection",
     "when": [
-      "dwarf",
-      "fighter"
+      "species:dwarf",
+      "role:fighter"
     ],
     "label": "Dwarf Fighter",
     "visual_override": {
-      "armor_note": "armour is clan-forged \u2014 better than any merchant could sell, and the clan knows it",
-      "build_note": "stocky fighter build is almost perfectly optimised \u2014 low stance, high durability, axe level with the chin of a taller opponent"
+      "armor_clothing": "armour is clan-forged — better than any merchant could sell, and the clan knows it",
+      "build": "stocky fighter build is almost perfectly optimised — low stance, high durability, axe level with the chin of a taller opponent"
     },
     "traits_add": [
       "axe-culture",
@@ -269,22 +271,24 @@
       "stance-is-a-fortress"
     ],
     "prompt_fragments_add": [
-      "clan-forged armour clearly superior to mass production",
-      "low stable fighting stance",
-      "axe naturally level with a taller opponent's chin"
+      { "slot": "armor_clothing", "text": "clan-forged armour clearly superior to mass production" },
+      { "slot": "bearing", "text": "low stable fighting stance" },
+      { "slot": "weapon", "text": "axe naturally level with a taller opponent's chin" }
     ]
   },
   {
     "id": "tiefling-rogue",
     "taxonomy": "intersection",
     "when": [
-      "tiefling",
-      "rogue"
+      "species:tiefling",
+      "role:rogue"
     ],
     "label": "Tiefling Rogue",
     "visual_override": {
-      "armor_note": "the tail is a natural advantage \u2014 an extra limb for balance and carrying small items",
-      "features_note": "solid eyes see in darkness naturally; horns are filed down for mask compatibility"
+      "features": "solid eyes see in darkness naturally; horns are filed down for mask compatibility",
+      "features_add": [
+        "the tail is a natural advantage — an extra limb for balance and carrying small items"
+      ]
     },
     "traits_add": [
       "natural-dark-vision",
@@ -292,22 +296,22 @@
       "outsider-turned-invisible"
     ],
     "prompt_fragments_add": [
-      "tail used for balance or carrying small tools",
-      "filed-down horns for mask compatibility",
-      "solid eyes made for darkness"
+      { "slot": "features", "text": "tail used for balance or carrying small tools" },
+      { "slot": "features", "text": "filed-down horns for mask compatibility" },
+      { "slot": "features", "text": "solid eyes made for darkness" }
     ]
   },
   {
     "id": "aasimar-paladin",
     "taxonomy": "intersection",
     "when": [
-      "aasimar",
-      "paladin"
+      "species:aasimar",
+      "role:paladin"
     ],
     "label": "Aasimar Paladin",
     "visual_override": {
-      "armor_note": "the divine plate is not just enchanted \u2014 it was grown from celestial will around the bearer",
-      "features_note": "when smiting, the halo becomes visible and the solid silver eyes glow gold"
+      "armor_clothing": "the divine plate is not just enchanted — it was grown from celestial will around the bearer",
+      "features": "when smiting, the halo becomes visible and the solid silver eyes glow gold"
     },
     "traits_add": [
       "living-divine-vessel",
@@ -315,22 +319,22 @@
       "the-divine-is-not-metaphor"
     ],
     "prompt_fragments_add": [
-      "divine plate that looks grown not forged",
-      "halo visible when power activates",
-      "solid silver eyes capable of gold divine glow"
+      { "slot": "armor_clothing", "text": "divine plate that looks grown not forged" },
+      { "slot": "aura", "text": "halo visible when power activates" },
+      { "slot": "features", "text": "solid silver eyes capable of gold divine glow" }
     ]
   },
   {
     "id": "drow-warlock",
     "taxonomy": "intersection",
     "when": [
-      "drow",
-      "warlock"
+      "species:drow",
+      "role:warlock"
     ],
     "label": "Drow Warlock",
     "visual_override": {
-      "armor_note": "underdark aesthetic meets patron corruption \u2014 spider silk robes with eldritch weavings",
-      "features_note": "glowing red eyes now have eldritch flickering; the patron and the spider queen are rivals on the same skin"
+      "armor_clothing": "underdark aesthetic meets patron corruption — spider silk robes with eldritch weavings",
+      "features": "glowing red eyes now have eldritch flickering; the patron and the spider queen are rivals on the same skin"
     },
     "traits_add": [
       "spider-queen-and-patron-in-tension",
@@ -338,22 +342,22 @@
       "doubly-alienated"
     ],
     "prompt_fragments_add": [
-      "spider silk robes with eldritch weavings",
-      "red eyes flickering with patron energy",
-      "spider queen and patron competing for the same bearer"
+      { "slot": "armor_clothing", "text": "spider silk robes with eldritch weavings" },
+      { "slot": "features", "text": "red eyes flickering with patron energy" },
+      { "slot": "aura", "text": "spider queen and patron competing for the same bearer" }
     ]
   },
   {
     "id": "tabaxi-rogue",
     "taxonomy": "intersection",
     "when": [
-      "tabaxi",
-      "rogue"
+      "species:tabaxi",
+      "role:rogue"
     ],
     "label": "Tabaxi Rogue",
     "visual_override": {
-      "armor_note": "the cat fur already provides some camouflage \u2014 the dark leathers augment pattern that exists naturally",
-      "features_note": "retractable claws replace daggers; tail is a balance asset and rope-analogue"
+      "armor_clothing": "the cat fur already provides some camouflage — the dark leathers augment pattern that exists naturally",
+      "features": "retractable claws replace daggers; tail is a balance asset and rope-analogue"
     },
     "traits_add": [
       "natural-camouflage-pattern",
@@ -361,22 +365,22 @@
       "nine-lives-feels-literal"
     ],
     "prompt_fragments_add": [
-      "cat fur pattern augmenting the dark leather camouflage",
-      "retractable claws out for work",
-      "tail extended for balance on the job"
+      { "slot": "surface", "text": "cat fur pattern augmenting the dark leather camouflage" },
+      { "slot": "features", "text": "retractable claws out for work" },
+      { "slot": "features", "text": "tail extended for balance on the job" }
     ]
   },
   {
     "id": "warforged-fighter",
     "taxonomy": "intersection",
     "when": [
-      "warforged",
-      "fighter"
+      "species:warforged",
+      "role:fighter"
     ],
     "label": "Warforged Fighter",
     "visual_override": {
-      "armor_note": "the armour is the body \u2014 no distinction between wearing plate and being plate",
-      "build_note": "every scar is a repair; the weapon grip has worn grooves that match only these hands"
+      "armor_clothing": "the armour is the body — no distinction between wearing plate and being plate",
+      "build": "every scar is a repair; the weapon grip has worn grooves that match only these hands"
     },
     "traits_add": [
       "armour-is-not-worn-it-is",
@@ -384,22 +388,22 @@
       "war-that-made-them-is-over-but-they-are-not"
     ],
     "prompt_fragments_add": [
-      "composite body-armour with no distinction between flesh and plate",
-      "worn repair marks across the chassis",
-      "weapon grip shaped to fit these specific hands over years of use"
+      { "slot": "surface", "text": "composite body-armour with no distinction between flesh and plate" },
+      { "slot": "marks", "text": "worn repair marks across the chassis" },
+      { "slot": "weapon", "text": "weapon grip shaped to fit these specific hands over years of use" }
     ]
   },
   {
     "id": "goliath-barbarian",
     "taxonomy": "intersection",
     "when": [
-      "goliath",
-      "barbarian"
+      "species:goliath",
+      "role:barbarian"
     ],
     "label": "Goliath Barbarian",
     "visual_override": {
-      "build_note": "the lithoderm markings glow faintly under rage \u2014 the stone in the skin responds to the power",
-      "armor_note": "minimal armour looks even more minimal on a 7-foot frame \u2014 barely enough to cover the strategic points"
+      "build": "the lithoderm markings glow faintly under rage — the stone in the skin responds to the power",
+      "armor_clothing": "minimal armour looks even more minimal on a 7-foot frame — barely enough to cover the strategic points"
     },
     "traits_add": [
       "stone-blooded-rage",
@@ -407,22 +411,22 @@
       "mountain-made-flesh"
     ],
     "prompt_fragments_add": [
-      "lithoderm stone markings faintly glowing under rage",
-      "7-foot frame making minimal armour look even more minimal",
-      "mountain made into a person"
+      { "slot": "marks", "text": "lithoderm stone markings faintly glowing under rage" },
+      { "slot": "build", "text": "7-foot frame making minimal armour look even more minimal" },
+      { "slot": "tone", "text": "mountain made into a person" }
     ]
   },
   {
     "id": "lizardfolk-scientist",
     "taxonomy": "intersection",
     "when": [
-      "lizardfolk",
-      "scientist"
+      "species:lizardfolk",
+      "role:scientist"
     ],
     "label": "Lizardfolk Scientist",
     "visual_override": {
-      "features_note": "the slit pupils track specimen movement with predator precision \u2014 the cold logic reads as inhuman focus",
-      "build_note": "tail and scales underneath the lab coat; the coat is an accommodation for the environment, not truly theirs"
+      "features": "the slit pupils track specimen movement with predator precision — the cold logic reads as inhuman focus",
+      "build": "tail and scales underneath the lab coat; the coat is an accommodation for the environment, not truly theirs"
     },
     "traits_add": [
       "predator-logic-applied-to-science",
@@ -430,22 +434,22 @@
       "understands-specimen-because-is-specimen"
     ],
     "prompt_fragments_add": [
-      "slit pupils tracking specimens with predator focus",
-      "lab coat over scaled hide as environmental accommodation",
-      "cold predator logic applied to scientific method"
+      { "slot": "features", "text": "slit pupils tracking specimens with predator focus" },
+      { "slot": "armor_clothing", "text": "lab coat over scaled hide as environmental accommodation" },
+      { "slot": "bearing", "text": "cold predator logic applied to scientific method" }
     ]
   },
   {
     "id": "exiled-legend",
     "taxonomy": "intersection",
     "when": [
-      "exiled",
-      "legendary"
+      "descriptor:exiled",
+      "descriptor:legendary"
     ],
     "label": "Exiled Legend",
     "visual_override": {
-      "gear_note": "the legendary artefacts are theirs \u2014 unambiguously \u2014 but the insignia that said where they came from has been removed or defaced",
-      "presence_note": "everyone knows who they are; the exile removed the title, not the reputation"
+      "gear": "the legendary artefacts are theirs — unambiguously — but the insignia that said where they came from has been removed or defaced",
+      "bearing": "everyone knows who they are; the exile removed the title, not the reputation"
     },
     "traits_add": [
       "reputation-precedes-institution",
@@ -453,21 +457,21 @@
       "legend-stripped-of-rank-not-of-power"
     ],
     "prompt_fragments_add": [
-      "legendary gear with insignia removed but power undeniable",
-      "reputation visible in bearing that no exile can erase",
-      "everyone knows who they are without the title"
+      { "slot": "gear", "text": "legendary gear with insignia removed but power undeniable" },
+      { "slot": "bearing", "text": "reputation visible in bearing that no exile can erase" },
+      { "slot": "aura", "text": "everyone knows who they are without the title" }
     ]
   },
   {
     "id": "augmented-hacker",
     "taxonomy": "intersection",
     "when": [
-      "augmented",
-      "hacker"
+      "descriptor:augmented",
+      "role:hacker"
     ],
     "label": "Augmented Hacker",
     "visual_override": {
-      "build_note": "lean cyberpunk silhouette, cranial implants dominate the skull profile",
+      "build": "lean cyberpunk silhouette, cranial implants dominate the skull profile",
       "features_add": [
         "subdermal data-port array at the temple",
         "one eye replaced with chrome optical implant"
@@ -478,21 +482,21 @@
       "physically-fragile-mentally-lethal"
     ],
     "prompt_fragments_add": [
-      "chrome cranial implants",
-      "subdermal data-port at temple",
-      "one eye a chrome optical unit"
+      { "slot": "features", "text": "chrome cranial implants" },
+      { "slot": "features", "text": "subdermal data-port at temple" },
+      { "slot": "features", "text": "one eye a chrome optical unit" }
     ]
   },
   {
     "id": "augmented-street-samurai",
     "taxonomy": "intersection",
     "when": [
-      "augmented",
-      "street-samurai"
+      "descriptor:augmented",
+      "role:street-samurai"
     ],
     "label": "Augmented Street Samurai",
     "visual_override": {
-      "build_note": "combat-optimised chassis \u2014 arm and leg augmentations visible beneath torn sleeves",
+      "build": "combat-optimised chassis — arm and leg augmentations visible beneath torn sleeves",
       "features_add": [
         "retractable blade housing along the forearm",
         "muscle-fibre enhancement visible at wrist and neck"
@@ -503,21 +507,21 @@
       "corporate-weapon-gone-rogue"
     ],
     "prompt_fragments_add": [
-      "retractable blade housing on forearm",
-      "combat-grade cybernetic limbs",
-      "muscle-fibre augmentation beneath skin"
+      { "slot": "features", "text": "retractable blade housing on forearm" },
+      { "slot": "features", "text": "combat-grade cybernetic limbs" },
+      { "slot": "surface", "text": "muscle-fibre augmentation beneath skin" }
     ]
   },
   {
     "id": "android-space-marine",
     "taxonomy": "intersection",
     "when": [
-      "android",
-      "space-marine"
+      "species:android",
+      "role:space-marine"
     ],
     "label": "Android Space Marine",
     "visual_override": {
-      "armor_note": "military chassis under standard combat armour, synthetic skin worn or absent at joints",
+      "armor_clothing": "military chassis under standard combat armour, synthetic skin worn or absent at joints",
       "features_add": [
         "exposed servo-joint at elbow and shoulder",
         "unit serial number stencilled on chest plate"
@@ -528,21 +532,21 @@
       "order-following-without-question"
     ],
     "prompt_fragments_add": [
-      "exposed servo-joints beneath armour",
-      "unit serial number on chest plate",
-      "synthetic face with flat affect"
+      { "slot": "features", "text": "exposed servo-joints beneath armour" },
+      { "slot": "marks", "text": "unit serial number on chest plate" },
+      { "slot": "features", "text": "synthetic face with flat affect" }
     ]
   },
   {
     "id": "hiver-engineer",
     "taxonomy": "intersection",
     "when": [
-      "hiver",
-      "engineer"
+      "species:hiver",
+      "role:engineer"
     ],
     "label": "Hiver Engineer",
     "visual_override": {
-      "build_note": "insectoid limbs adapted for precision work \u2014 middle limbs carry tool harness, mandibles used for fine manipulation",
+      "build": "insectoid limbs adapted for precision work — middle limbs carry tool harness, mandibles used for fine manipulation",
       "features_add": [
         "multi-tool harness across the thorax",
         "compound eyes behind protective engineering goggles"
@@ -553,21 +557,21 @@
       "tool-as-extension-of-body"
     ],
     "prompt_fragments_add": [
-      "multi-tool harness across thorax",
-      "insectoid limbs holding precision tools",
-      "compound eyes behind engineering goggles"
+      { "slot": "gear", "text": "multi-tool harness across thorax" },
+      { "slot": "features", "text": "insectoid limbs holding precision tools" },
+      { "slot": "features", "text": "compound eyes behind engineering goggles" }
     ]
   },
   {
     "id": "corrupted-priest",
     "taxonomy": "intersection",
     "when": [
-      "corrupted",
-      "priest"
+      "descriptor:corrupted",
+      "role:priest"
     ],
     "label": "Corrupted Priest",
     "visual_override": {
-      "armor_note": "holy vestments defaced \u2014 symbols inverted or scored through, fabric stained with wrongness at the edges",
+      "armor_clothing": "holy vestments defaced — symbols inverted or scored through, fabric stained with wrongness at the edges",
       "features_add": [
         "divine symbol worn inverted at the collar",
         "corruption creeping up the neck from beneath the robes"
@@ -578,21 +582,21 @@
       "something-answers-but-not-what-was-called"
     ],
     "prompt_fragments_add": [
-      "holy vestments defaced and inverted",
-      "corruption spreading from beneath the robes",
-      "divine symbol worn wrong-side-up"
+      { "slot": "armor_clothing", "text": "holy vestments defaced and inverted" },
+      { "slot": "aura", "text": "corruption spreading from beneath the robes" },
+      { "slot": "armor_clothing", "text": "divine symbol worn wrong-side-up" }
     ]
   },
   {
     "id": "spectral-vampire-lord",
     "taxonomy": "intersection",
     "when": [
-      "spectral",
-      "vampire-lord"
+      "descriptor:spectral",
+      "role:vampire-lord"
     ],
     "label": "Spectral Vampire Lord",
     "visual_override": {
-      "build_note": "form barely coherent \u2014 edges dissolving into shadow, aristocratic features half-present half-translucent",
+      "build": "form barely coherent — edges dissolving into shadow, aristocratic features half-present half-translucent",
       "features_add": [
         "edges of the figure bleeding into darkness",
         "aristocratic garments fading at hem and cuff into void"
@@ -603,21 +607,21 @@
       "ancient-hunger-made-ghost"
     ],
     "prompt_fragments_add": [
-      "figure edges dissolving into shadow",
-      "aristocratic form half-translucent",
-      "Victorian garments fading into darkness at the edges"
+      { "slot": "aura", "text": "figure edges dissolving into shadow" },
+      { "slot": "build", "text": "aristocratic form half-translucent" },
+      { "slot": "armor_clothing", "text": "Victorian garments fading into darkness at the edges" }
     ]
   },
   {
     "id": "ancient-revenant",
     "taxonomy": "intersection",
     "when": [
-      "ancient",
-      "revenant"
+      "descriptor:ancient",
+      "role:revenant"
     ],
     "label": "Ancient Revenant",
     "visual_override": {
-      "build_note": "impossibly old undead \u2014 flesh has calcified rather than rotted, armour fused to the body over centuries",
+      "build": "impossibly old undead — flesh has calcified rather than rotted, armour fused to the body over centuries",
       "features_add": [
         "armour fused to the ribcage over centuries",
         "face a calcified skull with no remaining tissue"
@@ -628,21 +632,21 @@
       "purpose-outlasted-flesh"
     ],
     "prompt_fragments_add": [
-      "calcified ancient armour fused to bone",
-      "skull-face with calcified tissue",
-      "centuries of dust settled in every joint"
+      { "slot": "armor_clothing", "text": "calcified ancient armour fused to bone" },
+      { "slot": "features", "text": "skull-face with calcified tissue" },
+      { "slot": "surface", "text": "centuries of dust settled in every joint" }
     ]
   },
   {
     "id": "gaunt-mad-doctor",
     "taxonomy": "intersection",
     "when": [
-      "gaunt",
-      "mad-doctor"
+      "descriptor:gaunt",
+      "role:mad-doctor"
     ],
     "label": "Gaunt Mad Doctor",
     "visual_override": {
-      "build_note": "extreme emaciation from obsessive work \u2014 hollow eyes above surgical mask, knuckle bones visible through latex gloves",
+      "build": "extreme emaciation from obsessive work — hollow eyes above surgical mask, knuckle bones visible through latex gloves",
       "features_add": [
         "surgical mask pulled to chin, eyes intense and hollow",
         "skeletal hands in stained surgical gloves"
@@ -653,21 +657,21 @@
       "beyond-ethics"
     ],
     "prompt_fragments_add": [
-      "hollow sunken eyes above a surgical mask",
-      "skeletal hands in stained latex gloves",
-      "emaciation from obsessive research"
+      { "slot": "features", "text": "hollow sunken eyes above a surgical mask" },
+      { "slot": "features", "text": "skeletal hands in stained latex gloves" },
+      { "slot": "build", "text": "emaciation from obsessive research" }
     ]
   },
   {
     "id": "veteran-spec-ops",
     "taxonomy": "intersection",
     "when": [
-      "veteran",
-      "spec-ops-operator"
+      "descriptor:veteran",
+      "role:spec-ops-operator"
     ],
     "label": "Veteran Spec-Ops",
     "visual_override": {
-      "armor_note": "high-grade kit worn to personal preference \u2014 regulation modified, non-standard gear added, unit patch replaced with blank velcro",
+      "armor_clothing": "high-grade kit worn to personal preference — regulation modified, non-standard gear added, unit patch replaced with blank velcro",
       "features_add": [
         "non-regulation blade on the off-hip",
         "blank velcro where unit patch was",
@@ -679,21 +683,21 @@
       "seen-everything"
     ],
     "prompt_fragments_add": [
-      "modified non-regulation gear configuration",
-      "blank velcro patch where insignia was",
-      "kit chosen by experience not regulation"
+      { "slot": "gear", "text": "modified non-regulation gear configuration" },
+      { "slot": "marks", "text": "blank velcro patch where insignia was" },
+      { "slot": "gear", "text": "kit chosen by experience not regulation" }
     ]
   },
   {
     "id": "scarred-hardboiled-detective",
     "taxonomy": "intersection",
     "when": [
-      "scarred",
-      "hardboiled-detective"
+      "descriptor:scarred",
+      "role:hardboiled-detective"
     ],
     "label": "Scarred Hardboiled Detective",
     "visual_override": {
-      "build_note": "the scar is the biography \u2014 a face that has been broken and reset, trenchcoat hiding older damage beneath",
+      "build": "the scar is the biography — a face that has been broken and reset, trenchcoat hiding older damage beneath",
       "features_add": [
         "facial scar from an old case gone wrong",
         "knuckles rebuilt from repeated use"
@@ -704,21 +708,21 @@
       "body-kept-going-past-sense"
     ],
     "prompt_fragments_add": [
-      "facial scar crossing the jawline or brow",
-      "knuckles rebuilt from use",
-      "trenchcoat over older damage beneath"
+      { "slot": "marks", "text": "facial scar crossing the jawline or brow" },
+      { "slot": "features", "text": "knuckles rebuilt from use" },
+      { "slot": "armor_clothing", "text": "trenchcoat over older damage beneath" }
     ]
   },
   {
     "id": "legendary-ronin",
     "taxonomy": "intersection",
     "when": [
-      "legendary",
-      "ronin"
+      "descriptor:legendary",
+      "role:ronin"
     ],
     "label": "Legendary Ronin",
     "visual_override": {
-      "armor_note": "no mon \u2014 masterless by choice. Armour exceptional quality but deliberately faction-free.",
+      "armor_clothing": "no mon — masterless by choice. Armour exceptional quality but deliberately faction-free.",
       "features_add": [
         "blank lacquer panel where clan mon would be",
         "blade worn to an impossible edge from decades of care"
@@ -729,21 +733,21 @@
       "allegiance-given-to-no-lord"
     ],
     "prompt_fragments_add": [
-      "blank lacquer panel where clan mon was removed",
-      "legendary-quality blade with no clan markings",
-      "masterless bearing carrying decades of battles"
+      { "slot": "marks", "text": "blank lacquer panel where clan mon was removed" },
+      { "slot": "weapon", "text": "legendary-quality blade with no clan markings" },
+      { "slot": "bearing", "text": "masterless bearing carrying decades of battles" }
     ]
   },
   {
     "id": "battle-worn-gladiator",
     "taxonomy": "intersection",
     "when": [
-      "battle-worn",
-      "ancient-gladiator"
+      "descriptor:battle-worn",
+      "role:ancient-gladiator"
     ],
     "label": "Battle-Worn Gladiator",
     "visual_override": {
-      "build_note": "arena scar-map \u2014 every fight legible on the body, minimal armour reveals the full record",
+      "build": "arena scar-map — every fight legible on the body, minimal armour reveals the full record",
       "features_add": [
         "criss-cross scarring across chest and arms",
         "notched helmet from past near-deaths",
@@ -755,21 +759,21 @@
       "crowd-reads-the-scars"
     ],
     "prompt_fragments_add": [
-      "criss-cross arena scarring on chest and arms",
-      "notched dented helmet from past fights",
-      "arena sand in the leather straps"
+      { "slot": "marks", "text": "criss-cross arena scarring on chest and arms" },
+      { "slot": "armor_clothing", "text": "notched dented helmet from past fights" },
+      { "slot": "gear", "text": "arena sand in the leather straps" }
     ]
   },
   {
     "id": "fallen-medieval-knight",
     "taxonomy": "intersection",
     "when": [
-      "fallen",
-      "medieval-knight"
+      "descriptor:fallen",
+      "role:medieval-knight"
     ],
     "label": "Fallen Knight",
     "visual_override": {
-      "armor_note": "once-magnificent plate now defaced \u2014 heraldic colours scorched or obscured, crest broken, armour maintained from habit not honour",
+      "armor_clothing": "once-magnificent plate now defaced — heraldic colours scorched or obscured, crest broken, armour maintained from habit not honour",
       "features_add": [
         "heraldic device on shield defaced or painted over",
         "broken helm crest rough-repaired",
@@ -781,21 +785,21 @@
       "fighting-on-without-why"
     ],
     "prompt_fragments_add": [
-      "heraldic device painted over or burned off",
-      "broken helm crest rough-repaired",
-      "magnificent armour worn without honour"
+      { "slot": "marks", "text": "heraldic device painted over or burned off" },
+      { "slot": "armor_clothing", "text": "broken helm crest rough-repaired" },
+      { "slot": "armor_clothing", "text": "magnificent armour worn without honour" }
     ]
   },
   {
     "id": "elite-viking-jarl",
     "taxonomy": "intersection",
     "when": [
-      "elite",
-      "viking-jarl"
+      "descriptor:elite",
+      "role:viking-jarl"
     ],
     "label": "Elite Viking Jarl",
     "visual_override": {
-      "armor_note": "finest ring-mail and imported steel \u2014 silver torque at the neck, arm-rings of tribute, cloak of rare fur",
+      "armor_clothing": "finest ring-mail and imported steel — silver torque at the neck, arm-rings of tribute, cloak of rare fur",
       "features_add": [
         "multiple silver arm-rings denoting won battles",
         "rare fur cloak from a distant land",
@@ -807,21 +811,21 @@
       "followed-into-anything"
     ],
     "prompt_fragments_add": [
-      "silver arm-rings of tribute and status",
-      "rare fur cloak from distant raids",
-      "pattern-welded blade at the hip"
+      { "slot": "gear", "text": "silver arm-rings of tribute and status" },
+      { "slot": "armor_clothing", "text": "rare fur cloak from distant raids" },
+      { "slot": "weapon", "text": "pattern-welded blade at the hip" }
     ]
   },
   {
     "id": "disgraced-gunslinger",
     "taxonomy": "intersection",
     "when": [
-      "disgraced",
-      "gunslinger"
+      "descriptor:disgraced",
+      "role:gunslinger"
     ],
     "label": "Disgraced Gunslinger",
     "visual_override": {
-      "armor_note": "badge gone \u2014 the faded outline of it still visible on the vest. Gun kept through everything else lost.",
+      "armor_clothing": "badge gone — the faded outline of it still visible on the vest. Gun kept through everything else lost.",
       "features_add": [
         "faded badge outline on the vest where the star was",
         "holster worn by long habit not pride"
@@ -832,21 +836,21 @@
       "gun-is-the-only-constant"
     ],
     "prompt_fragments_add": [
-      "faded badge outline on vest where the star was",
-      "gun holster worn by habit not pride",
-      "trail dust over former lawman's clothes"
+      { "slot": "marks", "text": "faded badge outline on vest where the star was" },
+      { "slot": "gear", "text": "gun holster worn by habit not pride" },
+      { "slot": "surface", "text": "trail dust over former lawman's clothes" }
     ]
   },
   {
     "id": "lithe-ninja-shinobi",
     "taxonomy": "intersection",
     "when": [
-      "lithe",
-      "ninja-shinobi"
+      "descriptor:lithe",
+      "role:ninja-shinobi"
     ],
     "label": "Lithe Shinobi",
     "visual_override": {
-      "build_note": "silhouette optimised for impossibility \u2014 long limbs, narrow profile, every element of kit flush against the body",
+      "build": "silhouette optimised for impossibility — long limbs, narrow profile, every element of kit flush against the body",
       "features_add": [
         "flat-profile tool pouches flush against the torso",
         "limbs proportionally long for reach and traverse"
@@ -857,21 +861,21 @@
       "movement-is-absence"
     ],
     "prompt_fragments_add": [
-      "impossibly lean flat-profile silhouette",
-      "flat tool pouches flush to the body",
-      "long limbs built for traverse and reach"
+      { "slot": "build", "text": "impossibly lean flat-profile silhouette" },
+      { "slot": "gear", "text": "flat tool pouches flush to the body" },
+      { "slot": "build", "text": "long limbs built for traverse and reach" }
     ]
   },
   {
     "id": "imposing-powerhouse",
     "taxonomy": "intersection",
     "when": [
-      "imposing",
-      "powerhouse"
+      "descriptor:imposing",
+      "role:powerhouse"
     ],
     "label": "Imposing Powerhouse",
     "visual_override": {
-      "build_note": "the costume strains to contain what is beneath \u2014 bulk that makes architecture look small",
+      "build": "the costume strains to contain what is beneath — bulk that makes architecture look small",
       "features_add": [
         "costume seams stressed at shoulder and bicep",
         "neck as wide as the jaw above it"
@@ -882,24 +886,24 @@
       "presence-as-threat"
     ],
     "prompt_fragments_add": [
-      "costume straining at every seam",
-      "bulk that makes the space look wrong",
-      "neck as wide as the jaw"
+      { "slot": "armor_clothing", "text": "costume straining at every seam" },
+      { "slot": "build", "text": "bulk that makes the space look wrong" },
+      { "slot": "build", "text": "neck as wide as the jaw" }
     ]
   },
   {
     "id": "mercenary-vigilante",
     "taxonomy": "intersection",
     "when": [
-      "mercenary",
-      "vigilante"
+      "descriptor:mercenary",
+      "role:vigilante"
     ],
     "label": "Mercenary Vigilante",
     "visual_override": {
-      "armor_note": "no hero colours \u2014 eclectic protective gear from military surplus, civilian hardware, and whatever works",
+      "armor_clothing": "no hero colours — eclectic protective gear from military surplus, civilian hardware, and whatever works",
       "features_add": [
         "mismatched knee pads and body armour panels",
-        "no symbol or insignia \u2014 blank as a deliberate choice"
+        "no symbol or insignia — blank as a deliberate choice"
       ]
     },
     "traits_add": [
@@ -907,9 +911,9 @@
       "paid-not-sworn"
     ],
     "prompt_fragments_add": [
-      "eclectic military-surplus protective gear",
-      "no insignia \u2014 blank by choice",
-      "mismatched armour panels from multiple sources"
+      { "slot": "gear", "text": "eclectic military-surplus protective gear" },
+      { "slot": "marks", "text": "no insignia — blank by choice" },
+      { "slot": "armor_clothing", "text": "mismatched armour panels from multiple sources" }
     ]
   }
 ]

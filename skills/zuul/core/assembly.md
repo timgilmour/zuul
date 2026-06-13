@@ -6,6 +6,17 @@ coherent `<DETAILS>` string — **without** producing contradictory prompts.
 Read this whenever you assemble `<DETAILS>` for a character or creature. It
 replaces "just concatenate the fragments."
 
+> **The engine implements this spec.** Don't merge by hand — run:
+>
+> ```bash
+> bun run tools/assemble-prompt.mjs --species dwarf --role barbarian --subgenre high-fantasy
+> ```
+>
+> The prose below documents the engine's behaviour. The only part that needs
+> agent/user judgment is a non-empty `conflicts[]` in its output (exit code 2):
+> a same-precedence collision in an exclusive slot — resolve it with the user
+> (or a `--add "<slot>:<text>"` override), exactly as the rules below describe.
+
 ## Why this exists
 
 Every vocabulary source (`species.json`, `genre.json`, `subgenres.json`,
@@ -18,7 +29,7 @@ into a **slot**, then resolve each slot.
 
 ## Slots
 
-**Style slots — additive, never conflict, always kept:**
+**Style slots — the highest-precedence supplying source wins (subgenre beats genre):**
 
 | Slot | Holds | Example |
 |------|-------|---------|
@@ -92,7 +103,7 @@ deliberate tension). Never guess on a same-precedence collision.
 5. **Assemble** in this fixed order so prompts read consistently:
 
    ```
-   build → features → surface → armor_clothing → gear → weapon → marks → aura → materials → tone → palette clause
+   build → features → surface → armor_clothing → gear → weapon → marks → aura → bearing → materials → tone → expression → palette clause
    ```
 
    `art_style` rides with the subject identity line (per `subjects/characters.md`
@@ -105,7 +116,7 @@ deliberate tension). Never guess on a same-precedence collision.
 
 A `prompt_fragments[]` entry is either:
 
-- a **bare string** (legacy — classified at assembly time by the cue table above), or
+- a **bare string** (legal only in vehicles/props pools — the engine and the six character-path pools require objects), or
 - an **object** `{ "slot": "<slot id>", "text": "<phrase>" }` (preferred for new
   fragments — slot is taken from the field, no classification guess).
 
@@ -130,24 +141,19 @@ Resolved per slot:
 
 | Slot | Result | Demoted |
 |------|--------|---------|
-| `art_style` | high fantasy concept art | |
-| `tone` | heroic mythic scale, luminous magical aesthetic | |
-| `build` | stocky barrel-chested, short stature, raw muscular physique | |
+| `art_style` | high fantasy concept art | ~~fantasy game concept art~~ |
+| `tone` | luminous magical aesthetic, heroic mythic scale | ~~medieval fantasy aesthetic~~ |
+| `build` | stocky barrel-chested build, short stature, raw muscular physique | |
 | `features` | thick beard | |
 | `surface` | ruddy skin | |
 | `armor_clothing` | minimal hide and fur armour, bare arms and shoulders | ~~gleaming enchanted armour~~, ~~gold-leaf ornamental detail~~ |
-| `marks` | war paint on face and chest | |
 | `gear` | tribal bone fetishes | |
+| `marks` | war paint on face and chest | |
 | `materials` | hand-crafted materials | |
-| `palette` | warm oak, bronze, bare iron | ~~sapphire, emerald~~ |
+| `palette` | russet brown, iron grey, gold, deep slate (from species) | |
 
 Final `<DETAILS>`:
 
-> stocky barrel-chested build, short stature, raw muscular physique, thick beard,
-> ruddy skin, minimal hide and fur armour, bare arms and shoulders, war paint on
-> face and chest, tribal bone fetishes, hand-crafted materials, heroic mythic
-> scale, palette of warm oak, bronze, and bare iron
+> stocky barrel-chested build, short stature, raw muscular physique, thick beard, ruddy skin, minimal hide and fur armour, bare arms and shoulders, tribal bone fetishes, war paint on face and chest, hand-crafted materials, luminous magical aesthetic, heroic mythic scale, palette of russet brown, iron grey, gold, deep slate
 
-> resolution: demoted "gleaming enchanted armour", "gold-leaf ornamental detail"
-> (subgenre→armor_clothing, owned by role); palette resolved to subgenre+species
-> overlap, dropped sapphire/emerald.
+> resolution: demoted "fantasy game concept art" (genre→art_style), "medieval fantasy aesthetic" (genre→tone), "gleaming enchanted armour" (subgenre→armor_clothing), "gold-leaf ornamental detail" (subgenre→armor_clothing); palette from species

@@ -22,20 +22,26 @@ try {
 const genreIds = genres.map((g) => g.id);
 const subIds = subs.map((s) => s.id);
 const validTags = new Set([...genreIds, ...subIds, "*"]);
-const knownIds = new Set([...species.map((s) => s.id), ...descriptors.map((d) => d.id), ...roles.map((r) => r.id)]);
+const poolIds = {
+  species: new Set(species.map((s) => s.id)),
+  role: new Set(roles.map((r) => r.id)),
+  descriptor: new Set(descriptors.map((d) => d.id)),
+};
+
+const typed = (file) => ({ typedRequired: C.TYPED_REQUIRED_POOLS.has(file) });
 
 const errors = [
-  ...C.checkGenres(genres),
-  ...C.checkSubgenres(subs, genreIds),
-  ...C.checkRoles(roles, validTags),
+  ...C.checkGenres(genres, typed("genre.json")),
+  ...C.checkSubgenres(subs, genreIds, typed("subgenres.json")),
+  ...C.checkRoles(roles, validTags, typed("roles.json")),
   ...C.checkRoleCoverage(subs, roles),
-  ...C.checkTaggedPool("species.json", species, validTags),
-  ...C.checkTaggedPool("vehicles.json", vehicles, validTags),
-  ...C.checkTaggedPool("props.json", props, validTags),
-  ...C.checkDescriptors(descriptors),
+  ...C.checkTaggedPool("species.json", species, validTags, typed("species.json")),
+  ...C.checkTaggedPool("vehicles.json", vehicles, validTags, typed("vehicles.json")),
+  ...C.checkTaggedPool("props.json", props, validTags, typed("props.json")),
+  ...C.checkDescriptors(descriptors, typed("descriptors.json")),
   ...C.checkPoses(poses),
   ...C.checkStyles(styles),
-  ...C.checkIntersections(intersections, knownIds),
+  ...C.checkIntersections(intersections, poolIds, typed("intersections.json")),
 ];
 
 const POOLS = {
@@ -45,6 +51,7 @@ const POOLS = {
   "intersections.json": intersections,
 };
 for (const [file, pool] of Object.entries(POOLS)) {
+  errors.push(...C.checkLabels(pool, file));
   errors.push(...C.checkNoExt(pool, file));
   errors.push(...C.checkTaxonomy(pool, C.TAXONOMY_BY_POOL[file], file));
 }

@@ -14,8 +14,8 @@
       "fragile"
     ],
     "prompt_fragments": [
-      "tiny sprite-scale figure",
-      "easily overlooked stature"
+      { "slot": "build", "text": "tiny sprite-scale figure" },
+      { "slot": "build", "text": "easily overlooked stature" }
     ]
   },
   {
@@ -33,8 +33,8 @@
       "underestimated"
     ],
     "prompt_fragments": [
-      "small stature",
-      "below average height"
+      { "slot": "build", "text": "small stature" },
+      { "slot": "build", "text": "below average height" }
     ]
   },
   {
@@ -51,7 +51,7 @@
       "versatile"
     ],
     "prompt_fragments": [
-      "average humanoid height"
+      { "slot": "build", "text": "average humanoid height" }
     ]
   },
   {
@@ -70,9 +70,9 @@
       "hard-to-hide"
     ],
     "prompt_fragments": [
-      "towering large build",
-      "head and shoulders above average height",
-      "fills the frame"
+      { "slot": "build", "text": "towering large build" },
+      { "slot": "build", "text": "head and shoulders above average height" },
+      { "slot": "build", "text": "fills the frame" }
     ]
   },
   {
@@ -90,8 +90,8 @@
       "terrain-altering"
     ],
     "prompt_fragments": [
-      "massive giant-scale figure",
-      "dwarfs surrounding objects"
+      { "slot": "build", "text": "massive giant-scale figure" },
+      { "slot": "build", "text": "dwarfs surrounding objects" }
     ]
   },
   {
@@ -109,8 +109,8 @@
       "geological-impact"
     ],
     "prompt_fragments": [
-      "colossal kaiju-scale figure",
-      "buildings visible for scale"
+      { "slot": "build", "text": "colossal kaiju-scale figure" },
+      { "slot": "build", "text": "buildings visible for scale" }
     ]
   },
   {
@@ -128,9 +128,9 @@
       "potential-unrealised"
     ],
     "prompt_fragments": [
-      "young unlined face",
-      "lean youthful build",
-      "still growing into their gear"
+      { "slot": "features", "text": "young unlined face" },
+      { "slot": "build", "text": "lean youthful build" },
+      { "slot": "build", "text": "still growing into their gear" }
     ]
   },
   {
@@ -147,7 +147,7 @@
       "prime"
     ],
     "prompt_fragments": [
-      "adult in their prime"
+      { "slot": "build", "text": "adult in their prime" }
     ]
   },
   {
@@ -165,10 +165,10 @@
       "respected"
     ],
     "prompt_fragments": [
-      "elder weathered face",
-      "grey or white hair",
-      "scars of a long life",
-      "deliberate movement"
+      { "slot": "features", "text": "elder weathered face" },
+      { "slot": "features", "text": "grey or white hair" },
+      { "slot": "marks", "text": "scars of a long life" },
+      { "slot": "bearing", "text": "deliberate movement" }
     ]
   },
   {
@@ -186,9 +186,9 @@
       "power-accumulated"
     ],
     "prompt_fragments": [
-      "ancient ageless quality",
-      "face that has seen centuries",
-      "beyond-normal-lifespan presence"
+      { "slot": "bearing", "text": "ancient ageless quality" },
+      { "slot": "features", "text": "face that has seen centuries" },
+      { "slot": "bearing", "text": "beyond-normal-lifespan presence" }
     ]
   },
   {
@@ -206,9 +206,9 @@
       "trusted-gear"
     ],
     "prompt_fragments": [
-      "battle-worn scarred equipment",
-      "repaired dents and tears",
-      "veteran's scars on face and hands"
+      { "slot": "marks", "text": "battle-worn scarred equipment" },
+      { "slot": "marks", "text": "repaired dents and tears" },
+      { "slot": "marks", "text": "veteran's scars on face and hands" }
     ]
   },
   {
@@ -226,9 +226,9 @@
       "untested-or-meticulous"
     ],
     "prompt_fragments": [
-      "pristine immaculate equipment",
-      "perfect condition",
-      "no wear or damage"
+      { "slot": "marks", "text": "pristine immaculate equipment" },
+      { "slot": "marks", "text": "perfect condition" },
+      { "slot": "marks", "text": "no wear or damage" }
     ]
   },
   {
@@ -246,9 +246,9 @@
       "unstable"
     ],
     "prompt_fragments": [
-      "corruption visible as dark veins",
-      "cracks leaking unnatural light",
-      "warped or blackened surfaces"
+      { "slot": "surface", "text": "corruption visible as dark veins" },
+      { "slot": "aura", "text": "cracks leaking unnatural light" },
+      { "slot": "surface", "text": "warped or blackened surfaces" }
     ]
   },
   {
@@ -265,9 +265,9 @@
       "better-resourced"
     ],
     "prompt_fragments": [
-      "elite customised gear",
-      "clearly superior kit to peers",
-      "top-tier equipment"
+      { "slot": "gear", "text": "elite customised gear" },
+      { "slot": "gear", "text": "clearly superior kit to peers" },
+      { "slot": "gear", "text": "top-tier equipment" }
     ]
   },
   {
@@ -285,9 +285,9 @@
       "history-defining"
     ],
     "prompt_fragments": [
-      "legendary named artefacts",
-      "gear with visible history",
-      "unique iconic equipment"
+      { "slot": "gear", "text": "legendary named artefacts" },
+      { "slot": "gear", "text": "gear with visible history" },
+      { "slot": "gear", "text": "unique iconic equipment" }
     ]
   },
   {
@@ -304,9 +304,9 @@
       "world-historical"
     ],
     "prompt_fragments": [
-      "mythic aura distorting surroundings",
-      "power visible as environmental effect",
-      "beyond-legendary presence"
+      { "slot": "aura", "text": "mythic aura distorting surroundings" },
+      { "slot": "aura", "text": "power visible as environmental effect" },
+      { "slot": "bearing", "text": "beyond-legendary presence" }
     ]
   },
   {
@@ -323,8 +323,8 @@
       "wingspan-is-presence"
     ],
     "prompt_fragments": [
-      "large folded wings on back",
-      "wingspan proportional to height"
+      { "slot": "features", "text": "large folded wings on back" },
+      { "slot": "features", "text": "wingspan proportional to height" }
     ]
   },
   {
@@ -341,9 +341,9 @@
       "intimidating-silhouette"
     ],
     "prompt_fragments": [
-      "four arms \u2014 upper and lower pair",
-      "all four arms slightly extended to show clear separation",
-      "multi-armed silhouette"
+      { "slot": "features", "text": "four arms \u2014 upper and lower pair" },
+      { "slot": "features", "text": "all four arms slightly extended to show clear separation" },
+      { "slot": "build", "text": "multi-armed silhouette" }
     ]
   },
   {
@@ -360,9 +360,9 @@
       "history-on-skin"
     ],
     "prompt_fragments": [
-      "prominent scarring on face or body",
-      "scars that tell a story",
-      "character-defining marks from past battles"
+      { "slot": "marks", "text": "prominent scarring on face or body" },
+      { "slot": "marks", "text": "scars that tell a story" },
+      { "slot": "marks", "text": "character-defining marks from past battles" }
     ]
   },
   {
@@ -379,8 +379,8 @@
       "anonymous-by-choice"
     ],
     "prompt_fragments": [
-      "face concealed by mask or helm",
-      "identity hidden"
+      { "slot": "armor_clothing", "text": "face concealed by mask or helm" },
+      { "slot": "bearing", "text": "identity hidden" }
     ]
   },
   {
@@ -397,7 +397,7 @@
       "secretive"
     ],
     "prompt_fragments": [
-      "hood drawn up, face partially in shadow"
+      { "slot": "armor_clothing", "text": "hood drawn up, face partially in shadow" }
     ]
   },
   {
@@ -415,10 +415,10 @@
       "survival-mode"
     ],
     "prompt_fragments": [
-      "feral untamed appearance",
-      "torn clothing",
-      "wild matted hair",
-      "animalistic crouch and bearing"
+      { "slot": "bearing", "text": "feral untamed appearance" },
+      { "slot": "marks", "text": "torn clothing" },
+      { "slot": "features", "text": "wild matted hair" },
+      { "slot": "bearing", "text": "animalistic crouch and bearing" }
     ]
   },
   {
@@ -436,10 +436,10 @@
       "cold-to-the-touch"
     ],
     "prompt_fragments": [
-      "spectral semi-transparent form",
-      "soft wispy edges",
-      "cool blue-white glow",
-      "ghostly presence"
+      { "slot": "surface", "text": "spectral semi-transparent form" },
+      { "slot": "surface", "text": "soft wispy edges" },
+      { "slot": "aura", "text": "cool blue-white glow" },
+      { "slot": "bearing", "text": "ghostly presence" }
     ]
   },
   {
@@ -457,9 +457,9 @@
       "chosen"
     ],
     "prompt_fragments": [
-      "warm golden radiance from within",
-      "faint halo or light crown",
-      "luminous blessed skin"
+      { "slot": "aura", "text": "warm golden radiance from within" },
+      { "slot": "aura", "text": "faint halo or light crown" },
+      { "slot": "surface", "text": "luminous blessed skin" }
     ]
   },
   {
@@ -476,9 +476,9 @@
       "power-at-a-price"
     ],
     "prompt_fragments": [
-      "visible augmentations \u2014 cybernetic implants or enhancement runes",
-      "enhanced beyond baseline",
-      "power-at-a-price aesthetic"
+      { "slot": "surface", "text": "visible augmentations \u2014 cybernetic implants or enhancement runes" },
+      { "slot": "build", "text": "enhanced beyond baseline" },
+      { "slot": "bearing", "text": "power-at-a-price aesthetic" }
     ]
   },
   {
@@ -496,9 +496,9 @@
       "resources-behind-them"
     ],
     "prompt_fragments": [
-      "noble bearing and posture of ownership",
-      "finer quality materials and insignia",
-      "high-status presence"
+      { "slot": "bearing", "text": "noble bearing and posture of ownership" },
+      { "slot": "materials", "text": "finer quality materials and insignia" },
+      { "slot": "bearing", "text": "high-status presence" }
     ]
   },
   {
@@ -516,9 +516,9 @@
       "chip-on-shoulder"
     ],
     "prompt_fragments": [
-      "no insignia of any group",
-      "worn gear of the long road",
-      "bearing of someone who walks alone by necessity"
+      { "slot": "gear", "text": "no insignia of any group" },
+      { "slot": "gear", "text": "worn gear of the long road" },
+      { "slot": "bearing", "text": "bearing of someone who walks alone by necessity" }
     ]
   },
   {
@@ -535,9 +535,9 @@
       "unnoticed"
     ],
     "prompt_fragments": [
-      "standard-issue unremarkable gear",
-      "nothing distinctive",
-      "functional but forgettable equipment"
+      { "slot": "gear", "text": "standard-issue unremarkable gear" },
+      { "slot": "gear", "text": "nothing distinctive" },
+      { "slot": "gear", "text": "functional but forgettable equipment" }
     ]
   },
   {
@@ -555,9 +555,9 @@
       "dangerous-because-knows-the-inside"
     ],
     "prompt_fragments": [
-      "former affiliation insignia stripped or defaced",
-      "stripped pauldron or faded tabard where a symbol was",
-      "bearing of someone who remembers what they lost"
+      { "slot": "marks", "text": "former affiliation insignia stripped or defaced" },
+      { "slot": "marks", "text": "stripped pauldron or faded tabard where a symbol was" },
+      { "slot": "bearing", "text": "bearing of someone who remembers what they lost" }
     ]
   },
   {
@@ -574,9 +574,9 @@
       "unpredictable-but-not-dangerous"
     ],
     "prompt_fragments": [
-      "unkempt unbound hair",
-      "nature-touched appearance",
-      "unconcerned with civilised presentation"
+      { "slot": "features", "text": "unkempt unbound hair" },
+      { "slot": "bearing", "text": "nature-touched appearance" },
+      { "slot": "bearing", "text": "unconcerned with civilised presentation" }
     ]
   },
   {
@@ -594,9 +594,9 @@
       "keeps-others-alive"
     ],
     "prompt_fragments": [
-      "gear showing years of careful use",
-      "veteran's quiet competence",
-      "bearing of someone who has seen things recruits have not"
+      { "slot": "gear", "text": "gear showing years of careful use" },
+      { "slot": "bearing", "text": "veteran's quiet competence" },
+      { "slot": "bearing", "text": "bearing of someone who has seen things recruits have not" }
     ]
   },
   {
@@ -613,9 +613,9 @@
       "wall-of-flesh"
     ],
     "prompt_fragments": [
-      "hulking over-muscled build",
-      "massive bulk filling the frame",
-      "exaggerated breadth and mass"
+      { "slot": "build", "text": "hulking over-muscled build" },
+      { "slot": "build", "text": "massive bulk filling the frame" },
+      { "slot": "build", "text": "exaggerated breadth and mass" }
     ]
   },
   {
@@ -632,9 +632,9 @@
       "low-profile"
     ],
     "prompt_fragments": [
-      "lithe lean build, elongated limbs",
-      "minimal bulk built for speed and reach",
-      "fluid and flexible physique"
+      { "slot": "build", "text": "lithe lean build, elongated limbs" },
+      { "slot": "build", "text": "minimal bulk built for speed and reach" },
+      { "slot": "build", "text": "fluid and flexible physique" }
     ]
   },
   {
@@ -651,9 +651,9 @@
       "intensity-through-deprivation"
     ],
     "prompt_fragments": [
-      "gaunt hollow-cheeked face",
-      "prominent bone structure, skin tight over skull",
-      "emaciated intensity"
+      { "slot": "features", "text": "gaunt hollow-cheeked face" },
+      { "slot": "features", "text": "prominent bone structure, skin tight over skull" },
+      { "slot": "bearing", "text": "emaciated intensity" }
     ]
   },
   {
@@ -670,9 +670,9 @@
       "silhouette-dominance"
     ],
     "prompt_fragments": [
-      "imposing presence that commands the frame",
-      "bearing that dominates every space",
-      "powerful silhouette regardless of scale"
+      { "slot": "bearing", "text": "imposing presence that commands the frame" },
+      { "slot": "bearing", "text": "bearing that dominates every space" },
+      { "slot": "bearing", "text": "powerful silhouette regardless of scale" }
     ]
   },
   {
@@ -689,9 +689,9 @@
       "death-made-animate"
     ],
     "prompt_fragments": [
-      "undead pallor and degraded flesh",
-      "exposed bone at extremities",
-      "hollowed eye sockets with cold unnatural light"
+      { "slot": "surface", "text": "undead pallor and degraded flesh" },
+      { "slot": "features", "text": "exposed bone at extremities" },
+      { "slot": "features", "text": "hollowed eye sockets with cold unnatural light" }
     ]
   },
   {
@@ -708,9 +708,9 @@
       "unstable-form"
     ],
     "prompt_fragments": [
-      "mutated asymmetric biological abnormalities",
-      "additional growths and wrongly-placed features",
-      "proportions that do not resolve correctly"
+      { "slot": "features", "text": "mutated asymmetric biological abnormalities" },
+      { "slot": "features", "text": "additional growths and wrongly-placed features" },
+      { "slot": "build", "text": "proportions that do not resolve correctly" }
     ]
   },
   {
@@ -727,9 +727,9 @@
       "tragedy-implied"
     ],
     "prompt_fragments": [
-      "vestiges of former glory defaced and corrupted",
-      "fine materials now broken or perverted",
-      "past greatness made tragic"
+      { "slot": "marks", "text": "vestiges of former glory defaced and corrupted" },
+      { "slot": "marks", "text": "fine materials now broken or perverted" },
+      { "slot": "bearing", "text": "past greatness made tragic" }
     ]
   },
   {
@@ -746,9 +746,9 @@
       "unwelcome-where-once-powerful"
     ],
     "prompt_fragments": [
-      "rank insignia removed or defaced",
-      "bearing of someone stripped of status",
-      "former uniform reduced to bare cloth"
+      { "slot": "marks", "text": "rank insignia removed or defaced" },
+      { "slot": "bearing", "text": "bearing of someone stripped of status" },
+      { "slot": "armor_clothing", "text": "former uniform reduced to bare cloth" }
     ]
   },
   {
@@ -765,9 +765,9 @@
       "travelling-light"
     ],
     "prompt_fragments": [
-      "travelling light with identity concealed",
-      "hood up, face partly obscured",
-      "no visible allegiance markers"
+      { "slot": "bearing", "text": "travelling light with identity concealed" },
+      { "slot": "armor_clothing", "text": "hood up, face partly obscured" },
+      { "slot": "gear", "text": "no visible allegiance markers" }
     ]
   },
   {
@@ -784,9 +784,9 @@
       "coin-driven"
     ],
     "prompt_fragments": [
-      "mismatched armour and gear from multiple sources",
-      "no single faction's colours or markings",
-      "coin-earned eclectic kit"
+      { "slot": "armor_clothing", "text": "mismatched armour and gear from multiple sources" },
+      { "slot": "bearing", "text": "no single faction's colours or markings" },
+      { "slot": "gear", "text": "coin-earned eclectic kit" }
     ]
   }
 ]

@@ -27,12 +27,17 @@ export const TAXONOMY_BY_POOL = {
   "roles.json":"role","props.json":"prop","vehicles.json":"vehicle",
   "intersections.json":"intersection",
 };
+// Pools whose prompt_fragments must be {slot,text} objects (Tier 4).
+// Flipped per pool as each migration lands. vehicles/props stay bare-string-legal.
+export const TYPED_REQUIRED_POOLS = new Set(["genre.json", "subgenres.json", "species.json", "roles.json", "descriptors.json", "intersections.json"]);
+
 const KEBAB = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-export function checkFragments(label, frags) {
+export function checkFragments(label, frags, { typedRequired = false } = {}) {
   const errors = [];
   for (const f of frags) {
     if (typeof f === "string") {
+      if (typedRequired) { errors.push(`${label}: bare-string fragment "${f}" — this pool requires {slot,text} objects`); continue; }
       if (!f.trim()) errors.push(`${label}: empty string fragment`);
       continue;
     }
@@ -46,16 +51,20 @@ export function checkFragments(label, frags) {
   return errors;
 }
 
-export function checkGenres(genres) {
+export function checkGenres(genres, opts = {}) {
   const errors = [];
   const genreIds = genres.map((g) => g.id);
   if (genreIds.slice().sort().join() !== EXPECTED_GENRES.slice().sort().join())
     errors.push(`genre.json ids != expected. got: ${genreIds.join(",")}`);
-  for (const g of genres) if (g.level !== "genre") errors.push(`genre ${g.id} missing level:"genre"`);
+  for (const g of genres) {
+    if (g.level !== "genre") errors.push(`genre ${g.id} missing level:"genre"`);
+    if (!Array.isArray(g.prompt_fragments) || !g.prompt_fragments.length) errors.push(`genre ${g.id} empty prompt_fragments`);
+    else errors.push(...checkFragments(`genre ${g.id}`, g.prompt_fragments, opts));
+  }
   return errors;
 }
 
-export function checkSubgenres(subs, genreIds) {
+export function checkSubgenres(subs, genreIds, opts = {}) {
   const errors = [];
   const subIds = subs.map((s) => s.id);
   const allExpectedSubs = Object.values(EXPECTED_SUBS).flat();
@@ -68,12 +77,12 @@ export function checkSubgenres(subs, genreIds) {
     if (!s.tone) errors.push(`subgenre ${s.id} missing tone`);
     if (!Array.isArray(s.descriptors) || !s.descriptors.length) errors.push(`subgenre ${s.id} empty descriptors`);
     if (!Array.isArray(s.prompt_fragments) || !s.prompt_fragments.length) errors.push(`subgenre ${s.id} empty prompt_fragments`);
-    else errors.push(...checkFragments(`subgenre ${s.id}`, s.prompt_fragments));
+    else errors.push(...checkFragments(`subgenre ${s.id}`, s.prompt_fragments, opts));
   }
   return errors;
 }
 
-export function checkRoles(roles, validTags) {
+export function checkRoles(roles, validTags, opts = {}) {
   if (!Array.isArray(roles)) return ["roles.json is not an array"];
   const errors = [];
   const seenIds = new Set();
@@ -83,7 +92,7 @@ export function checkRoles(roles, validTags) {
     if (!Array.isArray(r.applies_to) || !r.applies_to.length) errors.push(`role ${r.id} empty applies_to`);
     for (const t of r.applies_to || []) if (!validTags.has(t)) errors.push(`role ${r.id} bad tag "${t}"`);
     if (!Array.isArray(r.prompt_fragments) || !r.prompt_fragments.length) errors.push(`role ${r.id} empty prompt_fragments`);
-    else errors.push(...checkFragments(`role ${r.id}`, r.prompt_fragments));
+    else errors.push(...checkFragments(`role ${r.id}`, r.prompt_fragments, opts));
   }
   return errors;
 }
@@ -97,7 +106,7 @@ export function checkRoleCoverage(subs, roles) {
 }
 
 // species / vehicles / props
-export function checkTaggedPool(file, pool, validTags) {
+export function checkTaggedPool(file, pool, validTags, opts = {}) {
   if (!Array.isArray(pool)) return [`${file} is not an array`];
   const errors = [];
   const ids = new Set();
@@ -108,12 +117,14 @@ export function checkTaggedPool(file, pool, validTags) {
     if (!Array.isArray(x.applies_to) || !x.applies_to.length) errors.push(`${file}: ${x.id} empty applies_to`);
     for (const t of x.applies_to || []) if (!validTags.has(t)) errors.push(`${file}: ${x.id} bad tag "${t}"`);
     if (!Array.isArray(x.prompt_fragments) || !x.prompt_fragments.length) errors.push(`${file}: ${x.id} empty prompt_fragments`);
-    else errors.push(...checkFragments(`${file}:${x.id}`, x.prompt_fragments));
+    else errors.push(...checkFragments(`${file}:${x.id}`, x.prompt_fragments, opts));
     if (file === "species.json" && !SPECIES_PLANS.has(x.body_plan)) errors.push(`species ${x.id}: bad or missing body_plan "${x.body_plan}"`);
     if (file === "props.json" || file === "vehicles.json") {
       if (typeof x.view !== "string" || !x.view.trim()) errors.push(`${file}: ${x.id} missing view`);
       if (typeof x.aspect !== "string" || !x.aspect.trim()) errors.push(`${file}: ${x.id} missing aspect`);
     }
+    if (file === "props.json" && (typeof x.category !== "string" || !x.category.trim()))
+      errors.push(`props.json: ${x.id} missing category`);
   }
   return errors;
 }
@@ -126,7 +137,6 @@ export function checkPoses(poses) {
   for (const p of poses) {
     if (ids.has(p.id)) errors.push(`pose ${p.id}: duplicate id`);
     ids.add(p.id);
-    if (!p.label) errors.push(`pose ${p.id}: missing label`);
     if (!POSE_CATEGORIES.has(p.category)) errors.push(`pose ${p.id}: bad category "${p.category}"`);
     if (typeof p.mesh_safe !== "boolean") errors.push(`pose ${p.id}: mesh_safe must be boolean`);
     if (!Array.isArray(p.applies_to) || !p.applies_to.length) errors.push(`pose ${p.id}: empty applies_to`);
@@ -149,7 +159,6 @@ export function checkStyles(styles) {
   for (const st of styles) {
     if (ids.has(st.id)) errors.push(`style ${st.id}: duplicate id`);
     ids.add(st.id);
-    if (!st.label) errors.push(`style ${st.id}: missing label`);
     if (typeof st.mesh_safe !== "boolean") errors.push(`style ${st.id}: mesh_safe must be boolean`);
     if (typeof st.uses_framing !== "boolean") errors.push(`style ${st.id}: uses_framing must be boolean`);
     if (typeof st.prompt !== "string" || !st.prompt.trim()) errors.push(`style ${st.id}: missing prompt`);
@@ -179,27 +188,48 @@ export function checkTaxonomy(pool, expected, label) {
   return errors;
 }
 
+export function checkLabels(pool, label) {
+  const errors = [];
+  for (const x of pool)
+    if (typeof x.label !== "string" || !x.label.trim())
+      errors.push(`${label}: entry "${x.id ?? "(no id)"}" missing label`);
+  return errors;
+}
+
+export function checkVisualOverride(label, vo) {
+  const errors = [];
+  for (const [k, v] of Object.entries(vo ?? {})) {
+    const base = k.endsWith("_add") ? k.slice(0, -4) : k;
+    if (!SLOTS.has(base)) { errors.push(`${label}: visual_override key "${k}" is not a slot or <slot>_add`); continue; }
+    if (k.endsWith("_add")) {
+      if (!Array.isArray(v) || v.some((s) => typeof s !== "string" || !s.trim()))
+        errors.push(`${label}: visual_override "${k}" must be an array of non-empty strings`);
+    } else if (typeof v !== "string" || !v.trim()) {
+      errors.push(`${label}: visual_override "${k}" must be a non-empty string`);
+    }
+  }
+  return errors;
+}
+
 // Per-pool checks for descriptors and intersections.
-export function checkDescriptors(descriptors) {
+export function checkDescriptors(descriptors, opts = {}) {
   if (!Array.isArray(descriptors)) return ["descriptors.json is not an array"];
   const errors = [];
   const ids = new Set();
   for (const d of descriptors) {
     if (ids.has(d.id)) errors.push(`descriptor ${d.id}: duplicate id`);
     ids.add(d.id);
-    if (!d.label) errors.push(`descriptor ${d.id}: missing label`);
     if (!DESCRIPTOR_CATEGORIES.has(d.category)) errors.push(`descriptor ${d.id}: bad or missing category "${d.category}"`);
     if (!Array.isArray(d.prompt_fragments) || !d.prompt_fragments.length) errors.push(`descriptor ${d.id}: empty prompt_fragments`);
-    else errors.push(...checkFragments(`descriptor ${d.id}`, d.prompt_fragments));
+    else errors.push(...checkFragments(`descriptor ${d.id}`, d.prompt_fragments, opts));
   }
   return errors;
 }
 
-// knownIds = Set of species ∪ descriptor ∪ role ids.
-// Note: ids that exist in more than one pool (e.g. android, elder, noble, outcast)
-// are ambiguous to when-token resolution — the Set union cannot tell which pool
-// a token refers to. Disambiguating those ids is future hygiene work (Tier 3).
-export function checkIntersections(intersections, knownIds) {
+export const WHEN_TOKEN = /^(species|role|descriptor):([a-z0-9]+(?:-[a-z0-9]+)*)$/;
+
+// poolIds = { species: Set, role: Set, descriptor: Set }
+export function checkIntersections(intersections, poolIds, opts = {}) {
   if (!Array.isArray(intersections)) return ["intersections.json is not an array"];
   const errors = [];
   const ids = new Set();
@@ -211,13 +241,17 @@ export function checkIntersections(intersections, knownIds) {
       if (ids.has(x.id)) errors.push(`duplicate intersection id "${x.id}"`);
       ids.add(x.id);
     }
-    if (!x.label) errors.push(`intersection ${tag}: missing label`);
     if (!Array.isArray(x.when) || x.when.length < 2) errors.push(`intersection ${tag}: "when" must list at least two tokens`);
-    for (const t of x.when || []) if (!knownIds.has(t)) errors.push(`intersection ${tag}: when-token "${t}" resolves to no species/descriptor/role id`);
+    for (const t of x.when || []) {
+      const m = typeof t === "string" ? t.match(WHEN_TOKEN) : null;
+      if (!m) { errors.push(`intersection ${tag}: when-token "${t}" must be "<pool>:<id>" with pool one of species|role|descriptor`); continue; }
+      if (!poolIds[m[1]].has(m[2])) errors.push(`intersection ${tag}: when-token "${t}" resolves to no ${m[1]} id`);
+    }
     if (typeof x.visual_override !== "object" || x.visual_override === null) errors.push(`intersection ${tag}: visual_override must be an object`);
+    else errors.push(...checkVisualOverride(`intersection ${tag}`, x.visual_override));
     if (!Array.isArray(x.traits_add)) errors.push(`intersection ${tag}: traits_add must be an array`);
     if (!Array.isArray(x.prompt_fragments_add) || !x.prompt_fragments_add.length) errors.push(`intersection ${tag}: empty prompt_fragments_add`);
-    else errors.push(...checkFragments(`intersection ${tag}`, x.prompt_fragments_add));
+    else errors.push(...checkFragments(`intersection ${tag}`, x.prompt_fragments_add, opts));
   }
   return errors;
 }

@@ -17,8 +17,8 @@
       "socially-complex"
     ],
     "prompt_fragments": [
-      "human",
-      "standard humanoid proportions"
+      { "slot": "build", "text": "human" },
+      { "slot": "build", "text": "standard humanoid proportions" }
     ],
     "applies_to": [
       "*"
@@ -53,10 +53,10 @@
       "honour-bound"
     ],
     "prompt_fragments": [
-      "grey-green skin",
-      "heavy lower tusks",
-      "heavy brow ridge",
-      "broad muscular build"
+      { "slot": "surface", "text": "grey-green skin" },
+      { "slot": "features", "text": "heavy lower tusks" },
+      { "slot": "features", "text": "heavy brow ridge" },
+      { "slot": "build", "text": "broad muscular build" }
     ],
     "applies_to": [
       "fantasy"
@@ -91,10 +91,10 @@
       "nature-connected"
     ],
     "prompt_fragments": [
-      "long pointed ears",
-      "high angular cheekbones",
-      "slender graceful build",
-      "luminous pale skin"
+      { "slot": "features", "text": "long pointed ears" },
+      { "slot": "features", "text": "high angular cheekbones" },
+      { "slot": "build", "text": "slender graceful build" },
+      { "slot": "surface", "text": "luminous pale skin" }
     ],
     "applies_to": [
       "fantasy"
@@ -129,10 +129,10 @@
       "mountain-dweller"
     ],
     "prompt_fragments": [
-      "stocky barrel-chested build",
-      "thick beard",
-      "ruddy skin",
-      "short stature"
+      { "slot": "build", "text": "stocky barrel-chested build" },
+      { "slot": "features", "text": "thick beard" },
+      { "slot": "surface", "text": "ruddy skin" },
+      { "slot": "build", "text": "short stature" }
     ],
     "applies_to": [
       "fantasy",
@@ -170,10 +170,10 @@
       "alien-logic"
     ],
     "prompt_fragments": [
-      "insectoid chitinous exoskeleton",
-      "compound eyes",
-      "mandibles",
-      "segmented body"
+      { "slot": "surface", "text": "insectoid chitinous exoskeleton" },
+      { "slot": "features", "text": "compound eyes" },
+      { "slot": "features", "text": "mandibles" },
+      { "slot": "build", "text": "segmented body" }
     ],
     "applies_to": [
       "scifi"
@@ -207,10 +207,10 @@
       "politically-complex"
     ],
     "prompt_fragments": [
-      "pointed ears",
-      "V-shaped brow ridges",
-      "sharp angular features",
-      "pale olive skin"
+      { "slot": "features", "text": "pointed ears" },
+      { "slot": "features", "text": "V-shaped brow ridges" },
+      { "slot": "features", "text": "sharp angular features" },
+      { "slot": "surface", "text": "pale olive skin" }
     ],
     "applies_to": [
       "scifi"
@@ -246,10 +246,10 @@
       "resilient"
     ],
     "prompt_fragments": [
-      "crimson skin",
-      "curling ram horns",
-      "solid glowing eyes",
-      "long slender tail"
+      { "slot": "surface", "text": "crimson skin" },
+      { "slot": "features", "text": "curling ram horns" },
+      { "slot": "features", "text": "solid glowing eyes" },
+      { "slot": "features", "text": "long slender tail" }
     ],
     "applies_to": [
       "fantasy"
@@ -282,11 +282,11 @@
       "honour-focused"
     ],
     "prompt_fragments": [
-      "scaled draconic hide",
-      "reptilian head",
-      "short curved horns",
-      "clawed hands",
-      "powerfully built"
+      { "slot": "surface", "text": "scaled draconic hide" },
+      { "slot": "features", "text": "reptilian head" },
+      { "slot": "features", "text": "short curved horns" },
+      { "slot": "features", "text": "clawed hands" },
+      { "slot": "build", "text": "powerfully built" }
     ],
     "applies_to": [
       "fantasy"
@@ -321,10 +321,10 @@
       "programmed-directives"
     ],
     "prompt_fragments": [
-      "synthetic humanoid",
-      "visible panel seams",
-      "glowing optical sensors",
-      "mechanical joints"
+      { "slot": "build", "text": "synthetic humanoid" },
+      { "slot": "surface", "text": "visible panel seams" },
+      { "slot": "features", "text": "glowing optical sensors" },
+      { "slot": "features", "text": "mechanical joints" }
     ],
     "applies_to": [
       "scifi",
@@ -360,10 +360,48 @@
       "practical"
     ],
     "prompt_fragments": [
-      "very short stature",
-      "large hairy bare feet",
-      "round cheerful face",
-      "curly hair"
+      { "slot": "build", "text": "very short stature" },
+      { "slot": "features", "text": "large hairy bare feet" },
+      { "slot": "features", "text": "round cheerful face" },
+      { "slot": "features", "text": "curly hair" }
+    ],
+    "applies_to": [
+      "fantasy"
+    ],
+    "body_plan": "biped"
+  },
+  {
+    "id": "goblin",
+    "taxonomy": "species",
+    "label": "Goblin",
+    "default_size": "small",
+    "visual": {
+      "skin": "mossy green to sallow olive",
+      "features": [
+        "long pointed ears",
+        "hooked nose",
+        "sharp teeth",
+        "wiry frame"
+      ],
+      "build": "small, wiry, quick",
+      "palette": [
+        "mossy green",
+        "patchwork leather brown",
+        "bronze",
+        "dull iron"
+      ]
+    },
+    "traits": [
+      "scrappy",
+      "opportunist",
+      "pack-minded",
+      "scavenger"
+    ],
+    "prompt_fragments": [
+      { "slot": "build", "text": "small wiry build" },
+      { "slot": "features", "text": "long pointed ears" },
+      { "slot": "features", "text": "hooked nose" },
+      { "slot": "surface", "text": "mossy green skin" }
     ],
     "applies_to": [
       "fantasy"
@@ -398,10 +436,10 @@
       "eccentric"
     ],
     "prompt_fragments": [
-      "very short wiry build",
-      "large nose",
-      "wide curious eyes",
-      "wild eccentric hair"
+      { "slot": "build", "text": "very short wiry build" },
+      { "slot": "features", "text": "large nose" },
+      { "slot": "features", "text": "wide curious eyes" },
+      { "slot": "features", "text": "wild eccentric hair" }
     ],
     "applies_to": [
       "fantasy",
@@ -436,10 +474,10 @@
       "tougher-than-they-look"
     ],
     "prompt_fragments": [
-      "grey-olive skin",
-      "small lower tusks",
-      "prominent brow ridge",
-      "tall strong build"
+      { "slot": "surface", "text": "grey-olive skin" },
+      { "slot": "features", "text": "small lower tusks" },
+      { "slot": "features", "text": "prominent brow ridge" },
+      { "slot": "build", "text": "tall strong build" }
     ],
     "applies_to": [
       "fantasy"
@@ -474,10 +512,10 @@
       "burden-of-purpose"
     ],
     "prompt_fragments": [
-      "luminous pale gold skin",
-      "solid silver eyes",
-      "faint halo glow",
-      "ethereal celestial beauty"
+      { "slot": "surface", "text": "luminous pale gold skin" },
+      { "slot": "features", "text": "solid silver eyes" },
+      { "slot": "aura", "text": "faint halo glow" },
+      { "slot": "features", "text": "ethereal celestial beauty" }
     ],
     "applies_to": [
       "fantasy"
@@ -513,11 +551,11 @@
       "patient-predator"
     ],
     "prompt_fragments": [
-      "scaled reptilian hide",
-      "reptilian head with forked tongue",
-      "slit pupils",
-      "tail",
-      "dense muscular build"
+      { "slot": "surface", "text": "scaled reptilian hide" },
+      { "slot": "features", "text": "reptilian head with forked tongue" },
+      { "slot": "features", "text": "slit pupils" },
+      { "slot": "features", "text": "tail" },
+      { "slot": "build", "text": "dense muscular build" }
     ],
     "applies_to": [
       "fantasy"
@@ -552,10 +590,10 @@
       "navigational-sense"
     ],
     "prompt_fragments": [
-      "bull's head with curved horns",
-      "hooved feet",
-      "short furred hide",
-      "massive 7-foot heavily muscled build"
+      { "slot": "features", "text": "bull's head with curved horns" },
+      { "slot": "features", "text": "hooved feet" },
+      { "slot": "surface", "text": "short furred hide" },
+      { "slot": "build", "text": "massive 7-foot heavily muscled build" }
     ],
     "applies_to": [
       "fantasy"
@@ -591,11 +629,11 @@
       "whimsically-dangerous"
     ],
     "prompt_fragments": [
-      "short cat fur over humanoid form",
-      "cat head with upright ears",
-      "slit pupils",
-      "retractable claws",
-      "long cat tail"
+      { "slot": "surface", "text": "short cat fur over humanoid form" },
+      { "slot": "features", "text": "cat head with upright ears" },
+      { "slot": "features", "text": "slit pupils" },
+      { "slot": "features", "text": "retractable claws" },
+      { "slot": "features", "text": "long cat tail" }
     ],
     "applies_to": [
       "fantasy"
@@ -630,10 +668,10 @@
       "ageless"
     ],
     "prompt_fragments": [
-      "composite wood-metal-stone plating",
-      "glowing crystal eye-lenses",
-      "integrated construct armour",
-      "solid dense build"
+      { "slot": "surface", "text": "composite wood-metal-stone plating" },
+      { "slot": "features", "text": "glowing crystal eye-lenses" },
+      { "slot": "armor_clothing", "text": "integrated construct armour" },
+      { "slot": "build", "text": "solid dense build" }
     ],
     "applies_to": [
       "fantasy",
@@ -669,11 +707,11 @@
       "photosensitive"
     ],
     "prompt_fragments": [
-      "jet black skin",
-      "silver-white hair",
-      "glowing red or violet eyes",
-      "long pointed ears",
-      "sharp aristocratic features"
+      { "slot": "surface", "text": "jet black skin" },
+      { "slot": "surface", "text": "silver-white hair" },
+      { "slot": "features", "text": "glowing red or violet eyes" },
+      { "slot": "features", "text": "long pointed ears" },
+      { "slot": "features", "text": "sharp aristocratic features" }
     ],
     "applies_to": [
       "fantasy"
@@ -706,10 +744,10 @@
       "mountain-born"
     ],
     "prompt_fragments": [
-      "stone-grey skin with natural lithoderm markings",
-      "slab-muscled giant-kin proportions",
-      "7-foot tall build",
-      "granite-patterned skin markings"
+      { "slot": "surface", "text": "stone-grey skin with natural lithoderm markings" },
+      { "slot": "build", "text": "slab-muscled giant-kin proportions" },
+      { "slot": "build", "text": "7-foot tall build" },
+      { "slot": "surface", "text": "granite-patterned skin markings" }
     ],
     "applies_to": [
       "fantasy"
@@ -744,11 +782,11 @@
       "martial-zealot"
     ],
     "prompt_fragments": [
-      "yellow-green sallow skin",
-      "flattened angular face",
-      "large swept-back pointed ears",
-      "elongated skull",
-      "burning deep-set eyes"
+      { "slot": "surface", "text": "yellow-green sallow skin" },
+      { "slot": "features", "text": "flattened angular face" },
+      { "slot": "features", "text": "large swept-back pointed ears" },
+      { "slot": "features", "text": "elongated skull" },
+      { "slot": "features", "text": "burning deep-set eyes" }
     ],
     "applies_to": [
       "fantasy",
@@ -785,11 +823,11 @@
       "roar-of-authority"
     ],
     "prompt_fragments": [
-      "lion fur over humanoid form",
-      "impressive lion's mane",
-      "cat ears",
-      "clawed hands",
-      "tall proud powerful build"
+      { "slot": "surface", "text": "lion fur over humanoid form" },
+      { "slot": "features", "text": "impressive lion's mane" },
+      { "slot": "features", "text": "cat ears" },
+      { "slot": "features", "text": "clawed hands" },
+      { "slot": "build", "text": "tall proud powerful build" }
     ],
     "applies_to": [
       "fantasy"
@@ -824,11 +862,11 @@
       "warrior-poet"
     ],
     "prompt_fragments": [
-      "prominent cranial ridges",
-      "dark brown skin",
-      "heavy brow",
-      "powerful warrior build",
-      "long dark hair"
+      { "slot": "features", "text": "prominent cranial ridges" },
+      { "slot": "surface", "text": "dark brown skin" },
+      { "slot": "features", "text": "heavy brow" },
+      { "slot": "build", "text": "powerful warrior build" },
+      { "slot": "features", "text": "long dark hair" }
     ],
     "applies_to": [
       "scifi"

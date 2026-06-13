@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "validate": "bun run validate-vocab.mjs",
+    "assemble": "bun run assemble-prompt.mjs",
+    "validate-outputs": "bun run validate-outputs.mjs",
     "test": "bun test"
   },
   "dependencies": {

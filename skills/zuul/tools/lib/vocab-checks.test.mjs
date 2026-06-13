@@ -1,6 +1,7 @@
 import { test, expect } from "bun:test";
 import {
   checkFragments, checkGenres, checkStyles, checkPoses, checkDescriptors, checkNoExt, checkTaxonomy, checkIntersections,
+  checkLabels, checkTaggedPool, checkVisualOverride,
 } from "./vocab-checks.mjs";
 
 test("checkFragments flags an unknown slot", () => {
@@ -19,7 +20,7 @@ test("checkFragments accepts a valid mix", () => {
 
 test("checkGenres flags a missing level", () => {
   const ids = ["fantasy","horror","scifi","modern","science-fantasy","historical","western"];
-  const errs = checkGenres(ids.map((id, i) => ({ id, level: i === 0 ? "WRONG" : "genre" })));
+  const errs = checkGenres(ids.map((id, i) => ({ id, level: i === 0 ? "WRONG" : "genre", prompt_fragments: ["x"] })));
   expect(errs).toHaveLength(1);
   expect(errs[0]).toContain("missing level");
 });
@@ -87,26 +88,103 @@ test("checkTaxonomy errors when expected value is undefined", () => {
   expect(errs[0]).toContain("no expected value");
 });
 
+const POOL_IDS = {
+  species: new Set(["orc", "android"]),
+  role: new Set(["barbarian", "android"]),
+  descriptor: new Set(["large"]),
+};
+const validIntersection = (over = {}) => ({
+  id: "large-orc", taxonomy: "intersection", label: "Large Orc",
+  when: ["species:orc", "descriptor:large"],
+  visual_override: {}, traits_add: [],
+  prompt_fragments_add: ["towering even among orcs"],
+  ...over,
+});
+
+test("checkIntersections accepts pool-qualified when-tokens", () => {
+  expect(checkIntersections([validIntersection()], POOL_IDS)).toEqual([]);
+});
+
+test("checkIntersections rejects bare when-tokens", () => {
+  const errs = checkIntersections([validIntersection({ when: ["orc", "large"] })], POOL_IDS);
+  expect(errs.some((e) => e.includes('"orc"') && e.includes("<pool>:<id>"))).toBe(true);
+});
+
+test("checkIntersections rejects a token whose id is missing from the named pool", () => {
+  const errs = checkIntersections([validIntersection({ when: ["species:orc", "descriptor:bogus"] })], POOL_IDS);
+  expect(errs.some((e) => e.includes('"descriptor:bogus"'))).toBe(true);
+});
+
+test("checkIntersections rejects an unknown pool prefix", () => {
+  const errs = checkIntersections([validIntersection({ when: ["species:orc", "vehicle:android"] })], POOL_IDS);
+  expect(errs.some((e) => e.includes('"vehicle:android"'))).toBe(true);
+});
+
+test("checkIntersections disambiguates colliding ids by pool prefix", () => {
+  // "android" exists as both species and role; the prefix decides.
+  const ok = checkIntersections([validIntersection({ when: ["species:android", "role:barbarian"] })], POOL_IDS);
+  expect(ok).toEqual([]);
+  // The prefix is load-bearing: the same id under a pool that lacks it must fail.
+  const errs = checkIntersections([validIntersection({ when: ["descriptor:android", "descriptor:large"] })], POOL_IDS);
+  expect(errs.some((e) => e.includes('"descriptor:android"'))).toBe(true);
+});
+
 test("checkIntersections flags a missing id", () => {
-  const known = new Set(["orc", "large"]);
-  const errs = checkIntersections([{ when: ["orc", "large"], label: "Large Orc", visual_override: {}, traits_add: [], prompt_fragments_add: ["x"] }], known);
+  const errs = checkIntersections([{ when: ["species:orc", "descriptor:large"], label: "Large Orc", visual_override: {}, traits_add: [], prompt_fragments_add: ["x"] }], POOL_IDS);
   expect(errs.some((e) => e.includes("missing id"))).toBe(true);
 });
 
-test("checkIntersections flags an unresolved when-token", () => {
-  const known = new Set(["orc"]);
-  const errs = checkIntersections([{ id: "orc-ghost", when: ["orc", "ghost"], label: "L", visual_override: {}, traits_add: [], prompt_fragments_add: ["x"] }], known);
-  expect(errs.some((e) => e.includes('when-token "ghost"'))).toBe(true);
-});
-
-test("checkIntersections accepts a valid entry", () => {
-  const known = new Set(["orc", "large"]);
-  expect(checkIntersections([{ id: "large-orc", taxonomy: "intersection", when: ["orc", "large"], label: "Large Orc", visual_override: { build: "big" }, traits_add: ["x"], prompt_fragments_add: ["towering"] }], known)).toEqual([]);
-});
-
 test("checkIntersections flags a duplicate id", () => {
-  const known = new Set(["orc", "large"]);
-  const entry = { id: "large-orc", taxonomy: "intersection", when: ["orc", "large"], label: "Large Orc", visual_override: {}, traits_add: [], prompt_fragments_add: ["x"] };
-  const errs = checkIntersections([entry, { ...entry }], known);
+  const entry = validIntersection();
+  const errs = checkIntersections([entry, { ...entry }], POOL_IDS);
   expect(errs.some((e) => e.includes('duplicate intersection id "large-orc"'))).toBe(true);
+});
+
+test("checkLabels flags a missing label on any pool", () => {
+  const errs = checkLabels([{ id: "x" }, { id: "y", label: "Y" }], "roles.json");
+  expect(errs).toHaveLength(1);
+  expect(errs[0]).toContain('"x"');
+});
+
+test("checkTaggedPool requires category on props", () => {
+  const prop = { id: "p", taxonomy: "prop", label: "P", applies_to: ["*"], view: "v", aspect: "1:1", prompt_fragments: ["x"] };
+  const errs = checkTaggedPool("props.json", [prop], new Set(["*"]));
+  expect(errs.some((e) => e.includes("missing category"))).toBe(true);
+});
+
+test("checkGenres validates prompt_fragments", () => {
+  const ids = ["fantasy","horror","scifi","modern","science-fantasy","historical","western"];
+  const genres = ids.map((id) => ({ id, level: "genre", prompt_fragments: id === "fantasy" ? [] : ["ok"] }));
+  const errs = checkGenres(genres);
+  expect(errs.some((e) => e.includes("fantasy") && e.includes("empty prompt_fragments"))).toBe(true);
+});
+
+test("checkVisualOverride accepts slot keys and <slot>_add keys", () => {
+  expect(checkVisualOverride("x", { build: "huge", features_add: ["horns"] })).toEqual([]);
+});
+
+test("checkVisualOverride rejects non-slot keys and bad value shapes", () => {
+  const errs = checkVisualOverride("x", { bogus: "v", build: ["not-a-string"], features_add: "not-an-array" });
+  expect(errs.some((e) => e.includes('"bogus"'))).toBe(true);
+  // an array on a bare slot key fails the string-shape rule, not the _add rule
+  expect(errs.some((e) => e.includes('"build"') && e.includes("non-empty string"))).toBe(true);
+  expect(errs.some((e) => e.includes('"features_add"'))).toBe(true);
+});
+
+test("checkVisualOverride accepts an empty _add array (benign no-op, pinned as deliberate)", () => {
+  expect(checkVisualOverride("x", { features_add: [] })).toEqual([]);
+});
+
+test("checkVisualOverride rejects a bare _add key with no slot base", () => {
+  const errs = checkVisualOverride("x", { _add: ["x"] });
+  expect(errs.some((e) => e.includes('"_add"'))).toBe(true);
+});
+
+test("checkFragments rejects bare strings when typedRequired", () => {
+  const errs = checkFragments("x", ["legacy string"], { typedRequired: true });
+  expect(errs.some((e) => e.includes("requires {slot,text}"))).toBe(true);
+});
+
+test("checkFragments still accepts bare strings by default", () => {
+  expect(checkFragments("x", ["legacy string"])).toEqual([]);
 });

@@ -92,7 +92,7 @@ Export a workflow from ComfyUI via **File → Save (API Format)** (requires the 
 
 ```bash
 # Built-in txt2img with an explicit checkpoint
-bun run 04-Skills/zuul/tools/generate-image.ts \
+bun run skills/zuul/tools/generate-image.ts \
   --provider comfyui \
   --comfyui-checkpoint v1-5-pruned-emaonly-fp16.safetensors \
   --prompt "a small goblin rogue, concept art, plain background" \
@@ -100,7 +100,7 @@ bun run 04-Skills/zuul/tools/generate-image.ts \
   --output 09-Outputs/concepts/characters/goblin-rogue/goblin-rogue-01.png
 
 # Run an API-format workflow file
-bun run 04-Skills/zuul/tools/generate-image.ts \
+bun run skills/zuul/tools/generate-image.ts \
   --provider comfyui \
   --comfyui-workflow /tmp/hero-sheet-api.json \
   --prompt "a brass automaton knight, front-facing orthographic" \
@@ -108,7 +108,7 @@ bun run 04-Skills/zuul/tools/generate-image.ts \
   --output 09-Outputs/concepts/characters/automaton-knight/automaton-knight-01.png
 
 # List available checkpoints
-bun run 04-Skills/zuul/tools/generate-image.ts --list-comfyui-models
+bun run skills/zuul/tools/generate-image.ts --list-comfyui-models
 ```
 
 ## Networking
